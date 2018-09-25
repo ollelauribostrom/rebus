@@ -1,0 +1,28 @@
+sudo: false
+language: node_js
+node_js:
+  - '10'
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+install:
+  - npm install
+script:
+  - npm run test:all
+  - npm run coveralls
+after_success:
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  name: 'Reactor bot'
+  on:
+    branch: master

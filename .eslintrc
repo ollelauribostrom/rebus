@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["react", "jsx-a11y", "import", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-use-before-define": 0,
+    "lines-between-class-members": 0,
+    "import/prefer-default-export": 0
+  },
+  "globals": {
+    "SyntheticEvent": true,
+    "HTMLButtonElement": true,
+    "document": true,
+    "jest": true,
+    "expect": true,
+    "test": true,
+    "it": true,
+    "describe": true,
+    "Worker": true,
+    "$Keys": true
+  }
+}
