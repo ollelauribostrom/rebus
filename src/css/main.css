@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700');
+
 html,
-body {
+body,
+.root {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -7,5 +10,100 @@ body {
 }
 
 body {
-  background-color: #FF9999;
+  background-color: #ff9999;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.rebus {
+  padding-top: 10%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rebus__score {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: block;
+  font-size: 24px;
+  color: #fff;
+}
+
+.rebus__text {
+  font-size: 3em;
+}
+
+.rebus__input {
+  padding: 30px 0 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rebus__word {
+  padding: 0 20px;
+}
+
+.rebus__word__char {
+  border: 0;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 5px;
+}
+
+.rebus__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #fff;
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Anonymous Pro', monospace;
+  margin: 20px 40px;
+}
+
+.button:hover {
+  color: #d3d3d3;
+}
+
+.button--try {
+  font-weight: 700;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }

@@ -1,0 +1,41 @@
+export function isEventCallback(key, value) {
+  return typeof value === 'function' && key.substr(0, 2) === 'on';
+}
+
+export function addListeners(component, $element) {
+  Object.entries(component.props).forEach(([key, value]) => {
+    if (isEventCallback(key, value)) {
+      const event = key.substr(2).toLowerCase();
+      $element.addEventListener(event, value);
+    }
+  });
+}
+
+export function renderChildren(component, $element, placeholder) {
+  component.children
+    .map(child => renderComponent(child, $element))
+    .forEach(childElement => $element.insertBefore(childElement, placeholder));
+  $element.removeChild(placeholder);
+}
+
+export function renderComponent(component, $parent) {
+  const template = document.createElement('template');
+  const rendered = component.render(component.props);
+  template.innerHTML = rendered;
+  const $element = template.content.firstElementChild;
+  const childrenPlaceholder = $element.querySelector('children');
+  if (childrenPlaceholder) {
+    renderChildren(component, $element, childrenPlaceholder);
+  }
+  if (component.$element) {
+    component.$parent.replaceChild($element, component.$element);
+  }
+  addListeners(component, $element);
+  Object.assign(component, { $parent, $element, rendered });
+  return $element;
+}
+
+export function render(component, root) {
+  const element = renderComponent(component, root);
+  root.appendChild(element);
+}

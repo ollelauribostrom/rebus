@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for mini render/component renders a component with children 1`] = `
+"<div class=\\"parent\\">
+          <span class=\\"child\\">Child1</span><span class=\\"child\\">Child2</span></div>"
+`;
+
+exports[`Tests for mini render/component renders a single component without children 1`] = `"<span class=\\"child\\">Child1</span>"`;
+
+exports[`Tests for mini store updates connected components on state change 1`] = `
+"<div class=\\"parent\\">
+          <span class=\\"child\\">Not connected</span><span>1</span></div>"
+`;
