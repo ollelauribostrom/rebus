@@ -1,27 +1,37 @@
 import '../css/main.css';
-import { createComponent, render } from './mini';
-import { Counter, Child, Button, List } from './components';
+import { render } from './mini';
+import { Wrapper, Button, Rebus, RebusInput, Score, GithubBanner, RebusForm } from './components';
 import { actions } from './store';
 
-function App(...children) {
-  return createComponent({
-    children,
-    render() {
-      return `
-        <div>
-          <children>
-        </div>
-      `;
-    }
-  });
-}
-
 render(
-  App(
-    Counter(Child({ text: 'I am a useless child' })),
-    Button({ text: 'Decrement', onClick: actions.decrement }),
-    Button({ text: 'Increment', onClick: actions.increment }),
-    List()
+  Wrapper(
+    { className: 'app' },
+    Score(),
+    Rebus(
+      RebusForm(
+        {
+          onSubmit: e => {
+            e.preventDefault();
+            actions.check();
+            actions.restoreFlash();
+          }
+        },
+        RebusInput({ onInput: e => actions.setInput(e.target.value), focus: true })
+      ),
+      Wrapper(
+        { className: 'rebus__buttons' },
+        Button({ text: 'Next', onClick: actions.next }),
+        Button({
+          text: 'Try solution',
+          class: '--try',
+          onClick: () => {
+            actions.check();
+            actions.restoreFlash();
+          }
+        })
+      )
+    ),
+    GithubBanner({ url: 'https://github.com/ollelauribostrom/rebus' })
   ),
   document.querySelector('.root')
 );

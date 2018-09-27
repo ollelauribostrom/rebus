@@ -2,20 +2,27 @@
 
 html,
 body,
-.root {
+.root,
+.app {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
-body {
+*:focus {
+  outline: 0;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  align-items: center;
   background-color: #ff9999;
   font-family: 'Anonymous Pro', monospace;
 }
 
 .rebus {
-  padding-top: 10%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -23,38 +30,51 @@ body {
   flex-direction: column;
 }
 
-.rebus__score {
+.rebus__state {
   position: absolute;
   top: 25px;
   left: 25px;
   display: block;
+}
+
+.rebus__state__score {
   font-size: 24px;
   color: #fff;
+  display: block;
+}
+
+.rebus__state__current {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #484848;
+  display: block;
 }
 
 .rebus__text {
   font-size: 3em;
+  color: #484848;
 }
 
 .rebus__input {
-  padding: 30px 0 50px 0;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.rebus__word {
-  padding: 0 20px;
-}
-
-.rebus__word__char {
-  border: 0;
-  padding: 10px;
-  width: 20px;
-  height: 20px;
-  text-align: center;
+  margin: 40px;
   font-size: 18px;
-  margin: 10px 5px;
+  border: 1px solid #484848;
+  background: none;
+  min-width: 25%;
+}
+
+.rebus__input:hover,
+.rebus__input:active,
+.rebus__input:focus {
+  border: 1px solid #d3d3d3;
+}
+
+.rebus__input--answered {
+  background: green;
 }
 
 .rebus__buttons {
@@ -74,7 +94,9 @@ body {
   margin: 20px 40px;
 }
 
-.button:hover {
+.button:hover,
+.button:active,
+.button:focus {
   color: #d3d3d3;
 }
 
@@ -105,5 +127,55 @@ body {
   }
   .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+.flash--success {
+  -webkit-animation-name: flash-success-animation;
+  -webkit-animation-duration: 0.5s;
+  animation-name: flash-success-animation;
+  animation-duration: 0.5s;
+}
+
+.flash--fail {
+  -webkit-animation-name: flash-fail-animation;
+  -webkit-animation-duration: 0.5s;
+  animation-name: flash-fail-animation;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes flash-success-animation {
+  from {
+    background: green;
+  }
+  to {
+    background: default;
+  }
+}
+
+@keyframes flash-success-animation {
+  from {
+    background: green;
+  }
+  to {
+    background: default;
+  }
+}
+
+@-webkit-keyframes flash-fail-animation {
+  from {
+    background: red;
+  }
+  to {
+    background: default;
+  }
+}
+
+@keyframes flash-fail-animation {
+  from {
+    background: red;
+  }
+  to {
+    background: default;
   }
 }
