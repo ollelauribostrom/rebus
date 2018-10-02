@@ -1,13 +1,12 @@
 import { createComponent } from './mini';
 import { connect } from './store';
 
-export function Wrapper(props, ...children) {
+export function App(...children) {
   return createComponent({
-    props,
     children,
-    render({ className = '' }) {
+    render() {
       return `
-          <div class="${className}">
+          <div class="app">
             <children>
           </div>
         `;
@@ -15,71 +14,25 @@ export function Wrapper(props, ...children) {
   });
 }
 
-export function Button(props, ...children) {
-  return createComponent({
-    props,
-    children,
-    render({ text, className = '' }) {
-      return `<button class="button ${className}">${text}</button>`;
-    }
-  });
-}
-
-export function Rebus(...children) {
+export function Rebus(props, ...children) {
   return connect(
     createComponent({
+      props,
       children,
-      render({ current, rebusList }) {
+      render({ current, rebuses }) {
+        const rebus = rebuses[current];
+        this.children = rebus.words.map((word, wordIndex) =>
+          Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
+        );
         return `
-        <div class="rebus">
-          <span class="rebus__text">${rebusList[current].rebus}</span>
-          <children>
-        </div>
-      `;
-      }
-    })
-  );
-}
-
-export function RebusForm(props, ...children) {
-  return createComponent({
-    props,
-    children,
-    render() {
-      return `
-        <form action="" method="post">
-          <children>
-          <button type="submit" hidden />
-        </form>
-      `;
-    }
-  });
-}
-
-export function RebusInput(props) {
-  return connect(
-    createComponent({
-      props,
-      render({ current, rebusList, flashClass }) {
-        const rebus = rebusList[current];
-        const value = rebus.answered ? rebus.text : '';
-        const disabled = rebus.answered ? 'disabled' : '';
-        const answeredClass = rebus.answered ? 'rebus__input--answered' : '';
-        return `<input type="text" class="rebus__input ${flashClass} ${answeredClass}" value="${value}" ${disabled} />`;
-      }
-    })
-  );
-}
-
-export function Score(props) {
-  return connect(
-    createComponent({
-      props,
-      render({ score, current, rebusList }) {
-        return `
-          <div class="rebus__state">
-            <span class="rebus__state__score">Score: ${score}</span>
-            <span class="rebus__state__current">Rebus: ${current + 1}/${rebusList.length}</span>
+          <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''}">
+            <div class="rebus__header">
+              <span>${current + 1}/${rebuses.length}</span>
+            </div>
+            <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
+            <div class="rebus__words">
+              <children>
+            </div>
           </div>
         `;
       }
@@ -87,14 +40,78 @@ export function Score(props) {
   );
 }
 
-export function GithubBanner(props) {
+export function Word(props, ...children) {
+  return createComponent({
+    props,
+    children,
+    render({ word, charInput }) {
+      this.children = word.split('').map((_, charIndex) =>
+        Char({
+          charIndex,
+          ...props,
+          onInput: e => charInput(e.target.value, props.wordIndex, charIndex)
+        })
+      );
+      return `
+          <div class="word">
+            <children>
+          </div>
+        `;
+    }
+  });
+}
+
+export function Char(props) {
+  return createComponent({
+    props,
+    render({ current, rebuses, wordIndex, charIndex }) {
+      const rebus = rebuses[current];
+      const previousWords = rebus.words.slice(0, wordIndex).join('');
+      const index = wordIndex > 0 ? previousWords.length + charIndex : charIndex;
+      const value = rebus.input[index] || '';
+      return `
+        <input 
+          type="text"
+          maxlength="1"
+          class="word__char"
+          placeholder=" "
+          value="${value}"
+        >`;
+    }
+  });
+}
+
+export function ChangeButton(props) {
+  return createComponent({
+    props,
+    render({ className = '' }) {
+      return `
+        <button class="change-button ${className}">
+          <svg width="36px" height="67px" viewBox="0 0 36 67" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs></defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="App" transform="translate(-282.000000, -478.000000)" fill="#837373" fill-rule="nonzero">
+                <g id="Button.button.button--prev" transform="translate(300.000000, 511.500000) scale(-1, -1) translate(-300.000000, -511.500000) translate(282.000000, 478.000000)">
+                  <path d="M2.7,66.561337 C2.07931034,67.146221 1.0862069,67.146221 0.465517241,66.561337 C-0.155172414,65.9456697 -0.155172414,64.9606019 0.465517241,64.3449345 L31.562069,33.5 L0.465517241,2.65506547 C-0.155172414,2.03939812 -0.155172414,1.05433035 0.465517241,0.438662991 C1.0862069,-0.146220997 2.07931034,-0.146220997 2.7,0.438662991 L36,33.5 L2.7,66.561337 Z"
+                    id="Shape"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+      `;
+    }
+  });
+}
+
+export function GithubCorner(props) {
   return createComponent({
     props,
     render({ url }) {
       return `
         <a href="${url}" class="github-corner" aria-label="View source on Github">
-          <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
-            aria-hidden="true">
+          <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
             <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
               fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
@@ -102,6 +119,26 @@ export function GithubBanner(props) {
               fill="currentColor" class="octo-body"></path>
           </svg>
         </a>
+      `;
+    }
+  });
+}
+
+export function Logo() {
+  return createComponent({
+    render() {
+      return `
+      <svg class="logo" width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="App" transform="translate(-49.000000, -41.000000)" fill="#808B02">
+            <g id=".header" transform="translate(43.000000, 32.000000)">
+              <path d="M25.92,48.64 L22.24,48.64 L22.24,20.4 L30.96,20.4 C33.093344,20.4 34.7066612,20.7066636 35.8,21.32 C36.8933388,21.9333364 37.7466636,22.8266608 38.36,24 C38.9733364,25.1733392 39.28,26.4533264 39.28,27.84 C39.28,28.9600056 39.0666688,30.0133284 38.64,31 C38.2133312,31.9866716 37.6133372,32.8933292 36.84,33.72 C36.0666628,34.5466708 34.9066744,35.2799968 33.36,35.92 C33.9466696,36.2400016 34.3999984,36.5599984 34.72,36.88 C35.0400016,37.2000016 35.4133312,37.7066632 35.84,38.4 C36.2666688,39.0933368 36.6399984,39.706664 36.96,40.24 L41.44,48.64 L37.28,48.64 L33.36,41.2 C32.3466616,39.3866576 31.0933408,37.8400064 29.6,36.56 L25.92,36.56 L25.92,48.64 Z M25.92,33.68 L29.52,33.68 C31.0666744,33.68 32.2266628,33.4400024 33,32.96 C33.7733372,32.4799976 34.3866644,31.8000044 34.84,30.92 C35.2933356,30.0399956 35.52,29.0933384 35.52,28.08 C35.52,27.1733288 35.3333352,26.3733368 34.96,25.68 C34.5866648,24.9866632 34.0533368,24.4000024 33.36,23.92 C32.6666632,23.4399976 31.4666752,23.2 29.76,23.2 L25.92,23.2 L25.92,33.68 Z M57.84,60.88 L52.8,60.96 L52.8,58.88 L55.92,58.88 L55.92,55.6 L57.92,55.6 L57.84,60.88 Z M49.76,60.88 L43.36,60.88 L43.36,58.88 L49.76,58.88 L49.76,60.88 Z M39.84,60.88 L33.6,60.88 L33.6,58.88 L39.84,58.88 L39.84,60.88 Z M29.92,60.88 L23.68,60.88 L23.68,58.88 L29.92,58.88 L29.92,60.88 Z M20.64,60.88 L14.32,60.88 L14.4,58.88 L20.64,58.96 L20.64,60.88 Z M11.36,60.88 L6,60.88 L6.16,55.52 L8.16,55.52 L8.16,58.88 L11.36,58.88 L11.36,60.88 Z M8.16,52.24 L6.08,52.24 L6.08,46.08 L8.16,46.16 L8.16,52.24 Z M8.16,42.88 L6,42.88 L6.08,36.8 L8.16,36.8 L8.16,42.88 Z M8.16,33.68 L6,33.68 L6.08,27.44 L8.16,27.36 L8.16,33.68 Z M8.16,24.4 L6,24.4 L6.16,17.92 L8.16,17.92 L8.16,24.4 Z M8.16,14.96 L6.16,14.96 L6.16,10 L11.36,9.84 L11.36,11.92 L8.24,11.92 L8.16,14.96 Z M14.4,11.92 L14.4,9.92 L20.72,10 L20.64,11.92 L14.4,11.92 Z M23.76,11.92 L23.68,10 L30,9.84 L30.08,12 L23.76,11.92 Z M33.68,12 L33.68,10 L40,10 L40,11.92 L33.68,12 Z M43.36,11.92 L43.36,10 L50,10 L49.92,12 L43.36,11.92 Z M52.96,10 L58,10 L57.92,15.12 L55.92,15.12 L55.92,11.92 L52.88,12.08 L52.96,10 Z M57.92,18.08 L57.92,24.48 L55.92,24.48 L55.92,18 L57.92,18.08 Z M57.92,27.44 L57.92,33.76 L56,33.68 L55.92,27.44 L57.92,27.44 Z M57.84,36.96 L57.84,42.96 L55.92,42.96 L55.92,36.88 L57.84,36.96 Z M57.76,46.16 L57.76,52.32 L55.92,52.4 L55.92,46.16 L57.76,46.16 Z"
+                id="Logo.logo"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
       `;
     }
   });

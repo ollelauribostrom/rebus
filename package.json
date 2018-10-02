@@ -2,7 +2,9 @@
   "name": "rebus",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "dom-confetti": "0.0.11"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.1",
     "@babel/preset-env": "^7.0.0",

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html,
 body,
@@ -15,98 +15,146 @@ body,
 }
 
 .app {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #ff9999;
-  font-family: 'Anonymous Pro', monospace;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  background-color: #202425;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23363116' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.logo {
+  height: 4.44vw;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  align-self: center;
+  justify-self: center;
 }
 
 .rebus {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  background-color: #0d3540;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-rows: 40px auto;
+  grid-row-gap: 50px;
+  padding-bottom: 50px;
 }
 
-.rebus__state {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  display: block;
+.rebus--answered {
+  background-color: #028b5b;
 }
 
-.rebus__state__score {
-  font-size: 24px;
-  color: #fff;
-  display: block;
-}
-
-.rebus__state__current {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #484848;
-  display: block;
-}
-
-.rebus__text {
-  font-size: 3em;
-  color: #484848;
-}
-
-.rebus__input {
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px;
-  font-size: 18px;
-  border: 1px solid #484848;
-  background: none;
-  min-width: 25%;
-}
-
-.rebus__input:hover,
-.rebus__input:active,
-.rebus__input:focus {
-  border: 1px solid #d3d3d3;
-}
-
-.rebus__input--answered {
-  background: green;
-}
-
-.rebus__buttons {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  border-top: 1px solid #fff;
-}
-
-.button {
+.change-button {
   background-color: transparent;
   border: 0;
-  color: #fff;
   font-size: 20px;
   cursor: pointer;
-  font-family: 'Anonymous Pro', monospace;
-  margin: 20px 40px;
+  padding: 10px;
+  align-self: center;
 }
 
-.button:hover,
-.button:active,
-.button:focus {
-  color: #d3d3d3;
+.change-button svg {
+  height: 36px;
 }
 
-.button--try {
-  font-weight: 700;
+.change-button path {
+  fill: #837373;
+}
+
+.change-button:hover path,
+.change-button:active path,
+.change-button:focus path {
+  fill: #e2e2e2;
+}
+
+.change-button--prev {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.change-button--next {
+  transform: rotate(180deg);
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.rebus__header {
+  background-color: #1d1d1d;
+  border-radius: 8px 8px 0 0;
+  font-size: 14px;
+  color: #898989;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.rebus__symbols {
+  align-self: center;
+  justify-self: center;
+  font-size: 65px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.word {
+  margin-bottom: 20px;
+  display: grid;
+  justify-items: auto;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 50px);
+  padding: 0 20px;
+}
+
+.word__char {
+  height: 50px;
+  border: 1px solid #979797;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+.word__char:not(:placeholder-shown) {
+  background-color: #026b8b;
+}
+
+.word__char:active,
+.word__char:focus {
+  background-color: rgba(2, 107, 139, 0.3);
+}
+
+.confetti-canon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* ----------------------------------------------
+ * GitHub Corners
+ * w: https://github.com/tholman/github-corners
+ * ---------------------------------------------- */
+
+.github-corner {
+  fill: #27768e;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
 }
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
+
 @keyframes octocat-wave {
   0%,
   100% {
@@ -121,61 +169,82 @@ body,
     transform: rotate(10deg);
   }
 }
+
+@media (min-width: 501px) and (max-width: 1024px) {
+  .change-button--prev {
+    grid-column-start: 1;
+  }
+  .change-button--next {
+    grid-column-start: 5;
+  }
+  .rebus {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+  }
+}
+
 @media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
+  .logo {
+    display: none;
   }
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
+  .app {
+    grid-template-rows: 1fr 8fr 2fr;
   }
-}
-
-.flash--success {
-  -webkit-animation-name: flash-success-animation;
-  -webkit-animation-duration: 0.5s;
-  animation-name: flash-success-animation;
-  animation-duration: 0.5s;
-}
-
-.flash--fail {
-  -webkit-animation-name: flash-fail-animation;
-  -webkit-animation-duration: 0.5s;
-  animation-name: flash-fail-animation;
-  animation-duration: 0.5s;
-}
-
-@-webkit-keyframes flash-success-animation {
-  from {
-    background: green;
+  .github-corner {
+    display: none;
   }
-  to {
-    background: default;
+  .change-button {
+    grid-row-start: 3;
+  }
+  .rebus {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    border-radius: 0;
+  }
+  .rebus__header {
+    border-radius: 0;
   }
 }
 
-@keyframes flash-success-animation {
-  from {
-    background: green;
+/* ----------------------------------------------
+ * Generated by Animista on 2018-10-2 9:2:14
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+.flip-vertical-right {
+  animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.flip-vertical-left {
+  animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation flip-vertical-right
+ * ----------------------------------------
+ */
+@keyframes flip-vertical-right {
+  0% {
+    transform: rotateY(0);
   }
-  to {
-    background: default;
+  100% {
+    transform: rotateY(360deg);
   }
 }
 
-@-webkit-keyframes flash-fail-animation {
-  from {
-    background: red;
+/**
+ * ----------------------------------------
+ * animation flip-vertical-left
+ * ----------------------------------------
+ */
+@keyframes flip-vertical-left {
+  0% {
+    transform: rotateY(0);
   }
-  to {
-    background: default;
-  }
-}
-
-@keyframes flash-fail-animation {
-  from {
-    background: red;
-  }
-  to {
-    background: default;
+  100% {
+    transform: rotateY(-360deg);
   }
 }

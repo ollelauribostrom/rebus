@@ -14,8 +14,8 @@ export function addListeners(component, $element) {
 export function renderChildren(component, $element, placeholder) {
   component.children
     .map(child => renderComponent(child, $element))
-    .forEach(childElement => $element.insertBefore(childElement, placeholder));
-  $element.removeChild(placeholder);
+    .forEach(childElement => placeholder.parentNode.insertBefore(childElement, placeholder));
+  placeholder.parentNode.removeChild(placeholder);
 }
 
 export function renderComponent(component, $parent) {
