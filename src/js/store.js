@@ -3,10 +3,12 @@ import { createStore } from './mini';
 
 const actionsCreators = {
   next: ({ current, rebuses }) => ({
-    current: current < rebuses.length - 1 ? current + 1 : 0
+    current: current < rebuses.length - 1 ? current + 1 : 0,
+    animation: 'flip-vertical-right'
   }),
   prev: ({ current, rebuses }) => ({
-    current: current > 1 ? current - 1 : rebuses.length - 1
+    current: current > 0 ? current - 1 : rebuses.length - 1,
+    animation: 'flip-vertical-left'
   }),
   setInput: ({ current, rebuses }, input, wordIndex, charIndex) => {
     const rebus = rebuses[current];
@@ -14,7 +16,7 @@ const actionsCreators = {
     const index = wordIndex > 0 ? previousWords.length + charIndex : charIndex;
     const updatedRebuses = [...rebuses];
     updatedRebuses[current].input[index] = input;
-    return { updatedRebuses };
+    return { updatedRebuses, animation: 'none' };
   },
   check: ({ current, rebuses }, confettiCanon) => {
     const rebus = rebuses[current];
@@ -23,7 +25,7 @@ const actionsCreators = {
       confetti(confettiCanon);
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;
-      return { updatedRebuses };
+      return { updatedRebuses, animation: 'none' };
     }
     return {};
   }
@@ -31,6 +33,7 @@ const actionsCreators = {
 
 const initialState = {
   current: 0,
+  animation: 'none',
   rebuses: [
     {
       symbols: ['😍', '👍', '😍'],

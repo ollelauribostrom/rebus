@@ -14,14 +14,17 @@ body,
   outline: 0;
 }
 
+.root {
+  background-color: #202425;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23363116' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
 .app {
   color: #fff;
   font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-  background-color: #202425;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23363116' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .logo {
@@ -213,11 +216,11 @@ body,
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-.flip-vertical-right {
+.animation--flip-vertical-right {
   animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
-.flip-vertical-left {
+.animation--flip-vertical-left {
   animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 

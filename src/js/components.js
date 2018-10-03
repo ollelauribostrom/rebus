@@ -19,13 +19,13 @@ export function Rebus(props, ...children) {
     createComponent({
       props,
       children,
-      render({ current, rebuses }) {
+      render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
         this.children = rebus.words.map((word, wordIndex) =>
           Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
         );
         return `
-          <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''}">
+          <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
             </div>
