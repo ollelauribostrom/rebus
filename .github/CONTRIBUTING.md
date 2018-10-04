@@ -1,4 +1,4 @@
-# Contributing to sverigesradio
+# Contributing to rebus
 
 ## Contribution process overview
 
@@ -16,7 +16,7 @@
 
 1. Click the fork button up top.
 2. Clone your fork locally (Notice that git's `origin` reference will point to your forked repository).
-3. It is useful to have the upstream repository registered as well using: `git remote add upstream https://github.com/ollelauribostrom/sverigesradio.git` and periodically fetch it using `git fetch upstream`.
+3. It is useful to have the upstream repository registered as well using: `git remote add upstream https://github.com/ollelauribostrom/rebus.git` and periodically fetch it using `git fetch upstream`.
 
 ### 2. Create feature branch
 
@@ -27,7 +27,7 @@ Create and switch to new feature branch: `git checkout -b {branch_name} upstream
 
 1. Now that you have a new branch you can edit/create/delete files.
 2. Use touch-up commits with main one (squash) -- the `git commit --amend` can be used for that. (You may use git force push after that).
-3. Look at how to run your own local development copy [here](https://github.com/ollelauribostrom/sverigesradio/blob/master/README.md#running-your-own-local-development-copy).
+3. Look at how to run your own local development copy [here](https://github.com/ollelauribostrom/rebus/blob/master/README.md#running-your-own-local-development-copy).
 
 ### 4. Run testing
 
