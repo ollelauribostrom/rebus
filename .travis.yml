@@ -24,6 +24,6 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  name: 'Reactor bot'
+  name: 'Rebus bot'
   on:
     branch: master
