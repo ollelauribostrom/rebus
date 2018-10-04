@@ -23,7 +23,7 @@ function Child(props) {
   });
 }
 
-describe('Tests for mini', () => {
+describe('Tests for mini framework', () => {
   describe('render/component', () => {
     it('renders a single component without children', () => {
       const root = document.createElement('div');

@@ -9,15 +9,12 @@
     "import/prefer-default-export": 0
   },
   "globals": {
-    "SyntheticEvent": true,
-    "HTMLButtonElement": true,
     "document": true,
     "jest": true,
     "expect": true,
     "test": true,
     "it": true,
     "describe": true,
-    "Worker": true,
-    "$Keys": true
+    "Event": true
   }
 }

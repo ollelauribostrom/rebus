@@ -6,10 +6,10 @@ export function App(...children) {
     children,
     render() {
       return `
-          <div class="app">
-            <children>
-          </div>
-        `;
+        <div class="app">
+          <children>
+        </div>
+      `;
     }
   });
 }
