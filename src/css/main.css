@@ -51,40 +51,6 @@ body,
   background-color: #028b5b;
 }
 
-.change-button {
-  background-color: transparent;
-  border: 0;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 10px;
-  align-self: center;
-}
-
-.change-button svg {
-  height: 36px;
-}
-
-.change-button path {
-  fill: #837373;
-}
-
-.change-button:hover path,
-.change-button:active path,
-.change-button:focus path {
-  fill: #e2e2e2;
-}
-
-.change-button--prev {
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-
-.change-button--next {
-  transform: rotate(180deg);
-  grid-column-start: 4;
-  grid-row-start: 2;
-}
-
 .rebus__header {
   background-color: #1d1d1d;
   border-radius: 8px 8px 0 0;
@@ -131,6 +97,40 @@ body,
 .word__char:active,
 .word__char:focus {
   background-color: rgba(2, 107, 139, 0.3);
+}
+
+.change-button {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  align-self: center;
+}
+
+.change-button svg {
+  height: 36px;
+}
+
+.change-button path {
+  fill: #837373;
+}
+
+.change-button:hover path,
+.change-button:active path,
+.change-button:focus path {
+  fill: #e2e2e2;
+}
+
+.change-button--prev {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.change-button--next {
+  transform: rotate(180deg);
+  grid-column-start: 4;
+  grid-row-start: 2;
 }
 
 .confetti-canon {
