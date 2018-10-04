@@ -1,5 +1,6 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
+import { getRebuses } from './rebuses';
 
 const actionsCreators = {
   next: ({ current, rebuses }) => ({
@@ -34,20 +35,7 @@ const actionsCreators = {
 const initialState = {
   current: 0,
   animation: 'none',
-  rebuses: [
-    {
-      symbols: ['😍', '👍', '😍'],
-      words: ['one', 'two'],
-      input: [...Array(6)],
-      isAnswered: false
-    },
-    {
-      symbols: ['😍', '👍', '😍'],
-      words: ['two', 'three'],
-      input: [...Array(8)],
-      isAnswered: false
-    }
-  ]
+  rebuses: getRebuses()
 };
 
 export const { connect, actions } = createStore(initialState, actionsCreators);
