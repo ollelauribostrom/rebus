@@ -2,7 +2,7 @@ import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
 import { getRebuses } from './rebuses';
 
-const actionsCreators = {
+export const actionsCreators = {
   next: ({ current, rebuses }) => ({
     current: current < rebuses.length - 1 ? current + 1 : 0,
     animation: 'flip-vertical-right'
@@ -32,7 +32,7 @@ const actionsCreators = {
   }
 };
 
-const initialState = {
+export const initialState = {
   current: 0,
   animation: 'none',
   rebuses: getRebuses()

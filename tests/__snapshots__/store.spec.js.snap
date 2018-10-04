@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for store should have the correct initial state 1`] = `
+Object {
+  "animation": "none",
+  "current": 0,
+  "rebuses": Array [
+    Object {
+      "input": Array [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+      ],
+      "isAnswered": false,
+      "symbols": Array [
+        "😍",
+        "👍",
+        "😍",
+      ],
+      "words": Array [
+        "one",
+        "two",
+      ],
+    },
+    Object {
+      "input": Array [
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+        undefined,
+      ],
+      "isAnswered": false,
+      "symbols": Array [
+        "😍",
+        "👍",
+        "😍",
+      ],
+      "words": Array [
+        "three",
+        "four",
+      ],
+    },
+  ],
+}
+`;
