@@ -1,7 +1,7 @@
 {
   "name": "rebus",
   "version": "1.0.0",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "dom-confetti": "0.0.11"
   },
