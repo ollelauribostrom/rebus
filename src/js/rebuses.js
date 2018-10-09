@@ -6,6 +6,10 @@ const rebuses = [
   {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants']
+  },
+  {
+    symbols: ['📖', '+', '🙋', '+', '📝'],
+    words: ['Readme', 'file']
   }
 ];
 
