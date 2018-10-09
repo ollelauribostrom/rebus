@@ -17,7 +17,7 @@ export const actionsCreators = {
     const index = wordIndex > 0 ? previousWords.length + charIndex : charIndex;
     const updatedRebuses = [...rebuses];
     updatedRebuses[current].input[index] = input;
-    return { updatedRebuses, animation: 'none' };
+    return { updatedRebuses };
   },
   check: ({ current, rebuses }, confettiCanon) => {
     const rebus = rebuses[current];

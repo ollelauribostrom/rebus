@@ -15,8 +15,10 @@ body,
 }
 
 .root {
-  background-color: #202425;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23363116' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: #330000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .app {
@@ -25,37 +27,40 @@ body,
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-column-gap: 30px;
 }
 
 .logo {
-  height: 4.44vw;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  align-self: center;
-  justify-self: center;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 .rebus {
-  background-color: #0d3540;
+  background-color: #1542e642;
   grid-column-start: 3;
+  align-self: center;
   grid-row-start: 2;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   display: grid;
   grid-template-rows: 40px auto;
-  grid-row-gap: 50px;
-  padding-bottom: 50px;
+  grid-row-gap: 30px;
+  padding-bottom: 20px;
+}
+
+.rebus:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .rebus--answered {
-  background-color: #028b5b;
+  background-color: #26bd88b0;
 }
 
 .rebus__header {
-  background-color: #1d1d1d;
-  border-radius: 8px 8px 0 0;
+  background-color: #1d1d1d1a;
   font-size: 14px;
-  color: #898989;
+  color: #ffffff;
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -64,8 +69,12 @@ body,
 .rebus__symbols {
   align-self: center;
   justify-self: center;
-  font-size: 65px;
+  font-size: 3em;
   text-align: center;
+  padding: 0 20px;
+}
+
+.rebus__words {
   padding: 0 20px;
 }
 
@@ -75,12 +84,11 @@ body,
   justify-items: auto;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 50px);
-  padding: 0 20px;
 }
 
 .word__char {
   height: 50px;
-  border: 1px solid #979797;
+  border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
   text-align: center;
@@ -91,12 +99,12 @@ body,
 }
 
 .word__char:not(:placeholder-shown) {
-  background-color: #026b8b;
+  background-color: #0000004d;
 }
 
 .word__char:active,
 .word__char:focus {
-  background-color: rgba(2, 107, 139, 0.3);
+  background-color: #0000001f;
 }
 
 .change-button {
@@ -106,6 +114,7 @@ body,
   cursor: pointer;
   padding: 10px;
   align-self: center;
+  justify-self: flex-start;
 }
 
 .change-button svg {
@@ -113,18 +122,19 @@ body,
 }
 
 .change-button path {
-  fill: #837373;
+  fill: #fff;
 }
 
 .change-button:hover path,
 .change-button:active path,
 .change-button:focus path {
-  fill: #e2e2e2;
+  fill: rgba(2, 107, 139, 0.3);
 }
 
 .change-button--prev {
   grid-column-start: 2;
   grid-row-start: 2;
+  justify-self: flex-end;
 }
 
 .change-button--next {
@@ -146,7 +156,7 @@ body,
  * ---------------------------------------------- */
 
 .github-corner {
-  fill: #27768e;
+  fill: #009688;
   color: #fff;
   position: absolute;
   top: 0;
