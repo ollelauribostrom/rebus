@@ -1,4 +1,4 @@
-import { getRebus, getRebuses } from '../src/js/rebuses';
+import { getRebuses } from '../src/js/rebuses';
 
 describe('Tests for rebuses', () => {
   it('generates a correct array of rebuses', () => {
@@ -9,15 +9,5 @@ describe('Tests for rebuses', () => {
       expect(rebus.input.length).toEqual(rebus.words.join('').length);
       expect(rebus.isAnswered).toEqual(false);
     });
-  });
-  test('rebus: 1', () => {
-    const rebus = getRebus(1);
-    expect(rebus.symbols).toEqual(['Re', '+', '🚌']);
-    expect(rebus.words).toEqual(['Rebus']);
-  });
-  test('rebus: 2', () => {
-    const rebus = getRebus(2);
-    expect(rebus.symbols).toEqual(['🏠', '+', 'pl', '+', '🐜', '+', 's']);
-    expect(rebus.words).toEqual(['Houseplants']);
   });
 });

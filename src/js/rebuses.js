@@ -1,18 +1,17 @@
 const rebuses = [
   {
-    id: 1,
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus']
   },
   {
-    id: 2,
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants']
   }
 ];
 
 export function getRebuses() {
-  return rebuses.map(rebus => ({
+  return rebuses.map((rebus, id) => ({
+    id,
     ...rebus,
     input: [...Array(rebus.words.join('').length)],
     isAnswered: false
