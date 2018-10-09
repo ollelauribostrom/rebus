@@ -8,7 +8,7 @@ Contributing to an open source project for the first time can be a scary thing. 
 
 Everyone can! (and I mean everyone) 💫
 
-💻 **You don’t have to contribute code**. Adda new rebus, fix a typo, report a bug, add some documentation, do some re-design or add a translation. This project just like most open source projects are in need of all sorts of different contributions. Not just code.
+💻 **You don’t have to contribute code**. Add a new rebus, fix a typo, report a bug, add some documentation, do some re-design or add a translation. This project just like most open source projects are in need of all sorts of different contributions. Not just code.
 
 🌟 **You are good enough**. Start of easy by fixing something small (like adding a new rebus). This will help you orientate yourself in the project and increase your confidence and experience. No one will judge you if you make a mistake and you can't break anything. Ask for some pointers if you get stuck. You got this!
 
@@ -18,7 +18,7 @@ The only thing that is required to get started is git. Make sure you have it ins
 
 ## Fork this repo
 
-Create a fork of this repo by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
+The first step is to create a fork of this repo. Do so by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
 
 ![Forking the repo](.github/fork.png)
 
