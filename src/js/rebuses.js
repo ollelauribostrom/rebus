@@ -1,13 +1,13 @@
 const rebuses = [
   {
     id: 1,
-    symbols: ['😍', '👍', '😍'],
-    words: ['one', 'two']
+    symbols: ['Re', '+', '🚌'],
+    words: ['Rebus']
   },
   {
     id: 2,
-    symbols: ['😍', '👍', '😍'],
-    words: ['two', 'three']
+    symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
+    words: ['Houseplants']
   }
 ];
 

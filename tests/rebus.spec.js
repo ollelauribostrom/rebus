@@ -12,7 +12,12 @@ describe('Tests for rebuses', () => {
   });
   test('rebus: 1', () => {
     const rebus = getRebus(1);
-    expect(rebus.symbols).toEqual(['😍', '👍', '😍']);
-    expect(rebus.words).toEqual(['one', 'two']);
+    expect(rebus.symbols).toEqual(['Re', '+', '🚌']);
+    expect(rebus.words).toEqual(['Rebus']);
+  });
+  test('rebus: 2', () => {
+    const rebus = getRebus(2);
+    expect(rebus.symbols).toEqual(['🏠', '+', 'pl', '+', '🐜', '+', 's']);
+    expect(rebus.words).toEqual(['Houseplants']);
   });
 });
