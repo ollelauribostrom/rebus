@@ -12,7 +12,7 @@ Everyone can! (and I mean everyone) 💫
 
 🌟 **You are good enough**. Start of easy by fixing something small (like adding a new rebus). This will help you orientate yourself in the project and increase your confidence and experience. No one will judge you if you make a mistake and you can't break anything. Ask for some pointers if you get stuck. You got this!
 
-➡️ Have a look at the [open issues]() to see what needs to be done in this project.
+➡️ Have a look at the [open issues](ollelauribostrom/rebus/issues) to see what needs to be done in this project.
 
 The only thing that is required to get started is git. Make sure you have it installed on your computer by running `git --version` in your terminal. If you do not have git installed, [install it](https://help.github.com/articles/set-up-git/).
 
