@@ -50,6 +50,10 @@ const rebuses = [
   {
     symbols: ['🌞', '+', '🛀'],
     words: ['Sunbath']
+  },
+  {
+    symbols: ['🐱', '+', 'as', '+', '🏆', 'y̶', '+', 'e'],
+    words: ['Catastrophe']
   }
 ];
 
