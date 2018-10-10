@@ -1,12 +1,14 @@
 # Rebus
 
-Contributing to an open source project for the first time can be a scary thing. The goal of this repo is to help you take your first steps as an open source contributor by developing a simple (but hopefully fun) rebus game together.
+[![Build Status](https://travis-ci.org/ollelauribostrom/rebus.svg?branch=master)](https://travis-ci.org/ollelauribostrom/rebus)
+[![Coverage Status](https://coveralls.io/repos/github/ollelauribostrom/rebus/badge.svg?branch=master)](https://coveralls.io/github/ollelauribostrom/rebus?branch=master)
+
+Contributing to an open source project for the first time can be a scary thing. The goal of this repo is to help you take your first steps as an open source contributor by developing a simple (but hopefully fun) rebus game together. 💖
 
 #### Try the live version of the game: https://ollelauribostrom.github.io/rebus/
 
 ## Who can contribute?
 
-<<<<<<< HEAD
 Everyone can! (and I mean everyone) 💫
 
 💻 **You don’t have to contribute code**. Add a new rebus, fix a typo, report a bug, add some documentation, do some re-design or add a translation. This project just like most open source projects are in need of all sorts of different contributions. Not just code.
@@ -14,44 +16,22 @@ Everyone can! (and I mean everyone) 💫
 🌟 **You are good enough**. Start of easy by fixing something small (like adding a new rebus). This will help you orientate yourself in the project and increase your confidence and experience. No one will judge you if you make a mistake and you can't break anything. Ask for some pointers if you get stuck. You got this!
 
 ➡️ Have a look at the [open issues](https://github.com/ollelauribostrom/rebus/issues) to see what needs to be done in this project.
-=======
-Everyone can! (and I mean everyone)
-
-**You don’t have to contribute code**. Fix a typo, report a bug, add some documentation, do some re-design or add a translation. This project just like most open source projects are in need of all sorts of different contributions. Not just code.
-
-**You are good enough**. Start of easy by fixing something small (like adding a new rebus). This will help you orientate yourself in the project and increase your confidence and experience. No one will judge you if you make a mistake and you can't break anything. Ask for some pointers if you get stuck. You got this!
-
-Have a look at the [open issues]() to see what needs to be done in this project.
->>>>>>> 94c94f618f16cc98b238ec49c946b9d5cf8282a2
 
 The only thing that is required to get started is git. Make sure you have it installed on your computer by running `git --version` in your terminal. If you do not have git installed, [install it](https://help.github.com/articles/set-up-git/).
 
 ## Fork this repo
 
-<<<<<<< HEAD
 The first step is to create a fork of this repo. Do so by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
 
 ![Forking the repo](.github/fork.png)
-=======
-Create a fork of this repo by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
-<img src="" />
->>>>>>> 94c94f618f16cc98b238ec49c946b9d5cf8282a2
 
 ## Clone the repo
 
 The next step is to clone the forked repo to your machine.
 
-<<<<<<< HEAD
 Go to your GitHub repositories and open the forked repository called Rebus (_forked from ollelauribostrom/rebus_). Then click on the "Clone or download" button and then click the copy to clipboard icon to get your url.
 
 <img align="right" width="300" src=".github/clone.png" alt="Cloning the repo" />
-=======
-Go to your GitHub repositories and open the forked repository called Rebus (_forked from ollelauribostrom/rebus_).
-<img src="" />
-
-Click on the "Clone or download" button and then click the copy to clipboard icon to get your url.
-<img src="" />
->>>>>>> 94c94f618f16cc98b238ec49c946b9d5cf8282a2
 
 Finally run the following git command in your terminal:
 
@@ -96,12 +76,8 @@ git checkout -b add-new-rebus
 Now it's time to make your changes. Let's add a new rebus to the game.
 
 Open the file `src/js/rebuses.js` in your favourite editor and add a new rebus object to the end of the `rebuses` array. Save the file and then run `git --status` to see which changes you have made. This will look something like:
-<<<<<<< HEAD
 
 <img align="right" width="300" src=".github/status.png" alt="Git status" />
-=======
-<img src="" />
->>>>>>> 94c94f618f16cc98b238ec49c946b9d5cf8282a2
 
 To add these changes to your next commit, you can run:
 
@@ -134,19 +110,12 @@ git push origin <your-new-branch-name>
 ## Open a Pull Request
 
 Head over to your repository on GitHub and click on the green "Compare and pull request" button.
-<<<<<<< HEAD
 
 ![Compare and pull request](.github/pr.png)
 
 Describe your changes and submit your pull request
 
 ![Submit pull request](.github/pr2.png)
-=======
-<img src="" />
-
-Describe your changes and submit your pull request
-<img src="" />
->>>>>>> 94c94f618f16cc98b238ec49c946b9d5cf8282a2
 
 ## What's next?
 
