@@ -120,7 +120,7 @@ Object {
 
 exports[`Tests for components Char renders correctly (with value and multiple words) 2`] = `
 "
-        <input 
+        <input
           type=\\"text\\"
           maxlength=\\"1\\"
           class=\\"word__char\\"
@@ -167,7 +167,7 @@ Object {
 
 exports[`Tests for components Char renders correctly (with value and single word) 2`] = `
 "
-        <input 
+        <input
           type=\\"text\\"
           maxlength=\\"1\\"
           class=\\"word__char\\"
@@ -214,7 +214,7 @@ Object {
 
 exports[`Tests for components Char renders correctly (without value) 2`] = `
 "
-        <input 
+        <input
           type=\\"text\\"
           maxlength=\\"1\\"
           class=\\"word__char\\"
