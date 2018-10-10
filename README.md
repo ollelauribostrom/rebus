@@ -1,5 +1,7 @@
 # Rebus
 
+[![Build Status](https://travis-ci.org/ollelauribostrom/rebus.svg?branch=master)](https://travis-ci.org/ollelauribostrom/rebus)
+
 Contributing to an open source project for the first time can be a scary thing. The goal of this repo is to help you take your first steps as an open source contributor by developing a simple (but hopefully fun) rebus game together. 💖
 
 #### Try the live version of the game: https://ollelauribostrom.github.io/rebus/
