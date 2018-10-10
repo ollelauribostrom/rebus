@@ -28,6 +28,30 @@ const rebuses = [
     words: ['Pineapple']
   },
   {
+    symbols: ['🥚', '+', '🌱'],
+    words: ['Eggplant']
+  },
+  {
+    symbols: ['🔥', '+', '🦊'],
+    words: ['Firefox']
+  },
+  {
+    symbols: ['💊', '+', 'ow'],
+    words: ['Pillow']
+  },
+  {
+    symbols: ['🖊️', '+', 'd', '+', '🐜'],
+    words: ['Pendant']
+  },
+  {
+    symbols: ['🌡️', '+', '🔑'],
+    words: ['Hotkey']
+  },
+  {
+    symbols: ['🌞', '+', '🛀'],
+    words: ['Sunbath']
+  },
+  {
     symbols: ['🐱', '+', 'as', '+', '🏆', 'y̶', '+', 'e'],
     words: ['Catastrophe']
   }
