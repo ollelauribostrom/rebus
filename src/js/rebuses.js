@@ -66,6 +66,14 @@ const rebuses = [
   {
     symbols: ['🔑', '🐗', '+', 'd'],
     words: ['Keyboard']
+  },
+  {
+    symbols: ['💵', '+', 'ew'],
+    words: ['cashew']
+  },
+  {
+    symbols: ['🤘🏻', '+', '⭐️'],
+    words: ['rockstar']
   }
 ];
 
