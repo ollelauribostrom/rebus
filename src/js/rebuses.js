@@ -62,6 +62,10 @@ const rebuses = [
   {
     symbols: ['🍌', '+', '🍞'],
     words: ['Bananabread']
+  },
+  {
+    symbols: ['🔑', '🐗', '+', 'd'],
+    words: ['Keyboard']
   }
 ];
 
