@@ -78,6 +78,10 @@ const rebuses = [
   {
     symbols: ['Tu', '+', '👄'],
     words: ['Tulip']
+  },
+  {
+    symbols: ['🔥', '+', '🌬️', '+', '🎈'],
+    words: ['Hot', 'Air', 'Balloon']
   }
 ];
 
