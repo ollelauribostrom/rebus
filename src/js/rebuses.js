@@ -28,7 +28,7 @@ const rebuses = [
     words: ['Pineapple']
   },
   {
-    symbols: ['💵','+','⚽'],
+    symbols: ['💵', '+', '⚽'],
     words: ['Moneyball']
   }
 ];
