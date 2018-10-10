@@ -90,6 +90,10 @@ const rebuses = [
   {
     symbols: ['💻', '+', '🌊'],
     words: ['Digital', 'Ocean']
+  },
+  {
+    symbols: ['🔥', '+', '🌬️', '+', '🎈'],
+    words: ['Hot', 'Air', 'Balloon']
   }
 ];
 
