@@ -79,8 +79,10 @@ const rebuses = [
     symbols: ['Tu', '+', '👄'],
     words: ['Tulip']
   },
+  {
   symbols: ['💵', '+', '⚽'],
     words: ['Moneyball']
+  }
 ];
 
 export function getRebuses() {
