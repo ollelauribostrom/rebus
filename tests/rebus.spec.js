@@ -1,4 +1,4 @@
-import { getRebuses } from '../src/js/rebuses';
+import { getRebuses, getRebus } from '../src/js/rebuses';
 
 describe('Tests for rebuses', () => {
   it('generates a correct array of rebuses', () => {
