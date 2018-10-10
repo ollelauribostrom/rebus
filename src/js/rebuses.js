@@ -60,6 +60,14 @@ const rebuses = [
     words: ['Assassinate']
   },
   {
+    symbols: ['🍌', '+', '🍞'],
+    words: ['Bananabread']
+  },
+  {
+    symbols: ['🔑', '🐗', '+', 'd'],
+    words: ['Keyboard']
+  },
+  {
     symbols: ['💵', '+', 'ew'],
     words: ['cashew']
   },
