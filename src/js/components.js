@@ -49,7 +49,17 @@ export function Word(props, ...children) {
         Char({
           charIndex,
           ...props,
-          onInput: e => charInput(e.target.value, props.wordIndex, charIndex)
+          onInput: e => {
+            const input = e.target.value;
+            charInput(input, props.wordIndex, charIndex);
+
+            if (/[a-zA-Z]/.test(input)) {
+              const nextChildren = this.children[charIndex].$element.nextSibling;
+              if (nextChildren != null) {
+                nextChildren.focus();
+              }
+            }
+          }
         })
       );
       return `
@@ -70,7 +80,7 @@ export function Char(props) {
       const index = wordIndex > 0 ? previousWords.length + charIndex : charIndex;
       const value = rebus.input[index] || '';
       return `
-        <input 
+        <input
           type="text"
           maxlength="1"
           class="word__char"
