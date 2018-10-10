@@ -10,6 +10,22 @@ const rebuses = [
   {
     symbols: ['📖', '+', '🙋', '+', '📝'],
     words: ['Readme', 'file']
+  },
+  {
+    symbols: ['🚗', '+', 'a', '+', '🚐'],
+    words: ['Caravan']
+  },
+  {
+    symbols: ['⭐', '+', '🐠'],
+    words: ['Starfish']
+  },
+  {
+    symbols: ['💡', '+', '🏠'],
+    words: ['Lighthouse']
+  },
+  {
+    symbols: ['🌲', '+', '🍎'],
+    words: ['Pineapple']
   }
 ];
 
