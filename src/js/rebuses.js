@@ -80,6 +80,18 @@ const rebuses = [
     words: ['Tulip']
   },
   {
+    symbols: ['🔥', '+', '🐶'],
+    words: ['Hotdog']
+  },
+  {
+    symbols: ['🌙', '+', '☀'],
+    words: ['Moonshine']
+  },
+  {
+    symbols: ['💻', '+', '🌊'],
+    words: ['Digital', 'Ocean']
+  },
+  {
     symbols: ['🔥', '+', '🌬️', '+', '🎈'],
     words: ['Hot', 'Air', 'Balloon']
   }

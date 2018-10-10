@@ -81,7 +81,6 @@ body,
 .word {
   margin-bottom: 20px;
   display: grid;
-  justify-items: auto;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 50px);
 }
