@@ -110,6 +110,10 @@ const rebuses = [
   {
     symbols: ['f', '+', '🌬️', '+', 'y'],
     words: ['Fairy']
+  },
+  {
+    symbols: ['📖', '+', '🙋', '+', '.md'],
+    words: ['README.md']
   }
 ];
 
