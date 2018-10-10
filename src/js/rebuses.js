@@ -1,4 +1,5 @@
-const rebuses = [{
+const rebuses = [
+  {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus']
   },
