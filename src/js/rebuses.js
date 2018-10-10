@@ -82,7 +82,7 @@ const rebuses = [
 ];
 
 export function getRebuses() {
-  return rebuses.map((rebus, id) => ({
+  return shuffle(rebuses).map((rebus, id) => ({
     id,
     ...rebus,
     input: [...Array(rebus.words.join('').length)],
@@ -92,4 +92,8 @@ export function getRebuses() {
 
 export function getRebus(id) {
   return getRebuses().find(rebus => rebus.id === id);
+}
+
+export function shuffle(collection) {
+  return collection.sort(() => 0.5 - Math.random());
 }

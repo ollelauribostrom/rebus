@@ -5,6 +5,10 @@ jest.mock('../src/js/store', () => ({
   connect: arg => arg
 }));
 
+jest.mock('../src/js/rebuses', () => ({
+  shuffle: collection => collection
+}));
+
 const mockState = {
   current: 0,
   animation: 'none',
