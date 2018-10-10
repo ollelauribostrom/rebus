@@ -94,6 +94,22 @@ const rebuses = [
   {
     symbols: ['🔥', '+', '🌬️', '+', '🎈'],
     words: ['Hot', 'Air', 'Balloon']
+  },
+  {
+    symbols: ['🔥', '+', 'man'],
+    words: ['Fireman']
+  },
+  {
+    symbols: ['💡', '+', 'er'],
+    words: ['Lighter']
+  },
+  {
+    symbols: ['🌙', '+', '💡'],
+    words: ['Moonlight']
+  },
+  {
+    symbols: ['f', '+', '🌬️', '+', 'y'],
+    words: ['Fairy']
   }
 ];
 
