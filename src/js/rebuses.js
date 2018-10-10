@@ -26,6 +26,26 @@ const rebuses = [
   {
     symbols: ['🌲', '+', '🍎'],
     words: ['Pineapple']
+  },
+  {
+    symbols: ['🔥', '+', '🦊'],
+    words: ['Firefox']
+  },
+  {
+    symbols: ['💊', '+', 'ow'],
+    words: ['Pillow']
+  },
+  {
+    symbols: ['🖊️', '+', 'd', '+', '🐜'],
+    words: ['Pendant']
+  },
+  {
+    symbols: ['🌡️', '+', '🔑'],
+    words: ['Hotkey']
+  },
+  {
+    symbols: ['🌞', '+', '🛀'],
+    words: ['Sunbath']
   }
 ];
 
