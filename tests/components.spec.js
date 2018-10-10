@@ -70,9 +70,10 @@ describe('Tests for components', () => {
       const root = document.createElement('div');
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
+      inputs[0].focus();
       inputs[0].value = 'T';
       inputs[0].dispatchEvent(new Event('input'));
-      expect(inputs[1] === document.activeElement).to.equal(true, 'The element was not focused');
+      expect(inputs[1] === document.activeElement).toBeTruthy();
     });
     it('it remains on the same node when a character that is not a letter is pressed', () => {
       const onInput = jest.fn();
@@ -80,9 +81,10 @@ describe('Tests for components', () => {
       const root = document.createElement('div');
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
+      inputs[0].focus();
       inputs[0].value = '!';
       inputs[0].dispatchEvent(new Event('input'));
-      expect(inputs[0] === document.activeElement).to.equal(true, 'The element was not focused');
+      expect(inputs[0] === document.activeElement).toBeTruthy();
     });
   });
   describe('Char', () => {
