@@ -78,6 +78,26 @@ const rebuses = [
   {
     symbols: ['Tu', '+', '👄'],
     words: ['Tulip']
+  },
+  {
+    symbols: ['🦇', '+', 'tery'],
+    words: ['Battery']
+  },
+  {
+    symbols: ['🔒', '+', 'smith'],
+    words: ['Locksmith']
+  },
+  {
+    symbols: ['👞', '+', 'horn'],
+    words: ['Shoehorn']
+  },
+  {
+    symbols: ['🖊', '+', 't', '+', '🏠'],
+    words: ['Penthouse']
+  },
+  {
+    symbols: ['🐱', '+', 'e', '+', '💍'],
+    words: ['Catering']
   }
 ];
 
