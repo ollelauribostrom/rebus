@@ -26,6 +26,10 @@ const rebuses = [
   {
     symbols: ['🌲', '+', '🍎'],
     words: ['Pineapple']
+  },
+  {
+    symbols: ['💵','+','⚽'],
+    words: ['Moneyball']
   }
 ];
 
