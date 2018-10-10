@@ -28,8 +28,56 @@ const rebuses = [
     words: ['Pineapple']
   },
   {
-    symbols: ['💵', '+', '⚽'],
-    words: ['Moneyball']
+    symbols: ['🥚', '+', '🌱'],
+    words: ['Eggplant']
+  },
+  {
+    symbols: ['🔥', '+', '🦊'],
+    words: ['Firefox']
+  },
+  {
+    symbols: ['💊', '+', 'ow'],
+    words: ['Pillow']
+  },
+  {
+    symbols: ['🖊️', '+', 'd', '+', '🐜'],
+    words: ['Pendant']
+  },
+  {
+    symbols: ['🌡️', '+', '🔑'],
+    words: ['Hotkey']
+  },
+  {
+    symbols: ['🌞', '+', '🛀'],
+    words: ['Sunbath']
+  },
+  {
+    symbols: ['🐱', '+', 'as', '+', '🏆', 'y̶', '+', 'e'],
+    words: ['Catastrophe']
+  },
+  {
+    symbols: ['🍑', '🍑', '+', 'i', 'n', 'a', 't', 'e'],
+    words: ['Assassinate']
+  },
+  {
+    symbols: ['🍌', '+', '🍞'],
+    words: ['Bananabread']
+  },
+  {
+    symbols: ['🔑', '🐗', '+', 'd'],
+    words: ['Keyboard']
+  },
+  {
+    symbols: ['💵', '+', 'ew'],
+    words: ['cashew']
+  },
+  {
+    symbols: ['🤘🏻', '+', '⭐️'],
+    words: ['rockstar']
+  },
+  {
+    symbols: ['Tu', '+', '👄'],
+    words: ['Tulip']
   }
 ];
 
