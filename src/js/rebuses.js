@@ -28,6 +28,10 @@ const rebuses = [
     words: ['Pineapple']
   },
   {
+    symbols: ['🥚', '+', '🌱'],
+    words: ['Eggplant']
+  },
+  {
     symbols: ['🔥', '+', '🦊'],
     words: ['Firefox']
   },
