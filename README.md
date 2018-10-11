@@ -86,14 +86,14 @@ git checkout -b <your-new-branch-name> upstream/master
 For example:
 
 ```sh
-git checkout -b my-new-rebus upstream/master
+git checkout -b add-new-rebus upstream/master
 ```
 
 ## Make your changes
 
 Now it's time to make your changes. Let's add a new rebus to the game.
 
-Open the file `src/js/rebuses.js` in your favourite editor (preferable VSCode 😉) and add a new rebus object to the end of the `rebuses` array. Save the file and then run `git --status` to see which changes you have made. This will look something like:
+Open the file `src/js/rebuses.js` in your favourite editor (preferable VSCode 😉) and add a new rebus object to the end of the `rebuses` array. Save the file and then run `git status` to see which changes you have made. This will look something like:
 
 <img align="right" width="300" src=".github/status.png" alt="Git status" />
 
