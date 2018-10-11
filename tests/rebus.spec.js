@@ -10,7 +10,7 @@ describe('Tests for rebuses', () => {
       expect(rebus.isAnswered).toEqual(false);
     });
   });
-  
+
   it('Can retrieve a single rebus', () => {
     const rebus = getRebus(1);
     expect(typeof rebus.id).toEqual('number');
