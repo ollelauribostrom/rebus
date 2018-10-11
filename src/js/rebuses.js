@@ -96,6 +96,34 @@ const rebuses = [
     words: ['Hot', 'Air', 'Balloon']
   },
   {
+    symbols: ['💵', '+', '⚽'],
+    words: ['Moneyball']
+  },
+  {
+    symbols: ['🐂', '+', '👀'],
+    words: ['Bullseye']
+  },
+  {
+    symbols: ['🦇', '+', 'tery'],
+    words: ['Battery']
+  },
+  {
+    symbols: ['🔒', '+', 'smith'],
+    words: ['Locksmith']
+  },
+  {
+    symbols: ['👞', '+', 'horn'],
+    words: ['Shoehorn']
+  },
+  {
+    symbols: ['🖊', '+', 't', '+', '🏠'],
+    words: ['Penthouse']
+  },
+  {
+    symbols: ['🐱', '+', 'e', '+', '💍'],
+    words: ['Catering']
+  },
+  {
     symbols: ['2', '+', 'Na️', '+', '🐟'],
     words: ['tunafish']
   }
