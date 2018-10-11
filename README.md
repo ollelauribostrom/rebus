@@ -47,11 +47,10 @@ For example:
 git clone https://github.com/username/rebus.git
 ```
 
-You have now created a local clone on you computer. Good job!
+## Register the upstream repository
 
-## Create a branch
-
-It's common practice to create a new branch for each new feature of bugfix you are working on. Let's go ahead and create one.
+You have now created a local clone on you computer. This clone will point to your forked repository. It's also useful to have
+the upstream repository (the source that your forked) registered as well to be able to stay up to date with the latest changes.
 
 If you haven't already, start by changing your directory to the rebus catalog that was created when you ran `git clone`:
 
@@ -59,25 +58,42 @@ If you haven't already, start by changing your directory to the rebus catalog th
 cd rebus
 ```
 
+Then add `ollelauribostrom/rebus` as the upstream remote:
+
+```
+git remote add upstream https://github.com/ollelauribostrom/rebus.git
+```
+
+## Create a branch
+
+It's common practice to create a new branch for each new feature of bugfix you are working on. Let's go ahead and create one.
+
+First, lets make sure we got the latest version of the upstream repository by running (do this before each time you create a new branch):
+
+```sh
+git fetch upstream
+```
+
 Create your new branch by running:
 
 ```sh
-git checkout -b <your-new-branch-name>
+git checkout -b <your-new-branch-name> upstream/master
 ```
 
-> Note: Replace `<your-new-branch-name>` with something that describes the changes you are about to make
+> Note 1: Replace `<your-new-branch-name>` with something that describes the changes you are about to make  
+> Note 2: By specifying `upstream/master` we're saying that our new branch should be created from the latest upstream version
 
 For example:
 
 ```sh
-git checkout -b add-new-rebus
+git checkout -b my-new-rebus upstream/master
 ```
 
 ## Make your changes
 
 Now it's time to make your changes. Let's add a new rebus to the game.
 
-Open the file `src/js/rebuses.js` in your favourite editor and add a new rebus object to the end of the `rebuses` array. Save the file and then run `git --status` to see which changes you have made. This will look something like:
+Open the file `src/js/rebuses.js` in your favourite editor (preferable VSCode 😉) and add a new rebus object to the end of the `rebuses` array. Save the file and then run `git --status` to see which changes you have made. This will look something like:
 
 <img align="right" width="300" src=".github/status.png" alt="Git status" />
 
@@ -125,7 +141,7 @@ Describe your changes and submit your pull request
 
 You just took your first step as an open source contributor. Your pull request will be reviewed as soon as possible.
 Join us on [gitter](https://gitter.im/rebus-contributors/Lobby) if you have questions or need any help. If you feel like
-it, please star this repo ⭐.
+it, please give this repository a star ⭐.
 
 If you want something more to work on, look at [the open issues](https://github.com/ollelauribostrom/rebus/issues) for
 inspiration. Also, take a look the [Further Reading](https://github.com/ollelauribostrom/rebus#further-reading) section for more great learning resources.
