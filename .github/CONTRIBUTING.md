@@ -1,47 +1,47 @@
 # Contributing to rebus
 
+For a step-by-step guide on how to make your first contribution, have a look in the [README](https://github.com/ollelauribostrom/rebus#rebus).
+
 ## Contribution process overview
 
-1. Create your own fork of this project.
-2. Create a feature branch.
-3. Make your changes.
-4. Run testing `npm test`.
-5. Run linting `npm run lint`.
-6. Push changes to your fork/branch.
-7. Create pull request.
-8. Code review and automated testing.
-9. Merge into master.
+1. Fork this project.
+1. Create a feature branch.
+1. Make your changes.
+1. Run the game locally
+1. Run the tests.
+1. Push your changes to your fork/branch.
+1. Open a pull request.
 
 ### 1. Fork
 
 1. Click the fork button up top.
-2. Clone your fork locally (Notice that git's `origin` reference will point to your forked repository).
-3. It is useful to have the upstream repository registered as well using: `git remote add upstream https://github.com/ollelauribostrom/rebus.git` and periodically fetch it using `git fetch upstream`.
+1. Clone your fork locally (Notice that git's `origin` reference will point to your forked repository).
+1. It is useful to have the upstream repository registered as well using: `git remote add upstream https://github.com/ollelauribostrom/rebus.git` and periodically fetch it using `git fetch upstream`.
 
-### 2. Create feature branch
+### 2. Create a feature branch
 
-Create and switch to new feature branch: `git checkout -b {branch_name} upstream/master`  
+Create and switch to a new feature branch: `git checkout -b {branch_name} upstream/master`  
 (replace `{branch_name}` with a meaningful name that describes your feature or change).
 
-### 3. Make changes
+### 3. Make your changes
 
-1. Now that you have a new branch you can edit/create/delete files.
-2. Use touch-up commits with main one (squash) -- the `git commit --amend` can be used for that. (You may use git force push after that).
-3. Look at how to run your own local development copy [here](https://github.com/ollelauribostrom/rebus/blob/master/README.md#running-your-own-local-development-copy).
+Now that you have a new branch you can edit/create/delete files. Use touch-up commits using `git commit --amend`. (You may use git force push after that).
 
-### 4. Run testing
+### 4. Run the game locally
 
-`npm run test`.
+- Install the dependencies: `npm install`.
+- Start the local development server: `npm start`.
 
-### 5. Run linting
+### 5. Run the tests
 
-`npm run lint`.
+- Run tests: `npm test`.
+- Run lint: `npm run lint`.
+- Run tests and lint: `npm run test:all`.
 
-### 6. Push changes to your fork/branch
+### 6. Push your changes to your fork/branch
 
-1. After lint and all tests pass, push the changes to your fork/branch on GitHub: `git push origin {branch_name}`.
-2. For force push, which will destroy previous commits on the server, use `--force` (or `-f`) option.
+After lint and all tests pass, push the changes to your fork/branch on GitHub: `git push origin {branch_name}`. For force push, which will destroy previous commits on the server, use `--force` (or `-f`) option.
 
-### 7. Create pull request
+### 7. Create a pull request
 
 Create a pull request on GitHub for your feature branch.
