@@ -122,6 +122,10 @@ const rebuses = [
   {
     symbols: ['🐱', '+', 'e', '+', '💍'],
     words: ['Catering']
+  },
+  {
+    symbols: ['2', '+', 'Na️', '+', '🐟'],
+    words: ['tunafish']
   }
 ];
 
