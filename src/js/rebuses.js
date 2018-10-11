@@ -96,8 +96,8 @@ const rebuses = [
     words: ['Hot', 'Air', 'Balloon']
   },
   {
-    symbols: ['🐝', '🐝', '🚣', '⛔', '🐝','🐝'],
-    words: ['To', 'Be', 'Or','Not','To','Be']
+    symbols: ['🐝', '🐝', '🚣', '⛔', '🐝', '🐝'],
+    words: ['To', 'Be', 'Or', 'Not', 'To', 'Be']
   }
 ];
 
