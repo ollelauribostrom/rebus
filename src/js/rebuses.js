@@ -98,6 +98,10 @@ const rebuses = [
   {
     symbols: ['💵', '+', '⚽'],
     words: ['Moneyball']
+  },
+  {
+    symbols: ['🐂', '+', '👀'],
+    words: ['Bullseye']
   }
 ];
 
