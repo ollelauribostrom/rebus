@@ -1,4 +1,5 @@
-const rebuses = [{
+const rebuses = [
+  {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus']
   },
@@ -53,6 +54,50 @@ const rebuses = [{
   {
     symbols: ['🐱', '+', 'as', '+', '🏆', 'y̶', '+', 'e'],
     words: ['Catastrophe']
+  },
+  {
+    symbols: ['🍑', '🍑', '+', 'i', 'n', 'a', 't', 'e'],
+    words: ['Assassinate']
+  },
+  {
+    symbols: ['🍌', '+', '🍞'],
+    words: ['Bananabread']
+  },
+  {
+    symbols: ['🔑', '🐗', '+', 'd'],
+    words: ['Keyboard']
+  },
+  {
+    symbols: ['💵', '+', 'ew'],
+    words: ['cashew']
+  },
+  {
+    symbols: ['🤘🏻', '+', '⭐️'],
+    words: ['rockstar']
+  },
+  {
+    symbols: ['Tu', '+', '👄'],
+    words: ['Tulip']
+  },
+  {
+    symbols: ['🔥', '+', '🐶'],
+    words: ['Hotdog']
+  },
+  {
+    symbols: ['🌙', '+', '☀'],
+    words: ['Moonshine']
+  },
+  {
+    symbols: ['💻', '+', '🌊'],
+    words: ['Digital', 'Ocean']
+  },
+  {
+    symbols: ['🔥', '+', '🌬️', '+', '🎈'],
+    words: ['Hot', 'Air', 'Balloon']
+  },
+  {
+    symbols: ['💵', '+', '⚽'],
+    words: ['Moneyball']
   },
   {
     symbols: ['🐂', '+', '👀'],
