@@ -126,6 +126,22 @@ const rebuses = [
   {
     symbols: ['2', '+', 'Na️', '+', '🐟'],
     words: ['tunafish']
+  },
+  {
+    symbols: ['🔥', '+', 'man'],
+    words: ['Fireman']
+  },
+  {
+    symbols: ['💡', '+', 'er'],
+    words: ['Lighter']
+  },
+  {
+    symbols: ['🌙', '+', '💡'],
+    words: ['Moonlight']
+  },
+  {
+    symbols: ['f', '+', '🌬️', '+', 'y'],
+    words: ['Fairy']
   }
 ];
 
