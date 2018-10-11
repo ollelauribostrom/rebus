@@ -89,6 +89,17 @@ For example:
 git checkout -b add-new-rebus upstream/master
 ```
 
+## Running the game locally
+ Run
+ ```sh
+npm run start
+```
+ or
+ ```sh
+yarn start
+```
+ from your terminal to start game locally in development mode.
+
 ## Make your changes
 
 Now it's time to make your changes. Let's add a new rebus to the game.
