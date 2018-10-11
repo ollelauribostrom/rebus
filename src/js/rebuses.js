@@ -143,6 +143,10 @@ const rebuses = [
     symbols: ['f', '+', '🌬️', '+', 'y'],
     words: ['Fairy']
   }
+  {
+    symbols: ['🐝', '+', 'r'],
+    words: ['Beer']
+  }
 ];
 
 export function getRebuses() {
