@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
+    "@sentry/browser": "^4.1.1",
     "dom-confetti": "0.0.11"
   },
   "devDependencies": {
@@ -44,6 +45,12 @@
     "collectCoverageFrom": [
       "<rootDir>/src/**/*.js"
     ],
-    "coverageDirectory": "<rootDir>/coverage"
+    "coverageDirectory": "<rootDir>/coverage",
+    "moduleNameMapper": {
+      "\\.(css|sass)$": "<rootDir>/tests/__mocks__/styleMock.js"
+    },
+    "globals": {
+      "isTestRun": true
+    }
   }
 }

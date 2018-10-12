@@ -96,6 +96,90 @@ const rebuses = [
     words: ['Hot', 'Air', 'Balloon']
   },
   {
+    symbols: ['💵', '+', '⚽'],
+    words: ['Moneyball']
+  },
+  {
+    symbols: ['🐂', '+', '👀'],
+    words: ['Bullseye']
+  },
+  {
+    symbols: ['🦇', '+', 'tery'],
+    words: ['Battery']
+  },
+  {
+    symbols: ['🔒', '+', 'smith'],
+    words: ['Locksmith']
+  },
+  {
+    symbols: ['👞', '+', 'horn'],
+    words: ['Shoehorn']
+  },
+  {
+    symbols: ['🖊', '+', 't', '+', '🏠'],
+    words: ['Penthouse']
+  },
+  {
+    symbols: ['🐱', '+', 'e', '+', '💍'],
+    words: ['Catering']
+  },
+  {
+    symbols: ['2', '+', 'Na️', '+', '🐟'],
+    words: ['tunafish']
+  },
+  {
+    symbols: ['🔥', '+', 'man'],
+    words: ['Fireman']
+  },
+  {
+    symbols: ['💡', '+', 'er'],
+    words: ['Lighter']
+  },
+  {
+    symbols: ['🌙', '+', '💡'],
+    words: ['Moonlight']
+  },
+  {
+    symbols: ['f', '+', '🌬️', '+', 'y'],
+    words: ['Fairy']
+  },
+  {
+    symbols: ['🔨', '+', '⏰'],
+    words: ['Hammer', 'time']
+  },
+  {
+    symbols: ['👻', '+', '🚂'],
+    words: ['Ghost', 'Train']
+  },
+  {
+    symbols: ['🍦', '+', '🍦', '+', '👶'],
+    words: ['Ice', 'Ice', 'Baby']
+  },
+  {
+    symbols: ['🚗', '+', 'D', '+', '👹', '+', '🐏'],
+    words: ['cardiogram']
+  },
+  {
+    symbols: ['🌎', '+', 'wide', '+', '🕸️'],
+    words: ['world', 'wide', 'web']
+  },
+  {
+    symbols: ['🐀', '+', 'AT', '+', '2️', '+', 'E'],
+    words: ['ratatouille']
+  },
+  {
+    symbols: ['📖', '+', '🔑', '+', 'ping'],
+    words: ['bookkeeping']
+  },
+  {
+    symbols: ['sc', '+', '🦍', '+', '🐐'],
+    words: ['scapegoat']
+  },
+  {
+    symbols: ['🐜', '+', '⛵️', '+', 'tica'],
+    words: ['antarctica']
+  },
+  {
     symbols: ['🐝', '🐝', '🚣', '⛔', '🐝', '🐝'],
     words: ['To', 'Be', 'Or', 'Not', 'To', 'Be']
   }

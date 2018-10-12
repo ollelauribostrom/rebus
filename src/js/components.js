@@ -70,7 +70,7 @@ export function Char(props) {
       const index = wordIndex > 0 ? previousWords.length + charIndex : charIndex;
       const value = rebus.input[index] || '';
       return `
-        <input 
+        <input
           type="text"
           maxlength="1"
           class="word__char"

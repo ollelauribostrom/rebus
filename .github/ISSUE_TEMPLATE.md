@@ -14,5 +14,4 @@
 
 ## Specifications
 
-- Browser (vendor/version): 
-- OS (vendor/version):
+- Browser:
