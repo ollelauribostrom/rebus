@@ -40,8 +40,8 @@ describe('Tests for app', () => {
     const { container } = setup();
     init();
     expect(renderMock.render).toHaveBeenCalledTimes(1);
-    const firstCall = renderMock.render.mock.calls[ 0 ];
-    const [ firstArg, secondArg ] = firstCall;
+    const firstCall = renderMock.render.mock.calls[0];
+    const [firstArg, secondArg] = firstCall;
     expect(firstArg).toMatchSnapshot();
     expect(secondArg).toEqual(container);
   });
