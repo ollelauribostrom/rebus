@@ -21,6 +21,10 @@ Everyone can! (and I mean everyone) 💫
 
 The only thing that is required to get started is git. Make sure you have it installed on your computer by running `git --version` in your terminal. If you do not have git installed, [install it](https://help.github.com/articles/set-up-git/).
 
+## Experienced developers
+
+If you are an experienced developer, skip the tutorial and look the [contributing file](https://github.com/ollelauribostrom/rebus/blob/master/.github/CONTRIBUTING.md) to see how you can contribute.
+
 ## Fork this repo
 
 The first step is to create a fork of this repo. Do so by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
