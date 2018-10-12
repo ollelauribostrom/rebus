@@ -148,6 +148,14 @@ const rebuses = [
     words: ['Hammer', 'time']
   },
   {
+    symbols: ['👻', '+', '🚂'],
+    words: ['Ghost', 'Train']
+  },
+  {
+    symbols: ['🍦', '+', '🍦', '+', '👶'],
+    words: ['Ice', 'Ice', 'Baby']
+  },
+  {
     symbols: ['🚗', '+', 'D', '+', '👹', '+', '🐏'],
     words: ['cardiogram']
   },
