@@ -89,16 +89,21 @@ For example:
 git checkout -b add-new-rebus upstream/master
 ```
 
-## Running the game locally
- Run
- ```sh
-npm run start
+## Installing the dependencies
+
+Run
+
+```sh
+npm install
 ```
- or
- ```sh
-yarn start
+
+or
+
+```sh
+yarn install
 ```
- from your terminal to start game locally in development mode.
+
+from your terminal to install project dependencies
 
 ## Make your changes
 
@@ -125,6 +130,17 @@ For example:
 ```sh
 git commit -m "Adding a new rebus"
 ```
+
+## Running the game locally
+ Run
+ ```sh
+npm run start
+```
+ or
+ ```sh
+yarn start
+```
+from your terminal to start game locally in development mode.
 
 ## Push your changes to Github
 
