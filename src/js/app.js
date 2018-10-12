@@ -3,8 +3,8 @@ import { App, Logo, GithubCorner, ChangeButton, Rebus } from './components';
 import { actions } from './store';
 import '../css/main.css';
 
-export const app = () =>
-  render(
+export function init() {
+  return render(
     App(
       Logo(),
       GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
@@ -26,3 +26,8 @@ export const app = () =>
     ),
     document.querySelector('.root')
   );
+}
+
+if (!global || !global.isTestRun) {
+  init();
+}
