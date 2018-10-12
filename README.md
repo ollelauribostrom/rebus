@@ -176,6 +176,7 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 ## Further Reading
 
 - [GitHub Open Source Guide](https://opensource.guide/)
+- [Resourse To learn Git](https://try.github.io/)
 
 ## Support
 
