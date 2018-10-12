@@ -154,6 +154,26 @@ const rebuses = [
   {
     symbols: ['🍦', '+', '🍦', '+', '👶'],
     words: ['Ice', 'Ice', 'Baby']
+  },
+  {
+    symbols: ['🚗', '+', 'D', '+', '👹', '+', '🐏'],
+    words: ['cardiogram']
+  },
+  {
+    symbols: ['🌎', '+', 'wide', '+', '🕸️'],
+    words: ['world', 'wide', 'web']
+  },
+  {
+    symbols: ['🐀', '+', 'AT', '+', '2️', '+', 'E'],
+    words: ['ratatouille']
+  },
+  {
+    symbols: ['📖', '+', '🔑', '+', 'ping'],
+    words: ['bookkeeping']
+  },
+  {
+    symbols: ['sc', '+', '🦍', '+', '🐐'],
+    words: ['scapegoat']
   }
 ];
 
