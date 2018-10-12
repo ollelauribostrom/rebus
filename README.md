@@ -1,8 +1,8 @@
 # Rebus
 
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Build Status](https://travis-ci.org/ollelauribostrom/rebus.svg?branch=master)](https://travis-ci.org/ollelauribostrom/rebus)
 [![Coverage Status](https://coveralls.io/repos/github/ollelauribostrom/rebus/badge.svg?branch=master)](https://coveralls.io/github/ollelauribostrom/rebus?branch=master)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/rebus-contributors/Lobby)
 
 Contributing to an open source project for the first time can be a scary thing. The goal of this repo is to help you take your first steps as an open source contributor by developing a simple (but hopefully fun) rebus game together. 💖
@@ -80,8 +80,7 @@ Create your new branch by running:
 git checkout -b <your-new-branch-name> upstream/master
 ```
 
-> Note 1: Replace `<your-new-branch-name>` with something that describes the changes you are about to make  
-> Note 2: By specifying `upstream/master` we're saying that our new branch should be created from the latest upstream version
+> Note: Replace `<your-new-branch-name>` with something that describes the changes you are about to make
 
 For example:
 
@@ -89,37 +88,53 @@ For example:
 git checkout -b add-new-rebus upstream/master
 ```
 
+> Note: By specifying `upstream/master` we're saying that our new branch should be created from the latest upstream version
+
 ## Installing the dependencies
 
-Run
+Before we begin making our changes, let's install the projects dependencies:
 
 ```sh
 npm install
 ```
 
-or
-
-```sh
-yarn install
-```
-
-from your terminal to install project dependencies
-
 ## Make your changes
 
 Now it's time to make your changes. Let's add a new rebus to the game.
 
-Open the file `src/js/rebuses.js` in your favourite editor (preferable VSCode 😉) and add a new rebus object to the end of the `rebuses` array. Save the file and then run `git status` to see which changes you have made. This will look something like:
+1. Open the file `src/js/rebuses.js` in your favourite editor (preferable VSCode 😉).
+1. Add a new rebus object to the end of the `rebuses` array.
+1. Save the file when you are done.
 
-<img align="right" width="300" src=".github/status.png" alt="Git status" />
+## Running the game locally
 
-To add these changes to your next commit, you can run:
+If you want, you can run the game locally to try out your changes:
+
+```sh
+npm start
+```
+
+## Running the tests
+
+Before your commit your changes, run the tests to make sure you did'nt break anything:
+
+```sh
+npm run test:all
+```
+
+## Committing your changes
+
+Run `git status` to see which changes you have made. This will look something like:
+
+<img width="300" src=".github/status.png" alt="Git status" />
+
+Add these changes to your next commit by running:
 
 ```sh
 git add src/js/rebuses.js
 ```
 
-To commit your changes, run:
+And then commit them by running:
 
 ```sh
 git commit -m "Your message"
@@ -130,17 +145,6 @@ For example:
 ```sh
 git commit -m "Adding a new rebus"
 ```
-
-## Running the game locally
- Run
- ```sh
-npm run start
-```
- or
- ```sh
-yarn start
-```
-from your terminal to start game locally in development mode.
 
 ## Push your changes to Github
 
