@@ -3,7 +3,7 @@ import { App, Logo, GithubCorner, ChangeButton, Rebus } from './components';
 import { actions } from './store';
 import '../css/main.css';
 
-function registerListeners() {
+export function registerListeners() {
   document.addEventListener('keyup', event => {
     const key = event.key || event.keyCode; // For older browser support
     if (key === 'ArrowRight' || key === 39) {

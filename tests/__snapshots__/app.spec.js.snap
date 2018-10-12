@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tests for app renders once on load 1`] = `
+exports[`Tests for app init renders the app into the root element 1`] = `
 Object {
   "children": Array [
     Object {
