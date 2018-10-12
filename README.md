@@ -89,6 +89,22 @@ For example:
 git checkout -b add-new-rebus upstream/master
 ```
 
+## Installing the dependencies
+
+Run
+
+```sh
+npm install
+```
+
+or
+
+```sh
+yarn install
+```
+
+from your terminal to install project dependencies
+
 ## Make your changes
 
 Now it's time to make your changes. Let's add a new rebus to the game.
