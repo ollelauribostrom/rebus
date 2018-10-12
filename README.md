@@ -131,6 +131,17 @@ For example:
 git commit -m "Adding a new rebus"
 ```
 
+## Running the game locally
+ Run
+ ```sh
+npm run start
+```
+ or
+ ```sh
+yarn start
+```
+from your terminal to start game locally in development mode.
+
 ## Push your changes to Github
 
 Push your changes to GitHub by running:
