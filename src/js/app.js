@@ -3,19 +3,24 @@ import { App, Logo, GithubCorner, ChangeButton, Rebus } from './components';
 import { actions } from './store';
 import '../css/main.css';
 
-function registerListeners() {
-  document.addEventListener('keyup', event => {
-    const key = event.key || event.keyCode; // For older browser support
-    if (key === 'ArrowRight' || key === 39) {
-      actions.next();
-    }
-    if (key === 'ArrowLeft' || key === 37) {
-      actions.prev();
-    }
-    if (key === 'Enter' || key === 13) {
-      actions.next();
-    }
-  });
+export const onKeyUp = event => {
+  const key = event.key || event.keyCode; // For older browser support
+  switch (key) {
+    case 'ArrowLeft':
+    case 37:
+      return actions.prev();
+    case 'ArrowRight':
+    case 'Enter':
+    case 39:
+    case 13:
+      return actions.next();
+    default:
+      return undefined;
+  }
+};
+
+export function registerListeners() {
+  document.addEventListener('keyup', onKeyUp);
 }
 
 export function init() {
