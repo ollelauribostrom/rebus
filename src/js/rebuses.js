@@ -174,7 +174,7 @@ const rebuses = [
   {
     symbols: ['sc', '+', '🦍', '+', '🐐'],
     words: ['scapegoat']
-  }
+  },
   {
     symbols: ['🐜', '+', '⛵️', '+' 'tica'],
     words: ['antarctica']
