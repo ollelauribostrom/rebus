@@ -182,7 +182,11 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 ## Further Reading
 
 - [GitHub Open Source Guide](https://opensource.guide/)
-- [Resourse To learn Git](https://try.github.io/)
+- [Resource To learn Git](https://try.github.io/)
+- [Git Tutorial Part 1: What is Version Control?](https://www.youtube.com/watch?v=9GKpbI1siow&feature=youtu.be)
+- [Git Tutorial Part 2: Vocab (Repo, Staging, Commit, Push, Pull)](https://www.youtube.com/watch?v=n-p1RUmdl9M)
+- [Git Tutorial Part 3: Installation, Command-line & Clone](https://www.youtube.com/watch?v=UFEby2zo-9E)
+- [Git Tutorial Part 4: GitHub (Pushing to a Server)](https://www.youtube.com/watch?v=ol_UCWox9kc)
 
 ## Support
 
