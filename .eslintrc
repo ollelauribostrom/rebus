@@ -15,6 +15,7 @@
     "test": true,
     "it": true,
     "describe": true,
-    "Event": true
+    "Event": true,
+    "afterEach": true
   }
 }

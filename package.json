@@ -44,6 +44,12 @@
     "collectCoverageFrom": [
       "<rootDir>/src/**/*.js"
     ],
-    "coverageDirectory": "<rootDir>/coverage"
+    "coverageDirectory": "<rootDir>/coverage",
+    "moduleNameMapper": {
+      "\\.(css|sass)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "globals": {
+      "isTestRun": true
+    }
   }
 }
