@@ -27,6 +27,14 @@ The first step is to create a fork of this repo. Do so by clicking on the fork b
 
 ![Forking the repo](.github/fork.png)
 
+## Running the game locally
+
+Changes -> Run locally -> Tests -> Commit
+
+## Running the tests
+
+Changes -> Run locally -> Tests -> Commit
+
 ## Clone the repo
 
 The next step is to clone the forked repo to your machine.
