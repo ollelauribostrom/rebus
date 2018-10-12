@@ -142,6 +142,10 @@ const rebuses = [
   {
     symbols: ['f', '+', '🌬️', '+', 'y'],
     words: ['Fairy']
+  },
+  {
+    symbols: ['🔨', '+', '⏰'],
+    words: ['Hammer', 'time']
   }
 ];
 
