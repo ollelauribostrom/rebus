@@ -2,6 +2,6 @@ module.exports = api => {
   api.cache(true);
 
   return {
-    presets: [['@babel/preset-env', { targets: { node: '10' } }]]
+    presets: [['@babel/preset-env', { targets: '> 1%, not dead' }]]
   };
 };
