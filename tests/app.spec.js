@@ -1,5 +1,6 @@
-import { init } from '../src/js/app';
+import { init, registerListeners, onKeyUp } from '../src/js/app';
 import * as renderMock from '../src/js/mini/render';
+import { actions } from '../src/js/store';
 
 jest.mock('../src/js/mini/render', () => {
   const mock = {};
@@ -12,9 +13,19 @@ jest.mock('../src/js/mini/render', () => {
   reset();
   return mock;
 });
+jest.mock('../src/js/store');
+
+const oldAddEventListener = document.addEventListener;
 
 afterEach(() => {
   renderMock.reset();
+  document.addEventListener = jest.fn();
+  actions.prev.mockClear();
+  actions.next.mockClear();
+});
+
+afterAll(() => {
+  document.addEventListener = oldAddEventListener;
 });
 
 const setup = () => {
@@ -29,9 +40,32 @@ describe('Tests for app', () => {
     const { container } = setup();
     init();
     expect(renderMock.render).toHaveBeenCalledTimes(1);
-    const firstCall = renderMock.render.mock.calls[0];
-    const [firstArg, secondArg] = firstCall;
+    const firstCall = renderMock.render.mock.calls[ 0 ];
+    const [ firstArg, secondArg ] = firstCall;
     expect(firstArg).toMatchSnapshot();
     expect(secondArg).toEqual(container);
+  });
+
+  it('registers listeners', () => {
+    registerListeners();
+    expect(document.addEventListener).toHaveBeenCalledWith('keyup', onKeyUp);
+  });
+
+  describe('onKeyUp', () => {
+    const testKeyPress = (key, action) => {
+      it(`sends action on keypress with key ${key}`, () => {
+        onKeyUp({ key });
+        expect(action).toHaveBeenCalled();
+      });
+    };
+
+    testKeyPress(39, actions.next);
+    testKeyPress('ArrowRight', actions.next);
+
+    testKeyPress(37, actions.prev);
+    testKeyPress('ArrowLeft', actions.prev);
+
+    testKeyPress(13, actions.next);
+    testKeyPress('Enter', actions.next);
   });
 });

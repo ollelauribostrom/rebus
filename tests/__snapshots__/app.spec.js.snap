@@ -26,14 +26,7 @@ Object {
       "render": [Function],
       "update": [Function],
     },
-    Object {
-      "children": Array [],
-      "props": Object {
-        "charInput": [Function],
-      },
-      "render": [Function],
-      "update": [Function],
-    },
+    undefined,
     Object {
       "children": Array [],
       "props": Object {
