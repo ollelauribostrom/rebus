@@ -4,6 +4,11 @@ import { App, Logo, GithubCorner, ChangeButton, Rebus } from './components';
 import { actions } from './store';
 import '../css/main.css';
 
+function focusInput() {
+  const firstInput = document.querySelector('input.word__char');
+  firstInput.focus();
+}
+
 export function registerListeners() {
   document.addEventListener('keyup', event => {
     const key = event.key || event.keyCode; // For older browser support
@@ -40,7 +45,10 @@ export function init() {
         GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
         ChangeButton({
           className: 'change-button--prev',
-          onClick: () => actions.prev()
+          onClick: () =>
+            actions.prev().then(() => {
+              focusInput();
+            })
         }),
         Rebus({
           charInput: (input, wordIndex, charIndex) => {
@@ -51,7 +59,11 @@ export function init() {
         }),
         ChangeButton({
           className: 'change-button--next',
-          onClick: () => actions.next()
+          onClick: () => {
+            actions.next().then(() => {
+              focusInput();
+            });
+          }
         })
       ),
       document.querySelector('.root')
