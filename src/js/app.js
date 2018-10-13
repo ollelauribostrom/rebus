@@ -4,11 +4,6 @@ import { App, Logo, GithubCorner, ChangeButton, Rebus } from './components';
 import { actions } from './store';
 import '../css/main.css';
 
-function focusInput() {
-  const firstInput = document.querySelector('input.word__char');
-  firstInput.focus();
-}
-
 export function registerListeners() {
   document.addEventListener('keyup', event => {
     const key = event.key || event.keyCode; // For older browser support
@@ -19,22 +14,6 @@ export function registerListeners() {
       actions.prev();
     }
   });
-  const letterInputs = document.querySelectorAll('.word__char');
-  for (let i = 0; i < letterInputs.length; i += 1) {
-    letterInputs[i].addEventListener('keydown', e => {
-      const maxlength = letterInputs[i].getAttribute('maxlength');
-      if (
-        letterInputs[i].value.length === parseInt(maxlength, 10) &&
-        letterInputs[i + 1] !== undefined &&
-        e.keyCode !== 8
-      ) {
-        letterInputs[i + 1].focus();
-      }
-      if (e.keyCode === 8 && letterInputs[i - 1] !== undefined && letterInputs[i].value === '') {
-        letterInputs[i - 1].focus();
-      }
-    });
-  }
 }
 
 export function init() {
@@ -47,7 +26,8 @@ export function init() {
           className: 'change-button--prev',
           onClick: () =>
             actions.prev().then(() => {
-              focusInput();
+              actions.focusInput();
+              actions.moveCursor();
             })
         }),
         Rebus({
@@ -61,7 +41,8 @@ export function init() {
           className: 'change-button--next',
           onClick: () => {
             actions.next().then(() => {
-              focusInput();
+              actions.focusInput();
+              actions.moveCursor();
             });
           }
         })
@@ -77,5 +58,6 @@ if (!global || !global.isTestRun) {
   Sentry.init({ dsn: 'https://8f025bee12e84d9b8a16e9c3b9155ce8@sentry.io/1300214' });
   init();
   registerListeners();
-  focusInput();
+  actions.focusInput();
+  actions.moveCursor();
 }
