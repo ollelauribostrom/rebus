@@ -19,6 +19,7 @@ export function registerListeners() {
       actions.prev();
     }
   });
+  focusInput();
   const letterInputs = document.querySelectorAll('.word__char');
   for (let i = 0; i < letterInputs.length; i += 1) {
     letterInputs[i].addEventListener('keydown', e => {
