@@ -4,16 +4,15 @@ import { actions } from './store';
 import '../css/main.css';
 
 export const onKeyUp = event => {
-  const key = event.key || event.keyCode; // For older browser support
-  switch (key) {
-    case 37:
+  switch (event.key) {
+    case 'Left':
     case 'ArrowLeft':
       return actions.prev();
 
-    case 39:
+    case ' ':
+    case 'Spacebar':
+    case 'Right':
     case 'ArrowRight':
-    case 13:
-    case 'Enter':
       return actions.next();
 
     default:

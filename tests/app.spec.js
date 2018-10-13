@@ -59,13 +59,13 @@ describe('Tests for app', () => {
       });
     };
 
-    testKeyPress(39, actions.next);
-    testKeyPress('ArrowRight', actions.next);
-
-    testKeyPress(37, actions.prev);
+    testKeyPress('Left', actions.prev);
     testKeyPress('ArrowLeft', actions.prev);
 
-    testKeyPress(13, actions.next);
-    testKeyPress('Enter', actions.next);
+    testKeyPress('Right', actions.next);
+    testKeyPress('ArrowRight', actions.next);
+
+    testKeyPress(' ', actions.next);
+    testKeyPress('Spacebar', actions.next);
   });
 });
