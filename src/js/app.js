@@ -19,7 +19,6 @@ export function registerListeners() {
       actions.prev();
     }
   });
-  focusInput();
   const letterInputs = document.querySelectorAll('.word__char');
   for (let i = 0; i < letterInputs.length; i += 1) {
     letterInputs[i].addEventListener('keydown', e => {
@@ -78,4 +77,5 @@ if (!global || !global.isTestRun) {
   Sentry.init({ dsn: 'https://8f025bee12e84d9b8a16e9c3b9155ce8@sentry.io/1300214' });
   init();
   registerListeners();
+  focusInput();
 }
