@@ -1,6 +1,6 @@
 import { init, registerListeners, onKeyUp } from '../src/js/app';
+import { actions as actionsMock } from '../src/js/store';
 import * as renderMock from '../src/js/mini/render';
-import { actions } from '../src/js/store';
 
 jest.mock('../src/js/mini/render', () => {
   const mock = {};
@@ -17,11 +17,19 @@ jest.mock('../src/js/store');
 
 const oldAddEventListener = document.addEventListener;
 
+jest.mock('../src/js/store', () => ({
+  actions: {
+    next: jest.fn(),
+    prev: jest.fn()
+  },
+  connect: component => component
+}));
+
 afterEach(() => {
   renderMock.reset();
   document.addEventListener = jest.fn();
-  actions.prev.mockClear();
-  actions.next.mockClear();
+  actionsMock.prev.mockClear();
+  actionsMock.next.mockClear();
 });
 
 afterAll(() => {
@@ -36,14 +44,16 @@ const setup = () => {
 };
 
 describe('Tests for app', () => {
-  it('renders once on load', () => {
-    const { container } = setup();
-    init();
-    expect(renderMock.render).toHaveBeenCalledTimes(1);
-    const firstCall = renderMock.render.mock.calls[0];
-    const [firstArg, secondArg] = firstCall;
-    expect(firstArg).toMatchSnapshot();
-    expect(secondArg).toEqual(container);
+  describe('init', () => {
+    it('renders the app into the root element', () => {
+      const { container } = setup();
+      init();
+      expect(renderMock.render).toHaveBeenCalledTimes(1);
+      const firstCall = renderMock.render.mock.calls[0];
+      const [firstArg, secondArg] = firstCall;
+      expect(firstArg).toMatchSnapshot();
+      expect(secondArg).toEqual(container);
+    });
   });
 
   it('registers listeners', () => {
@@ -59,13 +69,13 @@ describe('Tests for app', () => {
       });
     };
 
-    testKeyPress('Left', actions.prev);
-    testKeyPress('ArrowLeft', actions.prev);
+    testKeyPress('Left', actionsMock.prev);
+    testKeyPress('ArrowLeft', actionsMock.prev);
 
-    testKeyPress('Right', actions.next);
-    testKeyPress('ArrowRight', actions.next);
+    testKeyPress('Right', actionsMock.next);
+    testKeyPress('ArrowRight', actionsMock.next);
 
-    testKeyPress(' ', actions.next);
-    testKeyPress('Spacebar', actions.next);
+    testKeyPress(' ', actionsMock.next);
+    testKeyPress('Spacebar', actionsMock.next);
   });
 });
