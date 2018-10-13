@@ -8,7 +8,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "^7.1.2",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
