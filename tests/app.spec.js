@@ -1,4 +1,5 @@
-import { init } from '../src/js/app';
+import { init, registerListeners } from '../src/js/app';
+import { actions as actionsMock } from '../src/js/store';
 import * as renderMock from '../src/js/mini/render';
 
 jest.mock('../src/js/mini/render', () => {
@@ -13,6 +14,14 @@ jest.mock('../src/js/mini/render', () => {
   return mock;
 });
 
+jest.mock('../src/js/store', () => ({
+  actions: {
+    next: jest.fn(),
+    prev: jest.fn()
+  },
+  connect: component => component
+}));
+
 afterEach(() => {
   renderMock.reset();
 });
@@ -25,13 +34,28 @@ const setup = () => {
 };
 
 describe('Tests for app', () => {
-  it('renders once on load', () => {
-    const { container } = setup();
-    init();
-    expect(renderMock.render).toHaveBeenCalledTimes(1);
-    const firstCall = renderMock.render.mock.calls[0];
-    const [firstArg, secondArg] = firstCall;
-    expect(firstArg).toMatchSnapshot();
-    expect(secondArg).toEqual(container);
+  describe('init', () => {
+    it('renders the app into the root element', () => {
+      const { container } = setup();
+      init();
+      expect(renderMock.render).toHaveBeenCalledTimes(1);
+      const firstCall = renderMock.render.mock.calls[0];
+      const [firstArg, secondArg] = firstCall;
+      expect(firstArg).toMatchSnapshot();
+      expect(secondArg).toEqual(container);
+    });
+  });
+  describe('registerListeners', () => {
+    it('register a listener for keyup events', () => {
+      const leftArrowEvent = new Event('keyup');
+      const rightArrowEvent = new Event('keyup');
+      leftArrowEvent.key = 'ArrowLeft';
+      rightArrowEvent.key = 'ArrowRight';
+      registerListeners();
+      document.dispatchEvent(leftArrowEvent);
+      document.dispatchEvent(rightArrowEvent);
+      expect(actionsMock.prev).toHaveBeenCalled();
+      expect(actionsMock.next).toHaveBeenCalled();
+    });
   });
 });
