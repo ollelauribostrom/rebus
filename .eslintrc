@@ -3,7 +3,7 @@
   "extends": ["airbnb", "prettier"],
   "plugins": ["react", "jsx-a11y", "import", "prettier"],
   "env": {
-    "jasmine": true
+    "jest": true
   },
   "rules": {
     "prettier/prettier": ["error"],
@@ -13,7 +13,6 @@
   },
   "globals": {
     "document": true,
-    "jest": true,
     "Event": true
   }
 }
