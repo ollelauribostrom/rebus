@@ -23,6 +23,10 @@ The only thing that is required to get started is git. Make sure you have it ins
 
 If you are an experienced developer, look at the [CONTRIBUTING file](https://github.com/ollelauribostrom/rebus/blob/master/.github/CONTRIBUTING.md) to see how you can contribute.
 
+## Why Contribute to Open Source?
+
+When you contribute to Open Source, you are taking part in a collaborative effort with a vast community of passionate developers and contributors! Open Source software allows you to see, use, and more importantly modify its source code. Contributing to Open Source is a great way to develop a deeper understanding of software, and the best part is being able to learn, and teach alongside a community of contributors.
+
 ## Fork this repo
 
 The first step is to create a fork of this repo. Do so by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
