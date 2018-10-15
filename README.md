@@ -188,6 +188,7 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 - [Git Tutorial Part 3: Installation, Command-line & Clone](https://www.youtube.com/watch?v=UFEby2zo-9E)
 - [Git Tutorial Part 4: GitHub (Pushing to a Server)](https://www.youtube.com/watch?v=ol_UCWox9kc)
 - [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html)
 
 ## Support
 
