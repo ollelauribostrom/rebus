@@ -2,6 +2,9 @@
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier"],
   "plugins": ["react", "jsx-a11y", "import", "prettier"],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "prettier/prettier": ["error"],
     "no-use-before-define": 0,
@@ -10,12 +13,6 @@
   },
   "globals": {
     "document": true,
-    "jest": true,
-    "expect": true,
-    "test": true,
-    "it": true,
-    "describe": true,
-    "Event": true,
-    "afterEach": true
+    "Event": true
   }
 }
