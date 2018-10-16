@@ -182,6 +182,62 @@ const rebuses = [
   {
     symbols: ['🌧', '+', '🏹'],
     words: ['rainbow']
+  },
+  {
+    symbols: ['👀','+','l','+','&'],
+    words: ['iceland']
+  },
+  {
+    symbols: ['d','+','💡'],
+    words: ['delight']
+  },
+  {
+    symbols: ['st','+','🌬','+','s'],
+    words: ['stairs']
+  },
+  {
+    symbols: ['⚡','+','🌊'],
+    words: ['shock','wave']
+  },
+  {
+    symbols: ['🐉','+','⚽','+','z'],
+    words: ['dragon','ball','z']
+  },
+  {
+    symbols: ['🔥','+','⭐'],
+    words: ['hotstar']
+  },
+  {
+    symbols: ['🦃','+','🐔'],
+    words: ['turkey','chicken']
+  },
+  {
+    symbols: ['🐛','+','zilla'],
+    words: ['bug','zilla']
+  },
+  {
+    symbols: ['🍔','+','🐼'],
+    words: ['food', 'panda']
+  },
+  {
+    symbols: ['🔌','+','🦈'],
+    words: ['wire', 'shark']
+  },
+  {
+    symbols: ['☁️','+','💻','+','ing'],
+    words: ['cloud', 'computing']
+  },
+  {
+    symbols: ['b','+','🔒','+','⛓️'],
+    words: ['block', 'chain']
+  },
+  {
+    symbols: ['☀️','+','day','+','🏫'],
+    words: ['sunday', 'school']
+  },
+  {
+    symbols: ['🔴','+','🚌'],
+    words: ['red', 'bus']
   }
 ];
 
