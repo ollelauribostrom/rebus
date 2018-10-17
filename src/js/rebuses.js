@@ -1,5 +1,4 @@
-const rebuses = [
-  {
+const rebuses = [{
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus']
   },
@@ -182,6 +181,10 @@ const rebuses = [
   {
     symbols: ['🌧', '+', '🏹'],
     words: ['rainbow']
+  },
+  {
+    symbols: ['👣', '+', '📝'],
+    words: ['footnote']
   }
 ];
 
