@@ -182,6 +182,10 @@ const rebuses = [
   {
     symbols: ['🌧', '+', '🏹'],
     words: ['rainbow']
+  },
+  {
+    symbols: ['🐏', '📃'],
+    words: ['rampage']
   }
 ];
 
