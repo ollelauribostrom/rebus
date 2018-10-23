@@ -67,6 +67,9 @@ export function Word(props, ...children) {
               const input = e.target.value;
               const prevChild = e.target.previousElementSibling;
               if (prevChild !== null && input === '') {
+                const prevChildInput = prevChild.value;
+                prevChild.value = '';
+                prevChild.value = prevChildInput;
                 prevChild.focus();
                 e.preventDefault();
               }

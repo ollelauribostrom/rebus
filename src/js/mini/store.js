@@ -1,7 +1,9 @@
+import { localState } from './localState';
+
 export function createStore(initialState, actions) {
   const store = {
     connectedComponents: [],
-    state: initialState
+    state: localState.initialize(initialState)
   };
   store.actions = new Proxy(actions, {
     get(target, key) {
@@ -9,6 +11,7 @@ export function createStore(initialState, actions) {
         const newState = await actions[key](store.state, ...args);
         store.state = Object.assign(store.state, newState);
         store.connectedComponents.forEach(c => c.update());
+        localState.set(store.state);
       };
     }
   });
