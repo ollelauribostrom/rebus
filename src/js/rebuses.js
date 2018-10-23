@@ -210,6 +210,10 @@ const rebuses = [
   {
     symbols: ['🐝', '+', 'r'],
     words: ['Beer']
+  },
+  {
+    symbols: ['🎉', '-', 'Y', '+', '⏰', '+', 'Job'],
+    words: ['part', 'time', 'job']
   }
 ];
 
