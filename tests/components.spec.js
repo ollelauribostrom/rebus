@@ -64,7 +64,7 @@ describe('Tests for components', () => {
       inputElement.dispatchEvent(new Event('input'));
       expect(onInput).toHaveBeenCalledWith('T', 0, 0);
     });
-    it('jumps to next simbling when a letter is pressed', () => {
+    it('jumps to next input field when a letter is pressed', () => {
       const onInput = jest.fn();
       const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
       const root = document.createElement('div');
@@ -75,7 +75,7 @@ describe('Tests for components', () => {
       inputs[0].dispatchEvent(new Event('input'));
       expect(inputs[1] === document.activeElement).toEqual(true);
     });
-    it('it remains on the same node when a character that is not a letter is pressed', () => {
+    it('remains on the same input field when a character that is not a letter is pressed', () => {
       const onInput = jest.fn();
       const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
       const root = document.createElement('div');
@@ -85,6 +85,31 @@ describe('Tests for components', () => {
       inputs[0].value = '!';
       inputs[0].dispatchEvent(new Event('input'));
       expect(inputs[0] === document.activeElement).toEqual(true);
+    });
+    it('jumps to the previous input field when pressing backspace in empty field', () => {
+      const onInput = jest.fn();
+      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const root = document.createElement('div');
+      render(Word(props), root);
+      const inputs = root.querySelectorAll('input');
+      const mockEvent = new Event('keydown');
+      mockEvent.key = 'Backspace';
+      inputs[1].focus();
+      inputs[1].dispatchEvent(mockEvent);
+      expect(inputs[0] === document.activeElement).toEqual(true);
+    });
+    it('remains on the same input field when pressing backspace in non empty field', () => {
+      const onInput = jest.fn();
+      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const root = document.createElement('div');
+      render(Word(props), root);
+      const inputs = root.querySelectorAll('input');
+      const mockEvent = new Event('keydown');
+      mockEvent.key = 'Backspace';
+      inputs[1].focus();
+      inputs[1].value = 'T';
+      inputs[1].dispatchEvent(mockEvent);
+      expect(inputs[1] === document.activeElement).toEqual(true);
     });
   });
   describe('Char', () => {

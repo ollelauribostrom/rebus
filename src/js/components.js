@@ -54,9 +54,21 @@ export function Word(props, ...children) {
             charInput(input, props.wordIndex, charIndex);
 
             if (/[a-zA-Z]/.test(input)) {
-              const nextChildren = this.children[charIndex].$element.nextSibling;
-              if (nextChildren != null) {
-                nextChildren.focus();
+              const nextChild = e.target.nextElementSibling;
+              if (nextChild !== null) {
+                nextChild.focus();
+              }
+            }
+          },
+          onKeydown: e => {
+            const key = e.key || e.keyCode;
+
+            if (key === 'Backspace' || key === 8) {
+              const input = e.target.value;
+              const prevChild = e.target.previousElementSibling;
+              if (prevChild !== null && input === '') {
+                prevChild.focus();
+                e.preventDefault();
               }
             }
           }
