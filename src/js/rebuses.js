@@ -214,6 +214,26 @@ const rebuses = [
   {
     symbols: ['🎉', '-', 'Y', '+', '⏰', '+', 'Job'],
     words: ['part', 'time', 'job']
+  },
+  {
+    symbols: ['💧', '+', '📦']
+    words: ['Dropbox']
+  },
+  {
+    symbols: ['💡', '+', '⚔️']
+    words: ['Lightsaber']
+  },
+  {
+    symbols: ['☕️']
+    words: ['Java']
+  },
+  {
+    symbols: ['⎈']
+    words: ['Helm']
+  },
+  {
+    symbols: ['🌍', '+', 'form']
+    words: ['Terraform']
   }
 ];
 
