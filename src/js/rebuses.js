@@ -202,6 +202,10 @@ const rebuses = [
   {
     symbols: ['🐈', '+', '🥊'],
     words: ['cat', 'fight']
+  },
+  {
+    symbols: ['👣', '+', '📝'],
+    words: ['footnote']
   }
 ];
 
