@@ -12,6 +12,11 @@ notifications:
   email:
     on_success: never
     on_failure: always
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/d6e8722e284fbf3d51b2
+    on_success: change
+    on_failure: always
 install:
   - npm install
 script:
