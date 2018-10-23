@@ -216,34 +216,49 @@ const rebuses = [
     words: ['part', 'time', 'job']
   },
   {
-    symbols: ['💧', '+', '📦']
+    symbols: ['🌲', '+', '🏠'],
+    words: ['treehouse']
+  },
+  {
+    symbols: ['✔', '+', 'list'],
+    words: ['checklist']
+  },
+  {
+    symbols: ['💧', '+', '📦'],
     words: ['Dropbox']
   },
   {
-    symbols: ['💡', '+', '⚔️']
+    symbols: ['💡', '+', '⚔️'],
     words: ['Lightsaber']
   },
   {
-    symbols: ['☕️']
+    symbols: ['☕️'],
     words: ['Java']
   },
   {
-    symbols: ['⎈']
+    symbols: ['⎈'],
     words: ['Helm']
   },
   {
-    symbols: ['🌍', '+', 'form']
+    symbols: ['🌍', '+', 'form'],
     words: ['Terraform']
   }
 ];
 
 export function getRebuses() {
-  return rebuses.map((rebus, id) => ({
+  const urlParams = new URLSearchParams(window.location.search);
+  const rebusId = Number(urlParams.get('rebus'));
+  const generatedRebuses = rebuses.map((rebus, id) => ({
     id,
     ...rebus,
     input: [...Array(rebus.words.join('').length)],
     isAnswered: false
   }));
+  if (rebusId) {
+    const specifiedRebus = generatedRebuses.splice(rebusId, 1);
+    generatedRebuses.unshift(...specifiedRebus);
+  }
+  return generatedRebuses;
 }
 
 export function getRebus(id) {

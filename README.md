@@ -15,7 +15,7 @@ Everyone can! (and I mean everyone) 💫
 
 💻 **You don’t have to contribute code**. Add a new rebus, fix a typo, report a bug, add some documentation, do some re-design or add a translation. This project just like most open source projects are in need of all sorts of different contributions. Not just code.
 
-🌟 **You are good enough**. Start of easy by fixing something small (like adding a new rebus). This will help you orientate yourself in the project and increase your confidence and experience. No one will judge you if you make a mistake and you can't break anything. Ask for some pointers if you get stuck. You got this!
+🌟 **You are good enough**. Start off easy by fixing something small (like adding a new rebus). This will help you orient yourself in the project and increase your confidence and experience. No one will judge you if you make a mistake, and you can't break anything! Ask for some pointers if you get stuck. You got this!
 
 ➡️ Have a look at the [open issues](https://github.com/ollelauribostrom/rebus/issues) to see what needs to be done in this project.
 
@@ -25,7 +25,7 @@ If you are an experienced developer, look at the [CONTRIBUTING file](https://git
 
 ## Why Contribute to Open Source?
 
-When you contribute to Open Source, you are taking part in a collaborative effort with a vast community of passionate developers and contributors! Open Source software allows you to see, use, and more importantly modify its source code. Contributing to Open Source is a great way to develop a deeper understanding of software, and the best part is being able to learn, and teach alongside a community of contributors.
+When you contribute to Open Source, you are taking part in the collaborative effort of a vast community of passionate developers and contributors! Open Source software allows you to see, use, and more importantly modify its source code. Contributing to Open Source is a great way to develop a deeper understanding of software, and the best part is being able to learn and teach alongside a community of contributors.
 
 ## Fork this repo
 
@@ -56,9 +56,9 @@ git clone https://github.com/username/rebus.git
 ## Register the upstream repository
 
 You have now created a local clone on you computer. This clone will point to your forked repository. It's also useful to have
-the upstream repository (the source that your forked) registered as well to be able to stay up to date with the latest changes.
+the upstream repository (the source that you forked) registered as well to be able to stay up to date with the latest changes.
 
-If you haven't already, start by changing your directory to the rebus catalog that was created when you ran `git clone`:
+If you haven't already, start by changing your directory to the rebus repository that was created when you ran `git clone`:
 
 ```sh
 cd rebus
@@ -72,9 +72,9 @@ git remote add upstream https://github.com/ollelauribostrom/rebus.git
 
 ## Create a branch
 
-It's common practice to create a new branch for each new feature of bugfix you are working on. Let's go ahead and create one.
+It's common practice to create a new branch for each new feature or bugfix you are working on. Let's go ahead and create one!
 
-First, lets make sure we got the latest version of the upstream repository by running (do this before each time you create a new branch):
+First, lets make sure we have the latest version of the upstream repository by running (do this before each time you create a new branch):
 
 ```sh
 git fetch upstream
@@ -122,7 +122,7 @@ npm start
 
 ## Running the tests
 
-Before your commit your changes, run the tests to make sure you did'nt break anything:
+Before your commit your changes, run the tests to make sure you didn't break anything:
 
 ```sh
 npm run test:all
