@@ -222,6 +222,18 @@ const rebuses = [
   {
     symbols: ['✔', '+', 'list'],
     words: ['checklist']
+  },
+  {
+    symbols: ['Uni', '+', '🌽'],
+    words: ['unicorn']
+  },
+  {
+    symbols: ['🆘', '+', 'desk'],
+    words: ['helpdesk']
+  },
+  {
+    symbols: ['🐱', '+', 'er', '+', '🗼'],
+    words: ['caterpillar']
   }
 ];
 
