@@ -76,6 +76,7 @@ export function Char(props) {
           class="word__char"
           placeholder=" "
           value="${value}"
+          autofocus
         >`;
     }
   });

@@ -178,6 +178,10 @@ const rebuses = [
   {
     symbols: ['🐜', '+', '⛵️', '+', 'tica'],
     words: ['antarctica']
+  },
+  {
+    symbols: ['🐝', '🐝', '🚣', '⛔', '🐝', '🐝'],
+    words: ['To', 'Be', 'Or', 'Not', 'To', 'Be']
   }
 ];
 
