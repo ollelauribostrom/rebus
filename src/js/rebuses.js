@@ -190,6 +190,10 @@ const rebuses = [
   {
     symbols: ['❄️', '+', 'man'],
     words: ['snowman']
+  },
+  {
+    symbols: ['🐏', '📃'],
+    words: ['rampage']
   }
 ];
 
