@@ -224,6 +224,26 @@ const rebuses = [
     words: ['checklist']
   },
   {
+    symbols: ['💧', '+', '📦'],
+    words: ['Dropbox']
+  },
+  {
+    symbols: ['💡', '+', '⚔️'],
+    words: ['Lightsaber']
+  },
+  {
+    symbols: ['☕️'],
+    words: ['Java']
+  },
+  {
+    symbols: ['⎈'],
+    words: ['Helm']
+  },
+  {
+    symbols: ['🌍', '+', 'form'],
+    words: ['Terraform']
+  },
+  {
     symbols: ['Uni', '+', '🌽'],
     words: ['unicorn']
   },
