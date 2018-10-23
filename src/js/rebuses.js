@@ -218,12 +218,19 @@ const rebuses = [
 ];
 
 export function getRebuses() {
-  return rebuses.map((rebus, id) => ({
+  const urlParams = new URLSearchParams(window.location.search);
+  const rebusId = Number(urlParams.get('rebus'));
+  const generatedRebuses = rebuses.map((rebus, id) => ({
     id,
     ...rebus,
     input: [...Array(rebus.words.join('').length)],
     isAnswered: false
   }));
+  if (rebusId) {
+    const specifiedRebus = generatedRebuses.splice(rebusId, 1);
+    generatedRebuses.unshift(...specifiedRebus);
+  }
+  return generatedRebuses;
 }
 
 export function getRebus(id) {
