@@ -14,22 +14,6 @@ export function registerListeners() {
       actions.prev();
     }
   });
-  const letterInputs = document.querySelectorAll('.word__char');
-  for (let i = 0; i < letterInputs.length; i += 1) {
-    letterInputs[i].addEventListener('keydown', e => {
-      const maxlength = letterInputs[i].getAttribute('maxlength');
-      if (
-        letterInputs[i].value.length === parseInt(maxlength, 10) &&
-        letterInputs[i + 1] !== undefined &&
-        e.keyCode !== 8
-      ) {
-        letterInputs[i + 1].focus();
-      }
-      if (e.keyCode === 8 && letterInputs[i - 1] !== undefined && letterInputs[i].value === '') {
-        letterInputs[i - 1].focus();
-      }
-    });
-  }
 }
 
 export function init() {
