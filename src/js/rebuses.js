@@ -217,11 +217,11 @@ const rebuses = [
   }
 ];
 
-function inLocalStorage(id) {
+export function isAnwered(id) {
   return (
-    !!window.localStorage.getItem('answered') &&
+    !!window.localStorage.getItem('answeredRebuses') &&
     window.localStorage
-      .getItem('answered')
+      .getItem('answeredRebuses')
       .split(',')
       .includes(id + '')
   );
@@ -229,7 +229,7 @@ function inLocalStorage(id) {
 
 export function getRebuses() {
   return rebuses.map((rebus, id) => {
-    const answered = inLocalStorage(id);
+    const answered = isAnswered(id);
 
     return {
       id,
