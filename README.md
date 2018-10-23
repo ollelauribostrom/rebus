@@ -1,8 +1,8 @@
 # Rebus
 
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Build Status](https://travis-ci.org/ollelauribostrom/rebus.svg?branch=master)](https://travis-ci.org/ollelauribostrom/rebus)
 [![Coverage Status](https://coveralls.io/repos/github/ollelauribostrom/rebus/badge.svg?branch=master)](https://coveralls.io/github/ollelauribostrom/rebus?branch=master)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/rebus-contributors/Lobby)
 
 Contributing to an open source project for the first time can be a scary thing. The goal of this repo is to help you take your first steps as an open source contributor by developing a simple (but hopefully fun) rebus game together. 💖
@@ -20,6 +20,12 @@ Everyone can! (and I mean everyone) 💫
 ➡️ Have a look at the [open issues](https://github.com/ollelauribostrom/rebus/issues) to see what needs to be done in this project.
 
 The only thing that is required to get started is git. Make sure you have it installed on your computer by running `git --version` in your terminal. If you do not have git installed, [install it](https://help.github.com/articles/set-up-git/).
+
+If you are an experienced developer, look at the [CONTRIBUTING file](https://github.com/ollelauribostrom/rebus/blob/master/.github/CONTRIBUTING.md) to see how you can contribute.
+
+## Why Contribute to Open Source?
+
+When you contribute to Open Source, you are taking part in a collaborative effort with a vast community of passionate developers and contributors! Open Source software allows you to see, use, and more importantly modify its source code. Contributing to Open Source is a great way to develop a deeper understanding of software, and the best part is being able to learn, and teach alongside a community of contributors.
 
 ## Fork this repo
 
@@ -80,8 +86,7 @@ Create your new branch by running:
 git checkout -b <your-new-branch-name> upstream/master
 ```
 
-> Note 1: Replace `<your-new-branch-name>` with something that describes the changes you are about to make  
-> Note 2: By specifying `upstream/master` we're saying that our new branch should be created from the latest upstream version
+> Note: Replace `<your-new-branch-name>` with something that describes the changes you are about to make
 
 For example:
 
@@ -89,21 +94,53 @@ For example:
 git checkout -b add-new-rebus upstream/master
 ```
 
+> Note: By specifying `upstream/master` we're saying that our new branch should be created from the latest upstream version
+
+## Installing the dependencies
+
+Before we begin making our changes, let's install the projects dependencies:
+
+```sh
+npm install
+```
+
 ## Make your changes
 
 Now it's time to make your changes. Let's add a new rebus to the game.
 
-Open the file `src/js/rebuses.js` in your favourite editor (preferable VSCode 😉) and add a new rebus object to the end of the `rebuses` array. Save the file and then run `git status` to see which changes you have made. This will look something like:
+1. Open the file `src/js/rebuses.js` in your favourite editor (preferable VSCode 😉).
+1. Add a new rebus object to the end of the `rebuses` array.
+1. Save the file when you are done.
 
-<img align="right" width="300" src=".github/status.png" alt="Git status" />
+## Running the game locally
 
-To add these changes to your next commit, you can run:
+If you want, you can run the game locally to try out your changes:
+
+```sh
+npm start
+```
+
+## Running the tests
+
+Before your commit your changes, run the tests to make sure you did'nt break anything:
+
+```sh
+npm run test:all
+```
+
+## Committing your changes
+
+Run `git status` to see which changes you have made. This will look something like:
+
+<img width="300" src=".github/status.png" alt="Git status" />
+
+Add these changes to your next commit by running:
 
 ```sh
 git add src/js/rebuses.js
 ```
 
-To commit your changes, run:
+And then commit them by running:
 
 ```sh
 git commit -m "Your message"
@@ -149,10 +186,23 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 ## Further Reading
 
 - [GitHub Open Source Guide](https://opensource.guide/)
+- [Resource To learn Git](https://try.github.io/)
+- [Git Tutorial Part 1: What is Version Control?](https://www.youtube.com/watch?v=9GKpbI1siow&feature=youtu.be)
+- [Git Tutorial Part 2: Vocab (Repo, Staging, Commit, Push, Pull)](https://www.youtube.com/watch?v=n-p1RUmdl9M)
+- [Git Tutorial Part 3: Installation, Command-line & Clone](https://www.youtube.com/watch?v=UFEby2zo-9E)
+- [Git Tutorial Part 4: GitHub (Pushing to a Server)](https://www.youtube.com/watch?v=ol_UCWox9kc)
+- [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html)
 
 ## Support
 
 Please [open an issue](https://github.com/ollelauribostrom/rebus/issues/new) for support, or join us on [gitter](https://gitter.im/rebus-contributors/Lobby).
+
+## Code of Conduct
+
+This project adheres to the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct).
+Please read the full text so that you can understand what actions will and will not be tolerated.
+
 
 ## License
 

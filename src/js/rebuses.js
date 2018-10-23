@@ -144,6 +144,70 @@ const rebuses = [
     words: ['Fairy']
   },
   {
+    symbols: ['🔨', '+', '⏰'],
+    words: ['Hammer', 'time']
+  },
+  {
+    symbols: ['👻', '+', '🚂'],
+    words: ['Ghost', 'Train']
+  },
+  {
+    symbols: ['🍦', '+', '🍦', '+', '👶'],
+    words: ['Ice', 'Ice', 'Baby']
+  },
+  {
+    symbols: ['🚗', '+', 'D', '+', '👹', '+', '🐏'],
+    words: ['cardiogram']
+  },
+  {
+    symbols: ['🌎', '+', 'wide', '+', '🕸️'],
+    words: ['world', 'wide', 'web']
+  },
+  {
+    symbols: ['🐀', '+', 'AT', '+', '2️', '+', 'E'],
+    words: ['ratatouille']
+  },
+  {
+    symbols: ['📖', '+', '🔑', '+', 'ping'],
+    words: ['bookkeeping']
+  },
+  {
+    symbols: ['sc', '+', '🦍', '+', '🐐'],
+    words: ['scapegoat']
+  },
+  {
+    symbols: ['🐜', '+', '⛵️', '+', 'tica'],
+    words: ['antarctica']
+  },
+  {
+    symbols: ['🌧', '+', '🏹'],
+    words: ['rainbow']
+  },
+  {
+    symbols: ['❄️', '+', '⚾️'],
+    words: ['snowball']
+  },
+  {
+    symbols: ['❄️', '+', 'man'],
+    words: ['snowman']
+  },
+  {
+    symbols: ['🐏', '📃'],
+    words: ['rampage']
+  },
+  {
+    symbols: ['✝️', '+', '🏹'],
+    words: ['cross', 'bow']
+  },
+  {
+    symbols: ['🐈', '+', '🥊'],
+    words: ['cat', 'fight']
+  },
+  {
+    symbols: ['👣', '+', '📝'],
+    words: ['footnote']
+  },
+  {
     symbols: ['🐝', '+', 'r'],
     words: ['Beer']
   }
