@@ -218,6 +218,10 @@ const rebuses = [
   {
     symbols: ['🌲', '+', '🏠'],
     words: ['treehouse']
+  },
+  {
+    symbols: ['T','+','⛏️','+','r'],
+    words: ['taxer']
   }
 ];
 
