@@ -198,6 +198,12 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 
 Please [open an issue](https://github.com/ollelauribostrom/rebus/issues/new) for support, or join us on [gitter](https://gitter.im/rebus-contributors/Lobby).
 
+## Code of Conduct
+
+This project adheres to the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct).
+Please read the full text so that you can understand what actions will and will not be tolerated.
+
+
 ## License
 
 Licensed under the MIT License.
