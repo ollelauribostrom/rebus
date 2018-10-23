@@ -218,19 +218,25 @@ const rebuses = [
 ];
 
 function inLocalStorage(id) {
-  window.localStorage.getItem("answered").split(',').includes(id)
+  return (
+    !!window.localStorage.getItem('answered') &&
+    window.localStorage
+      .getItem('answered')
+      .split(',')
+      .includes(id + '')
+  );
 }
 
 export function getRebuses() {
   return rebuses.map((rebus, id) => {
-    const answered = inLocalStorage(id)
+    const answered = inLocalStorage(id);
 
-    return ({
+    return {
       id,
       ...rebus,
       input: answered ? [...Array(rebus.words.join(''))] : [...Array(rebus.words.join('').length)],
       isAnswered: answered
-    })
+    };
   });
 }
 
