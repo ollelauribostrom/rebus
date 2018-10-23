@@ -217,13 +217,21 @@ const rebuses = [
   }
 ];
 
+function inLocalStorage(id) {
+  window.localStorage.getItem("answered").split(',').includes(id)
+}
+
 export function getRebuses() {
-  return rebuses.map((rebus, id) => ({
-    id,
-    ...rebus,
-    input: [...Array(rebus.words.join('').length)],
-    isAnswered: false
-  }));
+  return rebuses.map((rebus, id) => {
+    const answered = inLocalStorage(id)
+
+    return ({
+      id,
+      ...rebus,
+      input: answered ? [...Array(rebus.words.join(''))] : [...Array(rebus.words.join('').length)],
+      isAnswered: answered
+    })
+  });
 }
 
 export function getRebus(id) {
