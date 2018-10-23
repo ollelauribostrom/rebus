@@ -23,6 +23,10 @@ The only thing that is required to get started is git. Make sure you have it ins
 
 If you are an experienced developer, look at the [CONTRIBUTING file](https://github.com/ollelauribostrom/rebus/blob/master/.github/CONTRIBUTING.md) to see how you can contribute.
 
+## Why Contribute to Open Source?
+
+When you contribute to Open Source, you are taking part in a collaborative effort with a vast community of passionate developers and contributors! Open Source software allows you to see, use, and more importantly modify its source code. Contributing to Open Source is a great way to develop a deeper understanding of software, and the best part is being able to learn, and teach alongside a community of contributors.
+
 ## Fork this repo
 
 The first step is to create a fork of this repo. Do so by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
@@ -188,10 +192,17 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 - [Git Tutorial Part 3: Installation, Command-line & Clone](https://www.youtube.com/watch?v=UFEby2zo-9E)
 - [Git Tutorial Part 4: GitHub (Pushing to a Server)](https://www.youtube.com/watch?v=ol_UCWox9kc)
 - [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html)
 
 ## Support
 
 Please [open an issue](https://github.com/ollelauribostrom/rebus/issues/new) for support, or join us on [gitter](https://gitter.im/rebus-contributors/Lobby).
+
+## Code of Conduct
+
+This project adheres to the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct).
+Please read the full text so that you can understand what actions will and will not be tolerated.
+
 
 ## License
 

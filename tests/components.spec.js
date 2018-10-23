@@ -64,6 +64,28 @@ describe('Tests for components', () => {
       inputElement.dispatchEvent(new Event('input'));
       expect(onInput).toHaveBeenCalledWith('T', 0, 0);
     });
+    it('jumps to next simbling when a letter is pressed', () => {
+      const onInput = jest.fn();
+      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const root = document.createElement('div');
+      render(Word(props), root);
+      const inputs = root.querySelectorAll('input');
+      inputs[0].focus();
+      inputs[0].value = 'T';
+      inputs[0].dispatchEvent(new Event('input'));
+      expect(inputs[1] === document.activeElement).toEqual(true);
+    });
+    it('it remains on the same node when a character that is not a letter is pressed', () => {
+      const onInput = jest.fn();
+      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const root = document.createElement('div');
+      render(Word(props), root);
+      const inputs = root.querySelectorAll('input');
+      inputs[0].focus();
+      inputs[0].value = '!';
+      inputs[0].dispatchEvent(new Event('input'));
+      expect(inputs[0] === document.activeElement).toEqual(true);
+    });
   });
   describe('Char', () => {
     it('renders correctly (without value)', () => {

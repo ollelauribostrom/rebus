@@ -180,6 +180,38 @@ const rebuses = [
     words: ['antarctica']
   },
   {
+    symbols: ['🌧', '+', '🏹'],
+    words: ['rainbow']
+  },
+  {
+    symbols: ['❄️', '+', '⚾️'],
+    words: ['snowball']
+  },
+  {
+    symbols: ['❄️', '+', 'man'],
+    words: ['snowman']
+  },
+  {
+    symbols: ['🐏', '📃'],
+    words: ['rampage']
+  },
+  {
+    symbols: ['✝️', '+', '🏹'],
+    words: ['cross', 'bow']
+  },
+  {
+    symbols: ['🐈', '+', '🥊'],
+    words: ['cat', 'fight']
+  },
+  {
+    symbols: ['👣', '+', '📝'],
+    words: ['footnote']
+  },
+  {
+    symbols: ['🐝', '+', 'r'],
+    words: ['Beer']
+  },
+  {
     symbols: ['🎉', '-', 'Y', '+', '⏰', '+', 'Job'],
     words: ['part', 'time', 'job']
   }

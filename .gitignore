@@ -5,3 +5,4 @@ yarn-error.log
 dist
 coverage
 package-lock.json
+.idea
