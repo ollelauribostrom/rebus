@@ -220,8 +220,8 @@ const rebuses = [
     words: ['treehouse']
   },
   {
-    symbols: ['T','+','⛏️','+','r'],
-    words: ['taxer']
+    symbols: ['🔨','+','head','+','🦈'],
+    words: ['hammerhead','shark']
   }
 ];
 
