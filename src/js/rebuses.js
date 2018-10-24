@@ -214,6 +214,106 @@ const rebuses = [
   {
     symbols: ['🎉', '-', 'Y', '+', '⏰', '+', 'Job'],
     words: ['part', 'time', 'job']
+  },
+  {
+    symbols: ['🌲', '+', '🏠'],
+    words: ['treehouse']
+  },
+  {
+    symbols: ['✔', '+', 'list'],
+    words: ['checklist']
+  },
+  {
+    symbols: ['💧', '+', '📦'],
+    words: ['Dropbox']
+  },
+  {
+    symbols: ['💡', '+', '⚔️'],
+    words: ['Lightsaber']
+  },
+  {
+    symbols: ['☕️'],
+    words: ['Java']
+  },
+  {
+    symbols: ['⎈'],
+    words: ['Helm']
+  },
+  {
+    symbols: ['🌍', '+', 'form'],
+    words: ['Terraform']
+  },
+  {
+    symbols: ['Uni', '+', '🌽'],
+    words: ['unicorn']
+  },
+  {
+    symbols: ['🆘', '+', 'desk'],
+    words: ['helpdesk']
+  },
+  {
+    symbols: ['🐱', '+', 'er', '+', '🗼'],
+    words: ['caterpillar']
+  },
+  {
+    symbols: ['🐴', '+', '🔙'],
+    words: ['horseback']
+  },
+  {
+    symbols: ['🎼', '+', '🍴'],
+    words: ['pitchfork']
+  },
+  {
+    symbols: ['🌊', '+', '🐴'],
+    words: ['seahorse']
+  },
+  {
+    symbols: ['🔙', '+', '💀'],
+    words: ['backbone']
+  },
+  {
+    symbols: ['💥', '+', '🌽'],
+    words: ['popcorn']
+  },
+  {
+    symbols: ['🔥', '+', '🏠'],
+    words: ['firehouse']
+  },
+  {
+    symbols: ['🚗', '+', 'go'],
+    words: ['cargo']
+  },
+  {
+    symbols: ['sm', '+', '🎨'],
+    words: ['smart']
+  },
+  {
+    symbols: ['😢', '+', '👶'],
+    words: ['crybaby']
+  },
+  {
+    symbols: ['👣', '+', '🎵'],
+    words: ['footnote']
+  },
+  {
+    symbols: ['📻', '+', '🙂'],
+    words: ['radiohead']
+  },
+  {
+    symbols: ['🗃', '+', 'elder', '+', '🐜'],
+    words: ['Box', 'Elder', 'Bug']
+  },
+  {
+    symbols: ['L', '+', '🏹'],
+    words: ['Elbow']
+  },
+  {
+    symbols: ['📅', '+', 'et', '+', '🌍'],
+    words: ['Planet', 'Earth']
+  },
+  {
+    symbols: ['🔨', '+', 'head', '+', '🦈'],
+    words: ['hammerhead', 'shark']
   }
 ];
 
@@ -225,7 +325,9 @@ export function isAnswered(id) {
 }
 
 export function getRebuses() {
-  return rebuses.map((rebus, id) => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const rebusId = Number(urlParams.get('rebus'));
+  const generatedRebuses = rebuses.map((rebus, id) => {
     const answered = isAnswered(id);
 
     return {
@@ -235,6 +337,11 @@ export function getRebuses() {
       isAnswered: answered
     };
   });
+  if (rebusId) {
+    const specifiedRebus = generatedRebuses.splice(rebusId, 1);
+    generatedRebuses.unshift(...specifiedRebus);
+  }
+  return generatedRebuses;
 }
 
 export function getRebus(id) {
