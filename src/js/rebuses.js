@@ -254,6 +254,18 @@ const rebuses = [
   {
     symbols: ['🐱', '+', 'er', '+', '🗼'],
     words: ['caterpillar']
+  },
+  {
+    symbols: ['🗃', '+', 'elder', '+', '🐜'],
+    words: ['Box', 'Elder', 'Bug']
+  },
+  {
+    symbols: ['L', '+', '🏹'],
+    words: ['Elbow']
+  },
+  {
+    symbols: ['📅', '+', 'et', '+', '🌍'],
+    words: ['Planet', 'Earth']
   }
 ];
 
