@@ -220,10 +220,6 @@ const rebuses = [
     words: ['treehouse']
   },
   {
-    symbols: ['🔨', '+', 'head', '+', '🦈'],
-    words: ['hammerhead','shark']
-  },
-  {
     symbols: ['✔', '+', 'list'],
     words: ['checklist']
   },
@@ -258,6 +254,10 @@ const rebuses = [
   {
     symbols: ['🐱', '+', 'er', '+', '🗼'],
     words: ['caterpillar']
+  },
+  {
+    symbols: ['🔨', '+', 'head', '+', '🦈'],
+    words: ['hammerhead', 'shark']
   }
 ];
 
