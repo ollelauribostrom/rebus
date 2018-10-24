@@ -298,6 +298,18 @@ const rebuses = [
   {
     symbols: ['📻', '+', '🙂'],
     words: ['radiohead']
+  },
+  {
+    symbols: ['🗃', '+', 'elder', '+', '🐜'],
+    words: ['Box', 'Elder', 'Bug']
+  },
+  {
+    symbols: ['L', '+', '🏹'],
+    words: ['Elbow']
+  },
+  {
+    symbols: ['📅', '+', 'et', '+', '🌍'],
+    words: ['Planet', 'Earth']
   }
 ];
 
