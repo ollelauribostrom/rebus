@@ -222,6 +222,41 @@ const rebuses = [
   {
     symbols: ['🔨','+','head','+','🦈'],
     words: ['hammerhead','shark']
+  },
+    symbols: ['✔', '+', 'list'],
+    words: ['checklist']
+  },
+  {
+    symbols: ['💧', '+', '📦'],
+    words: ['Dropbox']
+  },
+  {
+    symbols: ['💡', '+', '⚔️'],
+    words: ['Lightsaber']
+  },
+  {
+    symbols: ['☕️'],
+    words: ['Java']
+  },
+  {
+    symbols: ['⎈'],
+    words: ['Helm']
+  },
+  {
+    symbols: ['🌍', '+', 'form'],
+    words: ['Terraform']
+  },
+  {
+    symbols: ['Uni', '+', '🌽'],
+    words: ['unicorn']
+  },
+  {
+    symbols: ['🆘', '+', 'desk'],
+    words: ['helpdesk']
+  },
+  {
+    symbols: ['🐱', '+', 'er', '+', '🗼'],
+    words: ['caterpillar']
   }
 ];
 

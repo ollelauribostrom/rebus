@@ -193,6 +193,11 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 - [Git Tutorial Part 4: GitHub (Pushing to a Server)](https://www.youtube.com/watch?v=ol_UCWox9kc)
 - [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 - [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html)
+- [Friendly Beginner Repos](https://github.com/MunGell/awesome-for-beginners)
+- [GitHub Endorsed Beginning Contributer Repos](https://github.com/showcases/great-for-new-contributors)
+- [Sourcetree - Git GUI for macOS and Windows](https://www.sourcetreeapp.com/)
+- [VS Code - extensible code editor](https://code.visualstudio.com/)
+- [GitHub Atom - Hackable Text Editor for the 21st Century](https://atom.io/)
 
 ## Support
 
