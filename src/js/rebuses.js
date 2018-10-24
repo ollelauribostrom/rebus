@@ -256,6 +256,62 @@ const rebuses = [
     words: ['caterpillar']
   },
   {
+    symbols: ['🐴', '+', '🔙'],
+    words: ['horseback']
+  },
+  {
+    symbols: ['🎼', '+', '🍴'],
+    words: ['pitchfork']
+  },
+  {
+    symbols: ['🌊', '+', '🐴'],
+    words: ['seahorse']
+  },
+  {
+    symbols: ['🔙', '+', '💀'],
+    words: ['backbone']
+  },
+  {
+    symbols: ['💥', '+', '🌽'],
+    words: ['popcorn']
+  },
+  {
+    symbols: ['🔥', '+', '🏠'],
+    words: ['firehouse']
+  },
+  {
+    symbols: ['🚗', '+', 'go'],
+    words: ['cargo']
+  },
+  {
+    symbols: ['sm', '+', '🎨'],
+    words: ['smart']
+  },
+  {
+    symbols: ['😢', '+', '👶'],
+    words: ['crybaby']
+  },
+  {
+    symbols: ['👣', '+', '🎵'],
+    words: ['footnote']
+  },
+  {
+    symbols: ['📻', '+', '🙂'],
+    words: ['radiohead']
+  },
+  {
+    symbols: ['🗃', '+', 'elder', '+', '🐜'],
+    words: ['Box', 'Elder', 'Bug']
+  },
+  {
+    symbols: ['L', '+', '🏹'],
+    words: ['Elbow']
+  },
+  {
+    symbols: ['📅', '+', 'et', '+', '🌍'],
+    words: ['Planet', 'Earth']
+  },
+  {
     symbols: ['🔨', '+', 'head', '+', '🦈'],
     words: ['hammerhead', 'shark']
   }
