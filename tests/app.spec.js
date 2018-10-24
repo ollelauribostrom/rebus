@@ -1,4 +1,4 @@
-import { init, registerListeners } from '../src/js/app';
+import { init, registerListeners, setCurrentFromURL } from '../src/js/app';
 import { actions as actionsMock } from '../src/js/store';
 import * as renderMock from '../src/js/mini/render';
 
@@ -17,7 +17,8 @@ jest.mock('../src/js/mini/render', () => {
 jest.mock('../src/js/store', () => ({
   actions: {
     next: jest.fn(),
-    prev: jest.fn()
+    prev: jest.fn(),
+    setCurrent: jest.fn()
   },
   connect: component => component
 }));
@@ -56,6 +57,13 @@ describe('Tests for app', () => {
       document.dispatchEvent(rightArrowEvent);
       expect(actionsMock.prev).toHaveBeenCalled();
       expect(actionsMock.next).toHaveBeenCalled();
+    });
+  });
+  describe('setCurrentFromURL', () => {
+    it('sets the current rebus based on the url query string', () => {
+      window.history.pushState({}, 'Test', '/?rebus=2');
+      setCurrentFromURL();
+      expect(actionsMock.setCurrent).toHaveBeenCalledWith(2);
     });
   });
 });
