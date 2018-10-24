@@ -23,7 +23,7 @@ export const actionsCreators = {
     const rebus = rebuses[current];
     const isAnswered = rebus.words.join('').toUpperCase() === rebus.input.join('').toUpperCase();
     if (isAnswered) {
-      if (!window.localStorage.getItem('answered')) {
+      if (!window.localStorage.getItem('answeredRebuses')) {
         window.localStorage.setItem('answeredRebuses', JSON.stringify([rebus.id]));
       } else {
         window.localStorage.setItem(
