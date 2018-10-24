@@ -254,6 +254,46 @@ const rebuses = [
   {
     symbols: ['🐱', '+', 'er', '+', '🗼'],
     words: ['caterpillar']
+  },
+  {
+    symbols: ['🐴', '+', '🔙'],
+    words: ['horseback']
+  },
+  {
+    symbols: ['🎼', '+', '🍴'],
+    words: ['pitchfork']
+  },
+  {
+    symbols: ['🌊', '+', '🐴'],
+    words: ['seahorse']
+  },
+  {
+    symbols: ['🔙', '+', '💀'],
+    words: ['backbone']
+  },
+  {
+    symbols: ['💥', '+', '🌽'],
+    words: ['popcorn']
+  },
+  {
+    symbols: ['🔥', '+', '🏠'],
+    words: ['firehouse']
+  },
+  {
+    symbols: ['🚗', '+', 'go'],
+    words: ['cargo']
+  },
+  {
+    symbols: ['sm', '+', '🎨'],
+    words: ['smart']
+  },
+  {
+    symbols: ['😢', '+', '👶'],
+    words: ['crybaby']
+  },
+  {
+    symbols: ['👣', '+', '🎵'],
+    words: ['footnote']
   }
 ];
 
