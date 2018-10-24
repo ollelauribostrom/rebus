@@ -217,7 +217,7 @@ const rebuses = [
   }
 ];
 
-export function isAnwered(id) {
+export function isAnswered(id) {
   return (
     !!window.localStorage.getItem('answeredRebuses') &&
     window.localStorage
