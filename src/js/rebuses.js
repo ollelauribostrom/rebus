@@ -294,6 +294,10 @@ const rebuses = [
   {
     symbols: ['👣', '+', '🎵'],
     words: ['footnote']
+  },
+  {
+    symbols: ['📻', '+', '🙂'],
+    words: ['radiohead']
   }
 ];
 
