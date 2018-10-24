@@ -214,6 +214,14 @@ const rebuses = [
   {
     symbols: ['🎉', '-', 'Y', '+', '⏰', '+', 'Job'],
     words: ['part', 'time', 'job']
+  },
+  {
+    symbols: ['👞', '+', '📦'],
+    words: ['Shoebox']
+  },
+  {
+    symbols: ['💵', '+', '🛍️'],
+    words: ['Money', 'Bag']
   }
 ];
 
