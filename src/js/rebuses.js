@@ -223,6 +223,7 @@ const rebuses = [
     symbols: ['🔨','+','head','+','🦈'],
     words: ['hammerhead','shark']
   },
+  {
     symbols: ['✔', '+', 'list'],
     words: ['checklist']
   },
