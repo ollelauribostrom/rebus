@@ -220,10 +220,7 @@ const rebuses = [
 export function isAnswered(id) {
   return (
     !!window.localStorage.getItem('answeredRebuses') &&
-    window.localStorage
-      .getItem('answeredRebuses')
-      .split(',')
-      .includes(id + '')
+    JSON.parse(window.localStorage.getItem('answeredRebuses')).includes(id)
   );
 }
 
