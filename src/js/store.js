@@ -23,6 +23,15 @@ export const actionsCreators = {
     const rebus = rebuses[current];
     const isAnswered = rebus.words.join('').toUpperCase() === rebus.input.join('').toUpperCase();
     if (isAnswered) {
+      if (!window.localStorage.getItem('answeredRebuses')) {
+        window.localStorage.setItem('answeredRebuses', JSON.stringify([rebus.id]));
+      } else {
+        window.localStorage.setItem(
+          'answeredRebuses',
+          JSON.stringify([...JSON.parse(window.localStorage.getItem('answeredRebuses')), rebus.id])
+        );
+      }
+
       confetti(confettiCanon);
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;

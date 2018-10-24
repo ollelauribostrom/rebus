@@ -317,15 +317,26 @@ const rebuses = [
   }
 ];
 
+export function isAnswered(id) {
+  return (
+    !!window.localStorage.getItem('answeredRebuses') &&
+    JSON.parse(window.localStorage.getItem('answeredRebuses')).includes(id)
+  );
+}
+
 export function getRebuses() {
   const urlParams = new URLSearchParams(window.location.search);
   const rebusId = Number(urlParams.get('rebus'));
-  const generatedRebuses = rebuses.map((rebus, id) => ({
-    id,
-    ...rebus,
-    input: [...Array(rebus.words.join('').length)],
-    isAnswered: false
-  }));
+  const generatedRebuses = rebuses.map((rebus, id) => {
+    const answered = isAnswered(id);
+
+    return {
+      id,
+      ...rebus,
+      input: answered ? [...rebus.words.join('')] : [...Array(rebus.words.join('').length)],
+      isAnswered: answered
+    };
+  });
   if (rebusId) {
     const specifiedRebus = generatedRebuses.splice(rebusId, 1);
     generatedRebuses.unshift(...specifiedRebus);
