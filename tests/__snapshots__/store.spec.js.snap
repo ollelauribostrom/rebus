@@ -6,6 +6,7 @@ Object {
   "current": 0,
   "rebuses": Array [
     Object {
+      "id": 1,
       "input": Array [
         undefined,
         undefined,
@@ -26,6 +27,7 @@ Object {
       ],
     },
     Object {
+      "id": 2,
       "input": Array [
         undefined,
         undefined,
