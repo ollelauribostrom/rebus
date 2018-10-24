@@ -314,6 +314,10 @@ const rebuses = [
   {
     symbols: ['🔨', '+', 'head', '+', '🦈'],
     words: ['hammerhead', 'shark']
+  },
+  {
+    symbols: ['👩‍', '+', '💍'],
+    words: ['red', 'herring']
   }
 ];
 
