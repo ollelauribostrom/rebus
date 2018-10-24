@@ -310,6 +310,10 @@ const rebuses = [
   {
     symbols: ['📅', '+', 'et', '+', '🌍'],
     words: ['Planet', 'Earth']
+  },
+  {
+    symbols: ['🔨', '+', 'head', '+', '🦈'],
+    words: ['hammerhead', 'shark']
   }
 ];
 
