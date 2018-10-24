@@ -333,7 +333,7 @@ export function getRebuses() {
     return {
       id,
       ...rebus,
-      input: answered ? [...Array(rebus.words.join(''))] : [...Array(rebus.words.join('').length)],
+      input: answered ? [...rebus.words.join('')] : [...Array(rebus.words.join('').length)],
       isAnswered: answered
     };
   });
