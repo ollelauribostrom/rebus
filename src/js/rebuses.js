@@ -317,33 +317,33 @@ const rebuses = [
   }
 ];
 
-export function isAnswered(id) {
-  return (
-    !!window.localStorage.getItem('answeredRebuses') &&
-    JSON.parse(window.localStorage.getItem('answeredRebuses')).includes(id)
-  );
+export function isRebusAnswered(id) {
+  const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+  return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id);
+}
+
+export function markRebusAsAnswered(id) {
+  const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+  if (!answeredRebuses) {
+    window.localStorage.setItem('answeredRebuses', JSON.stringify([id]));
+  } else {
+    window.localStorage.setItem(
+      'answeredRebuses',
+      JSON.stringify([...JSON.parse(answeredRebuses), id])
+    );
+  }
 }
 
 export function getRebuses() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const rebusId = Number(urlParams.get('rebus'));
-  const generatedRebuses = rebuses.map((rebus, id) => {
-    const answered = isAnswered(id);
-
+  return rebuses.map((rebus, index) => {
+    const id = index + 1;
+    const isAnswered = isRebusAnswered(id);
+    const chars = rebus.words.join('');
     return {
       id,
       ...rebus,
-      input: answered ? [...rebus.words.join('')] : [...Array(rebus.words.join('').length)],
-      isAnswered: answered
+      input: isAnswered ? [...chars] : [...Array(chars.length)],
+      isAnswered
     };
   });
-  if (rebusId) {
-    const specifiedRebus = generatedRebuses.splice(rebusId, 1);
-    generatedRebuses.unshift(...specifiedRebus);
-  }
-  return generatedRebuses;
-}
-
-export function getRebus(id) {
-  return getRebuses().find(rebus => rebus.id === id);
 }

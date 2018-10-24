@@ -16,6 +16,12 @@ export function registerListeners() {
   });
 }
 
+export function setCurrentFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const id = Number(params.get('rebus'));
+  actions.setCurrent(id);
+}
+
 export function init() {
   try {
     return render(
@@ -49,4 +55,5 @@ if (!global || !global.isTestRun) {
   Sentry.init({ dsn: 'https://8f025bee12e84d9b8a16e9c3b9155ce8@sentry.io/1300214' });
   init();
   registerListeners();
+  setCurrentFromURL();
 }

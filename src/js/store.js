@@ -1,6 +1,6 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
-import { getRebuses } from './rebuses';
+import { getRebuses, markRebusAsAnswered } from './rebuses';
 
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
@@ -11,6 +11,13 @@ export const actionsCreators = {
     current: current > 0 ? current - 1 : rebuses.length - 1,
     animation: 'flip-vertical-left'
   }),
+  setCurrent: ({ rebuses }, id) => {
+    const index = rebuses.findIndex(rebus => rebus.id === id);
+    if (index > 0) {
+      return { current: index };
+    }
+    return {};
+  },
   setInput: ({ current, rebuses }, input, wordIndex, charIndex) => {
     const rebus = rebuses[current];
     const previousWords = rebus.words.slice(0, wordIndex).join('');
@@ -23,15 +30,7 @@ export const actionsCreators = {
     const rebus = rebuses[current];
     const isAnswered = rebus.words.join('').toUpperCase() === rebus.input.join('').toUpperCase();
     if (isAnswered) {
-      if (!window.localStorage.getItem('answeredRebuses')) {
-        window.localStorage.setItem('answeredRebuses', JSON.stringify([rebus.id]));
-      } else {
-        window.localStorage.setItem(
-          'answeredRebuses',
-          JSON.stringify([...JSON.parse(window.localStorage.getItem('answeredRebuses')), rebus.id])
-        );
-      }
-
+      markRebusAsAnswered(rebus.id);
       confetti(confettiCanon);
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;
