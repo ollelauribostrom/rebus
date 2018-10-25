@@ -318,6 +318,14 @@ const rebuses = [
   {
     symbols: ['👩‍', '+', '💍'],
     words: ['red', 'herring']
+  },
+  {
+    symbols: ['Black', '+', '🎩'],
+    words: ['Blackhat']
+  },
+  {
+    symbols: ['👁', '+', '💧'],
+    words: ['Eyedrop']
   }
 ];
 
