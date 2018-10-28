@@ -225,24 +225,13 @@ const rebuses = [
   }
 ];
 
-export function isAnswered(id) {
-  return (
-    !!window.localStorage.getItem('answeredRebuses') &&
-    JSON.parse(window.localStorage.getItem('answeredRebuses')).includes(id)
-  );
-}
-
 export function getRebuses() {
-  return rebuses.map((rebus, id) => {
-    const answered = isAnswered(id);
-
-    return {
-      id,
-      ...rebus,
-      input: answered ? [...Array(rebus.words.join(''))] : [...Array(rebus.words.join('').length)],
-      isAnswered: answered
-    };
-  });
+  return rebuses.map((rebus, id) => ({
+    id,
+    ...rebus,
+    input: [...Array(rebus.words.join('').length)],
+    isAnswered: false
+  }));
 }
 
 export function getRebus(id) {
