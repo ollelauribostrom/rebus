@@ -264,7 +264,7 @@ const rebuses = [
     words: ['foxhole']
   },
   {
-    symbols: ['🐦', '+', 's-', + '👁️'],
+    symbols: ['🐦', '+', 's-', '+', '👁️'],
     words: ["bird's-eye"]
   },
   {
