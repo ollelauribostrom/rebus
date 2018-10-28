@@ -350,7 +350,11 @@ const rebuses = [
   {
     symbols: ['💵', '+', '🛍️'],
     words: ['Money', 'Bag']
-  }
+  },
+  {
+    symbols: ['🅰️', '+', '💣' , '+', 'in', '+', '🅰️', '+' '🐂'],
+    words: ['Abominable']
+  },
 ];
 
 export function isRebusAnswered(id) {
