@@ -256,6 +256,18 @@ const rebuses = [
     words: ['caterpillar']
   },
   {
+    symbols: ['🧢', '+', 'tain'],
+    words: ['captain']
+  },
+  {
+    symbols: ['🦊', '+', 'hole'],
+    words: ['foxhole']
+  },
+  {
+    symbols: ['🐦', '+', 's-', '+', '👁️'],
+    words: ["bird's-eye"]
+  },
+  {
     symbols: ['🐴', '+', '🔙'],
     words: ['horseback']
   },
