@@ -354,6 +354,26 @@ const rebuses = [
   {
     symbols: ['💥', '+', 'py'],
     words: ['Poppy']
+  },
+  {
+    symbols: ['🔁', '+', '🔙'],
+    words: ['Loopback']
+  },
+  {
+    symbols: ['🔙', '+', '🏁'],
+    words: ['Backend'] 
+  },
+  {
+    symbols: ['🌃', '+', '🐎'],
+    words: ['Nightmare'] 
+  },
+  {
+    symbols: ['🔙', '+', '🚪'],
+    words: ['Backdoor'] 
+  },
+  {
+    symbols: ['🍀', '+', '🌌‍', '+', '🚶'],
+    words: ['Luke Skywalker'] 
   }
 ];
 
