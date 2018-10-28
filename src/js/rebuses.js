@@ -350,6 +350,22 @@ const rebuses = [
   {
     symbols: ['💵', '+', '🛍️'],
     words: ['Money', 'Bag']
+  },
+  {
+    symbols: ['💥', '+', 'py'],
+    words: ['Poppy']
+  },
+  {
+    symbols: ['💨', '+', '🦉', '-', 'L'],
+    words: ['window']
+  },
+  {
+    symbols: ['❌', '+', '🔤'],
+    words: ['crossword']
+  },
+  {
+    symbols: ['S', '+', '🦀', '+', 'BLE'],
+    words: ['scrabble']
   }
 ];
 
