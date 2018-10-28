@@ -216,6 +216,122 @@ const rebuses = [
     words: ['part', 'time', 'job']
   },
   {
+    symbols: ['🌲', '+', '🏠'],
+    words: ['treehouse']
+  },
+  {
+    symbols: ['✔', '+', 'list'],
+    words: ['checklist']
+  },
+  {
+    symbols: ['💧', '+', '📦'],
+    words: ['Dropbox']
+  },
+  {
+    symbols: ['💡', '+', '⚔️'],
+    words: ['Lightsaber']
+  },
+  {
+    symbols: ['☕️'],
+    words: ['Java']
+  },
+  {
+    symbols: ['⎈'],
+    words: ['Helm']
+  },
+  {
+    symbols: ['🌍', '+', 'form'],
+    words: ['Terraform']
+  },
+  {
+    symbols: ['Uni', '+', '🌽'],
+    words: ['unicorn']
+  },
+  {
+    symbols: ['🆘', '+', 'desk'],
+    words: ['helpdesk']
+  },
+  {
+    symbols: ['🐱', '+', 'er', '+', '🗼'],
+    words: ['caterpillar']
+  },
+  {
+    symbols: ['🐴', '+', '🔙'],
+    words: ['horseback']
+  },
+  {
+    symbols: ['🎼', '+', '🍴'],
+    words: ['pitchfork']
+  },
+  {
+    symbols: ['🌊', '+', '🐴'],
+    words: ['seahorse']
+  },
+  {
+    symbols: ['🔙', '+', '💀'],
+    words: ['backbone']
+  },
+  {
+    symbols: ['💥', '+', '🌽'],
+    words: ['popcorn']
+  },
+  {
+    symbols: ['🔥', '+', '🏠'],
+    words: ['firehouse']
+  },
+  {
+    symbols: ['🚗', '+', 'go'],
+    words: ['cargo']
+  },
+  {
+    symbols: ['sm', '+', '🎨'],
+    words: ['smart']
+  },
+  {
+    symbols: ['😢', '+', '👶'],
+    words: ['crybaby']
+  },
+  {
+    symbols: ['👣', '+', '🎵'],
+    words: ['footnote']
+  },
+  {
+    symbols: ['📻', '+', '🙂'],
+    words: ['radiohead']
+  },
+  {
+    symbols: ['🗃', '+', 'elder', '+', '🐜'],
+    words: ['Box', 'Elder', 'Bug']
+  },
+  {
+    symbols: ['L', '+', '🏹'],
+    words: ['Elbow']
+  },
+  {
+    symbols: ['📅', '+', 'et', '+', '🌍'],
+    words: ['Planet', 'Earth']
+  },
+  {
+    symbols: ['🔨', '+', 'head', '+', '🦈'],
+    words: ['hammerhead', 'shark']
+  },
+  {
+    symbols: ['👩‍', '+', '💍'],
+    words: ['red', 'herring']
+  },
+  {
+    symbols: ['Black', '+', '🎩'],
+    words: ['Blackhat']
+  },
+  {
+    symbols: ['👁', '+', '💧'],
+    words: ['Eyedrop']
+  },
+  {
+    symbols: ['🧠', '+', '🌪', '+', 'ing'],
+    words: ['Brainstorming']
+  },
+  {
     symbols: ['👞', '+', '📦'],
     words: ['Shoebox']
   },
@@ -225,15 +341,33 @@ const rebuses = [
   }
 ];
 
-export function getRebuses() {
-  return rebuses.map((rebus, id) => ({
-    id,
-    ...rebus,
-    input: [...Array(rebus.words.join('').length)],
-    isAnswered: false
-  }));
+export function isRebusAnswered(id) {
+  const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+  return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id);
 }
 
-export function getRebus(id) {
-  return getRebuses().find(rebus => rebus.id === id);
+export function markRebusAsAnswered(id) {
+  const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+  if (!answeredRebuses) {
+    window.localStorage.setItem('answeredRebuses', JSON.stringify([id]));
+  } else {
+    window.localStorage.setItem(
+      'answeredRebuses',
+      JSON.stringify([...JSON.parse(answeredRebuses), id])
+    );
+  }
+}
+
+export function getRebuses() {
+  return rebuses.map((rebus, index) => {
+    const id = index + 1;
+    const isAnswered = isRebusAnswered(id);
+    const chars = rebus.words.join('');
+    return {
+      id,
+      ...rebus,
+      input: isAnswered ? [...chars] : [...Array(chars.length)],
+      isAnswered
+    };
+  });
 }
