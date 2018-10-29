@@ -49,7 +49,29 @@ export function Word(props, ...children) {
         Char({
           charIndex,
           ...props,
-          onInput: e => charInput(e.target.value, props.wordIndex, charIndex)
+          onInput: e => {
+            const input = e.target.value;
+            charInput(input, props.wordIndex, charIndex);
+
+            if (/[a-zA-Z]/.test(input)) {
+              const nextChild = e.target.nextElementSibling;
+              if (nextChild !== null) {
+                nextChild.focus();
+              }
+            }
+          },
+          onKeydown: e => {
+            const key = e.key || e.keyCode;
+
+            if (key === 'Backspace' || key === 8) {
+              const input = e.target.value;
+              const prevChild = e.target.previousElementSibling;
+              if (prevChild !== null && input === '') {
+                prevChild.focus();
+                e.preventDefault();
+              }
+            }
+          }
         })
       );
       return `
@@ -70,7 +92,7 @@ export function Char(props) {
       const index = wordIndex > 0 ? previousWords.length + charIndex : charIndex;
       const value = rebus.input[index] || '';
       return `
-        <input 
+        <input
           type="text"
           maxlength="1"
           class="word__char"

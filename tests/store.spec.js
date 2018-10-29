@@ -4,19 +4,22 @@ import { actionsCreators, initialState } from '../src/js/store';
 jest.mock('../src/js/rebuses', () => ({
   getRebuses: () => [
     {
+      id: 1,
       symbols: ['😍', '👍', '😍'],
       words: ['one', 'two'],
       input: [...Array(6)],
       isAnswered: false
     },
     {
+      id: 2,
       symbols: ['😍', '👍', '😍'],
       words: ['three', 'four'],
       input: [...Array(9)],
       isAnswered: false
     }
   ],
-  shuffle: collection => collection
+  shuffle: collection => collection,
+  markRebusAsAnswered: jest.fn()
 }));
 
 describe('Tests for store', () => {
@@ -64,5 +67,11 @@ describe('Tests for store', () => {
     expect(finalState.rebuses[0].isAnswered).toEqual(true);
     expect(confettiSpy).toHaveBeenCalledTimes(1);
     expect(confettiSpy).toHaveBeenCalledWith(confettiCanon);
+  });
+  it('should handle action: setCurrent', () => {
+    const state = { ...initialState };
+    const newState = Object.assign({}, state, actionsCreators.setCurrent(state, 2));
+    const finalState = Object.assign({}, newState, actionsCreators.setCurrent(newState, 9999));
+    expect(finalState.current).toEqual(1);
   });
 });

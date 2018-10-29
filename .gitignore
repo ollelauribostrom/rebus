@@ -4,3 +4,5 @@ yarn-error.log
 .DS_Store
 dist
 coverage
+package-lock.json
+.idea
