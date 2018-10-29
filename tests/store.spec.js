@@ -15,7 +15,8 @@ jest.mock('../src/js/rebuses', () => ({
       input: [...Array(9)],
       isAnswered: false
     }
-  ]
+  ],
+  shuffle: collection => collection
 }));
 
 describe('Tests for store', () => {

@@ -1,6 +1,6 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
-import { getRebuses } from './rebuses';
+import { shuffle, getRebuses } from './rebuses';
 
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
@@ -35,7 +35,7 @@ export const actionsCreators = {
 export const initialState = {
   current: 0,
   animation: 'none',
-  rebuses: getRebuses()
+  rebuses: shuffle(getRebuses())
 };
 
 export const { connect, actions } = createStore(initialState, actionsCreators);

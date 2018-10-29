@@ -82,7 +82,7 @@ const rebuses = [
 ];
 
 export function getRebuses() {
-  return shuffle(rebuses).map((rebus, id) => ({
+  return rebuses.map((rebus, id) => ({
     id,
     ...rebus,
     input: [...Array(rebus.words.join('').length)],
