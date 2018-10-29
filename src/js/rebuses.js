@@ -354,7 +354,11 @@ const rebuses = [
   {
     symbols: ['💥', '+', 'py'],
     words: ['Poppy']
-  }
+  },
+  {
+    symbols: ['👋', '+', '🌍'],
+    words: ['Hello', 'World']
+  },
 ];
 
 export function isRebusAnswered(id) {
