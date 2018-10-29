@@ -1,5 +1,4 @@
-const rebuses = [
-  {
+const rebuses = [{
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus']
   },
@@ -354,6 +353,10 @@ const rebuses = [
   {
     symbols: ['💥', '+', 'py'],
     words: ['Poppy']
+  },
+  {
+    symbols: ['🎮', ' + ', '🎞'],
+    words: ['gamefilm']
   }
 ];
 
