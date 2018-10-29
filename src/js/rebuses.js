@@ -1,194 +1,194 @@
 const rebuses = [
   {
-    symbols: ['Re', '+', '🚌'],
+    symbols: ['Re', '🚌'],
     words: ['Rebus']
   },
   {
-    symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
+    symbols: ['🏠', 'pl', '🐜', 's'],
     words: ['Houseplants']
   },
   {
-    symbols: ['📖', '+', '🙋', '+', '📝'],
+    symbols: ['📖', '🙋', '📝'],
     words: ['Readme', 'file']
   },
   {
-    symbols: ['🚗', '+', 'a', '+', '🚐'],
+    symbols: ['🚗', 'a', '🚐'],
     words: ['Caravan']
   },
   {
-    symbols: ['⭐', '+', '🐠'],
+    symbols: ['⭐', '🐠'],
     words: ['Starfish']
   },
   {
-    symbols: ['💡', '+', '🏠'],
+    symbols: ['💡', '🏠'],
     words: ['Lighthouse']
   },
   {
-    symbols: ['🌲', '+', '🍎'],
+    symbols: ['🌲', '🍎'],
     words: ['Pineapple']
   },
   {
-    symbols: ['🥚', '+', '🌱'],
+    symbols: ['🥚', '🌱'],
     words: ['Eggplant']
   },
   {
-    symbols: ['🔥', '+', '🦊'],
+    symbols: ['🔥', '🦊'],
     words: ['Firefox']
   },
   {
-    symbols: ['💊', '+', 'ow'],
+    symbols: ['💊', 'ow'],
     words: ['Pillow']
   },
   {
-    symbols: ['🖊️', '+', 'd', '+', '🐜'],
+    symbols: ['🖊️', 'd', '🐜'],
     words: ['Pendant']
   },
   {
-    symbols: ['🌡️', '+', '🔑'],
+    symbols: ['🌡️', '🔑'],
     words: ['Hotkey']
   },
   {
-    symbols: ['🌞', '+', '🛀'],
+    symbols: ['🌞', '🛀'],
     words: ['Sunbath']
   },
   {
-    symbols: ['🐱', '+', 'as', '+', '🏆', 'y̶', '+', 'e'],
+    symbols: ['🐱', 'as', '🏆', 'y̶', 'e'],
     words: ['Catastrophe']
   },
   {
-    symbols: ['🍑', '🍑', '+', 'i', 'n', 'a', 't', 'e'],
+    symbols: ['🍑', '🍑', 'inate'],
     words: ['Assassinate']
   },
   {
-    symbols: ['🍌', '+', '🍞'],
+    symbols: ['🍌', '🍞'],
     words: ['Bananabread']
   },
   {
-    symbols: ['🔑', '🐗', '+', 'd'],
+    symbols: ['🔑', '🐗', 'd'],
     words: ['Keyboard']
   },
   {
-    symbols: ['💵', '+', 'ew'],
+    symbols: ['💵', 'ew'],
     words: ['cashew']
   },
   {
-    symbols: ['🤘🏻', '+', '⭐️'],
+    symbols: ['🤘🏻', '⭐️'],
     words: ['rockstar']
   },
   {
-    symbols: ['Tu', '+', '👄'],
+    symbols: ['Tu', '👄'],
     words: ['Tulip']
   },
   {
-    symbols: ['🔥', '+', '🐶'],
+    symbols: ['🔥', '🐶'],
     words: ['Hotdog']
   },
   {
-    symbols: ['🌙', '+', '☀'],
+    symbols: ['🌙', '☀'],
     words: ['Moonshine']
   },
   {
-    symbols: ['💻', '+', '🌊'],
+    symbols: ['💻', '🌊'],
     words: ['Digital', 'Ocean']
   },
   {
-    symbols: ['🔥', '+', '🌬️', '+', '🎈'],
+    symbols: ['🔥', '🌬️', '🎈'],
     words: ['Hot', 'Air', 'Balloon']
   },
   {
-    symbols: ['💵', '+', '⚽'],
+    symbols: ['💵', '⚽'],
     words: ['Moneyball']
   },
   {
-    symbols: ['🐂', '+', '👀'],
+    symbols: ['🐂', '👀'],
     words: ['Bullseye']
   },
   {
-    symbols: ['🦇', '+', 'tery'],
+    symbols: ['🦇', 'tery'],
     words: ['Battery']
   },
   {
-    symbols: ['🔒', '+', 'smith'],
+    symbols: ['🔒', 'smith'],
     words: ['Locksmith']
   },
   {
-    symbols: ['👞', '+', 'horn'],
+    symbols: ['👞', 'horn'],
     words: ['Shoehorn']
   },
   {
-    symbols: ['🖊', '+', 't', '+', '🏠'],
+    symbols: ['🖊', 't', '🏠'],
     words: ['Penthouse']
   },
   {
-    symbols: ['🐱', '+', 'e', '+', '💍'],
+    symbols: ['🐱', 'e', '💍'],
     words: ['Catering']
   },
   {
-    symbols: ['2', '+', 'Na️', '+', '🐟'],
+    symbols: ['2', 'Na️', '🐟'],
     words: ['tunafish']
   },
   {
-    symbols: ['🔥', '+', 'man'],
+    symbols: ['🔥', 'man'],
     words: ['Fireman']
   },
   {
-    symbols: ['💡', '+', 'er'],
+    symbols: ['💡', 'er'],
     words: ['Lighter']
   },
   {
-    symbols: ['🌙', '+', '💡'],
+    symbols: ['🌙', '💡'],
     words: ['Moonlight']
   },
   {
-    symbols: ['f', '+', '🌬️', '+', 'y'],
+    symbols: ['f', '🌬️', 'y'],
     words: ['Fairy']
   },
   {
-    symbols: ['🔨', '+', '⏰'],
+    symbols: ['🔨', '⏰'],
     words: ['Hammer', 'time']
   },
   {
-    symbols: ['👻', '+', '🚂'],
+    symbols: ['👻', '🚂'],
     words: ['Ghost', 'Train']
   },
   {
-    symbols: ['🍦', '+', '🍦', '+', '👶'],
+    symbols: ['🍦', '🍦', '👶'],
     words: ['Ice', 'Ice', 'Baby']
   },
   {
-    symbols: ['🚗', '+', 'D', '+', '👹', '+', '🐏'],
+    symbols: ['🚗', 'D', '👹', '🐏'],
     words: ['cardiogram']
   },
   {
-    symbols: ['🌎', '+', 'wide', '+', '🕸️'],
+    symbols: ['🌎', 'wide', '🕸️'],
     words: ['world', 'wide', 'web']
   },
   {
-    symbols: ['🐀', '+', 'AT', '+', '2️', '+', 'E'],
+    symbols: ['🐀', 'AT', '2️', 'E'],
     words: ['ratatouille']
   },
   {
-    symbols: ['📖', '+', '🔑', '+', 'ping'],
+    symbols: ['📖', '🔑', 'ping'],
     words: ['bookkeeping']
   },
   {
-    symbols: ['sc', '+', '🦍', '+', '🐐'],
+    symbols: ['sc', '🦍', '🐐'],
     words: ['scapegoat']
   },
   {
-    symbols: ['🐜', '+', '⛵️', '+', 'tica'],
+    symbols: ['🐜', '⛵️', 'tica'],
     words: ['antarctica']
   },
   {
-    symbols: ['🌧', '+', '🏹'],
+    symbols: ['🌧', '🏹'],
     words: ['rainbow']
   },
   {
-    symbols: ['❄️', '+', '⚾️'],
+    symbols: ['❄️', '⚾️'],
     words: ['snowball']
   },
   {
-    symbols: ['❄️', '+', 'man'],
+    symbols: ['❄️', 'man'],
     words: ['snowman']
   },
   {
@@ -196,39 +196,39 @@ const rebuses = [
     words: ['rampage']
   },
   {
-    symbols: ['✝️', '+', '🏹'],
+    symbols: ['✝️', '🏹'],
     words: ['cross', 'bow']
   },
   {
-    symbols: ['🐈', '+', '🥊'],
+    symbols: ['🐈', '🥊'],
     words: ['cat', 'fight']
   },
   {
-    symbols: ['👣', '+', '📝'],
+    symbols: ['👣', '📝'],
     words: ['footnote']
   },
   {
-    symbols: ['🐝', '+', 'r'],
+    symbols: ['🐝', 'r'],
     words: ['Beer']
   },
   {
-    symbols: ['🎉', '-', 'Y', '+', '⏰', '+', 'Job'],
+    symbols: ['🎉', '-Y', '⏰', 'Job'],
     words: ['part', 'time', 'job']
   },
   {
-    symbols: ['🌲', '+', '🏠'],
+    symbols: ['🌲', '🏠'],
     words: ['treehouse']
   },
   {
-    symbols: ['✔', '+', 'list'],
+    symbols: ['✔', 'list'],
     words: ['checklist']
   },
   {
-    symbols: ['💧', '+', '📦'],
+    symbols: ['💧', '📦'],
     words: ['Dropbox']
   },
   {
-    symbols: ['💡', '+', '⚔️'],
+    symbols: ['💡', '⚔️'],
     words: ['Lightsaber']
   },
   {
@@ -240,119 +240,119 @@ const rebuses = [
     words: ['Helm']
   },
   {
-    symbols: ['🌍', '+', 'form'],
+    symbols: ['🌍', 'form'],
     words: ['Terraform']
   },
   {
-    symbols: ['Uni', '+', '🌽'],
+    symbols: ['Uni', '🌽'],
     words: ['unicorn']
   },
   {
-    symbols: ['🆘', '+', 'desk'],
+    symbols: ['🆘', 'desk'],
     words: ['helpdesk']
   },
   {
-    symbols: ['🐱', '+', 'er', '+', '🗼'],
+    symbols: ['🐱', 'er', '🗼'],
     words: ['caterpillar']
   },
   {
-    symbols: ['🧢', '+', 'tain'],
+    symbols: ['🧢', 'tain'],
     words: ['captain']
   },
   {
-    symbols: ['🦊', '+', 'hole'],
+    symbols: ['🦊', 'hole'],
     words: ['foxhole']
   },
   {
-    symbols: ['🐦', '+', 's-', '+', '👁️'],
+    symbols: ['🐦', 's-', '👁️'],
     words: ["bird's-eye"]
   },
   {
-    symbols: ['🐴', '+', '🔙'],
+    symbols: ['🐴', '🔙'],
     words: ['horseback']
   },
   {
-    symbols: ['🎼', '+', '🍴'],
+    symbols: ['🎼', '🍴'],
     words: ['pitchfork']
   },
   {
-    symbols: ['🌊', '+', '🐴'],
+    symbols: ['🌊', '🐴'],
     words: ['seahorse']
   },
   {
-    symbols: ['🔙', '+', '💀'],
+    symbols: ['🔙', '💀'],
     words: ['backbone']
   },
   {
-    symbols: ['💥', '+', '🌽'],
+    symbols: ['💥', '🌽'],
     words: ['popcorn']
   },
   {
-    symbols: ['🔥', '+', '🏠'],
+    symbols: ['🔥', '🏠'],
     words: ['firehouse']
   },
   {
-    symbols: ['🚗', '+', 'go'],
+    symbols: ['🚗', 'go'],
     words: ['cargo']
   },
   {
-    symbols: ['sm', '+', '🎨'],
+    symbols: ['sm', '🎨'],
     words: ['smart']
   },
   {
-    symbols: ['😢', '+', '👶'],
+    symbols: ['😢', '👶'],
     words: ['crybaby']
   },
   {
-    symbols: ['👣', '+', '🎵'],
+    symbols: ['👣', '🎵'],
     words: ['footnote']
   },
   {
-    symbols: ['📻', '+', '🙂'],
+    symbols: ['📻', '🙂'],
     words: ['radiohead']
   },
   {
-    symbols: ['🗃', '+', 'elder', '+', '🐜'],
+    symbols: ['🗃', 'elder', '🐜'],
     words: ['Box', 'Elder', 'Bug']
   },
   {
-    symbols: ['L', '+', '🏹'],
+    symbols: ['L', '🏹'],
     words: ['Elbow']
   },
   {
-    symbols: ['📅', '+', 'et', '+', '🌍'],
+    symbols: ['📅', 'et', '🌍'],
     words: ['Planet', 'Earth']
   },
   {
-    symbols: ['🔨', '+', 'head', '+', '🦈'],
+    symbols: ['🔨', 'head', '🦈'],
     words: ['hammerhead', 'shark']
   },
   {
-    symbols: ['👩‍', '+', '💍'],
+    symbols: ['👩‍', '💍'],
     words: ['red', 'herring']
   },
   {
-    symbols: ['Black', '+', '🎩'],
+    symbols: ['Black', '🎩'],
     words: ['Blackhat']
   },
   {
-    symbols: ['👁', '+', '💧'],
+    symbols: ['👁', '💧'],
     words: ['Eyedrop']
   },
   {
-    symbols: ['🧠', '+', '🌪', '+', 'ing'],
+    symbols: ['🧠', '🌪', 'ing'],
     words: ['Brainstorming']
   },
   {
-    symbols: ['👞', '+', '📦'],
+    symbols: ['👞', '📦'],
     words: ['Shoebox']
   },
   {
-    symbols: ['💵', '+', '🛍️'],
+    symbols: ['💵', '🛍️'],
     words: ['Money', 'Bag']
   },
   {
-    symbols: ['💥', '+', 'py'],
+    symbols: ['💥', 'py'],
     words: ['Poppy']
   }
 ];

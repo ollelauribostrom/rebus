@@ -29,7 +29,7 @@ export function Rebus(props, ...children) {
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
             </div>
-            <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
+            <span class="rebus__symbols">${rebus.symbols.join(' + ')}</span>
             <div class="rebus__words">
               <children>
             </div>

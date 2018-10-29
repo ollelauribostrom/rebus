@@ -313,7 +313,7 @@ exports[`Tests for components Rebus renders correctly (when rebus is answered) 2
             <div class=\\"rebus__header\\">
               <span>1/1</span>
             </div>
-            <span class=\\"rebus__symbols\\">😍 👍 😍</span>
+            <span class=\\"rebus__symbols\\">😍 + 👍 + 😍</span>
             <div class=\\"rebus__words\\">
               <children>
             </div>
@@ -361,7 +361,7 @@ exports[`Tests for components Rebus renders correctly (with animation class) 2`]
             <div class=\\"rebus__header\\">
               <span>1/1</span>
             </div>
-            <span class=\\"rebus__symbols\\">😍 👍 😍</span>
+            <span class=\\"rebus__symbols\\">😍 + 👍 + 😍</span>
             <div class=\\"rebus__words\\">
               <children>
             </div>
@@ -409,7 +409,7 @@ exports[`Tests for components Rebus renders correctly 2`] = `
             <div class=\\"rebus__header\\">
               <span>1/1</span>
             </div>
-            <span class=\\"rebus__symbols\\">😍 👍 😍</span>
+            <span class=\\"rebus__symbols\\">😍 + 👍 + 😍</span>
             <div class=\\"rebus__words\\">
               <children>
             </div>
