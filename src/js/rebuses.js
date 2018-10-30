@@ -354,6 +354,46 @@ const rebuses = [
   {
     symbols: ['💥', '+', 'py'],
     words: ['Poppy']
+  },
+  {
+    symbols: ['🍏', '+', '🥧'],
+    words: ['Applepie']
+  },
+  {
+    symbols: ['🍯', '+', '🌗'],
+    words: ['Honeymoon']
+  },
+  {
+    symbols: ['🕷', '+', '🧔🏻'],
+    words: ['Spiderman']
+  },
+  {
+    symbols: ['🐲', '+', '🍑'],
+    words: ['Dragonfruit']
+  },
+  {
+    symbols: ['🔫-s', '+', 'and', '+', '🥀-s'],
+    words: ['Gunsandroses']
+  },
+  {
+    symbols: ['👦🏼', '+', '📔'],
+    words: ['Facebook']
+  },
+  {
+    symbols: ['T', '+', '🏃', '+', '🐱', '+', 'e'],
+    words: ['Truncate']
+  },
+  {
+    symbols: ['🐶', '+', '🐱', '+', 'cher'],
+    words: ['Dogcatcher']
+  },
+  {
+    symbols: ['🌍', '+', '⭐️'],
+    words: ['Earthstar']
+  },
+  {
+    symbols: ['👱', '+', '👨‍🎓', '+', '⛵️-s'],
+    words: ['Headmasterships']
   }
 ];
 
