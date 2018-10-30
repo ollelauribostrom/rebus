@@ -358,6 +358,18 @@ const rebuses = [
   {
     symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
     words: ['Abominable']
+  },
+  {
+    symbols: ['📲', '+', '🅰️', '+', '🐀'],
+    words: ['Apparat']
+  },
+  {
+    symbols: ['☀️', '+', '🌼'],
+    words: ['Sunflower']
+  },
+  {
+    symbols: ['⛓️', '+', '🔁', '+', '🎬'],
+    words: ['Chainreaction']
   }
 ];
 
