@@ -352,9 +352,13 @@ const rebuses = [
     words: ['Money', 'Bag']
   },
   {
+    symbols: ['💥', '+', 'py'],
+    words: ['Poppy']
+  },
+  {
     symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
     words: ['Abominable']
-  },
+  }
 ];
 
 export function isRebusAnswered(id) {
