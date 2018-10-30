@@ -84,6 +84,7 @@ export function Word(props, ...children) {
 }
 
 export function Char(props) {
+  props.focus = !props.charIndex;
   return createComponent({
     props,
     render({ current, rebuses, wordIndex, charIndex }) {
