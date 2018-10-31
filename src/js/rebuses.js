@@ -390,6 +390,10 @@ const rebuses = [
   {
     symbols: ['🍀', '+', '🌌‍', '+', '🚶'],
     words: ['Luke Skywalker']
+  },
+  {
+    symbols: ['👋', '+', '🌍'],
+    words: ['Hello', 'World']
   }
 ];
 
