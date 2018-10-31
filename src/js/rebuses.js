@@ -394,6 +394,10 @@ const rebuses = [
   {
     symbols: ['👱', '+', '👨‍🎓', '+', '⛵️-s'],
     words: ['Headmasterships']
+  },
+  {
+    symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
+    words: ['Abominable']
   }
 ];
 
