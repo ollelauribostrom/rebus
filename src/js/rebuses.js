@@ -52,6 +52,38 @@ const rebuses = [
     words: ['Sunbath']
   },
   {
+    symbols: ['🚗', '🚙', '🚗'],
+    words: ['Cars']
+  },
+  {
+    symbols: ['👦🏻', '+', '⚡', '+', '👓', '=', '✨'],
+    words: ['Harry', 'Potter']
+  },
+  {
+    symbols: ['H', '=', 'C', '👒'],
+    words: ['Cat']
+  },
+  {
+    symbols: ['FR', '=', 'D', '🐸'],
+    words: ['Dog']
+  },
+  {
+    symbols: ['📦', 'B', '=', 'F'],
+    words: ['Fox']
+  },
+  {
+    symbols: ['G', '+', '❤️'],
+    words: ['Glove']
+  },
+  {
+    symbols: ['🍏', '-', '🐒', '+', '🐜'],
+    words: ['Plant']
+  },
+  {
+    symbols: ['🐝', '🍁'],
+    words: ['Belief']
+  },
+  {
     symbols: ['🐱', '+', 'as', '+', '🏆', 'y̶', '+', 'e'],
     words: ['Catastrophe']
   },
