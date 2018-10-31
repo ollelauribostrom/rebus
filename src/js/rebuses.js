@@ -394,6 +394,10 @@ const rebuses = [
   {
     symbols: ['👋', '+', '🌍'],
     words: ['Hello', 'World']
+  },
+  {
+    symbols: ['🌽', '+', 'u', '+', '👮', '+', 'ia'],
+    words: ['Cornucopia']
   }
 ];
 
