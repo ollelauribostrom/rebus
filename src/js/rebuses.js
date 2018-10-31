@@ -360,6 +360,78 @@ const rebuses = [
     words: ['Abominable']
   },
   {
+    symbols: ['👁', '+', '💖', '+', 'YOU'],
+    words: ['I', 'Love', 'You']
+  },
+  {
+    symbols: ['🐴', '+', '👞'],
+    words: ['Horse', 'Shoe']
+  },
+  {
+    symbols: ['🌍', '+', '☕'],
+    words: ['World', 'Cup']
+  },
+  {
+    symbols: ['🔁', '+', '🔙'],
+    words: ['Loopback']
+  },
+  {
+    symbols: ['🔙', '+', '🏁'],
+    words: ['Backend']
+  },
+  {
+    symbols: ['🌃', '+', '🐎'],
+    words: ['Nightmare']
+  },
+  {
+    symbols: ['🔙', '+', '🚪'],
+    words: ['Backdoor']
+  },
+  {
+    symbols: ['🍀', '+', '🌌‍', '+', '🚶'],
+    words: ['Luke Skywalker']
+  },
+  {
+    symbols: ['👋', '+', '🌍'],
+    words: ['Hello', 'World']
+  },
+  {
+    symbols: ['🌽', '+', 'u', '+', '👮', '+', 'ia'],
+    words: ['Cornucopia']
+  },
+  {
+    symbols: ['💨', '+', '🦉', '-', 'L'],
+    words: ['window']
+  },
+  {
+    symbols: ['❌', '+', '🔤'],
+    words: ['crossword']
+  },
+  {
+    symbols: ['S', '+', '🦀', '+', 'BLE'],
+    words: ['scrabble']
+  },
+  {
+    symbols: ['🦇', '+', '👨'],
+    words: ['Batman']
+  },
+  {
+    symbols: ['☀️', '+', '👓'],
+    words: ['Sunglasses']
+  },
+  {
+    symbols: ['🐄', '+', '👦'],
+    words: ['Cowboy']
+  },
+  {
+    symbols: ['🖊️', '+', '👬'],
+    words: ['Penpals']
+  },
+  {
+    symbols: ['⭐', '+', '💰'],
+    words: ['Starbucks']
+  },
+  {
     symbols: ['📲', '+', '🅰️', '+', '🐀'],
     words: ['Apparat']
   },
