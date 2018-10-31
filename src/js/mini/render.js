@@ -29,6 +29,7 @@ export function renderComponent(component, $parent) {
   }
   if (component.$element) {
     component.$parent.replaceChild($element, component.$element);
+    callDidRender(component);
   }
   if (component.props.focus) {
     $element.focus();
@@ -38,7 +39,15 @@ export function renderComponent(component, $parent) {
   return $element;
 }
 
+export function callDidRender(component) {
+  if (component.componentDidRender) {
+    component.componentDidRender();
+  }
+  component.children.forEach(child => callDidRender(child));
+}
+
 export function render(component, root) {
   const element = renderComponent(component, root);
   root.appendChild(element);
+  callDidRender(component);
 }

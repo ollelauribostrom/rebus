@@ -5,12 +5,14 @@ Object {
   "children": Array [
     Object {
       "children": Array [],
+      "componentDidRender": undefined,
       "props": Object {},
       "render": [Function],
       "update": [Function],
     },
     Object {
       "children": Array [],
+      "componentDidRender": undefined,
       "props": Object {
         "url": "https://github.com/ollelauribostrom/rebus",
       },
@@ -19,6 +21,7 @@ Object {
     },
     Object {
       "children": Array [],
+      "componentDidRender": undefined,
       "props": Object {
         "className": "change-button--prev",
         "onClick": [Function],
@@ -28,6 +31,7 @@ Object {
     },
     Object {
       "children": Array [],
+      "componentDidRender": undefined,
       "props": Object {
         "charInput": [Function],
       },
@@ -36,6 +40,7 @@ Object {
     },
     Object {
       "children": Array [],
+      "componentDidRender": undefined,
       "props": Object {
         "className": "change-button--next",
         "onClick": [Function],
@@ -44,6 +49,7 @@ Object {
       "update": [Function],
     },
   ],
+  "componentDidRender": undefined,
   "props": Object {},
   "render": [Function],
   "update": [Function],
