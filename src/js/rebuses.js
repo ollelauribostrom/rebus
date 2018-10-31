@@ -430,6 +430,18 @@ const rebuses = [
   {
     symbols: ['⭐', '+', '💰'],
     words: ['Starbucks']
+  },
+  {
+    symbols: ['📲', '+', '🅰️', '+', '🐀'],
+    words: ['Apparat']
+  },
+  {
+    symbols: ['☀️', '+', '🌼'],
+    words: ['Sunflower']
+  },
+  {
+    symbols: ['⛓️', '+', '🔁', '+', '🎬'],
+    words: ['Chainreaction']
   }
 ];
 
