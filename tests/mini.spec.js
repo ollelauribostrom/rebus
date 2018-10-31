@@ -5,6 +5,7 @@ const wait = duration => new Promise(resolve => setTimeout(resolve, duration));
 function Parent(...children) {
   return createComponent({
     children,
+    componentDidRender: jest.fn(),
     render() {
       return `
         <div class="parent">
@@ -14,9 +15,10 @@ function Parent(...children) {
   });
 }
 
-function Child(props) {
+function Child(props, componentDidRender) {
   return createComponent({
     props,
+    componentDidRender,
     render({ text }) {
       return `<span class="child">${text}</span>`;
     }
@@ -41,6 +43,19 @@ describe('Tests for mini framework', () => {
       render(Child({ onClick }), root);
       root.firstElementChild.click();
       expect(onClick).toHaveBeenCalled();
+    });
+    it('calls componentDidRender after the component has been rendered', () => {
+      const childOneDidRender = jest.fn();
+      const childTwoDidRender = jest.fn();
+      const root = document.createElement('div');
+      const parent = Parent(
+        Child({ text: 'Child1' }, childOneDidRender),
+        Child({ text: 'Child2' }, childTwoDidRender)
+      );
+      render(parent, root);
+      expect(parent.componentDidRender).toHaveBeenCalledTimes(1);
+      expect(childOneDidRender).toHaveBeenCalledTimes(1);
+      expect(childTwoDidRender).toHaveBeenCalledTimes(1);
     });
   });
   describe('store', () => {
