@@ -482,6 +482,42 @@ const rebuses = [
   {
     symbols: ['⛓️', '+', '🔁', '+', '🎬'],
     words: ['Chainreaction']
+  },
+  {
+    symbols: ['🗑️', '+', '🏀'],
+    words: ['Basketball']
+  },
+  {
+    symbols: ['🌎', '+', '🐛'],
+    words: ['Earthworm']
+  },
+  {
+    symbols: ['🌬', '+', '🐟'],
+    words: ['Blowfish']
+  },
+  {
+    symbols: ['🔑', '+', '🕳'],
+    words: ['Keyhole']
+  },
+  {
+    symbols: ['💔', '+', '🕐'],
+    words: ['Breaktime']
+  },
+  {
+    symbols: ['🐊', '+', '😭'],
+    words: ['Crocodile', 'tears']
+  },
+  {
+    symbols: ['💋', '☠'],
+    words: ['Kiss', 'of', 'death']
+  },
+  {
+    symbols: ['👨', '💀', '⛵'],
+    words: ['Pirate']
+  },
+  {
+    symbols: ['🚪', '+', '🔔'],
+    words: ['Doorbell']
   }
 ];
 
