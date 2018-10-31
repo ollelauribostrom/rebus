@@ -356,6 +356,22 @@ const rebuses = [
     words: ['Poppy']
   },
   {
+    symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
+    words: ['Abominable']
+  },
+  {
+    symbols: ['👁', '+', '💖', '+', 'YOU'],
+    words: ['I', 'Love', 'You']
+  },
+  {
+    symbols: ['🐴', '+', '👞'],
+    words: ['Horse', 'Shoe']
+  },
+  {
+    symbols: ['🌍', '+', '☕'],
+    words: ['World', 'Cup']
+  },
+  {
     symbols: ['🔁', '+', '🔙'],
     words: ['Loopback']
   },
