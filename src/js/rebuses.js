@@ -410,6 +410,26 @@ const rebuses = [
   {
     symbols: ['S', '+', '🦀', '+', 'BLE'],
     words: ['scrabble']
+  },
+  {
+    symbols: ['🦇', '+', '👨'],
+    words: ['Batman']
+  },
+  {
+    symbols: ['☀️', '+', '👓'],
+    words: ['Sunglasses']
+  },
+  {
+    symbols: ['🐄', '+', '👦'],
+    words: ['Cowboy']
+  },
+  {
+    symbols: ['🖊️', '+', '👬'],
+    words: ['Penpals']
+  },
+  {
+    symbols: ['⭐', '+', '💰'],
+    words: ['Starbucks']
   }
 ];
 
