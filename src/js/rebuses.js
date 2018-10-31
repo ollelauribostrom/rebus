@@ -398,6 +398,18 @@ const rebuses = [
   {
     symbols: ['🌽', '+', 'u', '+', '👮', '+', 'ia'],
     words: ['Cornucopia']
+  },
+  {
+    symbols: ['💨', '+', '🦉', '-', 'L'],
+    words: ['window']
+  },
+  {
+    symbols: ['❌', '+', '🔤'],
+    words: ['crossword']
+  },
+  {
+    symbols: ['S', '+', '🦀', '+', 'BLE'],
+    words: ['scrabble']
   }
 ];
 
