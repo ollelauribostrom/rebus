@@ -356,6 +356,50 @@ const rebuses = [
     words: ['Poppy']
   },
   {
+    symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
+    words: ['Abominable']
+  },
+  {
+    symbols: ['👁', '+', '💖', '+', 'YOU'],
+    words: ['I', 'Love', 'You']
+  },
+  {
+    symbols: ['🐴', '+', '👞'],
+    words: ['Horse', 'Shoe']
+  },
+  {
+    symbols: ['🌍', '+', '☕'],
+    words: ['World', 'Cup']
+  },
+  {
+    symbols: ['🔁', '+', '🔙'],
+    words: ['Loopback']
+  },
+  {
+    symbols: ['🔙', '+', '🏁'],
+    words: ['Backend']
+  },
+  {
+    symbols: ['🌃', '+', '🐎'],
+    words: ['Nightmare']
+  },
+  {
+    symbols: ['🔙', '+', '🚪'],
+    words: ['Backdoor']
+  },
+  {
+    symbols: ['🍀', '+', '🌌‍', '+', '🚶'],
+    words: ['Luke Skywalker']
+  },
+  {
+    symbols: ['👋', '+', '🌍'],
+    words: ['Hello', 'World']
+  },
+  {
+    symbols: ['🌽', '+', 'u', '+', '👮', '+', 'ia'],
+    words: ['Cornucopia']
+  },
+  {
     symbols: ['💨', '+', '🦉', '-', 'L'],
     words: ['window']
   },
