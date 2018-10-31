@@ -356,6 +356,46 @@ const rebuses = [
     words: ['Poppy']
   },
   {
+    symbols: ['🍏', '+', '🥧'],
+    words: ['Applepie']
+  },
+  {
+    symbols: ['🍯', '+', '🌗'],
+    words: ['Honeymoon']
+  },
+  {
+    symbols: ['🕷', '+', '🧔🏻'],
+    words: ['Spiderman']
+  },
+  {
+    symbols: ['🐲', '+', '🍑'],
+    words: ['Dragonfruit']
+  },
+  {
+    symbols: ['🔫-s', '+', 'and', '+', '🥀-s'],
+    words: ['Gunsandroses']
+  },
+  {
+    symbols: ['👦🏼', '+', '📔'],
+    words: ['Facebook']
+  },
+  {
+    symbols: ['T', '+', '🏃', '+', '🐱', '+', 'e'],
+    words: ['Truncate']
+  },
+  {
+    symbols: ['🐶', '+', '🐱', '+', 'cher'],
+    words: ['Dogcatcher']
+  },
+  {
+    symbols: ['🌍', '+', '⭐️'],
+    words: ['Earthstar']
+  },
+  {
+    symbols: ['👱', '+', '👨‍🎓', '+', '⛵️-s'],
+    words: ['Headmasterships']
+  },
+  {
     symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
     words: ['Abominable']
   },
@@ -430,6 +470,18 @@ const rebuses = [
   {
     symbols: ['⭐', '+', '💰'],
     words: ['Starbucks']
+  },
+  {
+    symbols: ['📲', '+', '🅰️', '+', '🐀'],
+    words: ['Apparat']
+  },
+  {
+    symbols: ['☀️', '+', '🌼'],
+    words: ['Sunflower']
+  },
+  {
+    symbols: ['⛓️', '+', '🔁', '+', '🎬'],
+    words: ['Chainreaction']
   },
   {
     symbols: ['🗑️', '+', '🏀'],
