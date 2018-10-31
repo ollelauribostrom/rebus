@@ -370,6 +370,26 @@ const rebuses = [
   {
     symbols: ['🌍', '+', '☕'],
     words: ['World', 'Cup']
+  },
+  {
+    symbols: ['🔁', '+', '🔙'],
+    words: ['Loopback']
+  },
+  {
+    symbols: ['🔙', '+', '🏁'],
+    words: ['Backend']
+  },
+  {
+    symbols: ['🌃', '+', '🐎'],
+    words: ['Nightmare']
+  },
+  {
+    symbols: ['🔙', '+', '🚪'],
+    words: ['Backdoor']
+  },
+  {
+    symbols: ['🍀', '+', '🌌‍', '+', '🚶'],
+    words: ['Luke Skywalker']
   }
 ];
 
