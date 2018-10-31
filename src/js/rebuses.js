@@ -361,19 +361,19 @@ const rebuses = [
   },
   {
     symbols: ['🔙', '+', '🏁'],
-    words: ['Backend'] 
+    words: ['Backend']
   },
   {
     symbols: ['🌃', '+', '🐎'],
-    words: ['Nightmare'] 
+    words: ['Nightmare']
   },
   {
     symbols: ['🔙', '+', '🚪'],
-    words: ['Backdoor'] 
+    words: ['Backdoor']
   },
   {
     symbols: ['🍀', '+', '🌌‍', '+', '🚶'],
-    words: ['Luke Skywalker'] 
+    words: ['Luke Skywalker']
   }
 ];
 
