@@ -49,7 +49,6 @@ export function Word(props, ...children) {
         Char({
           charIndex,
           ...props,
-          focus: !charIndex,
           onInput: e => {
             const input = e.target.value;
             charInput(input, props.wordIndex, charIndex);
