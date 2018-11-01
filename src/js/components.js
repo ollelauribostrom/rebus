@@ -19,6 +19,9 @@ export function Rebus(props, ...children) {
     createComponent({
       props,
       children,
+      componentDidRender() {
+        this.$element.querySelector("input").focus();
+      },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
         this.children = rebus.words.map((word, wordIndex) =>
