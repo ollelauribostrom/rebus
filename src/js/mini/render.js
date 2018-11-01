@@ -29,10 +29,10 @@ export function renderComponent(component, $parent) {
   }
   if (component.$element) {
     component.$parent.replaceChild($element, component.$element);
-    callDidRender(component);
   }
   addListeners(component, $element);
   Object.assign(component, { $parent, $element, rendered });
+  callDidRender(component);
   return $element;
 }
 
