@@ -29,10 +29,6 @@ export function renderComponent(component, $parent) {
   }
   if (component.$element) {
     component.$parent.replaceChild($element, component.$element);
-    callDidRender(component);
-  }
-  if (component.props.focus) {
-    $element.focus();
   }
   addListeners(component, $element);
   Object.assign(component, { $parent, $element, rendered });

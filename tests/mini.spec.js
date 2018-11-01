@@ -67,6 +67,7 @@ describe('Tests for mini framework', () => {
         return connect(
           createComponent({
             props,
+            componentDidUpdate: jest.fn(),
             render({ count }) {
               return `<span>${count}</span>`;
             }
@@ -74,10 +75,12 @@ describe('Tests for mini framework', () => {
         );
       }
       const root = document.createElement('div');
-      render(Parent(Child({ text: 'Not connected' }), ConnectedChild()), root);
+      const connectedChild = ConnectedChild();
+      render(Parent(Child({ text: 'Not connected' }), connectedChild), root);
       actions.increment();
       await wait(30);
       expect(root.innerHTML).toMatchSnapshot();
+      expect(connectedChild.componentDidUpdate).toHaveBeenCalledTimes(1);
     });
   });
 });
