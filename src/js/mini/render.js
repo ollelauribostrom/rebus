@@ -32,7 +32,6 @@ export function renderComponent(component, $parent) {
   }
   addListeners(component, $element);
   Object.assign(component, { $parent, $element, rendered });
-  callDidRender(component);
   return $element;
 }
 
