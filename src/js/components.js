@@ -19,7 +19,7 @@ export function Rebus(props, ...children) {
     createComponent({
       props,
       children,
-      componentDidRender() {
+      componentDidMount() {
         this.$element.querySelector('input').focus();
       },
       componentDidUpdate() {

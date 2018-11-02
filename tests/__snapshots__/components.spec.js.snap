@@ -5,14 +5,14 @@ Object {
   "children": Array [
     Object {
       "children": Array [],
-      "componentDidRender": undefined,
+      "componentDidMount": undefined,
       "componentDidUpdate": undefined,
       "props": Object {},
       "render": [Function],
       "update": [Function],
     },
   ],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {},
   "render": [Function],
@@ -31,7 +31,7 @@ exports[`Tests for components App renders correctly 2`] = `
 exports[`Tests for components ChangeButton renders correctly (with className prop) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {
     "className": "test",
@@ -63,7 +63,7 @@ exports[`Tests for components ChangeButton renders correctly (with className pro
 exports[`Tests for components ChangeButton renders correctly (without className prop) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {},
   "render": [Function],
@@ -93,7 +93,7 @@ exports[`Tests for components ChangeButton renders correctly (without className 
 exports[`Tests for components Char renders correctly (with value and multiple words) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {
     "animation": "none",
@@ -142,7 +142,7 @@ exports[`Tests for components Char renders correctly (with value and multiple wo
 exports[`Tests for components Char renders correctly (with value and single word) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {
     "animation": "none",
@@ -191,7 +191,7 @@ exports[`Tests for components Char renders correctly (with value and single word
 exports[`Tests for components Char renders correctly (without value) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {
     "animation": "none",
@@ -240,7 +240,7 @@ exports[`Tests for components Char renders correctly (without value) 2`] = `
 exports[`Tests for components GithubCorner renders correctly 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {
     "url": "test",
@@ -267,7 +267,7 @@ exports[`Tests for components GithubCorner renders correctly 2`] = `
 exports[`Tests for components Logo renders correctly 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {},
   "render": [Function],
@@ -294,7 +294,7 @@ exports[`Tests for components Logo renders correctly 2`] = `
 exports[`Tests for components Rebus renders correctly (when rebus is answered) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": [Function],
+  "componentDidMount": [Function],
   "componentDidUpdate": [Function],
   "props": Object {
     "animation": "none",
@@ -344,7 +344,7 @@ exports[`Tests for components Rebus renders correctly (when rebus is answered) 2
 exports[`Tests for components Rebus renders correctly (with animation class) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": [Function],
+  "componentDidMount": [Function],
   "componentDidUpdate": [Function],
   "props": Object {
     "animation": "flip-vertical-right",
@@ -394,7 +394,7 @@ exports[`Tests for components Rebus renders correctly (with animation class) 2`]
 exports[`Tests for components Rebus renders correctly 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": [Function],
+  "componentDidMount": [Function],
   "componentDidUpdate": [Function],
   "props": Object {
     "animation": "none",
@@ -444,7 +444,7 @@ exports[`Tests for components Rebus renders correctly 2`] = `
 exports[`Tests for components Word renders correctly 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
+  "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {
     "charInput": [MockFunction],
