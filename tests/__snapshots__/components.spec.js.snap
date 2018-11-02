@@ -294,8 +294,8 @@ exports[`Tests for components Logo renders correctly 2`] = `
 exports[`Tests for components Rebus renders correctly (when rebus is answered) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
-  "componentDidUpdate": undefined,
+  "componentDidRender": [Function],
+  "componentDidUpdate": [Function],
   "props": Object {
     "animation": "none",
     "current": 0,
@@ -344,8 +344,8 @@ exports[`Tests for components Rebus renders correctly (when rebus is answered) 2
 exports[`Tests for components Rebus renders correctly (with animation class) 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
-  "componentDidUpdate": undefined,
+  "componentDidRender": [Function],
+  "componentDidUpdate": [Function],
   "props": Object {
     "animation": "flip-vertical-right",
     "current": 0,
@@ -394,8 +394,8 @@ exports[`Tests for components Rebus renders correctly (with animation class) 2`]
 exports[`Tests for components Rebus renders correctly 1`] = `
 Object {
   "children": Array [],
-  "componentDidRender": undefined,
-  "componentDidUpdate": undefined,
+  "componentDidRender": [Function],
+  "componentDidUpdate": [Function],
   "props": Object {
     "animation": "none",
     "current": 0,

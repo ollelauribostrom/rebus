@@ -34,8 +34,8 @@ Object {
     },
     Object {
       "children": Array [],
-      "componentDidRender": undefined,
-      "componentDidUpdate": undefined,
+      "componentDidRender": [Function],
+      "componentDidUpdate": [Function],
       "props": Object {
         "charInput": [Function],
       },
