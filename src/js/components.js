@@ -20,7 +20,10 @@ export function Rebus(props, ...children) {
       props,
       children,
       componentDidRender() {
-        this.$element.querySelector("input").focus();
+        this.$element.querySelector('input').focus();
+      },
+      componentDidUpdate() {
+        this.$element.querySelector('input').focus();
       },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
