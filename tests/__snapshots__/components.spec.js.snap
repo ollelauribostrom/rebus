@@ -6,12 +6,14 @@ Object {
     Object {
       "children": Array [],
       "componentDidRender": undefined,
+      "componentDidUpdate": undefined,
       "props": Object {},
       "render": [Function],
       "update": [Function],
     },
   ],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {},
   "render": [Function],
   "update": [Function],
@@ -30,6 +32,7 @@ exports[`Tests for components ChangeButton renders correctly (with className pro
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "className": "test",
   },
@@ -61,6 +64,7 @@ exports[`Tests for components ChangeButton renders correctly (without className 
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {},
   "render": [Function],
   "update": [Function],
@@ -90,6 +94,7 @@ exports[`Tests for components Char renders correctly (with value and multiple wo
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "animation": "none",
     "charIndex": 1,
@@ -138,6 +143,7 @@ exports[`Tests for components Char renders correctly (with value and single word
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "animation": "none",
     "charIndex": 1,
@@ -186,6 +192,7 @@ exports[`Tests for components Char renders correctly (without value) 1`] = `
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "animation": "none",
     "charIndex": 1,
@@ -234,6 +241,7 @@ exports[`Tests for components GithubCorner renders correctly 1`] = `
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "url": "test",
   },
@@ -260,6 +268,7 @@ exports[`Tests for components Logo renders correctly 1`] = `
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {},
   "render": [Function],
   "update": [Function],
@@ -286,6 +295,7 @@ exports[`Tests for components Rebus renders correctly (when rebus is answered) 1
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "animation": "none",
     "current": 0,
@@ -335,6 +345,7 @@ exports[`Tests for components Rebus renders correctly (with animation class) 1`]
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "animation": "flip-vertical-right",
     "current": 0,
@@ -384,6 +395,7 @@ exports[`Tests for components Rebus renders correctly 1`] = `
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "animation": "none",
     "current": 0,
@@ -433,6 +445,7 @@ exports[`Tests for components Word renders correctly 1`] = `
 Object {
   "children": Array [],
   "componentDidRender": undefined,
+  "componentDidUpdate": undefined,
   "props": Object {
     "charInput": [MockFunction],
     "word": "one",
