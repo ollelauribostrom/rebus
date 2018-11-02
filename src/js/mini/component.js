@@ -15,8 +15,7 @@ export function createComponent({
     componentDidMount,
     componentDidUpdate,
     update() {
-      const preRendered = this.render(this.props);
-      if (this.rendered !== preRendered) {
+      if (this.rendered !== this.render(this.props)) {
         renderComponent(this, this.$parent);
         if (isFunction(this.componentDidUpdate)) {
           this.componentDidUpdate();
