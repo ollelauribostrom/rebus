@@ -23,21 +23,25 @@ The only thing that is required to get started is git. Make sure you have it ins
 
 If you are an experienced developer, look at the [CONTRIBUTING file](https://github.com/ollelauribostrom/rebus/blob/master/.github/CONTRIBUTING.md) to see how you can contribute.
 
-## Why Contribute to Open Source?
+## Why contribute to open source?
 
 When you contribute to Open Source, you are taking part in the collaborative effort of a vast community of passionate developers and contributors! Open Source software allows you to see, use, and more importantly modify its source code. Contributing to Open Source is a great way to develop a deeper understanding of software, and the best part is being able to learn and teach alongside a community of contributors.
 
-## Fork this repo
+## How to contribute
+
+Follow this step-by-step guide to make your first open source contribution. The steps you will perform in this guide is a somewhat standard workflow that you will encounter in most projects: `Fork -> Clone -> Install dependencies -> Make your changes -> Run tests -> Commit -> PR`
+
+### 1. Fork
 
 The first step is to create a fork of this repo. Do so by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
 
-![Forking the repo](.github/fork.png)
+<img src=".github/fork.png" alt="Forking the repo" />
 
-## Clone the repo
+### 2. Clone
 
 The next step is to clone the forked repo to your machine.
 
-Go to your GitHub repositories and open the forked repository called Rebus (_forked from ollelauribostrom/rebus_). Then click on the "Clone or download" button and then click the copy to clipboard icon to get your url.
+Go to your GitHub repositories and open the forked repository called Rebus (_forked from ollelauribostrom/rebus_). Click on the "Clone or download" button and then click the copy to clipboard icon to get your url.
 
 <img align="right" width="300" src=".github/clone.png" alt="Cloning the repo" />
 
@@ -53,7 +57,7 @@ For example:
 git clone https://github.com/username/rebus.git
 ```
 
-## Register the upstream repository
+### 3. Register the upstream repository
 
 You have now created a local clone on you computer. This clone will point to your forked repository. It's also useful to have
 the upstream repository (the source that you forked) registered as well to be able to stay up to date with the latest changes.
@@ -70,7 +74,7 @@ Then add `ollelauribostrom/rebus` as the upstream remote:
 git remote add upstream https://github.com/ollelauribostrom/rebus.git
 ```
 
-## Create a branch
+### 4. Create a branch
 
 It's common practice to create a new branch for each new feature or bugfix you are working on. Let's go ahead and create one!
 
@@ -96,7 +100,7 @@ git checkout -b add-new-rebus upstream/master
 
 > Note: By specifying `upstream/master` we're saying that our new branch should be created from the latest upstream version
 
-## Installing the dependencies
+### 5. Install the dependencies
 
 Before we begin making our changes, let's install the projects dependencies:
 
@@ -104,7 +108,7 @@ Before we begin making our changes, let's install the projects dependencies:
 npm install
 ```
 
-## Make your changes
+### 6. Make your changes
 
 Now it's time to make your changes. Let's add a new rebus to the game.
 
@@ -112,7 +116,7 @@ Now it's time to make your changes. Let's add a new rebus to the game.
 1. Add a new rebus object to the end of the `rebuses` array.
 1. Save the file when you are done.
 
-## Running the game locally
+### 7. Run the game locally
 
 If you want, you can run the game locally to try out your changes:
 
@@ -120,7 +124,7 @@ If you want, you can run the game locally to try out your changes:
 npm start
 ```
 
-## Running the tests
+### 8. Run the tests
 
 Before your commit your changes, run the tests to make sure you didn't break anything:
 
@@ -128,7 +132,7 @@ Before your commit your changes, run the tests to make sure you didn't break any
 npm run test:all
 ```
 
-## Committing your changes
+### 9. Commit your changes
 
 Run `git status` to see which changes you have made. This will look something like:
 
@@ -152,7 +156,7 @@ For example:
 git commit -m "Adding a new rebus"
 ```
 
-## Push your changes to Github
+### 10. Push your changes to Github
 
 Push your changes to GitHub by running:
 
@@ -162,15 +166,15 @@ git push origin <your-new-branch-name>
 
 > Note: Replace `<your-new-branch-name>` with the name of your branch
 
-## Open a Pull Request
+### 11. Open a Pull Request
 
 Head over to your repository on GitHub and click on the green "Compare and pull request" button.
 
-![Compare and pull request](.github/pr.png)
+<img src=".github/pr.png" alt="Compare and pull request" />
 
 Describe your changes and submit your pull request
 
-![Submit pull request](.github/pr2.png)
+<img src=".github/pr2.png" alt="Submit pull request" />
 
 ## What's next?
 
@@ -207,7 +211,6 @@ Please [open an issue](https://github.com/ollelauribostrom/rebus/issues/new) for
 
 This project adheres to the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct).
 Please read the full text so that you can understand what actions will and will not be tolerated.
-
 
 ## License
 
