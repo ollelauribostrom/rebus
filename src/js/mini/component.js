@@ -1,26 +1,27 @@
 import { renderComponent } from './render';
+import { isFunction } from './utils';
 
 export function createComponent({
   props = {},
   children = [],
   render,
-  componentDidRender,
+  componentDidMount,
   componentDidUpdate
 }) {
-  const component = {
+  return {
     props,
     children,
     render,
-    componentDidRender,
+    componentDidMount,
     componentDidUpdate,
     update() {
-      if (this.rendered !== this.render()) {
+      const preRendered = this.render(this.props);
+      if (this.rendered !== preRendered) {
         renderComponent(this, this.$parent);
-        if (this.componentDidUpdate) {
+        if (isFunction(this.componentDidUpdate)) {
           this.componentDidUpdate();
         }
       }
     }
   };
-  return component;
 }

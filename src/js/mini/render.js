@@ -1,49 +1,44 @@
-export function isEventCallback(key, value) {
-  return typeof value === 'function' && key.substr(0, 2) === 'on';
-}
+import { isFunction, isEventCallback, getEventName, createHTMLElement } from './utils';
 
 export function addListeners(component, $element) {
   Object.entries(component.props).forEach(([key, value]) => {
     if (isEventCallback(key, value)) {
-      const event = key.substr(2).toLowerCase();
+      const event = getEventName(key);
       $element.addEventListener(event, value);
     }
   });
 }
 
-export function renderChildren(component, $element, placeholder) {
-  component.children
-    .map(child => renderComponent(child, $element))
-    .forEach(childElement => placeholder.parentNode.insertBefore(childElement, placeholder));
-  placeholder.parentNode.removeChild(placeholder);
+export function callComponentDidMount(component) {
+  if (isFunction(component.componentDidMount)) {
+    component.componentDidMount();
+  }
+  component.children.forEach(child => callComponentDidMount(child));
 }
 
 export function renderComponent(component, $parent) {
-  const template = document.createElement('template');
   const rendered = component.render(component.props);
-  template.innerHTML = rendered;
-  const $element = template.content.firstElementChild;
-  const childrenPlaceholder = $element.querySelector('children');
-  if (childrenPlaceholder) {
-    renderChildren(component, $element, childrenPlaceholder);
+  const $element = createHTMLElement(rendered);
+  const placeholder = $element.querySelector('children');
+  if (component.children && placeholder) {
+    component.children.forEach(child => {
+      const childComponent = renderComponent(child, $element);
+      placeholder.parentNode.insertBefore(childComponent, placeholder);
+    });
+    placeholder.parentNode.removeChild(placeholder);
   }
   if (component.$element) {
     component.$parent.replaceChild($element, component.$element);
   }
   addListeners(component, $element);
-  Object.assign(component, { $parent, $element, rendered });
+  component.$parent = $parent; // eslint-disable-line
+  component.$element = $element; // eslint-disable-line
+  component.rendered = rendered; // eslint-disable-line
   return $element;
-}
-
-export function callDidRender(component) {
-  if (component.componentDidRender) {
-    component.componentDidRender();
-  }
-  component.children.forEach(child => callDidRender(child));
 }
 
 export function render(component, root) {
   const element = renderComponent(component, root);
   root.appendChild(element);
-  callDidRender(component);
+  callComponentDidMount(component);
 }

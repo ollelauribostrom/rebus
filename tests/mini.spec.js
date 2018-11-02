@@ -5,7 +5,7 @@ const wait = duration => new Promise(resolve => setTimeout(resolve, duration));
 function Parent(...children) {
   return createComponent({
     children,
-    componentDidRender: jest.fn(),
+    componentDidMount: jest.fn(),
     render() {
       return `
         <div class="parent">
@@ -15,10 +15,10 @@ function Parent(...children) {
   });
 }
 
-function Child(props, componentDidRender) {
+function Child(props, componentDidMount) {
   return createComponent({
     props,
-    componentDidRender,
+    componentDidMount,
     render({ text }) {
       return `<span class="child">${text}</span>`;
     }
@@ -44,18 +44,18 @@ describe('Tests for mini framework', () => {
       root.firstElementChild.click();
       expect(onClick).toHaveBeenCalled();
     });
-    it('calls componentDidRender after the component has been rendered', () => {
-      const childOneDidRender = jest.fn();
-      const childTwoDidRender = jest.fn();
+    it('calls componentDidMount after the component has been rendered', () => {
+      const childOneDidMount = jest.fn();
+      const childTwoDidMount = jest.fn();
       const root = document.createElement('div');
       const parent = Parent(
-        Child({ text: 'Child1' }, childOneDidRender),
-        Child({ text: 'Child2' }, childTwoDidRender)
+        Child({ text: 'Child1' }, childOneDidMount),
+        Child({ text: 'Child2' }, childTwoDidMount)
       );
       render(parent, root);
-      expect(parent.componentDidRender).toHaveBeenCalledTimes(1);
-      expect(childOneDidRender).toHaveBeenCalledTimes(1);
-      expect(childTwoDidRender).toHaveBeenCalledTimes(1);
+      expect(parent.componentDidMount).toHaveBeenCalledTimes(1);
+      expect(childOneDidMount).toHaveBeenCalledTimes(1);
+      expect(childTwoDidMount).toHaveBeenCalledTimes(1);
     });
   });
   describe('store', () => {
