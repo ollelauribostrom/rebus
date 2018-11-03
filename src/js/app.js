@@ -1,6 +1,11 @@
 import * as Sentry from '@sentry/browser';
 import { render } from './mini';
-import { App, Logo, GithubCorner, ChangeButton, Rebus } from './components';
+import { App } from './components/app';
+import { Logo } from './components/logo';
+import { GithubCorner } from './components/github-corner';
+import { ChangeButton } from './components/change-button';
+import { Rebus } from './components/rebus';
+
 import { actions } from './store';
 import '../css/main.css';
 
