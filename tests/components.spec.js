@@ -1,5 +1,11 @@
 import { render } from '../src/js/mini';
-import { App, Word, Char, Logo, GithubCorner, ChangeButton, Rebus } from '../src/js/components';
+import { App } from '../src/js/components/app';
+import { Word } from '../src/js/components/word';
+import { Char } from '../src/js/components/char';
+import { Logo } from '../src/js/components/logo';
+import { GithubCorner } from '../src/js/components/github-corner';
+import { ChangeButton } from '../src/js/components/change-button';
+import { Rebus } from '../src/js/components/rebus';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
