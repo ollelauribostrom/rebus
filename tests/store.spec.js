@@ -41,6 +41,14 @@ describe('Tests for store', () => {
     expect(newState.animation).toEqual('flip-vertical-left');
     expect(finalState.current).toEqual(0);
   });
+  it('should handle action: shake', () => {
+    const state = { ...initialState };
+    const newState = Object.assign({}, state, actionsCreators.shake(state));
+    const finalState = Object.assign({}, newState, actionsCreators.shake(newState));
+    expect(newState.current).toEqual(0);
+    expect(newState.animation).toEqual('shake');
+    expect(finalState.current).toEqual(0);
+  });
   it('should handle action: setInput', () => {
     const state = { ...initialState };
     const newState = Object.assign({}, state, actionsCreators.setInput(state, 'a', 0, 0));
@@ -74,3 +82,4 @@ describe('Tests for store', () => {
     expect(finalState.current).toEqual(1);
   });
 });
+
