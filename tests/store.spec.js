@@ -82,4 +82,3 @@ describe('Tests for store', () => {
     expect(finalState.current).toEqual(1);
   });
 });
-
