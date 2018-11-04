@@ -18,7 +18,8 @@ jest.mock('../src/js/store', () => ({
   actions: {
     next: jest.fn(),
     prev: jest.fn(),
-    setCurrent: jest.fn()
+    setCurrent: jest.fn(),
+    shake: jest.fn()
   },
   connect: component => component
 }));
@@ -50,13 +51,17 @@ describe('Tests for app', () => {
     it('register a listener for keyup events', () => {
       const leftArrowEvent = new Event('keyup');
       const rightArrowEvent = new Event('keyup');
+      const enterEvent = new Event('keyup');
       leftArrowEvent.key = 'ArrowLeft';
       rightArrowEvent.key = 'ArrowRight';
+      enterEvent.key = 'Enter';
       registerListeners();
       document.dispatchEvent(leftArrowEvent);
       document.dispatchEvent(rightArrowEvent);
+      document.dispatchEvent(enterEvent);
       expect(actionsMock.prev).toHaveBeenCalled();
       expect(actionsMock.next).toHaveBeenCalled();
+      expect(actionsMock.shake).toHaveBeenCalled();
     });
   });
   describe('setCurrentFromURL', () => {

@@ -18,6 +18,9 @@ export function registerListeners() {
     if (key === 'ArrowLeft' || key === 37) {
       actions.prev();
     }
+    if (key === 'Enter' || key === 13) {
+      actions.shake();
+    }
   });
 }
 
