@@ -304,7 +304,7 @@ Object {
 
 exports[`Tests for components ProgressBar renders correctly 2`] = `
 " 
-        <progress class=\\"progress-bar\\" value=\\"0\\" max=\\"148\\">
+        <progress class=\\"progress-bar\\" value=\\"0\\" max=\\"150\\">
         </progress> 
         "
 `;
