@@ -177,4 +177,13 @@ describe('Tests for components', () => {
       expect(wrapper.render()).toMatchSnapshot();
     });
   });
+  describe('ProgressBar', () => {
+    it('renders correctly when there are answered rebuses', () => {
+      const storage = jest.spyOn(Storage.prototype, 'getItem');
+      storage.mockImplementation(() => JSON.stringify([1]));
+      const wrapper = ProgressBar();
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render()).toMatchSnapshot();
+    });
+  });
 });

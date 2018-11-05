@@ -309,6 +309,24 @@ exports[`Tests for components ProgressBar renders correctly 2`] = `
         "
 `;
 
+exports[`Tests for components ProgressBar renders correctly when there are answered rebuses 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {},
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components ProgressBar renders correctly when there are answered rebuses 2`] = `
+" 
+        <progress class=\\"progress-bar\\" value=\\"1\\" max=\\"150\\">
+        </progress> 
+        "
+`;
+
 exports[`Tests for components Rebus renders correctly (when rebus is answered) 1`] = `
 Object {
   "children": Array [],
