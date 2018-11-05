@@ -118,15 +118,6 @@ describe('Tests for components', () => {
       inputs[1].dispatchEvent(mockEvent);
       expect(inputs[1] === document.activeElement).toEqual(true);
     });
-    it('disables inputs when rebus is answered', () => {
-      const onInput = jest.fn();
-      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
-      props.rebuses[0].isAnswered = true;
-      const root = document.createElement('div');
-      render(Word(props), root);
-      const inputs = root.querySelectorAll('input');
-      expect(inputs[1].disabled).toEqual(true);
-    });
   });
   describe('Char', () => {
     it('renders correctly (without value)', () => {
@@ -148,6 +139,14 @@ describe('Tests for components', () => {
       const wrapper = Char(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
+    });
+    it('disables inputs when rebus is answered', () => {
+      const props = { ...mockState, wordIndex: 0, charIndex: 1 };
+      props.rebuses[0].isAnswered = true;
+      const root = document.createElement('div');
+      render(Char(props), root);
+      const inputs = root.querySelectorAll('input');
+      expect(inputs[0].disabled).toEqual(true);
     });
   });
   describe('ChangeButton', () => {
