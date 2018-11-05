@@ -60,12 +60,15 @@ describe('Tests for rebuses', () => {
   });
   describe('checkForRebusDuplicates', () => {
     it('checks for duplicate rebuses', () => {
-      let rebuses = getRebuses();
-      let duplicates = [];
-      rebuses.forEach((rebus) => {
-        rebuses.forEach((potentialDuplicate) => {
-          if (rebus != potentialDuplicate && !duplicates.includes(rebus.words)) {
-            if (rebus.words.toString().toLowerCase() === potentialDuplicate.words.toString().toLowerCase()) {
+      const rebuses = getRebuses();
+      const duplicates = [];
+      rebuses.forEach(rebus => {
+        rebuses.forEach(potentialDuplicate => {
+          if (rebus !== potentialDuplicate && !duplicates.includes(rebus.words)) {
+            if (
+              rebus.words.toString().toLowerCase() ===
+              potentialDuplicate.words.toString().toLowerCase()
+            ) {
               duplicates.push(potentialDuplicate.words);
             }
           }
