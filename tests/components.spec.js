@@ -145,8 +145,8 @@ describe('Tests for components', () => {
       props.rebuses[0].isAnswered = true;
       const root = document.createElement('div');
       render(Char(props), root);
-      const inputs = root.querySelectorAll('input');
-      expect(inputs[0].disabled).toEqual(true);
+      const input = root.querySelector('input');
+      expect(input.disabled).toEqual(true);
     });
   });
   describe('ChangeButton', () => {
