@@ -136,6 +136,7 @@ exports[`Tests for components Char renders correctly (with value and multiple wo
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"c\\"
+          disabled
         >"
 `;
 
@@ -185,6 +186,7 @@ exports[`Tests for components Char renders correctly (with value and single word
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"c\\"
+          disabled
         >"
 `;
 
@@ -234,6 +236,7 @@ exports[`Tests for components Char renders correctly (without value) 2`] = `
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"\\"
+          disabled
         >"
 `;
 
