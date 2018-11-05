@@ -336,10 +336,6 @@ const rebuses = [
     words: ['crybaby']
   },
   {
-    symbols: ['👣', '+', '🎵'],
-    words: ['footnote']
-  },
-  {
     symbols: ['📻', '+', '🙂'],
     words: ['radiohead']
   },
@@ -564,10 +560,6 @@ const rebuses = [
     words: ['Watchman']
   },
   {
-    symbols: ['🌞', '+', '⚘'],
-    words: ['Sunflower']
-  },
-  {
     symbols: ['✋', '+', '📗'],
     words: ['Handbook']
   },
@@ -582,10 +574,6 @@ const rebuses = [
   {
     symbols: ['👂', '+', '💍'],
     words: ['Earring']
-  },
-  {
-    symbols: ['🚪', '+', '🔔'],
-    words: ['Doorbell']
   },
   {
     symbols: ['10', '+', '🐜'],
