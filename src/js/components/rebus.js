@@ -11,7 +11,11 @@ export function Rebus(props, ...children) {
         this.$element.querySelector('input').focus();
       },
       componentDidUpdate() {
-        this.$element.querySelector('input').focus();
+        const isRebusChanged = JSON.parse(window.localStorage.getItem('isRebusChanged'));
+        if (isRebusChanged) {
+          this.$element.querySelector('input').focus();
+          window.localStorage.setItem('isRebusChanged', false);
+        }
       },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
