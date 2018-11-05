@@ -6,6 +6,7 @@ import { Logo } from '../src/js/components/logo';
 import { GithubCorner } from '../src/js/components/github-corner';
 import { ChangeButton } from '../src/js/components/change-button';
 import { Rebus } from '../src/js/components/rebus';
+import { ProgressBar } from '../src/js/components/progress-bar';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
@@ -165,6 +166,13 @@ describe('Tests for components', () => {
   describe('Logo', () => {
     it('renders correctly', () => {
       const wrapper = Logo();
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render()).toMatchSnapshot();
+    });
+  });
+  describe('ProgressBar', () => {
+    it('renders correctly', () => {
+      const wrapper = ProgressBar();
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render()).toMatchSnapshot();
     });
