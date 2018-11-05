@@ -71,7 +71,7 @@ describe('Tests for rebuses', () => {
           }
         });
       });
-      expect(duplicates).toBe(new Array(0));
+      expect(duplicates).toEqual(new Array(0));
     });
   });
 });
