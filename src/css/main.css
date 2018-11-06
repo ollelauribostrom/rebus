@@ -78,6 +78,10 @@ body,
   padding: 0 20px;
 }
 
+.rebus__hint {
+  text-align: center;
+}
+
 .word {
   margin-bottom: 20px;
   display: grid;

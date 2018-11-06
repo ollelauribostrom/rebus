@@ -14,10 +14,12 @@ jest.mock('../src/js/store', () => ({
 const mockState = {
   current: 0,
   animation: 'none',
+  incorrectAnswerCount: 0,
   rebuses: [
     {
       symbols: ['😍', '👍', '😍'],
       words: ['one', 'two'],
+      hint: 'hint',
       input: [...Array(6)],
       isAnswered: false
     }
@@ -48,6 +50,20 @@ describe('Tests for components', () => {
     });
     it('renders correctly (with animation class)', () => {
       const props = { ...mockState, animation: 'flip-vertical-right' };
+      const wrapper = Rebus(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+    it('renders correctly (when incorrect answer count is less than max incorrect answer count)', () => {
+      const props = { ...mockState, incorrectAnswerCount: 1 };
+      props.rebuses[0].isAnswered = false;
+      const wrapper = Rebus(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+    it('renders correctly (when incorrect answer count is more than max incorrect answer count)', () => {
+      const props = { ...mockState, incorrectAnswerCount: 4 };
+      props.rebuses[0].isAnswered = false;
       const wrapper = Rebus(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
