@@ -184,6 +184,7 @@ describe('Tests for components', () => {
       const wrapper = ProgressBar();
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render()).toMatchSnapshot();
+      storage.mockRestore();
     });
   });
 });
