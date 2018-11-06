@@ -35,7 +35,7 @@ export function Rebus(props, ...children) {
             ${
               showHint
                 ? `<span class="rebus__hint">
-                ${HINT_SYMBOL + ' ' + rebus.hint}
+                ${HINT_SYMBOL} ${rebus.hint}
               </span>`
                 : ''
             }
