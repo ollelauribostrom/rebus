@@ -172,19 +172,18 @@ describe('Tests for components', () => {
   });
   describe('ProgressBar', () => {
     it('renders correctly', () => {
-      const wrapper = ProgressBar();
+      const props = mockState;
+      const wrapper = ProgressBar(props);
       expect(wrapper).toMatchSnapshot();
-      expect(wrapper.render()).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
     });
   });
   describe('ProgressBar', () => {
-    it('renders correctly when there are answered rebuses', () => {
-      const storage = jest.spyOn(Storage.prototype, 'getItem');
-      storage.mockImplementation(() => JSON.stringify([1]));
-      const wrapper = ProgressBar();
+    it('renders correctly (without rebuses)', () => {
+      const props = { rebuses: [] };
+      const wrapper = ProgressBar(props);
       expect(wrapper).toMatchSnapshot();
-      expect(wrapper.render()).toMatchSnapshot();
-      storage.mockRestore();
+      expect(wrapper.render(props)).toMatchSnapshot();
     });
   });
 });

@@ -1,18 +1,14 @@
 import { createComponent } from '../mini';
 import { connect } from '../store';
-import { totalRebusesCount } from '../rebuses';
 
-export function ProgressBar() {
+export function ProgressBar(props) {
   return connect(
     createComponent({
-      render() {
-        const answeredRebuses = window.localStorage.getItem('answeredRebuses');
-        let answeredRebusCount = 0;
-        if (answeredRebuses) {
-          answeredRebusCount = JSON.parse(answeredRebuses).length;
-        }
+      props,
+      render({ rebuses }) {
+        const answeredRebusCount = rebuses.filter(rebus => rebus.isAnswered).length;
         return ` 
-        <progress class="progress-bar" value="${answeredRebusCount}" max="${totalRebusesCount}">
+        <progress class="progress-bar" value="${answeredRebusCount}" max="${rebuses.length}">
         </progress> 
         `;
       }

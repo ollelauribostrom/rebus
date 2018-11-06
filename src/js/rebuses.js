@@ -631,5 +631,3 @@ export function getRebuses() {
     };
   });
 }
-
-export const totalRebusesCount = rebuses.length;
