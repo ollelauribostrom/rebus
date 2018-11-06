@@ -10,7 +10,12 @@ export function Rebus(props, ...children) {
       componentDidMount() {
         this.$element.querySelector('input').focus();
       },
-      componentDidUpdate() {
+      componentDidUpdate({ current }) {
+        /* If history API isn't available, we shouldn't revert to the more widely available `window.location.href`, 
+        as it incurs a new HTTP request and thus results in an infinite loop (and breaks SPAs). */
+        if (window.history) {
+          window.history.pushState('', '', `/?rebus=${current + 1}`);
+        }
         this.$element.querySelector('input').focus();
       },
       render({ current, rebuses, animation }) {
