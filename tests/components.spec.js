@@ -141,7 +141,7 @@ describe('Tests for components', () => {
       expect(wrapper.render(props)).toMatchSnapshot();
     });
     it('disables inputs when rebus is answered', () => {
-      const props = { ...mockState, wordIndex: 0, charIndex: 1 };
+      const props = mockState;
       props.rebuses[0].isAnswered = true;
       const root = document.createElement('div');
       render(Char(props), root);
