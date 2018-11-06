@@ -8,7 +8,7 @@ export function createStore(initialState, actions) {
       return async (...args) => {
         const newState = await actions[key](store.state, ...args);
         store.state = Object.assign(store.state, newState);
-        store.connectedComponents.forEach(c => c.update());
+        store.connectedComponents.forEach(c => c.update(store.state));
       };
     }
   });

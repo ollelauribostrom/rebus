@@ -14,11 +14,11 @@ export function createComponent({
     render,
     componentDidMount,
     componentDidUpdate,
-    update() {
+    update(newState) {
       if (this.rendered !== this.render(this.props)) {
         renderComponent(this, this.$parent);
         if (isFunction(this.componentDidUpdate)) {
-          this.componentDidUpdate();
+          this.componentDidUpdate(newState);
         }
       }
     }
