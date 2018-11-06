@@ -341,6 +341,56 @@ exports[`Tests for components Rebus renders correctly (when rebus is answered) 2
         "
 `;
 
+exports[`Tests for components Rebus renders correctly (when rebus is changed) 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": [Function],
+  "componentDidUpdate": [Function],
+  "props": Object {
+    "animation": "none",
+    "current": 0,
+    "rebuses": Array [
+      Object {
+        "input": Array [
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+        ],
+        "isAnswered": true,
+        "symbols": Array [
+          "😍",
+          "👍",
+          "😍",
+        ],
+        "words": Array [
+          "one",
+          "two",
+        ],
+      },
+    ],
+  },
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components Rebus renders correctly (when rebus is changed) 2`] = `
+"
+          <div class=\\"rebus rebus--answered animation--none\\">
+            <div class=\\"rebus__header\\">
+              <span>1/1</span>
+            </div>
+            <span class=\\"rebus__symbols\\">😍 👍 😍</span>
+            <div class=\\"rebus__words\\">
+              <children>
+            </div>
+          </div>
+        "
+`;
+
 exports[`Tests for components Rebus renders correctly (with animation class) 1`] = `
 Object {
   "children": Array [],

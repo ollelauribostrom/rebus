@@ -52,6 +52,15 @@ describe('Tests for components', () => {
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
+    it('renders correctly (when rebus is changed)', () => {
+      const storage = jest.spyOn(Storage.prototype, 'getItem');
+      storage.mockImplementation(() => JSON.stringify(true));
+      const props = mockState;
+      const wrapper = Rebus(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+      storage.mockRestore();
+    });
   });
   describe('Word', () => {
     it('renders correctly', () => {
