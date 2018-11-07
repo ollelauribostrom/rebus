@@ -18,6 +18,9 @@ export function createStore(initialState, actions) {
         if (key === 'render') {
           return (...args) => target.render(store.state, ...args);
         }
+        if (key === 'props') {
+          return Object.assign({}, target.props, store.state);
+        }
         return Reflect.get(target, key);
       }
     });
