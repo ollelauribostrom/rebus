@@ -109,7 +109,7 @@ Object {
           "c",
           undefined,
         ],
-        "isAnswered": true,
+        "isAnswered": false,
         "symbols": Array [
           "😍",
           "👍",
@@ -136,6 +136,7 @@ exports[`Tests for components Char renders correctly (with value and multiple wo
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"c\\"
+          
         >"
 `;
 
@@ -158,7 +159,7 @@ Object {
           undefined,
           undefined,
         ],
-        "isAnswered": true,
+        "isAnswered": false,
         "symbols": Array [
           "😍",
           "👍",
@@ -185,6 +186,7 @@ exports[`Tests for components Char renders correctly (with value and single word
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"c\\"
+          
         >"
 `;
 
@@ -207,7 +209,7 @@ Object {
           undefined,
           undefined,
         ],
-        "isAnswered": true,
+        "isAnswered": false,
         "symbols": Array [
           "😍",
           "👍",
@@ -234,6 +236,7 @@ exports[`Tests for components Char renders correctly (without value) 2`] = `
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"\\"
+          
         >"
 `;
 
@@ -291,6 +294,69 @@ exports[`Tests for components Logo renders correctly 2`] = `
       "
 `;
 
+exports[`Tests for components ProgressBar renders correctly (without rebuses) 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {
+    "rebuses": Array [],
+  },
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components ProgressBar renders correctly (without rebuses) 2`] = `
+" 
+        <progress class=\\"progress-bar\\" value=\\"0\\" max=\\"0\\">
+        </progress> 
+        "
+`;
+
+exports[`Tests for components ProgressBar renders correctly 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {
+    "animation": "none",
+    "current": 0,
+    "rebuses": Array [
+      Object {
+        "input": Array [
+          undefined,
+          "c",
+          undefined,
+          undefined,
+          "c",
+          undefined,
+        ],
+        "isAnswered": true,
+        "symbols": Array [
+          "😍",
+          "👍",
+          "😍",
+        ],
+        "words": Array [
+          "one",
+          "two",
+        ],
+      },
+    ],
+  },
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components ProgressBar renders correctly 2`] = `
+" 
+        <progress class=\\"progress-bar\\" value=\\"1\\" max=\\"1\\">
+        </progress> 
+        "
+`;
+
 exports[`Tests for components Rebus renders correctly (when rebus is answered) 1`] = `
 Object {
   "children": Array [],
@@ -328,56 +394,6 @@ Object {
 `;
 
 exports[`Tests for components Rebus renders correctly (when rebus is answered) 2`] = `
-"
-          <div class=\\"rebus rebus--answered animation--none\\">
-            <div class=\\"rebus__header\\">
-              <span>1/1</span>
-            </div>
-            <span class=\\"rebus__symbols\\">😍 👍 😍</span>
-            <div class=\\"rebus__words\\">
-              <children>
-            </div>
-          </div>
-        "
-`;
-
-exports[`Tests for components Rebus renders correctly (when rebus is changed) 1`] = `
-Object {
-  "children": Array [],
-  "componentDidMount": [Function],
-  "componentDidUpdate": [Function],
-  "props": Object {
-    "animation": "none",
-    "current": 0,
-    "rebuses": Array [
-      Object {
-        "input": Array [
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-        ],
-        "isAnswered": true,
-        "symbols": Array [
-          "😍",
-          "👍",
-          "😍",
-        ],
-        "words": Array [
-          "one",
-          "two",
-        ],
-      },
-    ],
-  },
-  "render": [Function],
-  "update": [Function],
-}
-`;
-
-exports[`Tests for components Rebus renders correctly (when rebus is changed) 2`] = `
 "
           <div class=\\"rebus rebus--answered animation--none\\">
             <div class=\\"rebus__header\\">

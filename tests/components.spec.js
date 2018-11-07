@@ -6,6 +6,7 @@ import { Logo } from '../src/js/components/logo';
 import { GithubCorner } from '../src/js/components/github-corner';
 import { ChangeButton } from '../src/js/components/change-button';
 import { Rebus } from '../src/js/components/rebus';
+import { ProgressBar } from '../src/js/components/progress-bar';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
@@ -51,15 +52,7 @@ describe('Tests for components', () => {
       const wrapper = Rebus(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
-    });
-    it('renders correctly (when rebus is changed)', () => {
-      const storage = jest.spyOn(Storage.prototype, 'getItem');
-      storage.mockImplementation(() => JSON.stringify(true));
-      const props = mockState;
-      const wrapper = Rebus(props);
-      expect(wrapper).toMatchSnapshot();
-      expect(wrapper.render(props)).toMatchSnapshot();
-      storage.mockRestore();
+      props.rebuses[0].isAnswered = false;
     });
   });
   describe('Word', () => {
@@ -148,6 +141,14 @@ describe('Tests for components', () => {
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
+    it('disables inputs when rebus is answered', () => {
+      const props = mockState;
+      props.rebuses[0].isAnswered = true;
+      const root = document.createElement('div');
+      render(Char(props), root);
+      const input = root.querySelector('input');
+      expect(input.disabled).toEqual(true);
+    });
   });
   describe('ChangeButton', () => {
     it('renders correctly (without className prop)', () => {
@@ -176,6 +177,22 @@ describe('Tests for components', () => {
       const wrapper = Logo();
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render()).toMatchSnapshot();
+    });
+  });
+  describe('ProgressBar', () => {
+    it('renders correctly', () => {
+      const props = mockState;
+      const wrapper = ProgressBar(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('ProgressBar', () => {
+    it('renders correctly (without rebuses)', () => {
+      const props = { rebuses: [] };
+      const wrapper = ProgressBar(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
     });
   });
 });

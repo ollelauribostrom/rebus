@@ -26,28 +26,20 @@ describe('Tests for store', () => {
     expect(initialState).toMatchSnapshot();
   });
   it('should handle action: next', () => {
-    const storage = jest.spyOn(Storage.prototype, 'setItem');
-    storage.mockImplementation((key, value) => Object.assign(storage, { [key]: value }));
     const state = { ...initialState };
     const newState = Object.assign({}, state, actionsCreators.next(state));
     const finalState = Object.assign({}, newState, actionsCreators.next(newState));
     expect(newState.current).toEqual(1);
     expect(newState.animation).toEqual('flip-vertical-right');
     expect(finalState.current).toEqual(0);
-    expect(storage.isRebusChanged).toEqual(true);
-    storage.mockRestore();
   });
   it('should handle action: prev', () => {
-    const storage = jest.spyOn(Storage.prototype, 'setItem');
-    storage.mockImplementation((key, value) => Object.assign(storage, { [key]: value }));
     const state = { ...initialState };
     const newState = Object.assign({}, state, actionsCreators.prev(state));
     const finalState = Object.assign({}, newState, actionsCreators.prev(newState));
     expect(newState.current).toEqual(1);
     expect(newState.animation).toEqual('flip-vertical-left');
     expect(finalState.current).toEqual(0);
-    expect(storage.isRebusChanged).toEqual(true);
-    storage.mockRestore();
   });
   it('should handle action: setInput', () => {
     const state = { ...initialState };

@@ -3,20 +3,14 @@ import { createStore } from './mini';
 import { getRebuses, markRebusAsAnswered } from './rebuses';
 
 export const actionsCreators = {
-  next: ({ current, rebuses }) => {
-    window.localStorage.setItem('isRebusChanged', true);
-    return {
-      current: current < rebuses.length - 1 ? current + 1 : 0,
-      animation: 'flip-vertical-right'
-    };
-  },
-  prev: ({ current, rebuses }) => {
-    window.localStorage.setItem('isRebusChanged', true);
-    return {
-      current: current > 0 ? current - 1 : rebuses.length - 1,
-      animation: 'flip-vertical-left'
-    };
-  },
+  next: ({ current, rebuses }) => ({
+    current: current < rebuses.length - 1 ? current + 1 : 0,
+    animation: 'flip-vertical-right'
+  }),
+  prev: ({ current, rebuses }) => ({
+    current: current > 0 ? current - 1 : rebuses.length - 1,
+    animation: 'flip-vertical-left'
+  }),
   setCurrent: ({ rebuses }, id) => {
     const index = rebuses.findIndex(rebus => rebus.id === id);
     if (index > 0) {
@@ -40,10 +34,6 @@ export const actionsCreators = {
       confetti(confettiCanon);
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;
-      const nextButton = document.querySelector('.change-button--next');
-      if (nextButton) {
-        nextButton.focus();
-      }
       return { updatedRebuses, animation: 'none' };
     }
     return {};

@@ -8,13 +8,24 @@ export function Rebus(props, ...children) {
       props,
       children,
       componentDidMount() {
-        this.$element.querySelector('input').focus();
+        const rebus = this.props.rebuses[this.props.current];
+        if (rebus.isAnswered) {
+          this.$parent.querySelector('.change-button--next').focus();
+        } else {
+          this.$element.querySelector('input').focus();
+        }
       },
       componentDidUpdate() {
-        const isRebusChanged = JSON.parse(window.localStorage.getItem('isRebusChanged'));
-        if (isRebusChanged) {
+        const rebus = this.props.rebuses[this.props.current];
+        /* If history API isn't available, we shouldn't revert to the more widely available `window.location.href`, 
+        as it incurs a new HTTP request and thus results in an infinite loop (and breaks SPAs). */
+        if (window.history) {
+          window.history.pushState('', '', `/?rebus=${rebus.id}`);
+        }
+        if (rebus.isAnswered) {
+          this.$parent.querySelector('.change-button--next').focus();
+        } else {
           this.$element.querySelector('input').focus();
-          window.localStorage.setItem('isRebusChanged', false);
         }
       },
       render({ current, rebuses, animation }) {
