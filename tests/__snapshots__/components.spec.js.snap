@@ -291,6 +291,69 @@ exports[`Tests for components Logo renders correctly 2`] = `
       "
 `;
 
+exports[`Tests for components ProgressBar renders correctly (without rebuses) 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {
+    "rebuses": Array [],
+  },
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components ProgressBar renders correctly (without rebuses) 2`] = `
+" 
+        <progress class=\\"progress-bar\\" value=\\"0\\" max=\\"0\\">
+        </progress> 
+        "
+`;
+
+exports[`Tests for components ProgressBar renders correctly 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {
+    "animation": "none",
+    "current": 0,
+    "rebuses": Array [
+      Object {
+        "input": Array [
+          undefined,
+          "c",
+          undefined,
+          undefined,
+          "c",
+          undefined,
+        ],
+        "isAnswered": true,
+        "symbols": Array [
+          "😍",
+          "👍",
+          "😍",
+        ],
+        "words": Array [
+          "one",
+          "two",
+        ],
+      },
+    ],
+  },
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components ProgressBar renders correctly 2`] = `
+" 
+        <progress class=\\"progress-bar\\" value=\\"1\\" max=\\"1\\">
+        </progress> 
+        "
+`;
+
 exports[`Tests for components Rebus renders correctly (when rebus is answered) 1`] = `
 Object {
   "children": Array [],
