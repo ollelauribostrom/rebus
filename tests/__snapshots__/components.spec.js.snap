@@ -109,7 +109,7 @@ Object {
           "c",
           undefined,
         ],
-        "isAnswered": true,
+        "isAnswered": false,
         "symbols": Array [
           "😍",
           "👍",
@@ -136,6 +136,7 @@ exports[`Tests for components Char renders correctly (with value and multiple wo
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"c\\"
+          
         >"
 `;
 
@@ -158,7 +159,7 @@ Object {
           undefined,
           undefined,
         ],
-        "isAnswered": true,
+        "isAnswered": false,
         "symbols": Array [
           "😍",
           "👍",
@@ -185,6 +186,7 @@ exports[`Tests for components Char renders correctly (with value and single word
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"c\\"
+          
         >"
 `;
 
@@ -207,7 +209,7 @@ Object {
           undefined,
           undefined,
         ],
-        "isAnswered": true,
+        "isAnswered": false,
         "symbols": Array [
           "😍",
           "👍",
@@ -234,6 +236,7 @@ exports[`Tests for components Char renders correctly (without value) 2`] = `
           class=\\"word__char\\"
           placeholder=\\" \\"
           value=\\"\\"
+          
         >"
 `;
 

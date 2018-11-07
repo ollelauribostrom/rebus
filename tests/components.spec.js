@@ -52,6 +52,7 @@ describe('Tests for components', () => {
       const wrapper = Rebus(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
+      props.rebuses[0].isAnswered = false;
     });
   });
   describe('Word', () => {
@@ -139,6 +140,14 @@ describe('Tests for components', () => {
       const wrapper = Char(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
+    });
+    it('disables inputs when rebus is answered', () => {
+      const props = mockState;
+      props.rebuses[0].isAnswered = true;
+      const root = document.createElement('div');
+      render(Char(props), root);
+      const input = root.querySelector('input');
+      expect(input.disabled).toEqual(true);
     });
   });
   describe('ChangeButton', () => {
