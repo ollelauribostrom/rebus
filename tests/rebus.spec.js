@@ -64,17 +64,17 @@ describe('Tests for rebuses', () => {
       const duplicates = [];
       rebuses.forEach(rebus => {
         rebuses.forEach(potentialDuplicate => {
-          if (rebus !== potentialDuplicate && !duplicates.includes(rebus.words)) {
+          if (rebus !== potentialDuplicate && !duplicates.includes(rebus)) {
             if (
               rebus.words.toString().toLowerCase() ===
               potentialDuplicate.words.toString().toLowerCase()
             ) {
-              duplicates.push(potentialDuplicate.words);
+              duplicates.push(potentialDuplicate);
             }
           }
         });
       });
-      expect(duplicates).toEqual(new Array(0));
+      expect(duplicates).toEqual([]);
     });
   });
 });
