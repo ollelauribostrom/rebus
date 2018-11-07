@@ -58,4 +58,23 @@ describe('Tests for rebuses', () => {
       expect(storage.answeredRebuses).toEqual('[1,2]');
     });
   });
+  describe('checkForRebusDuplicates', () => {
+    it('checks for duplicate rebuses', () => {
+      const rebuses = getRebuses();
+      const duplicates = [];
+      rebuses.forEach(rebus => {
+        rebuses.forEach(potentialDuplicate => {
+          if (rebus !== potentialDuplicate && !duplicates.includes(rebus)) {
+            if (
+              rebus.words.toString().toLowerCase() ===
+              potentialDuplicate.words.toString().toLowerCase()
+            ) {
+              duplicates.push(potentialDuplicate);
+            }
+          }
+        });
+      });
+      expect(duplicates).toEqual([]);
+    });
+  });
 });
