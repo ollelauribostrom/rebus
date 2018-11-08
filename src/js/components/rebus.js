@@ -8,7 +8,12 @@ export function Rebus(props, ...children) {
       props,
       children,
       componentDidMount() {
-        this.$element.querySelector('input').focus();
+        const rebus = this.props.rebuses[this.props.current];
+        if (rebus.isAnswered) {
+          this.$parent.querySelector('.change-button--next').focus();
+        } else {
+          this.$element.querySelector('input').focus();
+        }
       },
       componentDidUpdate() {
         const rebus = this.props.rebuses[this.props.current];
@@ -17,7 +22,11 @@ export function Rebus(props, ...children) {
         if (window.history) {
           window.history.pushState('', '', `/?rebus=${rebus.id}`);
         }
-        this.$element.querySelector('input').focus();
+        if (rebus.isAnswered) {
+          this.$parent.querySelector('.change-button--next').focus();
+        } else {
+          this.$element.querySelector('input').focus();
+        }
       },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
