@@ -28,6 +28,28 @@ export function Rebus(props, ...children) {
         } else {
           this.$element.querySelector('input').focus();
         }
+        if (rebus.isAnswered) {
+          this.$parent.querySelector('.change-button--next').focus();
+        } else {
+          this.$element.querySelector('input').focus();
+        }
+        let maxWordLength = 0;
+        function getMaxWordLength(value) {
+          if (maxWordLength < value.length) {
+            maxWordLength = value.length;
+          }
+        }
+        rebus.words.forEach(getMaxWordLength);
+        if (100 / maxWordLength >= 17) {
+          maxWordLength = `50px`;
+        } else {
+          maxWordLength = `${100 / maxWordLength}%`;
+        }
+        function setWordColumnWidth(element) {
+          element.setAttribute('style', `grid-template-columns: repeat(auto-fit,${maxWordLength})`);
+        }
+        const rebusWordElements = this.$element.querySelectorAll('.word');
+        rebusWordElements.forEach(setWordColumnWidth);
       },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
