@@ -5,6 +5,7 @@ import { Logo } from './components/logo';
 import { GithubCorner } from './components/github-corner';
 import { ChangeButton } from './components/change-button';
 import { Rebus } from './components/rebus';
+import { ProgressBar } from './components/progress-bar';
 
 import { actions } from './store';
 import '../css/main.css';
@@ -50,7 +51,8 @@ export function init() {
         ChangeButton({
           className: 'change-button--next',
           onClick: () => actions.next()
-        })
+        }),
+        ProgressBar()
       ),
       document.querySelector('.root')
     );

@@ -336,10 +336,6 @@ const rebuses = [
     words: ['crybaby']
   },
   {
-    symbols: ['👣', '+', '🎵'],
-    words: ['footnote']
-  },
-  {
     symbols: ['📻', '+', '🙂'],
     words: ['radiohead']
   },
@@ -564,10 +560,6 @@ const rebuses = [
     words: ['Watchman']
   },
   {
-    symbols: ['🌞', '+', '⚘'],
-    words: ['Sunflower']
-  },
-  {
     symbols: ['✋', '+', '📗'],
     words: ['Handbook']
   },
@@ -584,16 +576,16 @@ const rebuses = [
     words: ['Earring']
   },
   {
-    symbols: ['🚪', '+', '🔔'],
-    words: ['Doorbell']
-  },
-  {
     symbols: ['10', '+', '🐜'],
     words: ['Tenant']
   },
   {
     symbols: ['⛵️', '+', 'ment'],
     words: ['Shipment']
+  },
+  {
+    symbols: ['2', '+', '🐝', '+', 'or', '+', 'not', '+', '2', '+', '🐝'],
+    words: ['To Be Or Not To Be']
   }
 ];
 
