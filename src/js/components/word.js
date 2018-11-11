@@ -24,7 +24,9 @@ export function Word(props, ...children) {
           },
           onKeydown: e => {
             const key = e.key || e.keyCode;
-
+            if (key === 'Enter' || key === 13) {
+              actions.shake();
+            }
             if (key === 'Backspace' || key === 8) {
               const input = e.target.value;
               const prevChild = e.target.previousElementSibling;
@@ -32,9 +34,6 @@ export function Word(props, ...children) {
                 prevChild.focus();
                 e.preventDefault();
               }
-            }
-            if (key === 'Enter' || key === 13) {
-              actions.shake();
             }
           }
         })
