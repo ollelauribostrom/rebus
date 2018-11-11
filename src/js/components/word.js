@@ -1,5 +1,6 @@
 import { createComponent } from '../mini';
 import { Char } from './char';
+import { actions } from '../store';
 
 export function Word(props, ...children) {
   return createComponent({
@@ -31,6 +32,9 @@ export function Word(props, ...children) {
                 prevChild.focus();
                 e.preventDefault();
               }
+            }
+            if (key === 'Enter' || key === 13) {
+              actions.shake();
             }
           }
         })
