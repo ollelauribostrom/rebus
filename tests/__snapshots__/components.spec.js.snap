@@ -628,7 +628,7 @@ Object {
 
 exports[`Tests for components Word renders correctly 2`] = `
 "
-          <div class=\\"word\\">
+          <div class=\\"word\\" style=\\"grid-template-columns: repeat(auto-fit, NaN%)\\">
             <children>
           </div>
         "
