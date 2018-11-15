@@ -79,7 +79,10 @@ body,
 }
 
 .rebus__hint {
-  text-align: center;
+  text-align: center;  
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 3;
 }
 
 .word {

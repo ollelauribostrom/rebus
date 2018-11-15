@@ -273,6 +273,96 @@ exports[`Tests for components GithubCorner renders correctly 2`] = `
       "
 `;
 
+exports[`Tests for components Hint renders correctly (when incorrect answer count is less than max incorrect answer count) 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {
+    "animation": "none",
+    "current": 0,
+    "incorrectAnswerCount": 1,
+    "rebuses": Array [
+      Object {
+        "hint": "hint",
+        "input": Array [
+          undefined,
+          "c",
+          undefined,
+          undefined,
+          "c",
+          undefined,
+        ],
+        "isAnswered": false,
+        "symbols": Array [
+          "😍",
+          "👍",
+          "😍",
+        ],
+        "words": Array [
+          "one",
+          "two",
+        ],
+      },
+    ],
+  },
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components Hint renders correctly (when incorrect answer count is less than max incorrect answer count) 2`] = `
+" 
+        <span></span>
+        "
+`;
+
+exports[`Tests for components Hint renders correctly (when incorrect answer count is more than max incorrect answer count) 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {
+    "animation": "none",
+    "current": 0,
+    "incorrectAnswerCount": 4,
+    "rebuses": Array [
+      Object {
+        "hint": "hint",
+        "input": Array [
+          undefined,
+          "c",
+          undefined,
+          undefined,
+          "c",
+          undefined,
+        ],
+        "isAnswered": false,
+        "symbols": Array [
+          "😍",
+          "👍",
+          "😍",
+        ],
+        "words": Array [
+          "one",
+          "two",
+        ],
+      },
+    ],
+  },
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components Hint renders correctly (when incorrect answer count is more than max incorrect answer count) 2`] = `
+" 
+        <span class=\\"rebus__hint\\">
+                💡 hint
+              </span>
+        "
+`;
+
 exports[`Tests for components Logo renders correctly 1`] = `
 Object {
   "children": Array [],
@@ -365,114 +455,6 @@ exports[`Tests for components ProgressBar renders correctly 2`] = `
         "
 `;
 
-exports[`Tests for components Rebus renders correctly (when incorrect answer count is less than max incorrect answer count) 1`] = `
-Object {
-  "children": Array [],
-  "componentDidMount": [Function],
-  "componentDidUpdate": [Function],
-  "props": Object {
-    "animation": "none",
-    "current": 0,
-    "incorrectAnswerCount": 1,
-    "rebuses": Array [
-      Object {
-        "hint": "hint",
-        "input": Array [
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-        ],
-        "isAnswered": false,
-        "symbols": Array [
-          "😍",
-          "👍",
-          "😍",
-        ],
-        "words": Array [
-          "one",
-          "two",
-        ],
-      },
-    ],
-  },
-  "render": [Function],
-  "update": [Function],
-}
-`;
-
-exports[`Tests for components Rebus renders correctly (when incorrect answer count is less than max incorrect answer count) 2`] = `
-"
-          <div class=\\"rebus  animation--none\\">
-            <div class=\\"rebus__header\\">
-              <span>1/1</span>
-            </div>
-            <span class=\\"rebus__symbols\\">😍 👍 😍</span>
-            <div class=\\"rebus__words\\">
-              <children>
-            </div>
-            
-          </div>
-        "
-`;
-
-exports[`Tests for components Rebus renders correctly (when incorrect answer count is more than max incorrect answer count) 1`] = `
-Object {
-  "children": Array [],
-  "componentDidMount": [Function],
-  "componentDidUpdate": [Function],
-  "props": Object {
-    "animation": "none",
-    "current": 0,
-    "incorrectAnswerCount": 4,
-    "rebuses": Array [
-      Object {
-        "hint": "hint",
-        "input": Array [
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-          undefined,
-        ],
-        "isAnswered": false,
-        "symbols": Array [
-          "😍",
-          "👍",
-          "😍",
-        ],
-        "words": Array [
-          "one",
-          "two",
-        ],
-      },
-    ],
-  },
-  "render": [Function],
-  "update": [Function],
-}
-`;
-
-exports[`Tests for components Rebus renders correctly (when incorrect answer count is more than max incorrect answer count) 2`] = `
-"
-          <div class=\\"rebus  animation--none\\">
-            <div class=\\"rebus__header\\">
-              <span>1/1</span>
-            </div>
-            <span class=\\"rebus__symbols\\">😍 👍 😍</span>
-            <div class=\\"rebus__words\\">
-              <children>
-            </div>
-            <span class=\\"rebus__hint\\">
-                💡 hint
-              </span>
-          </div>
-        "
-`;
-
 exports[`Tests for components Rebus renders correctly (when rebus is answered) 1`] = `
 Object {
   "children": Array [],
@@ -521,7 +503,6 @@ exports[`Tests for components Rebus renders correctly (when rebus is answered) 2
             <div class=\\"rebus__words\\">
               <children>
             </div>
-            
           </div>
         "
 `;
@@ -574,7 +555,6 @@ exports[`Tests for components Rebus renders correctly (with animation class) 2`]
             <div class=\\"rebus__words\\">
               <children>
             </div>
-            
           </div>
         "
 `;
@@ -627,7 +607,6 @@ exports[`Tests for components Rebus renders correctly 2`] = `
             <div class=\\"rebus__words\\">
               <children>
             </div>
-            
           </div>
         "
 `;

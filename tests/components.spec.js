@@ -7,6 +7,7 @@ import { GithubCorner } from '../src/js/components/github-corner';
 import { ChangeButton } from '../src/js/components/change-button';
 import { Rebus } from '../src/js/components/rebus';
 import { ProgressBar } from '../src/js/components/progress-bar';
+import { Hint } from '../src/js/components/hint';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
@@ -55,20 +56,6 @@ describe('Tests for components', () => {
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
       props.rebuses[0].isAnswered = false;
-    });
-    it('renders correctly (when incorrect answer count is less than max incorrect answer count)', () => {
-      const props = { ...mockState, incorrectAnswerCount: 1 };
-      props.rebuses[0].isAnswered = false;
-      const wrapper = Rebus(props);
-      expect(wrapper).toMatchSnapshot();
-      expect(wrapper.render(props)).toMatchSnapshot();
-    });
-    it('renders correctly (when incorrect answer count is more than max incorrect answer count)', () => {
-      const props = { ...mockState, incorrectAnswerCount: 4 };
-      props.rebuses[0].isAnswered = false;
-      const wrapper = Rebus(props);
-      expect(wrapper).toMatchSnapshot();
-      expect(wrapper.render(props)).toMatchSnapshot();
     });
   });
   describe('Word', () => {
@@ -207,6 +194,24 @@ describe('Tests for components', () => {
     it('renders correctly (without rebuses)', () => {
       const props = { rebuses: [] };
       const wrapper = ProgressBar(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('Hint', () => {
+    it('renders correctly (when incorrect answer count is more than max incorrect answer count)', () => {
+      const props = { ...mockState, incorrectAnswerCount: 4 };
+      props.rebuses[0].isAnswered = false;
+      const wrapper = Hint(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('Hint', () => {
+    it('renders correctly (when incorrect answer count is less than max incorrect answer count)', () => {
+      const props = { ...mockState, incorrectAnswerCount: 1 };
+      props.rebuses[0].isAnswered = false;
+      const wrapper = Hint(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
