@@ -43,6 +43,14 @@ export const actionsCreators = {
       return { updatedRebuses, animation: 'none', incorrectAnswerCount: 0 };
     }
     return { incorrectAnswerCount: incorrectAnswerCount + 1 };
+  },
+  shake: ({ current, rebuses }) => {
+    const rebus = rebuses[current];
+    const isAnswered = rebus.words.join('').toUpperCase() === rebus.input.join('').toUpperCase();
+    if (!isAnswered) {
+      return { animation: 'shake' };
+    }
+    return {};
   }
 };
 

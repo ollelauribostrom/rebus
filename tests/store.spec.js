@@ -45,6 +45,16 @@ describe('Tests for store', () => {
     expect(finalState.current).toEqual(0);
     expect(finalState.incorrectAnswerCount).toEqual(0);
   });
+  it('should handle action: shake when isAnswered is false', () => {
+    const state = { ...initialState };
+    const newState = Object.assign({}, state, actionsCreators.shake(state));
+    const finalState = Object.assign({}, newState, actionsCreators.shake(newState));
+    expect(state.animation).toEqual('none');
+    expect(newState.current).toEqual(0);
+    expect(newState.animation).toEqual('shake');
+    expect(finalState.current).toEqual(0);
+    expect(finalState.rebuses[0].isAnswered).toEqual(false);
+  });
   it('should handle action: setInput', () => {
     const state = { ...initialState };
     const newState = Object.assign({}, state, actionsCreators.setInput(state, 'a', 0, 0));
@@ -82,5 +92,22 @@ describe('Tests for store', () => {
     const newState = Object.assign({}, state, actionsCreators.setCurrent(state, 2));
     const finalState = Object.assign({}, newState, actionsCreators.setCurrent(newState, 9999));
     expect(finalState.current).toEqual(1);
+  });
+  it('should handle action: shake when isAnswered is true', () => {
+    const confettiCanon = document.createElement('div');
+    const confettiSpy = jest.spyOn(confetti, 'confetti');
+    const state = { ...initialState };
+    const newState = Object.assign({}, state, actionsCreators.check(state, confettiCanon));
+    newState.rebuses[0].input = ['O', 'n', 'E', 'T', 'w', 'O'];
+    const finalState = Object.assign({}, newState, actionsCreators.check(newState, confettiCanon));
+    expect(finalState.rebuses[0].isAnswered).toEqual(true);
+    expect(confettiSpy).toHaveBeenCalledWith(confettiCanon);
+    const stateShake = { ...initialState };
+    const newStateShake = Object.assign({}, stateShake, actionsCreators.shake(stateShake));
+    const finalStateShake = Object.assign({}, newStateShake, actionsCreators.shake(newStateShake));
+    expect(stateShake.animation).toEqual('none');
+    expect(newStateShake.current).toEqual(0);
+    expect(newStateShake.animation).toEqual('none');
+    expect(finalStateShake.current).toEqual(0);
   });
 });

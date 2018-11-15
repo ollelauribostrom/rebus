@@ -587,6 +587,10 @@ const rebuses = [
   {
     symbols: ['2', '+', '🐝', '+', 'or', '+', 'not', '+', '2', '+', '🐝'],
     words: ['To Be Or Not To Be']
+  },
+  {
+    symbols: ['⬇', '➡', '+', '🤮'],
+    words: ['downright disgusting']
   }
 ];
 

@@ -1,5 +1,6 @@
 import { createComponent } from '../mini';
 import { Char } from './char';
+import { actions } from '../store';
 
 export function Word(props, ...children) {
   return createComponent({
@@ -23,7 +24,9 @@ export function Word(props, ...children) {
           },
           onKeydown: e => {
             const key = e.key || e.keyCode;
-
+            if (key === 'Enter' || key === 13) {
+              actions.shake();
+            }
             if (key === 'Backspace' || key === 8) {
               const input = e.target.value;
               const prevChild = e.target.previousElementSibling;
