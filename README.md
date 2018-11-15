@@ -167,7 +167,29 @@ git push origin <your-new-branch-name>
 
 > Note: Replace `<your-new-branch-name>` with the name of your branch
 
-### 11. Open a Pull Request
+### 11. Resolve Merge Conflicts
+
+Once changes have been committed and staged it's time to manage conflicts by running: 
+
+```sh
+git pull upstream master
+```
+
+Head back to your favourite code editor and review any conflicts.  Generally `current` changes will be highlighted in one color and `incoming` changes will be highlighted in a different color. `Accept` the `current` or `incoming` changes.  
+
+Commit changes again as outlined in step #9 and #10 above or by running: 
+
+```sh
+git add -A
+```
+```sh
+git commit -m "Your message"
+```
+```sh
+git push origin <your-new-branch-name>
+```
+
+### 12. Open a Pull Request
 
 Head over to your repository on GitHub and click on the green "Compare and pull request" button.
 
