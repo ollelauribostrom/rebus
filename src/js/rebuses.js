@@ -590,6 +590,10 @@ const rebuses = [
   {
     symbols: ['⬇', '➡', '+', '🤮'],
     words: ['downright disgusting']
+  },
+  {
+    symbols: ['H', '+', '👂'],
+    words: ['Hear']
   }
 ];
 
