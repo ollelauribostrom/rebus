@@ -1,5 +1,5 @@
 import { createComponent } from '../mini';
-import { Char } from './char';
+import { Char } from './Char';
 import { actions } from '../store';
 
 export function Word(props, ...children) {

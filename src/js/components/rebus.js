@@ -1,6 +1,6 @@
 import { createComponent } from '../mini';
 import { connect } from '../store';
-import { Word } from './word';
+import { Word } from './Word';
 
 export function Rebus(props, ...children) {
   return connect(
