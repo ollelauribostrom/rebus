@@ -78,6 +78,13 @@ body,
   padding: 0 20px;
 }
 
+.rebus__hint {
+  text-align: center;  
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 3;
+}
+
 .word {
   margin-bottom: 20px;
   display: grid;
