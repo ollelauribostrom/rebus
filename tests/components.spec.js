@@ -13,20 +13,22 @@ jest.mock('../src/js/store', () => ({
   connect: arg => arg
 }));
 
-const mockState = {
-  current: 0,
-  animation: 'none',
-  incorrectAnswerCount: 0,
-  rebuses: [
-    {
-      symbols: ['😍', '👍', '😍'],
-      words: ['one', 'two'],
-      hint: 'hint',
-      input: [...Array(6)],
-      isAnswered: false
-    }
-  ]
-};
+function getMockState() {
+  return {
+    current: 0,
+    animation: 'none',
+    incorrectAnswerCount: 0,
+    rebuses: [
+      {
+        symbols: ['😍', '👍', '😍'],
+        words: ['one', 'two'],
+        hint: 'hint',
+        input: [...Array(6)],
+        isAnswered: false
+      }
+    ]
+  };
+}
 
 describe('Tests for components', () => {
   describe('App', () => {
@@ -38,24 +40,23 @@ describe('Tests for components', () => {
   });
   describe('Rebus', () => {
     it('renders correctly', () => {
-      const props = mockState;
+      const props = getMockState();
       const wrapper = Rebus(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
     it('renders correctly (when rebus is answered)', () => {
-      const props = { ...mockState };
+      const props = getMockState();
       props.rebuses[0].isAnswered = true;
       const wrapper = Rebus(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
     it('renders correctly (with animation class)', () => {
-      const props = { ...mockState, animation: 'flip-vertical-right' };
+      const props = { ...getMockState(), animation: 'flip-vertical-right' };
       const wrapper = Rebus(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
-      props.rebuses[0].isAnswered = false;
     });
   });
   describe('Word', () => {
@@ -67,7 +68,7 @@ describe('Tests for components', () => {
     });
     it('correctly registers onInput handlers for each char', () => {
       const onInput = jest.fn();
-      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
       const root = document.createElement('div');
       render(Word(props), root);
       const inputElement = root.querySelector('input');
@@ -77,7 +78,7 @@ describe('Tests for components', () => {
     });
     it('jumps to next input field when a letter is pressed', () => {
       const onInput = jest.fn();
-      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
       const root = document.createElement('div');
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
@@ -88,7 +89,7 @@ describe('Tests for components', () => {
     });
     it('remains on the same input field when a character that is not a letter is pressed', () => {
       const onInput = jest.fn();
-      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
       const root = document.createElement('div');
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
@@ -99,7 +100,7 @@ describe('Tests for components', () => {
     });
     it('jumps to the previous input field when pressing backspace in empty field', () => {
       const onInput = jest.fn();
-      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
       const root = document.createElement('div');
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
@@ -111,7 +112,7 @@ describe('Tests for components', () => {
     });
     it('remains on the same input field when pressing backspace in non empty field', () => {
       const onInput = jest.fn();
-      const props = { ...mockState, word: 'one', wordIndex: 0, charInput: onInput };
+      const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
       const root = document.createElement('div');
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
@@ -125,27 +126,27 @@ describe('Tests for components', () => {
   });
   describe('Char', () => {
     it('renders correctly (without value)', () => {
-      const props = { ...mockState, wordIndex: 0, charIndex: 1 };
+      const props = { ...getMockState(), wordIndex: 0, charIndex: 1 };
       const wrapper = Char(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
     it('renders correctly (with value and single word)', () => {
-      const props = { ...mockState, wordIndex: 0, charIndex: 1 };
+      const props = { ...getMockState(), wordIndex: 0, charIndex: 1 };
       props.rebuses[0].input[1] = 'c';
       const wrapper = Char(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
     it('renders correctly (with value and multiple words)', () => {
-      const props = { ...mockState, wordIndex: 1, charIndex: 1 };
+      const props = { ...getMockState(), wordIndex: 1, charIndex: 1 };
       props.rebuses[0].input[4] = 'c';
       const wrapper = Char(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
     it('disables inputs when rebus is answered', () => {
-      const props = mockState;
+      const props = getMockState();
       props.rebuses[0].isAnswered = true;
       const root = document.createElement('div');
       render(Char(props), root);
@@ -184,7 +185,7 @@ describe('Tests for components', () => {
   });
   describe('ProgressBar', () => {
     it('renders correctly', () => {
-      const props = mockState;
+      const props = getMockState();
       const wrapper = ProgressBar(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
@@ -200,8 +201,7 @@ describe('Tests for components', () => {
   });
   describe('Hint', () => {
     it('renders correctly (when incorrect answer count is more than max incorrect answer count)', () => {
-      const props = { ...mockState, incorrectAnswerCount: 4 };
-      props.rebuses[0].isAnswered = false;
+      const props = { ...getMockState(), incorrectAnswerCount: 4 };
       const wrapper = Hint(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
@@ -209,8 +209,7 @@ describe('Tests for components', () => {
   });
   describe('Hint', () => {
     it('renders correctly (when incorrect answer count is less than max incorrect answer count)', () => {
-      const props = { ...mockState, incorrectAnswerCount: 1 };
-      props.rebuses[0].isAnswered = false;
+      const props = { ...getMockState(), incorrectAnswerCount: 1 };
       const wrapper = Hint(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();

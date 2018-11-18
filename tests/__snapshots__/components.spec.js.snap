@@ -105,7 +105,7 @@ Object {
         "hint": "hint",
         "input": Array [
           undefined,
-          "c",
+          undefined,
           undefined,
           undefined,
           "c",
@@ -287,10 +287,10 @@ Object {
         "hint": "hint",
         "input": Array [
           undefined,
-          "c",
           undefined,
           undefined,
-          "c",
+          undefined,
+          undefined,
           undefined,
         ],
         "isAnswered": false,
@@ -331,10 +331,10 @@ Object {
         "hint": "hint",
         "input": Array [
           undefined,
-          "c",
           undefined,
           undefined,
-          "c",
+          undefined,
+          undefined,
           undefined,
         ],
         "isAnswered": false,
@@ -424,13 +424,13 @@ Object {
         "hint": "hint",
         "input": Array [
           undefined,
-          "c",
           undefined,
           undefined,
-          "c",
+          undefined,
+          undefined,
           undefined,
         ],
-        "isAnswered": true,
+        "isAnswered": false,
         "symbols": Array [
           "😍",
           "👍",
@@ -450,7 +450,7 @@ Object {
 
 exports[`Tests for components ProgressBar renders correctly 2`] = `
 " 
-        <progress class=\\"progress-bar\\" value=\\"1\\" max=\\"1\\">
+        <progress class=\\"progress-bar\\" value=\\"0\\" max=\\"1\\">
         </progress> 
         "
 `;
@@ -527,7 +527,7 @@ Object {
           undefined,
           undefined,
         ],
-        "isAnswered": true,
+        "isAnswered": false,
         "symbols": Array [
           "😍",
           "👍",
@@ -547,7 +547,7 @@ Object {
 
 exports[`Tests for components Rebus renders correctly (with animation class) 2`] = `
 "
-          <div class=\\"rebus rebus--answered animation--flip-vertical-right\\">
+          <div class=\\"rebus  animation--flip-vertical-right\\">
             <div class=\\"rebus__header\\">
               <span>1/1</span>
             </div>
