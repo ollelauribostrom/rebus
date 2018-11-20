@@ -6,7 +6,7 @@ export function Word(props, ...children) {
   return createComponent({
     props,
     children,
-    render({ word, charInput, maxWordLength }) {
+    render({ word, charInput }) {
       this.children = word.split('').map((_, charIndex) =>
         Char({
           charIndex,
@@ -38,9 +38,8 @@ export function Word(props, ...children) {
           }
         })
       );
-      const columnSize = maxWordLength <= 6 ? '50px' : `${100 / maxWordLength}%`;
       return `
-          <div class="word" style="grid-template-columns: repeat(auto-fit, ${columnSize})">
+          <div class="word">
             <children>
           </div>
         `;
