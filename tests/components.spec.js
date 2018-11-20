@@ -1,5 +1,5 @@
 import { render } from '../src/js/mini';
-import { App } from '../src/js/components/app';
+import { App } from '../src/js/components/App';
 import { Word } from '../src/js/components/word';
 import { Char } from '../src/js/components/char';
 import { Logo } from '../src/js/components/logo';

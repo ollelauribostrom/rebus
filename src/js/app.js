@@ -1,6 +1,6 @@
 import * as Sentry from '@sentry/browser';
 import { render } from './mini';
-import { App } from './components/app';
+import { App } from './components/App';
 import { Logo } from './components/logo';
 import { GithubCorner } from './components/github-corner';
 import { ChangeButton } from './components/change-button';
