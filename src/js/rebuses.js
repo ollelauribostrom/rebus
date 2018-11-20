@@ -591,6 +591,10 @@ const rebuses = [
   {
     symbols: ['⬇', '➡', '+', '🤮'],
     words: ['downright disgusting']
+  },
+  {
+    symbols: ['🔥', '+', '🤼', '+', 'er'],
+    words: ['firefighter']
   }
 ];
 
