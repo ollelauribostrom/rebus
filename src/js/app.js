@@ -1,12 +1,12 @@
 import * as Sentry from '@sentry/browser';
 import { render } from './mini';
-import { App } from './components/app';
-import { Logo } from './components/logo';
-import { GithubCorner } from './components/github-corner';
-import { ChangeButton } from './components/change-button';
-import { Rebus } from './components/rebus';
-import { ProgressBar } from './components/progress-bar';
-import { Hint } from './components/hint';
+import { App } from './components/App';
+import { Logo } from './components/Logo';
+import { GithubCorner } from './components/GithubCorner';
+import { ChangeButton } from './components/ChangeButton';
+import { Rebus } from './components/Rebus';
+import { ProgressBar } from './components/ProgressBar';
+import { Hint } from './components/Hint';
 
 import { actions } from './store';
 import '../css/main.css';
