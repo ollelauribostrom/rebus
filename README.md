@@ -167,7 +167,30 @@ git push origin <your-new-branch-name>
 
 > Note: Replace `<your-new-branch-name>` with the name of your branch
 
-### 11. Resolve Merge Conflicts
+### 11. Open a Pull Request
+
+Head over to your repository on GitHub and click on the green "Compare and pull request" button.
+
+<img src=".github/pr.png" alt="Compare and pull request" />
+
+Describe your changes and submit your pull request
+
+<img src=".github/pr2.png" alt="Submit pull request" />
+
+## What's next?
+
+🎉 Congratulations 🎉
+
+You just took your first step as an open source contributor. Your pull request will be reviewed as soon as possible.
+Join us on [gitter](https://gitter.im/rebus-contributors/Lobby) if you have questions or need any help. If you feel like
+it, please give this repository a star ⭐.
+
+If you want something more to work on, look at [the open issues](https://github.com/ollelauribostrom/rebus/issues) for
+inspiration. Also, take a look the [Further Reading](https://github.com/ollelauribostrom/rebus#further-reading) section for more great learning resources.
+
+## FAQ
+
+# Resolve Merge Conflicts
 
 Once changes have been committed and staged it's time to manage conflicts by running: 
 
@@ -188,27 +211,6 @@ git commit -m "Your message"
 ```sh
 git push origin <your-new-branch-name>
 ```
-
-### 12. Open a Pull Request
-
-Head over to your repository on GitHub and click on the green "Compare and pull request" button.
-
-<img src=".github/pr.png" alt="Compare and pull request" />
-
-Describe your changes and submit your pull request
-
-<img src=".github/pr2.png" alt="Submit pull request" />
-
-## What's next?
-
-🎉 Congratulations 🎉
-
-You just took your first step as an open source contributor. Your pull request will be reviewed as soon as possible.
-Join us on [gitter](https://gitter.im/rebus-contributors/Lobby) if you have questions or need any help. If you feel like
-it, please give this repository a star ⭐.
-
-If you want something more to work on, look at [the open issues](https://github.com/ollelauribostrom/rebus/issues) for
-inspiration. Also, take a look the [Further Reading](https://github.com/ollelauribostrom/rebus#further-reading) section for more great learning resources.
 
 ## Further Reading
 
