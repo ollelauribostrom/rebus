@@ -1,13 +1,13 @@
 import { render } from '../src/js/mini';
 import { App } from '../src/js/components/App';
-import { Word } from '../src/js/components/word';
-import { Char } from '../src/js/components/char';
-import { Logo } from '../src/js/components/logo';
-import { GithubCorner } from '../src/js/components/github-corner';
-import { ChangeButton } from '../src/js/components/change-button';
-import { Rebus } from '../src/js/components/rebus';
-import { ProgressBar } from '../src/js/components/progress-bar';
-import { Hint } from '../src/js/components/hint';
+import { Word } from '../src/js/components/Word';
+import { Char } from '../src/js/components/Char';
+import { Logo } from '../src/js/components/Logo';
+import { GithubCorner } from '../src/js/components/GithubCorner';
+import { ChangeButton } from '../src/js/components/ChangeButton';
+import { Rebus } from '../src/js/components/Rebus';
+import { ProgressBar } from '../src/js/components/ProgressBar';
+import { Hint } from '../src/js/components/Hint';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
