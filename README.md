@@ -188,6 +188,30 @@ it, please give this repository a star ⭐.
 If you want something more to work on, look at [the open issues](https://github.com/ollelauribostrom/rebus/issues) for
 inspiration. Also, take a look the [Further Reading](https://github.com/ollelauribostrom/rebus#further-reading) section for more great learning resources.
 
+## FAQ
+
+### Resolve Merge Conflicts ###
+
+Once changes have been committed and staged it's time to manage conflicts by running: 
+
+```sh
+git pull upstream master
+```
+
+Head back to your favourite code editor and review any conflicts.  Generally `current` changes will be highlighted in one color and `incoming` changes will be highlighted in a different color. `Accept` the `current` or `incoming` changes.  
+
+Commit changes again as outlined in step #9 and #10 above or by running: 
+
+```sh
+git add -A
+```
+```sh
+git commit -m "Your message"
+```
+```sh
+git push origin <your-new-branch-name>
+```
+
 ## Further Reading
 
 - [GitHub Open Source Guide](https://opensource.guide/)
