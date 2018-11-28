@@ -190,7 +190,7 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 
 ## FAQ
 
-# Resolve Merge Conflicts
+### Resolve Merge Conflicts ###
 
 Once changes have been committed and staged it's time to manage conflicts by running: 
 
