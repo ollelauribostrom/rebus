@@ -30,16 +30,20 @@ describe('Tests for store', () => {
     const newState = Object.assign({}, state, actionsCreators.next(state));
     const finalState = Object.assign({}, newState, actionsCreators.next(newState));
     expect(newState.current).toEqual(1);
+    expect(newState.incorrectAnswerCount).toEqual(0);
     expect(newState.animation).toEqual('flip-vertical-right');
     expect(finalState.current).toEqual(0);
+    expect(finalState.incorrectAnswerCount).toEqual(0);
   });
   it('should handle action: prev', () => {
     const state = { ...initialState };
     const newState = Object.assign({}, state, actionsCreators.prev(state));
     const finalState = Object.assign({}, newState, actionsCreators.prev(newState));
     expect(newState.current).toEqual(1);
+    expect(newState.incorrectAnswerCount).toEqual(0);
     expect(newState.animation).toEqual('flip-vertical-left');
     expect(finalState.current).toEqual(0);
+    expect(finalState.incorrectAnswerCount).toEqual(0);
   });
   it('should handle action: shake when isAnswered is false', () => {
     const state = { ...initialState };
@@ -71,9 +75,15 @@ describe('Tests for store', () => {
     const state = { ...initialState };
     const newState = Object.assign({}, state, actionsCreators.check(state, confettiCanon));
     expect(newState.rebuses[0].isAnswered).toEqual(false);
+    expect(newState.incorrectAnswerCount).toEqual(0);
+    newState.rebuses[0].input = ['O', 'n', 'E', 'T', 'w', 'U'];
+    const nextState = Object.assign({}, newState, actionsCreators.check(newState, confettiCanon));
+    expect(nextState.incorrectAnswerCount).toEqual(1);
+    expect(nextState.rebuses[0].isAnswered).toEqual(false);
     newState.rebuses[0].input = ['O', 'n', 'E', 'T', 'w', 'O'];
     const finalState = Object.assign({}, newState, actionsCreators.check(newState, confettiCanon));
     expect(finalState.rebuses[0].isAnswered).toEqual(true);
+    expect(finalState.incorrectAnswerCount).toEqual(0);
     expect(confettiSpy).toHaveBeenCalledTimes(1);
     expect(confettiSpy).toHaveBeenCalledWith(confettiCanon);
   });

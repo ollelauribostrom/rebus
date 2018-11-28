@@ -8,6 +8,7 @@ body,
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 *:focus {
@@ -76,6 +77,13 @@ body,
 
 .rebus__words {
   padding: 0 20px;
+}
+
+.rebus__hint {
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 3;
 }
 
 .word {
@@ -154,6 +162,7 @@ body,
   grid-column-start: 1;
   grid-column-end: 6;
   border: none;
+  background: #9c0629;
 }
 
 progress[value] {
@@ -259,7 +268,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .animation--shake {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;

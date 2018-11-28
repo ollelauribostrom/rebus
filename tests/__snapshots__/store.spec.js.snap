@@ -4,6 +4,7 @@ exports[`Tests for store should have the correct initial state 1`] = `
 Object {
   "animation": "none",
   "current": 0,
+  "incorrectAnswerCount": 0,
   "rebuses": Array [
     Object {
       "id": 1,
