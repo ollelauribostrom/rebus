@@ -595,6 +595,10 @@ const rebuses = [
   {
     symbols: ['🔥', '+', '🤼', '+', 'er'],
     words: ['firefighter']
+  },
+  {
+    symbols: ['', '+', 'ce', '+', 'n', '+', 'a', '+', '🔵', '+', '🌕'],
+    words: ['Once in a Blue Moon']
   }
 ];
 
