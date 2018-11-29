@@ -684,7 +684,7 @@ const rebuses = [
   },
   {
     symbols: ['1', '+', 'ce', '+', 'n', '+', 'a', '+', '🔵', '+', '🌛'],
-    words: ['Once in a Blue Moon'],
+    words: ['Once', 'in', 'a', 'Blue Moon'],
     hint: 'Phrase used when something only happens once in a while'
   }
 ];
