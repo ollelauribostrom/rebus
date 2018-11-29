@@ -594,10 +594,13 @@ const rebuses = [
   {
     symbols: ['H', '+', '👂'],
     words: ['Hear']
+<<<<<<< HEAD
   },
   {
     symbols: ['🐴', '+', '🍎' ],
     words: ['Horse Apples']
+=======
+>>>>>>> 0df7798982461fc432c7665cccbd52c3c4bd1bcd
   }
 ];
 
