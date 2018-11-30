@@ -681,6 +681,11 @@ const rebuses = [
     symbols: ['🔥', '+', '🤼', '+', 'er'],
     words: ['firefighter'],
     hint: 'Someone trained to combat fires and rescue people trapped by fires'
+  },
+  {
+    symbols: ['1', '+', 'ce', '+', 'n', '+', 'a', '+', '🔵', '+', '🌛'],
+    words: ['Once', 'in', 'a', 'Blue Moon'],
+    hint: 'Phrase used when something only happens once in a while'
   }
 ];
 
