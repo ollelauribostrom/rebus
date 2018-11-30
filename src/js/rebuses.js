@@ -681,6 +681,14 @@ const rebuses = [
     symbols: ['🔥', '+', '🤼', '+', 'er'],
     words: ['firefighter'],
     hint: 'Someone trained to combat fires and rescue people trapped by fires'
+  },
+  {
+    symbols: ['🐱', '+', '🌲'],
+    words: ['catalog']
+  },
+  {
+    symbols: ['💋', '+', 'able'],
+    words: ['kissable']
   }
 ];
 
