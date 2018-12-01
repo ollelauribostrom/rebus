@@ -694,6 +694,11 @@ const rebuses = [
   {
     symbols: ['💋', '+', 'able'],
     words: ['kissable']
+  },
+  {
+    symbols: ['🔥', '+', '⚽'],
+    words: ['Fireball'],
+    hint: 'The sun is a big ________'
   }
 ];
 
