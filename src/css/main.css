@@ -8,6 +8,7 @@ body,
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 *:focus {
@@ -228,6 +229,13 @@ progress[value]::-webkit-progress-value {
     grid-column-start: 2;
     grid-column-end: span 3;
   }
+  .word {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50px);
+  }
+  .word__char {
+    width: auto;
+  }
 }
 
 @media (max-width: 500px) {
@@ -252,6 +260,13 @@ progress[value]::-webkit-progress-value {
   }
   .rebus__header {
     border-radius: 0;
+  }
+  .word {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50px);
+  }
+  .word__char {
+    width: auto;
   }
 }
 
