@@ -215,6 +215,7 @@ git push origin <your-new-branch-name>
 ### Linebreaks ###
 
 It is important to note that Windows and Linux operating systems deal with line endings differently. If you are getting an error where the program expects linebreaks to be "lf" but are finding "crlf" linebreak styles,
+
 <img src=".github/linebreak-error.png" alt="Terminal linebreak error" />
 
 then you can run the following command in your terminal:
@@ -224,6 +225,7 @@ npm run lint -- --fix
 ```
 
 To avoid this problem in the future, you can change your editor to use an end of line sequence of 'lf'. To do this in Visual Studio Code, simply click on the lf/crlf button on the bottom right and then select 'lf' from the drop-down menu that appears.
+
 <img src=".github/vsc-endline.png" alt="Visual Studio Code linebreaks" />
 
 ## Further Reading
