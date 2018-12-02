@@ -216,7 +216,9 @@ git push origin <your-new-branch-name>
 
 It is important to note that Windows and Linux operating systems deal with line endings differently. If you are getting an error where the program expects linebreaks to be "lf" but are finding "crlf" linebreak styles,
 <img src=".github/linebreak-error.png" alt="Terminal linebreak error" />
+
 then you can run the following command in your terminal:
+
 ```sh
 npm run lint -- --fix 
 ```
