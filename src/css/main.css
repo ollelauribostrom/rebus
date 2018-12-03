@@ -88,13 +88,14 @@ body,
 
 .word {
   margin-bottom: 20px;
-  display: grid;
+  display: flex;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 50px);
+  align-items: center;
 }
 
 .word__char {
   height: 50px;
+  width: 50px;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -227,6 +228,13 @@ progress[value]::-webkit-progress-value {
     grid-column-start: 2;
     grid-column-end: span 3;
   }
+  .word {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50px);
+  }
+  .word__char {
+    width: auto;
+  }
 }
 
 @media (max-width: 500px) {
@@ -251,6 +259,13 @@ progress[value]::-webkit-progress-value {
   }
   .rebus__header {
     border-radius: 0;
+  }
+  .word {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50px);
+  }
+  .word__char {
+    width: auto;
   }
 }
 
