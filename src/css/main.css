@@ -95,9 +95,7 @@ body,
 
 .word__char {
   height: 50px;
-  width: 100%;
-  max-width: 50px;
-  margin: auto 0;
+  width: 50px;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -165,6 +163,7 @@ body,
   grid-column-start: 1;
   grid-column-end: 6;
   border: none;
+  background: #9c0629;
 }
 
 progress[value] {
