@@ -708,7 +708,7 @@ const rebuses = [
   {
     symbols: ['💎', '+', '⃝'],
     words: ['Diamond', 'ring'],
-    hint: ['Things exchange in weddings.']
+    hint: ['Things you exchange in weddings.']
   }
 ];
 
