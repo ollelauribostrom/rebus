@@ -704,6 +704,11 @@ const rebuses = [
     symbols: ['🔥', '+', '⚽'],
     words: ['Fireball'],
     hint: 'The sun is a big ________'
+  },
+  {
+    symbols: ['💎', '+', '⃝'],
+    words: ['Diamond', 'ring'],
+    hint: ['Things you exchange in weddings.']
   }
 ];
 
