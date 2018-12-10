@@ -709,6 +709,11 @@ const rebuses = [
     symbols: ['💎', '+', '⃝'],
     words: ['Diamond', 'ring'],
     hint: ['Things you exchange in weddings.']
+  },
+  {
+    symbols: ['Black', '+', '🕳'],
+    words: ['Black', 'hole'],
+    hint: ['Final form of a star.']
   }
 ];
 
