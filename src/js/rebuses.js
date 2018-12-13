@@ -714,6 +714,11 @@ const rebuses = [
     symbols: ['Black', '+', '🕳'],
     words: ['Black', 'hole'],
     hint: ['Final form of a star.']
+  },
+  {
+    symbols: ['🐼', '-', 'DA', '+', '🍰'],
+    words: ['Pancake'],
+    hint: 'A delicious breakfast'
   }
 ];
 
