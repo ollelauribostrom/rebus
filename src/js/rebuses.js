@@ -292,7 +292,8 @@ const rebuses = [
   },
   {
     symbols: ['🌲', '+', '🏠'],
-    words: ['treehouse']
+    words: ['treehouse'],
+    hint: 'A house built in a tree'
   },
   {
     symbols: ['✔', '+', 'list'],
@@ -432,7 +433,8 @@ const rebuses = [
   },
   {
     symbols: ['👞', '+', '📦'],
-    words: ['Shoebox']
+    words: ['Shoebox'],
+    hunt: 'A box you get shoes in'
   },
   {
     symbols: ['💵', '+', '🛍️'],
