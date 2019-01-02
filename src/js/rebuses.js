@@ -721,6 +721,10 @@ const rebuses = [
     symbols: ['🐼', '-', 'DA', '+', '🍰'],
     words: ['Pancake'],
     hint: 'A delicious breakfast'
+  },
+  {
+    symbols: ['✝', '+', '🏹'],
+    words: ['Crossbow']
   }
 ];
 
