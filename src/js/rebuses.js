@@ -725,6 +725,15 @@ const rebuses = [
   {
     symbols: ['✝', '+', '🏹'],
     words: ['Crossbow']
+  },
+  {
+    symbols: ['D', '+', '💡'],
+    words: ['delight']
+  },
+  {
+    symbols: ['🌲', '+', 'T'],
+    words: ['treaty'],
+    hint: 'an agreement between countries'
   }
 ];
 
