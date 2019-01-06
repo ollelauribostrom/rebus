@@ -122,7 +122,8 @@ const rebuses = [
   },
   {
     symbols: ['💵', '+', 'ew'],
-    words: ['cashew']
+    words: ['cashew'],
+    hint: 'A type of nut'
   },
   {
     symbols: ['🤘🏻', '+', '⭐️'],
