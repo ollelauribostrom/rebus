@@ -739,7 +739,7 @@ const rebuses = [
   {
     symbols: ['🔑', '+', '⛓️'],
     words: ['keychain'],
-    hint: 'Holds on to one or more keys'
+    hint: 'Something that holds on to one or more keys'
   }
 ];
 
