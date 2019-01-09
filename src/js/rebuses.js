@@ -735,6 +735,11 @@ const rebuses = [
     symbols: ['🌲', '+', 'T'],
     words: ['treaty'],
     hint: 'an agreement between countries'
+  },
+  {
+    symbols: ['🔑', '+', '⛓️'],
+    words: ['keychain'],
+    hint: 'Holds on to one or more keys'
   }
 ];
 
