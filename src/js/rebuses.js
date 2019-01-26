@@ -740,6 +740,11 @@ const rebuses = [
     symbols: ['👹', '+', '🚚'],
     words: ['monster', 'truck'],
     hint: 'they have gigantic wheels!'
+  },
+  {
+    symbols: ['🔑', '+', '⛓️'],
+    words: ['keychain'],
+    hint: 'Something that holds on to one or more keys'
   }
 ];
 
