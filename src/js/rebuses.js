@@ -750,6 +750,36 @@ const rebuses = [
     symbols: ['💁', '+', '🖌'],
     words: ['hairbrush'],
     hint: 'Tidy your hair with'
+  },
+  {
+    symbols: ['💻'],
+    words: ['laptop'],
+    hint: 'A portable computer'
+  },
+  {
+    symbols: ['⚠', '⬇', '🔋'],
+    words: ['low battery'],
+    hint: 'You need to charge your device soon'
+  },
+  {
+    symbols: ['📰'],
+    words: ['newspaper'],
+    hint: 'Reading today&#39s ______'
+  },
+  {
+    symbols: ['✉'],
+    words: ['mail'],
+    hint: '"You&#39ve got ____"'
+  },
+  {
+    symbols: ['🌮', '+', '🥗'],
+    words: ['taco salad'],
+    hint: 'One food made up of the other food'
+  },
+  {
+    symbols: ['🍇', '-', '(🐒🐒🐒)', '+', '🐜'],
+    words: ['grant'],
+    hint: "Break it up. Do the subtraction then add the addition to the end"
   }
 ];
 
