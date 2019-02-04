@@ -758,7 +758,7 @@ const rebuses = [
   },
   {
     symbols: ['⚠', '⬇', '🔋'],
-    words: ['low battery'],
+    words: ['low','battery'],
     hint: 'You need to charge your device soon'
   },
   {
@@ -773,7 +773,7 @@ const rebuses = [
   },
   {
     symbols: ['🌮', '+', '🥗'],
-    words: ['taco salad'],
+    words: ['taco', 'salad'],
     hint: 'One food made up of the other food'
   },
   {
