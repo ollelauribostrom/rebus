@@ -745,6 +745,11 @@ const rebuses = [
     symbols: ['🔑', '+', '⛓️'],
     words: ['keychain'],
     hint: 'Something that holds on to one or more keys'
+  },
+  {
+    symbols: ['💁', '+', '🖌'],
+    words: ['hairbrush'],
+    hint: 'Tidy your hair with'
   }
 ];
 
