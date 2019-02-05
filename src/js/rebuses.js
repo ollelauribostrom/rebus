@@ -779,7 +779,7 @@ const rebuses = [
   {
     symbols: ['🍇', '-', '(🐒🐒🐒)', '+', '🐜'],
     words: ['grant'],
-    hint: "Break it up. Do the subtraction then add the addition to the end"
+    hint: 'Break it up. Do the subtraction then add the addition to the end'
   }
 ];
 
