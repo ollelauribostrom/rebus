@@ -136,7 +136,7 @@ body,
 .change-button:hover path,
 .change-button:active path,
 .change-button:focus path {
-  fill: rgba(2, 107, 139, 0.3);
+  fill: rgba(239, 190, 7, 0.8);
 }
 
 .change-button--prev {
