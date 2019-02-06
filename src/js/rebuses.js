@@ -758,7 +758,7 @@ const rebuses = [
   },
   {
     symbols: ['⚠', '⬇', '🔋'],
-    words: ['low','battery'],
+    words: ['low', 'battery'],
     hint: 'You need to charge your device soon'
   },
   {
