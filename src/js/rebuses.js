@@ -780,6 +780,11 @@ const rebuses = [
     symbols: ['🍇', '-', '(🐒🐒🐒)', '+', '🐜'],
     words: ['grant'],
     hint: 'Break it up. Do the subtraction then add the addition to the end'
+  },
+  {
+    symbols: ['👁', '+', '📱'],
+    words: ['iPhone'],
+    hint: 'Steve Jobs'
   }
 ];
 
