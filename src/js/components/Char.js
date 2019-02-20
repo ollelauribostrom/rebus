@@ -9,14 +9,16 @@ export function Char(props) {
       const index = wordIndex > 0 ? previousWords.length + charIndex : charIndex;
       const value = rebus.input[index] || '';
       return `
-        <input
-          type="text"
-          maxlength="1"
-          class="word__char"
-          placeholder=" "
-          value="${value}"
-          ${rebus.isAnswered ? 'disabled' : ''}
-        >`;
+        <div class="word__char__container">
+          <input
+            type="text"
+            maxlength="1"
+            class="word__char"
+            placeholder=" "
+            value="${value}"
+            ${rebus.isAnswered ? 'disabled' : ''}
+          >
+        </div>`;
     }
   });
 }

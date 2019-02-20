@@ -261,12 +261,22 @@ progress[value]::-webkit-progress-value {
   .rebus__header {
     border-radius: 0;
   }
+  
   .word {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 50px);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+  .word__char__container{
+    margin: 0 5px;
+  }
+  
   .word__char {
-    width: auto;
+    flex: 1;
+    height: 100%;
+    width: 100%;
   }
 }
 
