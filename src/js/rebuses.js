@@ -785,6 +785,11 @@ const rebuses = [
     symbols: ['👁', '+', '📱'],
     words: ['iPhone'],
     hint: 'Steve Jobs'
+  },
+  {
+    symbols: ['🚐', '+', 'Gogh'],
+    words: ['van', 'Gogh'],
+    hint: 'Famous Dutch painter.'
   }
 ];
 
