@@ -790,6 +790,11 @@ const rebuses = [
     symbols: ['→', '🦁', '👑'],
     words: ['the', 'lion', 'king'],
     hint: `Classic 90's coming of age film about a lion who must re-take his father's throne and become king of the jungle`
+  },
+  {
+    symbols: ['🚐', '+', 'Gogh'],
+    words: ['van', 'Gogh'],
+    hint: 'Famous Dutch painter.'
   }
 ];
 
