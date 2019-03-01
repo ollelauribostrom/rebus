@@ -10,6 +10,11 @@ const rebuses = [
     hint: `The second emoji is 'ant' not 'bug'`
   },
   {
+    symbols: ['(after ❌)', '+(🐝-b)','+☕️'],
+    words: ['yeet'],
+    hint: 'The finest millenial expansion of modern english vernacular'
+  },
+  {
     symbols: ['📖', '+', '🙋', '+', '📝'],
     words: ['Readme', 'file'],
     hint: 'The default markdown file of every GitHub repo'
