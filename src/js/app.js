@@ -54,7 +54,6 @@ export function init() {
         Hint(),
         ProgressBar(),
         PercentBar()
-
       ),
       document.querySelector('.root')
     );
