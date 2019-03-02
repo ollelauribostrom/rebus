@@ -12,7 +12,6 @@ export function PercentBar(props) {
 
         return ` 
         <span class ="percent-bar" id="myspan"> ${percent}% </span>
-       
         `;
       }
     })
