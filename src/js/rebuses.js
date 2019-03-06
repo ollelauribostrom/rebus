@@ -795,6 +795,15 @@ const rebuses = [
     symbols: ['🚐', '+', 'Gogh'],
     words: ['van', 'Gogh'],
     hint: 'Famous Dutch painter.'
+  },
+  {
+    symbols: ['🎁', '+', '🃏'],
+    words: ['gift', 'card']
+  },
+  {
+    symbols: ['🏹', '+', '👔'],
+    words: ['bow', 'tie'],
+    hint: ['An accessory that is often worn with a suit']
   }
 ];
 
