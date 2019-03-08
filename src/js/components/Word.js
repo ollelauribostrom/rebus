@@ -23,11 +23,15 @@ export function Word(props, ...children) {
             }
           },
           onKeydown: e => {
-            const key = e.key || e.keyCode;
-            if (key === 'Enter' || key === 13) {
+            const key = e.key;
+            const keyCode = e.keyCode;
+            if (keyCode >= 65 && keyCode <= 90){
+              e.target.value = '';
+            }
+            if (key === 'Enter' || keyCode === 13) {
               actions.shake();
             }
-            if (key === 'Backspace' || key === 8) {
+            if (key === 'Backspace' || keyCode === 8) {
               const input = e.target.value;
               const prevChild = e.target.previousElementSibling;
               if (prevChild !== null && input === '') {
