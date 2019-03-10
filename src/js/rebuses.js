@@ -60,7 +60,8 @@ const rebuses = [
   },
   {
     symbols: ['🌞', '+', '🛀'],
-    words: ['Sunbath']
+    words: ['Sunbath'],
+    hint: 'A way for cold-blooded animals to keep warm'
   },
   {
     symbols: ['🚗', '🚙', '🚗'],
@@ -132,7 +133,8 @@ const rebuses = [
   },
   {
     symbols: ['Tu', '+', '👄'],
-    words: ['Tulip']
+    words: ['Tulip'],
+    hint: 'This popular flower blooms in Spring'
   },
   {
     symbols: ['🔥', '+', '🐶'],
@@ -168,11 +170,13 @@ const rebuses = [
   },
   {
     symbols: ['🔒', '+', 'smith'],
-    words: ['Locksmith']
+    words: ['Locksmith'],
+    hint: 'This person lets you into your home when you lose your keys'
   },
   {
     symbols: ['👞', '+', 'horn'],
-    words: ['Shoehorn']
+    words: ['Shoehorn'],
+    hint: 'Makes putting your shoes on easier'
   },
   {
     symbols: ['🖊', '+', 't', '+', '🏠'],
@@ -185,11 +189,13 @@ const rebuses = [
   },
   {
     symbols: ['2', '+', 'Na️', '+', '🐟'],
-    words: ['tunafish']
+    words: ['tunafish'],
+    hint: 'A key ingredient in tuna salad'
   },
   {
     symbols: ['🔥', '+', 'man'],
-    words: ['Fireman']
+    words: ['Fireman'],
+    hint: 'Helps put out large fires'
   },
   {
     symbols: ['💡', '+', 'er'],
@@ -255,7 +261,8 @@ const rebuses = [
   },
   {
     symbols: ['❄️', '+', '⚾️'],
-    words: ['snowball']
+    words: ['snowball'],
+    hint: 'Fights break out with thsese in the winter'
   },
   {
     symbols: ['❄️', '+', 'man'],
@@ -298,7 +305,8 @@ const rebuses = [
   },
   {
     symbols: ['✔', '+', 'list'],
-    words: ['checklist']
+    words: ['checklist'],
+    hint: 'What you might use to keep track of your tasks for the day'
   },
   {
     symbols: ['💧', '+', '📦'],
@@ -317,11 +325,13 @@ const rebuses = [
   },
   {
     symbols: ['⎈'],
-    words: ['Helm']
+    words: ['Helm'],
+    hint: 'Where you steer the boat'
   },
   {
     symbols: ['🌍', '+', 'form'],
-    words: ['Terraform']
+    words: ['Terraform'],
+    hint: 'Changing the surface of a planet'
   },
   {
     symbols: ['Uni', '+', '🌽'],
@@ -352,15 +362,18 @@ const rebuses = [
   },
   {
     symbols: ['🐴', '+', '🔙'],
-    words: ['horseback']
+    words: ['horseback'],
+    hint: `A cowboy's primary form of travel`
   },
   {
     symbols: ['🎼', '+', '🍴'],
-    words: ['pitchfork']
+    words: ['pitchfork'],
+    hint: `You will need one to chase down Frankenstein's monster`
   },
   {
     symbols: ['🌊', '+', '🐴'],
-    words: ['seahorse']
+    words: ['seahorse'],
+    hint: `One of Nemo's friends was a _______`
   },
   {
     symbols: ['🔙', '+', '💀'],
@@ -448,7 +461,8 @@ const rebuses = [
   },
   {
     symbols: ['🍏', '+', '🥧'],
-    words: ['Applepie']
+    words: ['Applepie'],
+    hint: `It's as American as ______`
   },
   {
     symbols: ['🍯', '+', '🌗'],
@@ -476,7 +490,8 @@ const rebuses = [
   },
   {
     symbols: ['T', '+', '🏃', '+', '🐱', '+', 'e'],
-    words: ['Truncate']
+    words: ['Truncate'],
+    hint: 'To make something shorter by cutting off the end'
   },
   {
     symbols: ['🐶', '+', '🐱', '+', 'cher'],
@@ -526,7 +541,8 @@ const rebuses = [
   },
   {
     symbols: ['🔙', '+', '🚪'],
-    words: ['Backdoor']
+    words: ['Backdoor'],
+    hint: 'If you are behind your house you enter through the'
   },
   {
     symbols: ['🍀', '+', '🌌‍', '+', '🚶'],
@@ -565,11 +581,13 @@ const rebuses = [
   },
   {
     symbols: ['☀️', '+', '👓'],
-    words: ['Sunglasses']
+    words: ['Sunglasses'],
+    hint: 'Prevents you from squinting all day at the beach'
   },
   {
     symbols: ['🐄', '+', '👦'],
-    words: ['Cowboy']
+    words: ['Cowboy'],
+    hint: 'Heroes of the wild west'
   },
   {
     symbols: ['🖊️', '+', '👬'],
@@ -591,7 +609,8 @@ const rebuses = [
   },
   {
     symbols: ['⛓️', '+', '🔁', '+', '🎬'],
-    words: ['Chainreaction']
+    words: ['Chainreaction'],
+    hint: 'A series of events triggering each other'
   },
   {
     symbols: ['🗑️', '+', '🏀'],
@@ -608,7 +627,8 @@ const rebuses = [
   },
   {
     symbols: ['🔑', '+', '🕳'],
-    words: ['Keyhole']
+    words: ['Keyhole'],
+    hint: 'Your house key goes into the ______'
   },
   {
     symbols: ['💔', '+', '🕐'],
@@ -638,11 +658,13 @@ const rebuses = [
   },
   {
     symbols: ['🐎', '+', '👟'],
-    words: ['Horseshoe']
+    words: ['Horseshoe'],
+    hint: `Protect's a horse's hooves`
   },
   {
-    symbols: ['⌚', '+', 'men'],
-    words: ['Watchman']
+    symbols: ['⌚', '+', '👨'],
+    words: ['Watchman'],
+    hint: 'Who watches the ______?'
   },
   {
     symbols: ['✋', '+', '📗'],
@@ -692,7 +714,8 @@ const rebuses = [
   },
   {
     symbols: ['🐱', '+', '🌲'],
-    words: ['catalog']
+    words: ['catalog'],
+    hint: `The Sear's ________`
   },
   {
     symbols: ['💋', '+', 'able'],
@@ -729,7 +752,8 @@ const rebuses = [
   },
   {
     symbols: ['D', '+', '💡'],
-    words: ['delight']
+    words: ['delight'],
+    hint: 'To please someone'
   },
   {
     symbols: ['🌲', '+', 'T'],
