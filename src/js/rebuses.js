@@ -797,6 +797,11 @@ const rebuses = [
     hint: 'Famous Dutch painter.'
   },
   {
+    symbols: ['🖖'],
+    words: ['Star', 'Trek'],
+    hint: 'Famous salute from what TV show?'
+  },
+  {
     symbols: ['🎁', '+', '🃏'],
     words: ['gift', 'card']
   },
