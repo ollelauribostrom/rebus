@@ -795,6 +795,11 @@ const rebuses = [
     symbols: ['🚐', '+', 'Gogh'],
     words: ['van', 'Gogh'],
     hint: 'Famous Dutch painter.'
+  },
+  {
+    symbols: ['🖖'],
+    words: ['Star', 'Trek'],
+    hint: 'Famous salute from what TV show?'
   }
 ];
 
