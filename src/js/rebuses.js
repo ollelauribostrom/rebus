@@ -735,11 +735,6 @@ const rebuses = [
     symbols: ['🌲', '+', 'T'],
     words: ['treaty'],
     hint: 'an agreement between countries'
-  },
-  {
-    symbols: ['👹', '+', '🚚'],
-    words: ['monster', 'truck'],
-    hint: 'they have gigantic wheels!'
   }
 ];
 
