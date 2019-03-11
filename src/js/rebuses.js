@@ -60,7 +60,8 @@ const rebuses = [
   },
   {
     symbols: ['🌞', '+', '🛀'],
-    words: ['Sunbath']
+    words: ['Sunbath'],
+    hint: 'A way for cold-blooded animals to keep warm'
   },
   {
     symbols: ['🚗', '🚙', '🚗'],
@@ -135,7 +136,7 @@ const rebuses = [
   {
     symbols: ['Tu', '+', '👄'],
     words: ['Tulip'],
-    hint: `A beautiful flower`
+    hint: 'This popular flower blooms in Spring'
   },
   {
     symbols: ['🔥', '+', '🐶'],
@@ -175,7 +176,7 @@ const rebuses = [
   {
     symbols: ['🔒', '+', 'smith'],
     words: ['Locksmith'],
-    hint: `Someone who makes locks`
+    hint: 'This person lets you into your home when you lose your keys'
   },
   {
     symbols: ['👞', '+', 'horn'],
@@ -195,12 +196,12 @@ const rebuses = [
   {
     symbols: ['2', '+', 'Na️', '+', '🐟'],
     words: ['tunafish'],
-    hint: `It makes a good sandwich`
+    hint: 'A key ingredient in tuna salad'
   },
   {
     symbols: ['🔥', '+', 'man'],
     words: ['Fireman'],
-    hint: `They save many lives`
+    hint: 'Helps put out large fires'
   },
   {
     symbols: ['💡', '+', 'er'],
@@ -315,7 +316,7 @@ const rebuses = [
   {
     symbols: ['✔', '+', 'list'],
     words: ['checklist'],
-    hint: `Helps you keep track of what you have to do`
+    hint: 'What you might use to keep track of your tasks for the day'
   },
   {
     symbols: ['💧', '+', '📦'],
@@ -335,7 +336,7 @@ const rebuses = [
   {
     symbols: ['⎈'],
     words: ['Helm'],
-    hint: `Often worn on your head`
+    hint: 'Where you steer the boat'
   },
   {
     symbols: ['🌍', '+', 'form'],
@@ -375,17 +376,17 @@ const rebuses = [
   {
     symbols: ['🐴', '+', '🔙'],
     words: ['horseback'],
-    hint: `People enjoy riding on this`
+    hint: `A cowboy's primary form of travel`
   },
   {
     symbols: ['🎼', '+', '🍴'],
     words: ['pitchfork'],
-    hint: `A stereotypical farmers weapon`
+    hint: `You will need one to chase down Frankenstein's monster`
   },
   {
     symbols: ['🌊', '+', '🐴'],
     words: ['seahorse'],
-    hint: `One of the only mammals that give birth through males`
+    hint: `One of Nemo's friends was a _______`
   },
   {
     symbols: ['🔙', '+', '💀'],
@@ -480,7 +481,7 @@ const rebuses = [
   {
     symbols: ['🍏', '+', '🥧'],
     words: ['Applepie'],
-    hint: `A tasty type of pie`
+    hint: `It's as American as ______`
   },
   {
     symbols: ['🍯', '+', '🌗'],
@@ -510,7 +511,7 @@ const rebuses = [
   {
     symbols: ['T', '+', '🏃', '+', '🐱', '+', 'e'],
     words: ['Truncate'],
-    hint: `The limiting number of decimals`
+    hint: 'To make something shorter by cutting off the end'
   },
   {
     symbols: ['🐶', '+', '🐱', '+', 'cher'],
@@ -605,12 +606,12 @@ const rebuses = [
   {
     symbols: ['☀️', '+', '👓'],
     words: ['Sunglasses'],
-    hint: `When it's too sunny`
+    hint: 'Prevents you from squinting all day at the beach'
   },
   {
     symbols: ['🐄', '+', '👦'],
     words: ['Cowboy'],
-    hint: `A resident of the wild west`
+    hint: 'Heroes of the wild west'
   },
   {
     symbols: ['🖊️', '+', '👬'],
@@ -635,7 +636,7 @@ const rebuses = [
   {
     symbols: ['⛓️', '+', '🔁', '+', '🎬'],
     words: ['Chainreaction'],
-    hint: `A series of events that trigger one another`
+    hint: 'A series of events triggering each other'
   },
   {
     symbols: ['🗑️', '+', '🏀'],
@@ -655,7 +656,7 @@ const rebuses = [
   {
     symbols: ['🔑', '+', '🕳'],
     words: ['Keyhole'],
-    hint: `Where your keys belong`
+    hint: 'Your house key goes into the ______'
   },
   {
     symbols: ['💔', '+', '🕐'],
@@ -690,12 +691,12 @@ const rebuses = [
   {
     symbols: ['🐎', '+', '👟'],
     words: ['Horseshoe'],
-    hint: `A sign of good luck`
+    hint: `Protect's a horse's hooves`
   },
   {
-    symbols: ['⌚', '+', 'men'],
+    symbols: ['⌚', '+', '👨'],
     words: ['Watchman'],
-    hint: `Someone on the lookout`
+    hint: 'Who watches the ______?'
   },
   {
     symbols: ['✋', '+', '📗'],
@@ -750,7 +751,7 @@ const rebuses = [
   {
     symbols: ['🐱', '+', '🌲'],
     words: ['catalog'],
-    hint: `Keeps track of things`
+    hint: `The Sear's ________`
   },
   {
     symbols: ['💋', '+', 'able'],
@@ -788,7 +789,8 @@ const rebuses = [
   },
   {
     symbols: ['D', '+', '💡'],
-    words: ['delight']
+    words: ['delight'],
+    hint: 'To please someone'
   },
   {
     symbols: ['🌲', '+', 'T'],
