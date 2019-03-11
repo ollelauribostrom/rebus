@@ -17,8 +17,13 @@ export function Word(props, ...children) {
 
             if (/[a-zA-Z]/.test(input)) {
               const nextChild = e.target.nextElementSibling;
+              const hasNextWord = !!this.$element.nextSibling;
+
               if (nextChild !== null) {
                 nextChild.focus();
+              }
+              if (nextChild === null && hasNextWord) {
+                this.$element.nextSibling.firstElementChild.focus();
               }
             }
           },

@@ -95,7 +95,8 @@ const rebuses = [
   },
   {
     symbols: ['🍏', '-', '🐒', '+', '🐜'],
-    words: ['Plant']
+    words: ['Plant'],
+    hint: `It grows in your garden`
   },
   {
     symbols: ['🐝', '🍁'],
@@ -114,7 +115,8 @@ const rebuses = [
   },
   {
     symbols: ['🍌', '+', '🍞'],
-    words: ['Bananabread']
+    words: ['Bananabread'],
+    hint: `A monkey's favourite bread`
   },
   {
     symbols: ['🔑', '🐗', '+', 'd'],
@@ -143,7 +145,8 @@ const rebuses = [
   },
   {
     symbols: ['🌙', '+', '☀'],
-    words: ['Moonshine']
+    words: ['Moonshine'],
+    hint: `Illegal alcohol`
   },
   {
     symbols: ['💻', '+', '🌊'],
@@ -152,11 +155,13 @@ const rebuses = [
   },
   {
     symbols: ['🔥', '+', '🌬️', '+', '🎈'],
-    words: ['Hot', 'Air', 'Balloon']
+    words: ['Hot', 'Air', 'Balloon'],
+    hint: `Explore the skys with this`
   },
   {
     symbols: ['💵', '+', '⚽'],
-    words: ['Moneyball']
+    words: ['Moneyball'],
+    hint: `A great baseball movie`
   },
   {
     symbols: ['🐂', '+', '👀'],
@@ -176,11 +181,12 @@ const rebuses = [
   {
     symbols: ['👞', '+', 'horn'],
     words: ['Shoehorn'],
-    hint: 'Makes putting your shoes on easier'
+    hint: `Helps you put your shoe on`
   },
   {
     symbols: ['🖊', '+', 't', '+', '🏠'],
-    words: ['Penthouse']
+    words: ['Penthouse'],
+    hint: `The highest room in a hotel`
   },
   {
     symbols: ['🐱', '+', 'e', '+', '💍'],
@@ -204,7 +210,8 @@ const rebuses = [
   },
   {
     symbols: ['🌙', '+', '💡'],
-    words: ['Moonlight']
+    words: ['Moonlight'],
+    hint: `Lights up the night`
   },
   {
     symbols: ['f', '+', '🌬️', '+', 'y'],
@@ -218,11 +225,13 @@ const rebuses = [
   },
   {
     symbols: ['👻', '+', '🚂'],
-    words: ['Ghost', 'Train']
+    words: ['Ghost', 'Train'],
+    hint: `A haunted train`
   },
   {
     symbols: ['🍦', '+', '🍦', '+', '👶'],
-    words: ['Ice', 'Ice', 'Baby']
+    words: ['Ice', 'Ice', 'Baby'],
+    hint: `A great hit by Vanilla Ice`
   },
   {
     symbols: ['🚗', '+', 'D', '+', '👹', '+', '🐏'],
@@ -262,7 +271,7 @@ const rebuses = [
   {
     symbols: ['❄️', '+', '⚾️'],
     words: ['snowball'],
-    hint: 'Fights break out with thsese in the winter'
+    hint: `Throw them at your friends in winter`
   },
   {
     symbols: ['❄️', '+', 'man'],
@@ -271,7 +280,8 @@ const rebuses = [
   },
   {
     symbols: ['🐏', '📃'],
-    words: ['rampage']
+    words: ['rampage'],
+    hint: `The Hulk likes to go on a ____`
   },
   {
     symbols: ['✝️', '+', '🏹'],
@@ -331,7 +341,7 @@ const rebuses = [
   {
     symbols: ['🌍', '+', 'form'],
     words: ['Terraform'],
-    hint: 'Changing the surface of a planet'
+    hint: `A code software HashiCorp`
   },
   {
     symbols: ['Uni', '+', '🌽'],
@@ -340,7 +350,8 @@ const rebuses = [
   },
   {
     symbols: ['🆘', '+', 'desk'],
-    words: ['helpdesk']
+    words: ['helpdesk'],
+    hint: `Where you go to find help`
   },
   {
     symbols: ['🐱', '+', 'er', '+', '🗼'],
@@ -354,11 +365,13 @@ const rebuses = [
   },
   {
     symbols: ['🦊', '+', 'hole'],
-    words: ['foxhole']
+    words: ['foxhole'],
+    hint: `A multiplayer strategy action game`
   },
   {
     symbols: ['🐦', '+', 's-', '+', '👁️'],
-    words: ["bird's-eye"]
+    words: ["bird's-eye"],
+    hint: `When you observe from above`
   },
   {
     symbols: ['🐴', '+', '🔙'],
@@ -387,7 +400,8 @@ const rebuses = [
   },
   {
     symbols: ['🔥', '+', '🏠'],
-    words: ['firehouse']
+    words: ['firehouse'],
+    hint: `A very hot house`
   },
   {
     symbols: ['🚗', '+', 'go'],
@@ -406,11 +420,13 @@ const rebuses = [
   },
   {
     symbols: ['📻', '+', '🙂'],
-    words: ['radiohead']
+    words: ['radiohead'],
+    hint: `An old English rock band`
   },
   {
     symbols: ['🗃', '+', 'elder', '+', '🐜'],
-    words: ['Box', 'Elder', 'Bug']
+    words: ['Box', 'Elder', 'Bug'],
+    hint: `An annoying species of true bug`
   },
   {
     symbols: ['L', '+', '🏹'],
@@ -419,7 +435,8 @@ const rebuses = [
   },
   {
     symbols: ['📅', '+', 'et', '+', '🌍'],
-    words: ['Planet', 'Earth']
+    words: ['Planet', 'Earth'],
+    hint: `Where we all live`
   },
   {
     symbols: ['🔨', '+', 'head', '+', '🦈'],
@@ -428,7 +445,8 @@ const rebuses = [
   },
   {
     symbols: ['👩‍', '+', '💍'],
-    words: ['red', 'herring']
+    words: ['red', 'herring'],
+    hint: `A tasty seafood meal`
   },
   {
     symbols: ['Black', '+', '🎩'],
@@ -448,11 +466,12 @@ const rebuses = [
   {
     symbols: ['👞', '+', '📦'],
     words: ['Shoebox'],
-    hunt: 'A box you get shoes in'
+    hint: 'A box you get shoes in'
   },
   {
     symbols: ['💵', '+', '🛍️'],
-    words: ['Money', 'Bag']
+    words: ['Money', 'Bag'],
+    hint: `Every robbers desire`
   },
   {
     symbols: ['💥', '+', 'py'],
@@ -476,7 +495,8 @@ const rebuses = [
   },
   {
     symbols: ['🐲', '+', '🍑'],
-    words: ['Dragonfruit']
+    words: ['Dragonfruit'],
+    hint: `A mythical fruit made reality`
   },
   {
     symbols: ['🔫-s', '+', 'and', '+', '🥀-s'],
@@ -495,15 +515,18 @@ const rebuses = [
   },
   {
     symbols: ['🐶', '+', '🐱', '+', 'cher'],
-    words: ['Dogcatcher']
+    words: ['Dogcatcher'],
+    hint: `In case your dog runs away`
   },
   {
     symbols: ['🌍', '+', '⭐️'],
-    words: ['Earthstar']
+    words: ['Earthstar'],
+    hint: `A star shaped fungi`
   },
   {
     symbols: ['👱', '+', '👨‍🎓', '+', '⛵️-s'],
-    words: ['Headmasterships']
+    words: ['Headmasterships'],
+    hint: `The role of the headmaster`
   },
   {
     symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
@@ -527,7 +550,8 @@ const rebuses = [
   },
   {
     symbols: ['🔁', '+', '🔙'],
-    words: ['Loopback']
+    words: ['Loopback'],
+    hint: `Another word for rewind`
   },
   {
     symbols: ['🔙', '+', '🏁'],
@@ -542,7 +566,7 @@ const rebuses = [
   {
     symbols: ['🔙', '+', '🚪'],
     words: ['Backdoor'],
-    hint: 'If you are behind your house you enter through the'
+    hint: `When the front door doesn't work`
   },
   {
     symbols: ['🍀', '+', '🌌‍', '+', '🚶'],
@@ -601,11 +625,13 @@ const rebuses = [
   },
   {
     symbols: ['📲', '+', '🅰️', '+', '🐀'],
-    words: ['Apparat']
+    words: ['Apparat'],
+    hint: `A german electronic musician`
   },
   {
     symbols: ['☀️', '+', '🌼'],
-    words: ['Sunflower']
+    words: ['Sunflower'],
+    hint: `A plant that always faces the sun`
   },
   {
     symbols: ['⛓️', '+', '🔁', '+', '🎬'],
@@ -619,11 +645,13 @@ const rebuses = [
   },
   {
     symbols: ['🌎', '+', '🐛'],
-    words: ['Earthworm']
+    words: ['Earthworm'],
+    hint: `It's not a moonworm`
   },
   {
     symbols: ['🌬', '+', '🐟'],
-    words: ['Blowfish']
+    words: ['Blowfish'],
+    hint: `A fish that swells up`
   },
   {
     symbols: ['🔑', '+', '🕳'],
@@ -632,15 +660,18 @@ const rebuses = [
   },
   {
     symbols: ['💔', '+', '🕐'],
-    words: ['Breaktime']
+    words: ['Breaktime'],
+    hint: `Everyone's favourite part of the day`
   },
   {
     symbols: ['🐊', '+', '😭'],
-    words: ['Crocodile', 'tears']
+    words: ['Crocodile', 'tears'],
+    hint: `Fake tears`
   },
   {
     symbols: ['💋', '☠'],
-    words: ['Kiss', 'of', 'death']
+    words: ['Kiss', 'of', 'death'],
+    hint: `One kiss you don't want to receive`
   },
   {
     symbols: ['👨', '💀', '⛵'],
@@ -654,7 +685,8 @@ const rebuses = [
   },
   {
     symbols: ['🌙', '+', '🎂'],
-    words: ['Mooncake']
+    words: ['Mooncake'],
+    hint: `A lunar Chinese snack`
   },
   {
     symbols: ['🐎', '+', '👟'],
@@ -673,7 +705,8 @@ const rebuses = [
   },
   {
     symbols: ['🛤️', '+', 'men'],
-    words: ['Railwayman']
+    words: ['Railwayman'],
+    hint: `Works in a railway yard`
   },
   {
     symbols: ['🐱', '+', '🐠'],
@@ -692,15 +725,18 @@ const rebuses = [
   },
   {
     symbols: ['⛵️', '+', 'ment'],
-    words: ['Shipment']
+    words: ['Shipment'],
+    hint: `A package being delivered`
   },
   {
     symbols: ['2', '+', '🐝', '+', 'or', '+', 'not', '+', '2', '+', '🐝'],
-    words: ['To Be Or Not To Be']
+    words: ['To Be Or Not To Be'],
+    hint: `A famous quote from Hamlet`
   },
   {
     symbols: ['⬇', '➡', '+', '🤮'],
-    words: ['downright disgusting']
+    words: ['downright disgusting'],
+    hint: `Something extremely displeasing`
   },
   {
     symbols: ['🔥', '+', '🤼', '+', 'er'],
@@ -719,7 +755,8 @@ const rebuses = [
   },
   {
     symbols: ['💋', '+', 'able'],
-    words: ['kissable']
+    words: ['kissable'],
+    hint: `cute animals are very _____`
   },
   {
     symbols: ['😄', '+', '🎂🎁'],
@@ -819,6 +856,20 @@ const rebuses = [
     symbols: ['🚐', '+', 'Gogh'],
     words: ['van', 'Gogh'],
     hint: 'Famous Dutch painter.'
+  },
+  {
+    symbols: ['🖖'],
+    words: ['Star', 'Trek'],
+    hint: 'Famous salute from what TV show?'
+  },
+  {
+    symbols: ['🎁', '+', '🃏'],
+    words: ['gift', 'card']
+  },
+  {
+    symbols: ['🏹', '+', '👔'],
+    words: ['bow', 'tie'],
+    hint: ['An accessory that is often worn with a suit']
   }
 ];
 
