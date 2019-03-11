@@ -800,6 +800,15 @@ const rebuses = [
     symbols: ['🖖'],
     words: ['Star', 'Trek'],
     hint: 'Famous salute from what TV show?'
+  },
+  {
+    symbols: ['🎁', '+', '🃏'],
+    words: ['gift', 'card']
+  },
+  {
+    symbols: ['🏹', '+', '👔'],
+    words: ['bow', 'tie'],
+    hint: ['An accessory that is often worn with a suit']
   }
 ];
 
