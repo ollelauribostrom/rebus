@@ -125,7 +125,7 @@ const rebuses = [
   {
     symbols: ['💵', '+', 'ew'],
     words: ['cashew'],
-    hint: `A tasty nut`
+    hint: 'A type of nut'
   },
   {
     symbols: ['🤘🏻', '+', '⭐️'],
@@ -781,6 +781,93 @@ const rebuses = [
     symbols: ['🐼', '-', 'DA', '+', '🍰'],
     words: ['Pancake'],
     hint: 'A delicious breakfast'
+  },
+  {
+    symbols: ['✝', '+', '🏹'],
+    words: ['Crossbow']
+  },
+  {
+    symbols: ['D', '+', '💡'],
+    words: ['delight']
+  },
+  {
+    symbols: ['🌲', '+', 'T'],
+    words: ['treaty'],
+    hint: 'an agreement between countries'
+  },
+  {
+    symbols: ['👹', '+', '🚚'],
+    words: ['monster', 'truck'],
+    hint: 'they have gigantic wheels!'
+  },
+  {
+    symbols: ['🔑', '+', '⛓️'],
+    words: ['keychain'],
+    hint: 'Something that holds on to one or more keys'
+  },
+  {
+    symbols: ['💁', '+', '🖌'],
+    words: ['hairbrush'],
+    hint: 'Tidy your hair with'
+  },
+  {
+    symbols: ['💻'],
+    words: ['laptop'],
+    hint: 'A portable computer'
+  },
+  {
+    symbols: ['⚠', '⬇', '🔋'],
+    words: ['low', 'battery'],
+    hint: 'You need to charge your device soon'
+  },
+  {
+    symbols: ['📰'],
+    words: ['newspaper'],
+    hint: 'Reading today&#39s ______'
+  },
+  {
+    symbols: ['✉'],
+    words: ['mail'],
+    hint: '"You&#39ve got ____"'
+  },
+  {
+    symbols: ['🌮', '+', '🥗'],
+    words: ['taco', 'salad'],
+    hint: 'One food made up of the other food'
+  },
+  {
+    symbols: ['🍇', '-', '(🐒🐒🐒)', '+', '🐜'],
+    words: ['grant'],
+    hint: 'Break it up. Do the subtraction then add the addition to the end'
+  },
+  {
+    symbols: ['👁', '+', '📱'],
+    words: ['iPhone'],
+    hint: 'Steve Jobs'
+  },
+  {
+    symbols: ['→', '🦁', '👑'],
+    words: ['the', 'lion', 'king'],
+    hint: `Classic 90's coming of age film about a lion who must re-take his father's throne and become king of the jungle`
+  },
+  {
+    symbols: ['🚐', '+', 'Gogh'],
+    words: ['van', 'Gogh'],
+    hint: 'Famous Dutch painter.'
+  },
+  {
+    symbols: ['🖖'],
+    words: ['Star', 'Trek'],
+    hint: 'Famous salute from what TV show?'
+  },
+  {
+    symbols: ['🎁', '+', '🃏'],
+    words: ['gift', 'card']
+  },
+  {
+    symbols: ['🏹', '+', '👔'],
+    words: ['bow', 'tie'],
+    hint: ['An accessory that is often worn with a suit']
   }
 ];
 
