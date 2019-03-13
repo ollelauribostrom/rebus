@@ -123,6 +123,32 @@ describe('Tests for components', () => {
       inputs[1].dispatchEvent(mockEvent);
       expect(inputs[1] === document.activeElement).toEqual(true);
     });
+    it('clears field when user enters a valid letter character in non empty field', () => {
+      const onInput = jest.fn();
+      const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
+      const root = document.createElement('div');
+      render(Word(props), root);
+      const inputs = root.querySelectorAll('input');
+      const mockEvent = new Event('keydown');
+      mockEvent.keyCode = '87';
+      inputs[1].focus();
+      inputs[1].value = 'T';
+      inputs[1].dispatchEvent(mockEvent);
+      expect(inputs[1].value === '').toEqual(true);
+    });
+    it('does not clear field if non letter character is entered', () => {
+      const onInput = jest.fn();
+      const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
+      const root = document.createElement('div');
+      render(Word(props), root);
+      const inputs = root.querySelectorAll('input');
+      const mockEvent = new Event('keydown');
+      mockEvent.keyCode = '16';
+      inputs[1].focus();
+      inputs[1].value = 'T';
+      inputs[1].dispatchEvent(mockEvent);
+      expect(inputs[1].value === 'T').toEqual(true);
+    });
   });
   describe('Char', () => {
     it('renders correctly (without value)', () => {

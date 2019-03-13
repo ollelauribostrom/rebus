@@ -28,13 +28,16 @@ export function Word(props, ...children) {
             }
           },
           onKeydown: e => {
-            const key = e.key || e.keyCode;
-            if (key === 'Enter' || key === 13) {
+            const { key, keyCode, target } = e;
+            if (keyCode >= 65 && keyCode <= 90) {
+              target.value = '';
+            }
+            if (key === 'Enter' || keyCode === 13) {
               actions.shake();
             }
-            if (key === 'Backspace' || key === 8) {
-              const input = e.target.value;
-              const prevChild = e.target.previousElementSibling;
+            if (key === 'Backspace' || keyCode === 8) {
+              const input = target.value;
+              const prevChild = target.previousElementSibling;
               if (prevChild !== null && input === '') {
                 prevChild.focus();
                 e.preventDefault();
