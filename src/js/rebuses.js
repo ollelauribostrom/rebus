@@ -867,6 +867,11 @@ const rebuses = [
     words: ['gift', 'card']
   },
   {
+    symbols: ['_/\_'],
+    words: [Salute],
+    hint: 'Salute from me'
+  },
+  {
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
     hint: ['An accessory that is often worn with a suit']
