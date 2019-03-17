@@ -870,6 +870,11 @@ const rebuses = [
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
     hint: ['An accessory that is often worn with a suit']
+  },
+  {
+    symbols: ['🔎', '+', '🎉'],
+    words: ['search', 'party'],
+    hint: ['Let\'s find something together']
   }
 ];
 
