@@ -874,7 +874,7 @@ const rebuses = [
   {
     symbols: ['🔎', '+', '🎉'],
     words: ['search', 'party'],
-    hint: ['Let\'s find something together']
+    hint: ["Let's find something together"]
   }
 ];
 
