@@ -785,7 +785,8 @@ const rebuses = [
   },
   {
     symbols: ['✝', '+', '🏹'],
-    words: ['Crossbow']
+    words: ['Crossbow'],
+	hint: 'It fires bolts, not arrows.'
   },
   {
     symbols: ['D', '+', '💡'],
