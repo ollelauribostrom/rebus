@@ -870,7 +870,12 @@ const rebuses = [
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
     hint: ['An accessory that is often worn with a suit']
-  }
+  },
+  {
+    symbols: ['🍯', '+', '🐝'],
+    words: ['honeybee'],
+    hint: ['An insect that makes a sweet treat.']
+  },
 ];
 
 export function isRebusAnswered(id) {
