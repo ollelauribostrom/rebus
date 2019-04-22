@@ -869,7 +869,12 @@ const rebuses = [
   {
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
-    hint: ['An accessory that is often worn with a suit']
+    hint: ['An accessory that is often worn with a suit yeah']
+  },
+  {
+    symbols: ['🥫', '+', 'garoo'],
+    words: ['kangaroo'],
+    hint: 'Native Australian animal'
   }
 ];
 
