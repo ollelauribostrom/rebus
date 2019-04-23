@@ -31,6 +31,8 @@ export function Rebus(props, ...children) {
       },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
+        const answeredRebusCount = rebuses.filter(r => r.isAnswered).length;
+        const progressPercentages = Math.round((answeredRebusCount / rebuses.length) * 100);
         this.children = rebus.words.map((word, wordIndex) =>
           Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
         );
@@ -38,6 +40,7 @@ export function Rebus(props, ...children) {
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
+              <span>${progressPercentages} % solved</span>
             </div>
             <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
             <div class="rebus__words">
