@@ -257,6 +257,8 @@ progress[value]::-webkit-progress-value {
     grid-column-start: 1;
     grid-column-end: span 5;
     border-radius: 0;
+    width: 95%;
+    margin: 10px;
   }
   .rebus__header {
     border-radius: 0;
