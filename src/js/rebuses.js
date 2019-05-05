@@ -785,7 +785,8 @@ const rebuses = [
   },
   {
     symbols: ['✝', '+', '🏹'],
-    words: ['Crossbow']
+    words: ['Crossbow'],
+    hint: ['You load it with bolts']
   },
   {
     symbols: ['D', '+', '💡'],
@@ -864,12 +865,18 @@ const rebuses = [
   },
   {
     symbols: ['🎁', '+', '🃏'],
-    words: ['gift', 'card']
+    words: ['gift', 'card'],
+    hint: ['An alternative to cash for purchases within a particular store']
   },
   {
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
     hint: ['An accessory that is often worn with a suit']
+  },
+  {
+    symbols: ['🚪', '+', '🔔'],
+    words: ['door', 'bell'],
+    hint: ['You can ring it outside an house']
   }
 ];
 
