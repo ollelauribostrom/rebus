@@ -797,9 +797,9 @@ const rebuses = [
     hint: 'Famous Dutch painter.'
   },
   {
-    symbols: ['💍', '+', 'her'],
-    words: ['Marry', 'Her'],
-    hint: 'Propose like a Gentleman'
+    symbols: ['🦁', '+', '💖'],
+    words: ['Lionheart'],
+    hint: 'Film directed by Genevieve Nnaji'
   }
 ];
 
