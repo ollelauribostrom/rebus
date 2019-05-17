@@ -877,6 +877,11 @@ const rebuses = [
     symbols: ['🐛', '+', '🕳'],
     words: ['worm', 'hole'],
     hint: 'A passage through space creating a shortcut through time and space'
+  },
+  {
+    symbols: ['🌎', 'OF', '⚔', 'CRAFT'],
+    words: ['World', 'of', 'Warcraft'],
+    hint: ['Famous Blizzard online game']
   }
 ];
 
