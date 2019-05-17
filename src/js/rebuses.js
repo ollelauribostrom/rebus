@@ -266,7 +266,7 @@ const rebuses = [
   {
     symbols: ['🌧', '+', '🏹'],
     words: ['rainbow'],
-    hint: '🌈'
+    hint: 'You see this after it rains'
   },
   {
     symbols: ['❄️', '+', '⚾️'],
@@ -276,17 +276,12 @@ const rebuses = [
   {
     symbols: ['❄️', '+', 'man'],
     words: ['snowman'],
-    hint: '⛄'
+    hint: 'You make this when its snowing'
   },
   {
     symbols: ['🐏', '📃'],
     words: ['rampage'],
     hint: `The Hulk likes to go on a ____`
-  },
-  {
-    symbols: ['✝️', '+', '🏹'],
-    words: ['cross', 'bow'],
-    hint: 'A sophisticated version of the bow and arrow'
   },
   {
     symbols: ['🐈', '+', '🥊'],
@@ -356,7 +351,7 @@ const rebuses = [
   {
     symbols: ['🐱', '+', 'er', '+', '🗼'],
     words: ['caterpillar'],
-    hint: 'A tiny insect with many feet'
+    hint: 'It chews on leaves and then grows into something pretty.'
   },
   {
     symbols: ['🧢', '+', 'tain'],
@@ -381,7 +376,7 @@ const rebuses = [
   {
     symbols: ['🎼', '+', '🍴'],
     words: ['pitchfork'],
-    hint: `You will need one to chase down Frankenstein's monster`
+    hint: `Angry mobs are frequently seen with this`
   },
   {
     symbols: ['🌊', '+', '🐴'],
@@ -476,7 +471,7 @@ const rebuses = [
   {
     symbols: ['💥', '+', 'py'],
     words: ['Poppy'],
-    hint: `From Game of Thrones: 'Milk of the ____'`
+    hint: `They make opium from this`
   },
   {
     symbols: ['🍏', '+', '🥧'],
@@ -741,7 +736,7 @@ const rebuses = [
   {
     symbols: ['🔥', '+', '🤼', '+', 'er'],
     words: ['firefighter'],
-    hint: 'Someone trained to combat fires and rescue people trapped by fires'
+    hint: 'They show up when there is a fire'
   },
   {
     symbols: ['1', '+', 'ce', '+', 'n', '+', 'a', '+', '🔵', '+', '🌛'],
@@ -785,7 +780,8 @@ const rebuses = [
   },
   {
     symbols: ['✝', '+', '🏹'],
-    words: ['Crossbow']
+    words: ['Crossbow'],
+    hint: 'What an unskilled archer would use'
   },
   {
     symbols: ['D', '+', '💡'],
@@ -864,12 +860,18 @@ const rebuses = [
   },
   {
     symbols: ['🎁', '+', '🃏'],
-    words: ['gift', 'card']
+    words: ['gift', 'card'],
+    hint: 'You get one on your birthday'
   },
   {
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
     hint: ['An accessory that is often worn with a suit']
+  },
+  {
+    symbols: ['🔎', '+', '🎉'],
+    words: ['search', 'party'],
+    hint: ["Let's find something together"]
   },
   {
     symbols: ['🐛', '+', '🕳'],
