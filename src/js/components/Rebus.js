@@ -31,13 +31,14 @@ export function Rebus(props, ...children) {
       },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
+        const currentPercentage = (((current + 1) / rebuses.length) * 100).toFixed(1);
         this.children = rebus.words.map((word, wordIndex) =>
           Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
         );
         return `
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
-              <span>${current + 1}/${rebuses.length}</span>
+              <span>${current + 1}/${rebuses.length} (${currentPercentage}%)</span>
             </div>
             <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
             <div class="rebus__words">
