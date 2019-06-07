@@ -887,6 +887,66 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['(', '🔴', '+', '🔵', ')', '+', '🌫'],
+    words: ['Purple', 'Haze'],
+    hint: ['Jimi Hendrix sings all in my brain']
+  },
+  {
+    symbols: ['👋', '👋', '👩', '🌎', '🥧'],
+    words: ['Bye', 'Bye', 'Miss', 'American', 'Pie'],
+    hint: ['Drove my Chevy to the levy']
+  },
+  {
+    symbols: ['👶', '🦈'],
+    words: ['Baby', 'Shark'],
+    hint: ['Doo doo do doo do doo']
+  },
+  {
+    symbols: ['👸', '👰'],
+    words: ['Princess', 'Bride'],
+    hint: ['True love, Battling Rodents of Unusual Size, Inconceivable']
+  },
+  {
+    symbols: ['🔚', '+', '♟'],
+    words: ['Endgame'],
+    hint: ['Conclusion of either chess or current Marvel Cinematic Universe']
+  },
+  {
+    symbols: ['♾', '⚠', '-', 'ning'],
+    words: ['Infinity', 'War'],
+    hint: ['Thanos is inevitable']
+  },
+  {
+    symbols: ['☕', '+', '📜'],
+    words: ['Javascript'],
+    hint: ['What this game runs on and enables scripts in browsers']
+  },
+  {
+    symbols: ['❌', '+', '🚶'],
+    words: ['Crosswalk'],
+    hint: ['The safe place to cross the street']
+  },
+  {
+    symbols: ['⬆', '+', '🏋️‍'],
+    words: ['Uplift'],
+    hint: ['to raise or elevate']
+  },
+  {
+    symbols: ['⚫', '+', '⌨', '-', '🔑'],
+    words: ['Blackboard'],
+    hint: ['To be used with chalk']
+  },
+  {
+    symbols: ['🚗', '+', '🎱'],
+    words: ['Carpool'],
+    hint: ['Ride sharing']
+  },
+  {
+    symbols: ['⌛', '🛫'],
+    words: ['Time', 'Flies'],
+    hint: ["When you're having fun"]
   }
 ];
 
