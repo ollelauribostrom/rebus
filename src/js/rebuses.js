@@ -244,6 +244,11 @@ const rebuses = [
     hint: `What does the 'www' in websites stand for?`
   },
   {
+    symbols: ['@$$@#@#@$', '&', '*^&@(&%', '!@_)$$)*!%'],
+    words: ['Endgame is coming'],
+    hint: 'Cap Rocks'
+  },
+  {
     symbols: ['🐀', '+', 'AT', '+', '2️', '+', 'E'],
     words: ['ratatouille'],
     hint: 'A rat chef'
