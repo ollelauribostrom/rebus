@@ -335,3 +335,22 @@ progress[value]::-webkit-progress-value {
     transform: translate3d(4px, 0, 0);
   }
 }
+
+/**
+ * ----------------------------------------
+ * added to style and position searchbar
+ * ----------------------------------------
+ */
+ .searchbar {
+	 position: absolute;
+	 left: 47.5%;
+	 top: 30px;
+	 width: 5%;
+	 text-align: center;
+	 font-family: 'Raleway', sans-serif;
+ }
+ 
+ .searchbar input {
+	 background-color: transparent;
+	 color: #fff;
+ }

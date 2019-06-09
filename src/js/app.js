@@ -7,6 +7,7 @@ import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
+import { SearchBar } from './components/SearchBar';
 
 import { actions } from './store';
 import '../css/main.css';
@@ -34,6 +35,7 @@ export function init() {
     return render(
       App(
         Logo(),
+        SearchBar(),
         GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
         ChangeButton({
           className: 'change-button--prev',
