@@ -126,6 +126,7 @@ body,
   justify-self: flex-start;
 }
 
+
 .change-button svg {
   height: 36px;
 }
@@ -166,6 +167,17 @@ body,
   border: none;
   background: #9c0629;
 }
+
+.percent-bar {
+  grid-row-start: two;
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  content: "Hello";
+
+}
+
 
 progress[value] {
   width: auto;
