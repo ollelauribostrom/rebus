@@ -12,13 +12,25 @@ import { actions } from './store';
 import '../css/main.css';
 
 export function registerListeners() {
+  let modifier = false;
   document.addEventListener('keyup', event => {
     const key = event.key || event.keyCode; // For older browser support
     if (key === 'ArrowRight' || key === 39) {
-      actions.next();
+      if (!modifier) actions.next();
+      if (modifier) actions.next10();
     }
     if (key === 'ArrowLeft' || key === 37) {
-      actions.prev();
+      if (!modifier) actions.prev();
+      if (modifier) actions.prev10();
+    }
+    if (key === 'Shift' || key === 16) {
+      modifier = false;
+    }
+  });
+  document.addEventListener('keydown', event => {
+    const key = event.key || event.keyCode;
+    if (key === 'Shift' || key === 16) {
+      modifier = true;
     }
   });
 }
