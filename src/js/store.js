@@ -13,6 +13,16 @@ export const actionsCreators = {
     animation: 'flip-vertical-left',
     incorrectAnswerCount: 0
   }),
+  next10: ({ current, rebuses }) => ({
+    current: current < rebuses.length - 10 ? current + 10 : 0,
+    animation: 'flip-vertical-right',
+    incorrectAnswerCount: 0
+  }),
+  prev10: ({ current, rebuses }) => ({
+    current: current > 0 ? current - 10 : rebuses.length - 10,
+    animation: 'flip-vertical-left',
+    incorrectAnswerCount: 0
+  }),
   setCurrent: ({ rebuses }, id) => {
     const index = rebuses.findIndex(rebus => rebus.id === id);
     if (index > 0) {
