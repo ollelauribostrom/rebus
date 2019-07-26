@@ -889,7 +889,7 @@ const rebuses = [
     hint: ['An insect that makes a sweet treat.']
   },
   {
-    symbols: ['🖊', '+', 'a', '😎'],
+    symbols: ['🖊', '+', 'a', '+', '😎'],
     words: ['pinnacle'],
     hint: ['The very top']
   }
