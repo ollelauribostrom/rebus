@@ -39,15 +39,13 @@ export function Word(props, ...children) {
               const input = target.value;
               const prevChild = target.previousElementSibling;
               if (prevChild !== null && input === '') {
-
                 prevChild.focus();
                 e.preventDefault();
               }
               else if (target.parentElement && input === '') {
-                var previousSibling = target.parentElement.previousSibling;
-
+                const previousSibling = target.parentElement.previousSibling;
                 if (previousSibling) {
-                  var lastChildOfParent = previousSibling.lastElementChild;
+                  const lastChildOfParent = previousSibling.lastElementChild;
                   if (lastChildOfParent) {
                     lastChildOfParent.focus();
                     e.preventDefault();
