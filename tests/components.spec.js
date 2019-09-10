@@ -110,7 +110,6 @@ describe('Tests for components', () => {
       inputs[1].dispatchEvent(mockEvent);
       expect(inputs[0] === document.activeElement).toEqual(true);
     });
-
     it('clears everything if you hold backspace', () => {
       const onInput = jest.fn();
       const props = { ...getMockState(), word: 'one word', wordIndex: 0, charInput: onInput };
@@ -127,7 +126,6 @@ describe('Tests for components', () => {
       inputs[3].dispatchEvent(mockEvent);
       expect(inputs[2] === document.activeElement).toEqual(true);
     });
-
     it('remains on the same input field when pressing backspace in non empty field', () => {
       const onInput = jest.fn();
       const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
