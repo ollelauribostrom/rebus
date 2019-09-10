@@ -118,13 +118,13 @@ describe('Tests for components', () => {
       const inputs = root.querySelectorAll('input');
       const mockEvent = new Event('keydown');
       mockEvent.key = 'Backspace';
-      inputs[7].focus();
-      inputs[7].dispatchEvent(mockEvent);
+      inputs[6].focus();
       inputs[6].dispatchEvent(mockEvent);
       inputs[5].dispatchEvent(mockEvent);
       inputs[4].dispatchEvent(mockEvent);
       inputs[3].dispatchEvent(mockEvent);
-      expect(inputs[2] === document.activeElement).toEqual(true);
+      inputs[2].dispatchEvent(mockEvent);
+      expect(inputs[1] === document.activeElement).toEqual(true);
     });
     it('remains on the same input field when pressing backspace in non empty field', () => {
       const onInput = jest.fn();
