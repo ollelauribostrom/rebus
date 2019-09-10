@@ -101,7 +101,7 @@ describe('Tests for components', () => {
     it('jumps to the previous input field when pressing backspace in empty field', () => {
       const onInput = jest.fn();
       const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
-      const root = document.createElement('div');
+      const root = document.createElement('div');  
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
       const mockEvent = new Event('keydown');
@@ -110,6 +110,24 @@ describe('Tests for components', () => {
       inputs[1].dispatchEvent(mockEvent);
       expect(inputs[0] === document.activeElement).toEqual(true);
     });
+
+    it('clears everything if you hold backspace', () => {
+      const onInput = jest.fn();
+      const props = { ...getMockState(), word: 'one word', wordIndex: 0, charInput: onInput };
+      const root = document.createElement('div');  
+      render(Word(props), root);
+      const inputs = root.querySelectorAll('input');
+      const mockEvent = new Event('keydown');
+      mockEvent.key = 'Backspace';
+      inputs[7].focus();
+      inputs[7].dispatchEvent(mockEvent);
+      inputs[6].dispatchEvent(mockEvent);
+      inputs[5].dispatchEvent(mockEvent);
+      inputs[4].dispatchEvent(mockEvent);
+      inputs[3].dispatchEvent(mockEvent);
+      expect(inputs[2] === document.activeElement).toEqual(true);
+    });
+
     it('remains on the same input field when pressing backspace in non empty field', () => {
       const onInput = jest.fn();
       const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
