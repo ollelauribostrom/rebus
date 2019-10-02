@@ -887,7 +887,12 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
-  }
+  },
+  {
+    symbols: ['D', '+', '🐞'],
+    words: ['Debug'],
+    hint: 'coders spend a lot of time doing it.'
+  }	
 ];
 
 export function isRebusAnswered(id) {
