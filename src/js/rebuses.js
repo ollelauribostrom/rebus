@@ -1,5 +1,4 @@
-const rebuses = [
-  {
+const rebuses = [{
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
     hint: 'You´re solving one right now'
@@ -737,6 +736,11 @@ const rebuses = [
     symbols: ['🔥', '+', '🤼', '+', 'er'],
     words: ['firefighter'],
     hint: 'They show up when there is a fire'
+  },
+  {
+    symbols: ['🕵️‍♂️', '📦', '🔫', '❗'],
+    words: ['solid snake'],
+    hint: 'hideo kojima game '
   },
   {
     symbols: ['1', '+', 'ce', '+', 'n', '+', 'a', '+', '🔵', '+', '🌛'],
