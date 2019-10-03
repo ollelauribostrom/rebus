@@ -9,6 +9,7 @@ export function addListeners(component, $element) {
   });
 }
 
+//
 export function callComponentDidMount(component) {
   if (isFunction(component.componentDidMount)) {
     component.componentDidMount();
@@ -37,6 +38,7 @@ export function renderComponent(component, $parent) {
   return $element;
 }
 
+// appends all elements to root
 export function render(component, root) {
   const element = renderComponent(component, root);
   root.appendChild(element);

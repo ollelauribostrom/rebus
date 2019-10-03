@@ -1,6 +1,7 @@
 import { createComponent } from '../mini';
 import { connect } from '../store';
 
+//progress bar to keep track of progress
 export function ProgressBar(props) {
   return connect(
     createComponent({

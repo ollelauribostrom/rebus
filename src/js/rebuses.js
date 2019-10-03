@@ -1,4 +1,5 @@
 const rebuses = [
+  
   {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
@@ -887,16 +888,27 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🎩' + 'trick'],
+    words: ['hat', 'trick'],
+    hint: 'Score 3 goals in a single game'
   }
+  
 ];
 
 export function isRebusAnswered(id) {
+  //gets answeredRebuses obj
   const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+  //check for id in answerRebu obj
   return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id);
 }
 
+
 export function markRebusAsAnswered(id) {
+
   const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+  //if empty add key-value
   if (!answeredRebuses) {
     window.localStorage.setItem('answeredRebuses', JSON.stringify([id]));
   } else {
@@ -906,6 +918,7 @@ export function markRebusAsAnswered(id) {
     );
   }
 }
+
 
 export function getRebuses() {
   return rebuses.map((rebus, index) => {
