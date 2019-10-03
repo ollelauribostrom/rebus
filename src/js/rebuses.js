@@ -854,6 +854,11 @@ const rebuses = [
     hint: 'Famous Dutch painter.'
   },
   {
+    symbols: ['🚗', '🏊'],
+    words: ['Carpool'],
+    hint: 'A way to save the environment and money.'
+  },
+  {
     symbols: ['🖖'],
     words: ['Star', 'Trek'],
     hint: 'Famous salute from what TV show?'
