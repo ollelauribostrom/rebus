@@ -892,6 +892,16 @@ const rebuses = [
     symbols: ['💛', '💌'],
     words: ['love', 'letter'],
     hint: ['I love you']
+  },
+  {
+    symbols: ['🔭', '🌉'],
+    words: ['skygazer'],
+    hint: ['seeing the sky at night']
+  },
+  {
+    symbols: ['🎸', '🎹'],
+    words: ['musical', 'instruments'],
+    hint: ['guitar are piano are....']
   }
 ];
 
