@@ -6,7 +6,8 @@ import { GithubCorner } from './components/GithubCorner';
 import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
-import { Hint } from './components/Hint';
+import { ProgressValue } from './components/ProgressValue';
+import { Hint } from './components/Hint'; 
 
 import { actions } from './store';
 import '../css/main.css';
@@ -51,7 +52,8 @@ export function init() {
           onClick: () => actions.next()
         }),
         Hint(),
-        ProgressBar()
+        ProgressBar(),
+        ProgressValue()
       ),
       document.querySelector('.root')
     );
