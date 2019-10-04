@@ -874,6 +874,11 @@ const rebuses = [
     hint: ["Let's find something together"]
   },
   {
+    symbols: ['👸🏼', '+', '❄️'],
+    words: ['frozen'],
+    hint: ["Let it go"]
+  },
+  {
     symbols: ['🐛', '+', '🕳'],
     words: ['worm', 'hole'],
     hint: 'A passage through space creating a shortcut through time and space'
