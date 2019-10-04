@@ -884,6 +884,11 @@ const rebuses = [
     hint: ["Let it go"]
   },
   {
+    symbols: ['👸🏼', '+', '🐸'],
+    words: ['princess', 'and', 'the', 'frog'],
+    hint: 'A girl who kisses a ___.'
+  },
+  {
     symbols: ['🐛', '+', '🕳'],
     words: ['worm', 'hole'],
     hint: 'A passage through space creating a shortcut through time and space'
