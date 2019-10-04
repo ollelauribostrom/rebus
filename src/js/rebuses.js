@@ -819,6 +819,11 @@ const rebuses = [
     hint: 'You need to charge your device soon'
   },
   {
+    symbols: ['🎵', '🎼'],
+    words: ['composer'],
+    hint: 'Who writes classical music'
+  },
+  {
     symbols: ['📰'],
     words: ['newspaper'],
     hint: 'Reading today&#39s ______'
