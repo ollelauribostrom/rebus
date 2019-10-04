@@ -859,6 +859,11 @@ const rebuses = [
     hint: 'Famous salute from what TV show?'
   },
   {
+    symbols: ['👸🏼', '+', '🐸'],
+    words: ['princess', 'and', 'the', 'frog'],
+    hint: 'A girl who kisses a ___.'
+  },
+  {
     symbols: ['🎁', '+', '🃏'],
     words: ['gift', 'card'],
     hint: 'You get one on your birthday'
