@@ -5,3 +5,5 @@ yarn-error.log
 dist
 coverage
 .idea
+#VS Code Workspace File
+*.code-workspace
