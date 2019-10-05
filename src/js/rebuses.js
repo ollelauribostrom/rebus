@@ -897,6 +897,11 @@ const rebuses = [
     symbols: ['F', '+', '👂'],
     words: ['fear'],
     hint: ['A feeling induced by perceived danger or threat']
+  },
+  {
+    symbols: ['D', '+', '💡'],
+    words: ['delight'],
+    hint: ['A cause or source of great pleasure']
   }
 ];
 
