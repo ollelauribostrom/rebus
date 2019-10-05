@@ -1,3 +1,6 @@
+
+
+
 const rebuses = [
   
   {
@@ -898,9 +901,9 @@ const rebuses = [
 ];
 
 export function isRebusAnswered(id) {
-  //gets answeredRebuses obj
+  
   const answeredRebuses = window.localStorage.getItem('answeredRebuses');
-  //check for id in answerRebu obj
+  
   return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id);
 }
 
@@ -908,7 +911,7 @@ export function isRebusAnswered(id) {
 export function markRebusAsAnswered(id) {
 
   const answeredRebuses = window.localStorage.getItem('answeredRebuses');
-  //if empty add key-value
+  
   if (!answeredRebuses) {
     window.localStorage.setItem('answeredRebuses', JSON.stringify([id]));
   } else {
@@ -921,8 +924,10 @@ export function markRebusAsAnswered(id) {
 
 export function resetStorage(){
   window.localStorage.removeItem('answeredRebuses');
-  
+
   window.location.reload();
+  
+  
 }
 
 export function getRebuses() {

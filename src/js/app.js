@@ -30,6 +30,8 @@ export function setCurrentFromURL() {
   actions.setCurrent(id);
 }
 
+
+
 export function init() {
   try {
     return render(
