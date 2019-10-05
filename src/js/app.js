@@ -10,6 +10,7 @@ import { Hint } from './components/Hint';
 import {Reset} from './components/Reset';
 import { actions } from './store';
 import '../css/main.css';
+import { resetStorage } from './rebuses';
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -51,7 +52,11 @@ export function init() {
           onClick: () => actions.next()
         }),
         Hint(),
-        Reset(),
+        Reset({
+          className: 'resetButton',
+          onClick: () => resetStorage()
+        }),
+        
         ProgressBar()
       ),
       document.querySelector('.root')
