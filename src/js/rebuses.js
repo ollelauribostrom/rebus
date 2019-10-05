@@ -919,6 +919,10 @@ export function markRebusAsAnswered(id) {
   }
 }
 
+export function resetStorage(){
+  window.localStorage.removeItem('answeredRebuses');
+  
+}
 
 export function getRebuses() {
   return rebuses.map((rebus, index) => {

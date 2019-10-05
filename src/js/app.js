@@ -7,7 +7,7 @@ import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
-
+import {Reset} from './components/Reset';
 import { actions } from './store';
 import '../css/main.css';
 
@@ -51,6 +51,7 @@ export function init() {
           onClick: () => actions.next()
         }),
         Hint(),
+        Reset(),
         ProgressBar()
       ),
       document.querySelector('.root')
