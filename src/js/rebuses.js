@@ -700,7 +700,7 @@ const rebuses = [
   },
   {
     symbols: ['🛤️', '+', 'men'],
-    words: ['Railwayman'],
+    words: ['Railwaymen'],
     hint: `Works in a railway yard`
   },
   {
@@ -887,6 +887,11 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🐈', '-', 'T', '+', 'R'],
+    words: ['car'],
+    hint: ['Consists of wheels']
   }
 ];
 
