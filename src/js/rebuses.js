@@ -891,7 +891,7 @@ const rebuses = [
   {
     symbols: ['🐈', '-', 'T', '+', 'R'],
     words: ['car'],
-    hint: ['Consits of wheels']
+    hint: ['Consists of wheels']
   }
 ];
 
