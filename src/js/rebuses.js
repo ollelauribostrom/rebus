@@ -892,6 +892,11 @@ const rebuses = [
     symbols: ['🐈', '-', 'T', '+', 'R'],
     words: ['car'],
     hint: ['Consists of wheels']
+  },
+  {
+    symbols: ['F', '+', '👂'],
+    words: ['fear'],
+    hint: ['A feeling induced by perceived danger or threat']
   }
 ];
 
