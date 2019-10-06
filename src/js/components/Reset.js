@@ -11,6 +11,5 @@ export function Reset(props) {
         </button>      
       `;
     }
-  });   
+  });
 }
-

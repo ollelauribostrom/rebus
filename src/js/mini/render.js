@@ -9,7 +9,6 @@ export function addListeners(component, $element) {
   });
 }
 
-
 export function callComponentDidMount(component) {
   if (isFunction(component.componentDidMount)) {
     component.componentDidMount();
@@ -37,7 +36,6 @@ export function renderComponent(component, $parent) {
   component.rendered = rendered; // eslint-disable-line
   return $element;
 }
-
 
 export function render(component, root) {
   const element = renderComponent(component, root);

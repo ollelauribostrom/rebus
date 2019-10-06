@@ -889,7 +889,7 @@ const rebuses = [
     hint: ['An insect that makes a sweet treat.']
   },
   {
-    symbols: ['🎩' + 'trick'],
+    symbols: ['🎩' ,'+', 'trick'],
     words: ['hat', 'trick'],
     hint: 'Score 3 goals in a single game'
   }
@@ -912,7 +912,7 @@ export function markRebusAsAnswered(id) {
   }
 }
 
-export function resetStorage(){
+export function resetStorage() {
   window.localStorage.removeItem('answeredRebuses');
   window.location.reload();
 }
