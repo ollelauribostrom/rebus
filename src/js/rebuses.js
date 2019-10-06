@@ -912,11 +912,6 @@ export function markRebusAsAnswered(id) {
   }
 }
 
-export function resetStorage() {
-  window.localStorage.removeItem('answeredRebuses');
-  window.location.reload();
-}
-
 export function getRebuses() {
   return rebuses.map((rebus, index) => {
     const id = index + 1;

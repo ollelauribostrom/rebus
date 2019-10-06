@@ -10,7 +10,6 @@ import { Hint } from './components/Hint';
 import { Reset } from './components/Reset';
 import { actions } from './store';
 import '../css/main.css';
-import { resetStorage } from './rebuses';
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -28,6 +27,14 @@ export function setCurrentFromURL() {
   const params = new URLSearchParams(window.location.search);
   const id = Number(params.get('rebus'));
   actions.setCurrent(id);
+}
+
+export function resetStorage() {
+  const answers = window.localStorage.getItem('answeredRebuses');
+  if (answers) {
+    window.localStorage.removeItem('answeredRebuses');
+    window.location.reload();
+  }
 }
 
 export function init() {

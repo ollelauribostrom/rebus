@@ -1,4 +1,4 @@
-import { init, registerListeners, setCurrentFromURL } from '../src/js/app';
+import { init, registerListeners, setCurrentFromURL, resetStorage } from '../src/js/app';
 import { actions as actionsMock } from '../src/js/store';
 import * as renderMock from '../src/js/mini/render';
 
@@ -64,6 +64,14 @@ describe('Tests for app', () => {
       window.history.pushState({}, 'Test', '/?rebus=2');
       setCurrentFromURL();
       expect(actionsMock.setCurrent).toHaveBeenCalledWith(2);
+    });
+  });
+  describe('resetStorage', () => {
+    it('resets answered rebuses and reloads page', () => {
+      window.localStorage.setItem('answeredRebuses', 20);
+      const storage = window.localStorage.removeItem('answeredRebuses');
+      resetStorage();
+      expect(storage).toEqual(undefined);
     });
   });
 });
