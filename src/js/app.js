@@ -7,7 +7,7 @@ import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
-import {Reset} from './components/Reset';
+import { Reset } from './components/Reset';
 import { actions } from './store';
 import '../css/main.css';
 import { resetStorage } from './rebuses';
@@ -29,8 +29,6 @@ export function setCurrentFromURL() {
   const id = Number(params.get('rebus'));
   actions.setCurrent(id);
 }
-
-
 
 export function init() {
   try {
@@ -58,7 +56,6 @@ export function init() {
           className: 'resetButton',
           onClick: () => resetStorage()
         }),
-        
         ProgressBar()
       ),
       document.querySelector('.root')

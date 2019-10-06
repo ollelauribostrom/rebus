@@ -8,7 +8,6 @@ export function createComponent({
   componentDidMount,
   componentDidUpdate
 }) {
- 
   return {
     props,
     children,
@@ -16,9 +15,7 @@ export function createComponent({
     componentDidMount,
     componentDidUpdate,
     update() {
-
       if (this.rendered !== this.render(this.props)) {
-        
         renderComponent(this, this.$parent);
         if (isFunction(this.componentDidUpdate)) {
           this.componentDidUpdate();

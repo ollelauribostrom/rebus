@@ -1,8 +1,4 @@
-
-
-
 const rebuses = [
-  
   {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
@@ -897,21 +893,15 @@ const rebuses = [
     words: ['hat', 'trick'],
     hint: 'Score 3 goals in a single game'
   }
-  
 ];
 
 export function isRebusAnswered(id) {
-  
   const answeredRebuses = window.localStorage.getItem('answeredRebuses');
-  
   return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id);
 }
 
-
 export function markRebusAsAnswered(id) {
-
   const answeredRebuses = window.localStorage.getItem('answeredRebuses');
-  
   if (!answeredRebuses) {
     window.localStorage.setItem('answeredRebuses', JSON.stringify([id]));
   } else {
@@ -924,10 +914,7 @@ export function markRebusAsAnswered(id) {
 
 export function resetStorage(){
   window.localStorage.removeItem('answeredRebuses');
-
   window.location.reload();
-  
-  
 }
 
 export function getRebuses() {
