@@ -233,6 +233,12 @@ describe('Tests for components', () => {
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
+    it('renders correctly (with className prop', () => {
+      const props = { className: 'testing' };
+      const wrapper = Reset(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
   });
   describe('Hint', () => {
     it('renders correctly (when incorrect answer count is more than max incorrect answer count)', () => {
