@@ -611,6 +611,25 @@ exports[`Tests for components Rebus renders correctly 2`] = `
         "
 `;
 
+exports[`Tests for components Reset renders correctly (without className prop) 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {},
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components Reset renders correctly (without className prop) 2`] = `
+"
+        <button class=\\"undefined\\">
+          Reset
+        </button>
+      "
+`;
+
 exports[`Tests for components Word renders correctly 1`] = `
 Object {
   "children": Array [],

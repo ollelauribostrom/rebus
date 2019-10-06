@@ -8,6 +8,7 @@ import { ChangeButton } from '../src/js/components/ChangeButton';
 import { Rebus } from '../src/js/components/Rebus';
 import { ProgressBar } from '../src/js/components/ProgressBar';
 import { Hint } from '../src/js/components/Hint';
+import { Reset } from '../src/js/components/Reset';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
@@ -221,6 +222,14 @@ describe('Tests for components', () => {
     it('renders correctly (without rebuses)', () => {
       const props = { rebuses: [] };
       const wrapper = ProgressBar(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('Reset', () => {
+    it('renders correctly (without className prop)', () => {
+      const props = {};
+      const wrapper = Reset(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
