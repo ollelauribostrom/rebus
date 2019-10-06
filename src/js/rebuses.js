@@ -889,9 +889,9 @@ const rebuses = [
     hint: ['An insect that makes a sweet treat.']
   },
   {
-    symbols: ['🎩' ,'+', 'trick'],
+    symbols: ['🎩', '+', 'trick'],
     words: ['hat', 'trick'],
-    hint: 'Score 3 goals in a single game'
+    hint: ['Score 3 goals in a single game']
   }
 ];
 
