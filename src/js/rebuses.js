@@ -888,6 +888,10 @@ const rebuses = [
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
   }
+  symbols: ['🍈 - on', '+', '🗑'],
+  words: ['Melbourne'],
+  hint: ['Soon to be the largest city in Australia.']
+}
 ];
 
 export function isRebusAnswered(id) {
