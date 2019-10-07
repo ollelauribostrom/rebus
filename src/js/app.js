@@ -34,12 +34,6 @@ export function resetStorage() {
   if (answer) {
     window.localStorage.removeItem('answeredRebuses');
     window.location.reload();
-  } else {
-    const params = new URLSearchParams(window.location.search);
-    const id = Number(params.get('rebus'));
-    if (id > 1) {
-      actions.setCurrent(2);
-    }
   }
 }
 
