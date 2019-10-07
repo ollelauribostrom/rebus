@@ -15,7 +15,7 @@ export function Word(props, ...children) {
             const input = e.target.value;
             charInput(input, props.wordIndex, charIndex);
 
-            if (/[a-zA-Z]/.test(input)) {
+            if (/[a-zA-Z\d '-]/.test(input)) {
               const nextChild = e.target.nextElementSibling;
               const hasNextWord = !!this.$element.nextSibling;
 
