@@ -30,8 +30,7 @@ export function setCurrentFromURL() {
 }
 
 export function resetStorage() {
-  const answers = window.localStorage.getItem('answeredRebuses');
-  if (answers) {
+  if (window.localStorage.getItem('answeredRebuses')) {
     window.localStorage.removeItem('answeredRebuses');
     window.location.reload();
   }

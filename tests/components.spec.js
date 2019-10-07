@@ -234,12 +234,16 @@ describe('Tests for components', () => {
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
+  });
+  describe('Reset', () => {
     it('renders correctly (with className prop', () => {
       const props = { className: 'test' };
       const wrapper = Reset(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });
+  });
+  describe('Reset', () => {
     it('renders correctly (with onclick)', () => {
       const props = { className: 'testing', onclick: () => resetStorage() };
       const wrapper = Reset(props);
