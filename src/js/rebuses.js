@@ -1,4 +1,5 @@
 const rebuses = [
+  
   {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
@@ -307,6 +308,11 @@ const rebuses = [
     symbols: ['🌲', '+', '🏠'],
     words: ['treehouse'],
     hint: 'A house built in a tree'
+  },
+  {
+    symbols: ['🐖', '+', '🏦'],
+    words: ['Piggybank'],
+    hint: `A coin container for children`
   },
   {
     symbols: ['✔', '+', 'list'],
