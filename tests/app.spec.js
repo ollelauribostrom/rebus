@@ -65,10 +65,21 @@ describe('Tests for app', () => {
       setCurrentFromURL();
       expect(actionsMock.setCurrent).toHaveBeenCalledWith(2);
     });
+    it('sets the current rebus based on the url query string', () => {
+      window.history.pushState({}, 'Test', '/?rebus=8');
+      setCurrentFromURL();
+      expect(actionsMock.setCurrent).toHaveBeenCalledWith(8);
+    });
   });
   describe('resetStorage', () => {
     it('resets answered rebuses and reloads page', () => {
       window.localStorage.setItem('answeredRebuses', 20);
+      const storage = window.localStorage.removeItem('answeredRebuses');
+      resetStorage();
+      expect(storage).toEqual(undefined);
+    });
+    it('resets answered rebuses and reloads page', () => {
+      window.localStorage.setItem('answeredRebuses', [20, 50, 60]);
       const storage = window.localStorage.removeItem('answeredRebuses');
       resetStorage();
       expect(storage).toEqual(undefined);

@@ -9,6 +9,7 @@ import { Rebus } from '../src/js/components/Rebus';
 import { ProgressBar } from '../src/js/components/ProgressBar';
 import { Hint } from '../src/js/components/Hint';
 import { Reset } from '../src/js/components/Reset';
+import { resetStorage } from '../src/js/app';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
@@ -235,6 +236,12 @@ describe('Tests for components', () => {
     });
     it('renders correctly (with className prop', () => {
       const props = { className: 'test' };
+      const wrapper = Reset(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+    it('renders correctly (with onclick)', () => {
+      const props = { className: 'testing', onclick: () => resetStorage() };
       const wrapper = Reset(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
