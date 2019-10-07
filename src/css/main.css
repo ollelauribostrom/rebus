@@ -68,6 +68,16 @@ body,
   padding-left: 20px;
 }
 
+.resetButton{
+  background-color:purple; 
+  color:white; 
+  font-size: 25px;
+  height: 35px;
+  width: 150px; 
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
 .rebus__symbols {
   align-self: center;
   justify-self: center;
@@ -151,6 +161,8 @@ body,
   grid-column-start: 4;
   grid-row-start: 2;
 }
+
+
 
 .confetti-canon {
   position: absolute;

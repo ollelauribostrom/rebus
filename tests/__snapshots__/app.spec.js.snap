@@ -65,6 +65,17 @@ Object {
       "children": Array [],
       "componentDidMount": undefined,
       "componentDidUpdate": undefined,
+      "props": Object {
+        "className": "resetButton",
+        "onClick": [Function],
+      },
+      "render": [Function],
+      "update": [Function],
+    },
+    Object {
+      "children": Array [],
+      "componentDidMount": undefined,
+      "componentDidUpdate": undefined,
       "props": Object {},
       "render": [Function],
       "update": [Function],

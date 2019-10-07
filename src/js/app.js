@@ -7,7 +7,7 @@ import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
-
+import { Reset } from './components/Reset';
 import { actions } from './store';
 import '../css/main.css';
 
@@ -27,6 +27,14 @@ export function setCurrentFromURL() {
   const params = new URLSearchParams(window.location.search);
   const id = Number(params.get('rebus'));
   actions.setCurrent(id);
+}
+
+export function resetStorage() {
+  const answer = window.localStorage.getItem('answeredRebuses');
+  if (answer) {
+    window.localStorage.removeItem('answeredRebuses');
+    window.location.reload();
+  }
 }
 
 export function init() {
@@ -51,6 +59,10 @@ export function init() {
           onClick: () => actions.next()
         }),
         Hint(),
+        Reset({
+          className: 'resetButton',
+          onClick: () => resetStorage()
+        }),
         ProgressBar()
       ),
       document.querySelector('.root')
