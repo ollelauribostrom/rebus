@@ -1,4 +1,5 @@
-const rebuses = [{
+const rebuses = [
+  {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
     hint: 'You´re solving one right now'
