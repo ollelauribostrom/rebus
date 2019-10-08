@@ -889,9 +889,9 @@ const rebuses = [
     hint: ['An insect that makes a sweet treat.']
   },
   {
-    symbols: ['⌚','+','🥛'],
-    words:['hour','glass'],
-    hint:['A glass that measures time']
+    symbols: ['⌚', '+', '🥛'],
+    words: ['hour', 'glass'],
+    hint: ['A glass that measures time']
   }
 ];
 
