@@ -887,6 +887,21 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['❄️❄️❄️', '+', '🦊️'],
+    words: ['arctic', 'fox'],
+    hint: ['A type of cold weather animal']
+  },
+  {
+    symbols: ['🐍️', '+', '🛢️'],
+    words: ['snake', 'oil'],
+    hint: ['Selling a false product']
+  },
+  {
+    symbols: ['⛸️', '-', 'skate', '+', '🏝️', '🤢️'],
+    words: ['icelandic'],
+    hint: ['A language']
   }
 ];
 
