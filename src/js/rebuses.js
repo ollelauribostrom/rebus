@@ -890,8 +890,13 @@ const rebuses = [
   },
   {
     symbols: ['🍟', '-', 's', '+', '🌬', '-', 'wi', '+', 'ly',],
-    words: ['friendly'],
+    words: ['Friendly'],
     hint: ['Something you should always be.']
+  },
+  {
+    symbols: ['N', '=', 'D', '👑',],
+    words: ['Crowd'],
+    hint: ['Many people in an area.']
   }
 ];
 
