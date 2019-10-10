@@ -893,7 +893,6 @@ const rebuses = [
     words:['key', 'ring'],
     hint:['Used for keeping keys safe']
   }
-
 ];
 
 export function isRebusAnswered(id) {
