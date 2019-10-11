@@ -892,7 +892,7 @@ const rebuses = [
     symbols: ['🦀', '+', '🍎'],
     words: ['crabapple'],
     hint: ['Also known as wild apples']
-  },
+  }
 ];
 
 export function isRebusAnswered(id) {
