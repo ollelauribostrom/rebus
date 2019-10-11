@@ -920,3 +920,12 @@ export function getRebuses() {
     };
   });
 }
+
+export function getRandomUnansweredRebus(userInteractedRebuses) {
+  const unansweredRebuses = userInteractedRebuses.filter(resbus => !resbus.isAnswered);
+  const randomlyPickedUnansweredRebusesId = Math.floor(
+    Math.random() * Math.floor(unansweredRebuses.length)
+  );
+  const randomlyPickedRebus = unansweredRebuses[randomlyPickedUnansweredRebusesId];
+  return randomlyPickedRebus ? randomlyPickedRebus.id : 0;
+}

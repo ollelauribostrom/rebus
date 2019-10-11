@@ -4,6 +4,7 @@ import { App } from './components/App';
 import { Logo } from './components/Logo';
 import { GithubCorner } from './components/GithubCorner';
 import { ChangeButton } from './components/ChangeButton';
+import { RandomButton } from './components/RandomButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
@@ -49,6 +50,10 @@ export function init() {
         ChangeButton({
           className: 'change-button--next',
           onClick: () => actions.next()
+        }),
+        RandomButton({
+          className: 'random-button',
+          onClick: () => actions.random()
         }),
         Hint(),
         ProgressBar()

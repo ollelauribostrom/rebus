@@ -1,6 +1,6 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
-import { getRebuses, markRebusAsAnswered } from './rebuses';
+import { getRebuses, markRebusAsAnswered, getRandomUnansweredRebus } from './rebuses';
 
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
@@ -10,6 +10,11 @@ export const actionsCreators = {
   }),
   prev: ({ current, rebuses }) => ({
     current: current > 0 ? current - 1 : rebuses.length - 1,
+    animation: 'flip-vertical-left',
+    incorrectAnswerCount: 0
+  }),
+  random: ({ rebuses }) => ({
+    current: getRandomUnansweredRebus(rebuses),
     animation: 'flip-vertical-left',
     incorrectAnswerCount: 0
   }),
