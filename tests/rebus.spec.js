@@ -1,4 +1,9 @@
-import { getRebuses, isRebusAnswered, markRebusAsAnswered } from '../src/js/rebuses';
+import {
+  getRebuses,
+  isRebusAnswered,
+  markRebusAsAnswered,
+  getRandomUnansweredRebusId
+} from '../src/js/rebuses';
 
 describe('Tests for rebuses', () => {
   describe('getRebuses', () => {
@@ -75,6 +80,40 @@ describe('Tests for rebuses', () => {
         });
       });
       expect(duplicates).toEqual([]);
+    });
+  });
+  describe('getRandomUnansweredRebus', () => {
+    it('get an random rebus', () => {
+      const mockedUserInteractedRebuses = [
+        {
+          symbols: ['Re', '+', '🚌'],
+          words: ['Rebus'],
+          hint: 'You´re solving one right now',
+          isAnswered: true,
+          id: 0
+        },
+        {
+          symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
+          words: ['Houseplants'],
+          hint: `The second emoji is 'ant' not 'bug'`,
+          isAnswered: false,
+          id: 1
+        },
+        {
+          symbols: ['📖', '+', '🙋', '+', '📝'],
+          words: ['Readme', 'file'],
+          hint: 'The default markdown file of every GitHub repo',
+          isAnswered: false,
+          id: 2
+        }
+      ];
+      const mockMath = Object.create(global.Math);
+      mockMath.random = () => 0;
+      global.Math = mockMath;
+      const randomlyPickedUnansweredRebusId = getRandomUnansweredRebusId(
+        mockedUserInteractedRebuses
+      );
+      expect(randomlyPickedUnansweredRebusId).toBe(1);
     });
   });
 });
