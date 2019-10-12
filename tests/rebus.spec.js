@@ -107,6 +107,29 @@ describe('Tests for rebuses', () => {
           id: 2
         }
       ];
+      const mockedUserInteractedRebusesAnsweredCompletely = [
+        {
+          symbols: ['Re', '+', '🚌'],
+          words: ['Rebus'],
+          hint: 'You´re solving one right now',
+          isAnswered: true,
+          id: 0
+        },
+        {
+          symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
+          words: ['Houseplants'],
+          hint: `The second emoji is 'ant' not 'bug'`,
+          isAnswered: true,
+          id: 1
+        },
+        {
+          symbols: ['📖', '+', '🙋', '+', '📝'],
+          words: ['Readme', 'file'],
+          hint: 'The default markdown file of every GitHub repo',
+          isAnswered: true,
+          id: 2
+        }
+      ];
       const mockMath = Object.create(global.Math);
       mockMath.random = () => 0;
       global.Math = mockMath;
@@ -114,6 +137,10 @@ describe('Tests for rebuses', () => {
         mockedUserInteractedRebuses
       );
       expect(randomlyPickedUnansweredRebusId).toBe(1);
+      const randomlyPickedUnansweredRebusIdWithCompletlyAnswered = getRandomUnansweredRebusId(
+        mockedUserInteractedRebusesAnsweredCompletely
+      );
+      expect(randomlyPickedUnansweredRebusIdWithCompletlyAnswered).toBe(0);
     });
   });
 });

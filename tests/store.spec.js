@@ -19,7 +19,7 @@ jest.mock('../src/js/rebuses', () => ({
     }
   ],
   markRebusAsAnswered: jest.fn(),
-  getRandomUnansweredRebusId: jest.fn().mockReturnValue(1)
+  getRandomUnansweredRebusId: jest.fn().mockReturnValue(10)
 }));
 
 describe('Tests for store', () => {
@@ -47,13 +47,22 @@ describe('Tests for store', () => {
     expect(finalState.incorrectAnswerCount).toEqual(0);
   });
   it('should handle action: random', () => {
-    const state = { ...initialState };
-    const newState = Object.assign({}, state, actionsCreators.random(state));
-    const finalState = Object.assign({}, newState, actionsCreators.random(newState));
-    expect(newState.current).toEqual(1);
-    expect(newState.incorrectAnswerCount).toEqual(0);
-    expect(finalState.current).toEqual(1);
-    expect(finalState.incorrectAnswerCount).toEqual(0);
+    const state = Object.assign({}, { ...initialState });
+    const finalState1 = Object.assign({}, state, actionsCreators.random(state));
+    expect(finalState1.current).toEqual(10);
+    expect(finalState1.animation).toEqual('flip-vertical-left');
+    const nextState = Object.assign(
+      {},
+      {
+        ...finalState1
+      },
+      {
+        current: 11
+      }
+    );
+    const finalState = Object.assign({}, nextState, actionsCreators.random(nextState));
+    expect(finalState.current).toEqual(10);
+    expect(finalState.animation).toEqual('flip-vertical-right');
   });
   it('should handle action: shake when isAnswered is false', () => {
     const state = { ...initialState };
