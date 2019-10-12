@@ -699,7 +699,7 @@ const rebuses = [
     hint: 'An instructional manual'
   },
   {
-    symbols: ['🛤️', '+', 'men'],
+    symbols: ['🛤️', '+', 'man'],
     words: ['Railwayman'],
     hint: `Works in a railway yard`
   },
@@ -887,6 +887,11 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['wor', '+', '🚢 '],
+    words: ['worship'],
+    hint: ['An Act to get our wishes fullfilled by god.']
   }
 ];
 
