@@ -1,6 +1,6 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
-import { getRebuses, markRebusAsAnswered, getRandomUnansweredRebus } from './rebuses';
+import { getRebuses, markRebusAsAnswered, getRandomUnansweredRebusId } from './rebuses';
 
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
@@ -13,11 +13,15 @@ export const actionsCreators = {
     animation: 'flip-vertical-left',
     incorrectAnswerCount: 0
   }),
-  random: ({ rebuses }) => ({
-    current: getRandomUnansweredRebus(rebuses),
-    animation: 'flip-vertical-left',
-    incorrectAnswerCount: 0
-  }),
+  random: ({ current: idBeforeRandomized, rebuses }) => {
+    const idAfterRandomized = getRandomUnansweredRebusId(rebuses);
+    return {
+      current: idAfterRandomized,
+      animation:
+        idBeforeRandomized > idAfterRandomized ? 'flip-vertical-right' : 'flip-vertical-left',
+      incorrectAnswerCount: 0
+    };
+  },
   setCurrent: ({ rebuses }, id) => {
     const index = rebuses.findIndex(rebus => rebus.id === id);
     if (index > 0) {
