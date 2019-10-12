@@ -921,11 +921,11 @@ export function getRebuses() {
   });
 }
 
-export function getRandomUnansweredRebus(userInteractedRebuses) {
+export function getRandomUnansweredRebusId(userInteractedRebuses) {
   const unansweredRebuses = userInteractedRebuses.filter(resbus => !resbus.isAnswered);
-  const randomlyPickedUnansweredRebusesId = Math.floor(
+  const randomlyPickedUnansweredRebusNum = Math.floor(
     Math.random() * Math.floor(unansweredRebuses.length)
   );
-  const randomlyPickedRebus = unansweredRebuses[randomlyPickedUnansweredRebusesId];
+  const randomlyPickedRebus = unansweredRebuses[randomlyPickedUnansweredRebusNum];
   return randomlyPickedRebus ? randomlyPickedRebus.id : 0;
 }
