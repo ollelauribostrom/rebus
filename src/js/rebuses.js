@@ -291,7 +291,8 @@ const rebuses = [
   {
     symbols: ['👣', '+', '📝'],
     words: ['footnote'],
-    hint: 'Placed at the bottom of a page to describe something referenced in the page'
+    hint:
+      'Placed at the bottom of a page to describe something referenced in the page'
   },
   {
     symbols: ['🐝', '+', 'r'],
@@ -541,7 +542,8 @@ const rebuses = [
   {
     symbols: ['🌍', '+', '☕'],
     words: ['World', 'Cup'],
-    hint: 'A football/soccer tournament played every 4 years and organized by FIFA'
+    hint:
+      'A football/soccer tournament played every 4 years and organized by FIFA'
   },
   {
     symbols: ['🔁', '+', '🔙'],
@@ -571,7 +573,8 @@ const rebuses = [
   {
     symbols: ['👋', '+', '🌍'],
     words: ['Hello', 'World'],
-    hint: 'The popular output of many introductory computer programming tutorials'
+    hint:
+      'The popular output of many introductory computer programming tutorials'
   },
   {
     symbols: ['🌽', '+', 'u', '+', '👮', '+', 'ia'],
@@ -876,7 +879,7 @@ const rebuses = [
   {
     symbols: ['🐛', '+', '🕳'],
     words: ['worm', 'hole'],
-    hint: 'A passage through space creating a shortcut through time and space'
+    hint: ['A passage through space creating a shortcut through time and space']
   },
   {
     symbols: ['🌎', 'OF', '⚔', 'CRAFT'],
@@ -887,36 +890,41 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🐟', '+', '🍜'],
+    words: ['fishbowl'],
+    hint: ['Where fish live.']
   }
 ];
 
-export function isRebusAnswered(id) {
-  const answeredRebuses = window.localStorage.getItem('answeredRebuses');
-  return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id);
+export function isRebusAnswered (id) {
+  const answeredRebuses = window.localStorage.getItem('answeredRebuses')
+  return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id)
 }
 
-export function markRebusAsAnswered(id) {
-  const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+export function markRebusAsAnswered (id) {
+  const answeredRebuses = window.localStorage.getItem('answeredRebuses')
   if (!answeredRebuses) {
-    window.localStorage.setItem('answeredRebuses', JSON.stringify([id]));
+    window.localStorage.setItem('answeredRebuses', JSON.stringify([id]))
   } else {
     window.localStorage.setItem(
       'answeredRebuses',
       JSON.stringify([...JSON.parse(answeredRebuses), id])
-    );
+    )
   }
 }
 
-export function getRebuses() {
+export function getRebuses () {
   return rebuses.map((rebus, index) => {
-    const id = index + 1;
-    const isAnswered = isRebusAnswered(id);
-    const chars = rebus.words.join('');
+    const id = index + 1
+    const isAnswered = isRebusAnswered(id)
+    const chars = rebus.words.join('')
     return {
       id,
       ...rebus,
       input: isAnswered ? [...chars] : [...Array(chars.length)],
       isAnswered
-    };
-  });
+    }
+  })
 }
