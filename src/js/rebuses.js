@@ -887,6 +887,16 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['😺 😺 🔙', '+', 'c=y'],
+    words: ['stay'],
+    hint: ['The first word backwards.']
+  },
+  {
+    symbols: ['🔔',  '+', 'b=s'],
+    words: ['sell'],
+    hint: ['It bell']
   }
 ];
 
