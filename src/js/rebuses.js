@@ -894,7 +894,7 @@ const rebuses = [
     hint: ['A threat to fishes']
   },
   {
-    symbols: ['👑',"dom"],
+    symbols: ['👑', 'dom'],
     words: ['Kingdom'],
     hint: ['Ruled by a king or queen']
   },
