@@ -892,6 +892,11 @@ const rebuses = [
     symbols: ['wor', '+', '🚢 '],
     words: ['worship'],
     hint: ['An Act to get our wishes fullfilled by god.']
+  },
+  {
+    symbols: ['💦', '+', 'rium'],
+    words: ['Aquarium'],
+    hint: ['Wanna have a pet fish?']
   }
 ];
 
