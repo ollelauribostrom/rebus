@@ -887,6 +887,26 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🐠', 'er', '👨'],
+    words: ['Fisherman'],
+    hint: ['A threat to fishes']
+  },
+  {
+    symbols: ['👑', 'dom'],
+    words: ['Kingdom'],
+    hint: ['Ruled by a king or queen']
+  },
+  {
+    symbols: ['🍯', '+', 'comb'],
+    words: ['Honeycomb'],
+    hint: ['Built by an insect to store its sweet treat.']
+  },
+  {
+    symbols: ['🔥', '+', 'fly'],
+    words: ['Firefly'],
+    hint: 'A bug with a glowing rear end'
   }
 ];
 
