@@ -897,6 +897,11 @@ const rebuses = [
     symbols: ['💦', '+', 'rium'],
     words: ['Aquarium'],
     hint: ['Wanna have a pet fish?']
+  },
+  {
+    symbols: ['💰', '+', 'plant'],
+    words: ['Moneyplant'],
+    hint: ['A Houseplant from french polynesia!']
   }
 ];
 
