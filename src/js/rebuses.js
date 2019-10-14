@@ -900,7 +900,7 @@ const rebuses = [
   },
   {
     symbols: ['🍯', '+', 'comb'],
-    words: ['honeycomb'],
+    words: ['Honeycomb'],
     hint: ['Built by an insect to store its sweet treat.']
   },
   {
