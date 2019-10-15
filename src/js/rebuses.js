@@ -892,7 +892,7 @@ const rebuses = [
     symbols: ['🌊'],
     words: ['Wave'],
     hint: ['Sea']
-   }
+  }
 
 ];
 
