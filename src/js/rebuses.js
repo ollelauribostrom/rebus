@@ -882,6 +882,11 @@ const rebuses = [
     symbols: ['🌎', 'OF', '⚔', 'CRAFT'],
     words: ['World', 'of', 'Warcraft'],
     hint: ['Famous Blizzard online game']
+  },
+  {
+    symbols: ['🐦', '+', '⽖'],
+    words: ['ravenclaw'],
+    hint: ['The house of the witty']
   }
 ];
 
