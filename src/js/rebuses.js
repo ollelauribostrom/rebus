@@ -887,6 +887,26 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['👀', '+', '⚽'],
+    words: ['Eyeball'],
+    hint: ['You see things through this']
+  },
+  {
+    symbols: ['🌱', '+', '☕'],
+    words: ['Green', 'Tea'],
+    hint: ['Helps you lose weight']
+  },
+  {
+    symbols: ['💍', '+', '🐛'],
+    words: ['Ringworm'],
+    hint: ['Skin rash']
+  },
+  {
+    symbols: ['🙂', '+', '💡'],
+    words: ['Headlight'],
+    hint: ['Bikers wear while biking in the evening']
   }
 ];
 
