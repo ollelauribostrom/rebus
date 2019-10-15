@@ -893,7 +893,6 @@ const rebuses = [
     words: ['Wave'],
     hint: ['Sea']
   }
-
 ];
 
 export function isRebusAnswered(id) {
