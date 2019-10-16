@@ -25,6 +25,11 @@ const rebuses = [
     hint: 'Say the two emojis out loud'
   },
   {
+    symbols: ['🦷', '+', '⛏'],
+    words: ['Toothpick'],
+    hint: 'After Meals'
+  },
+  {
     symbols: ['💡', '+', '🏠'],
     words: ['Lighthouse'],
     hint: 'A tower with a light to guide ships at sea'
