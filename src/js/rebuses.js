@@ -888,6 +888,12 @@ const rebuses = [
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
   }
+,
+  {
+    symbols: ['🌊', '+', '📏'],
+    words: ['wavelength'],
+    hint: ['When people think alike, they are "on the same X".']
+  }
 ];
 
 export function isRebusAnswered(id) {
