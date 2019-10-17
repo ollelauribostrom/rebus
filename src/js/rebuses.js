@@ -887,6 +887,21 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['S', '+', '🚗', '+', 'F'],
+    words: ['scarf'],
+    hint: ['An article of clothing often worn in the winter.']
+  },
+  {
+    symbols: ['T', '+', '🧻'],
+    words: ['troll'],
+    hint: ['A person who intentionally antagonizes others online.']
+  },
+  {
+    symbols: ['🐲', '+', '✈️'],
+    words: ['dragonfly'],
+    hint: ['An insect often found near ponds, lakes, and streams.']
   }
 ];
 
