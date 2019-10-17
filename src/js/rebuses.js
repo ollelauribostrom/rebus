@@ -887,6 +887,11 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🏠', 'of', '🃏'],
+    words: ['House', 'of', 'Cards'],
+    hint: ['a structure built out of playing cards precariously balanced together.']
   }
 ];
 
