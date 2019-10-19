@@ -887,7 +887,22 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
-  }
+  },
+  {
+    symbols: ['📺', '+', '⚓'],
+    words: ['TV-Anchor'],
+    hint: ['One which entertains audience.']
+  },
+  {
+    symbols: ['🎭', '+', '👑'],
+    words: ['dramaqueen'],
+    hint: ['She doesn\'t go looking for drama, it just finds her']
+  },
+  {
+    symbols: ['🏡', '+', '👰'],
+    words: ['housewife'],
+    hint: ['Woman whose work is running or managing her family\'s home']
+  },
 ];
 
 export function isRebusAnswered(id) {
