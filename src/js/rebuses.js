@@ -902,7 +902,7 @@ const rebuses = [
     symbols: ['🏡', '+', '👰'],
     words: ['housewife'],
     hint: ['Woman whose work is running or managing her family\'s home']
-  },
+  }
 ];
 
 export function isRebusAnswered(id) {
