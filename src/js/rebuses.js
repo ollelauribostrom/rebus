@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: 'key(s) to provide quick access to particular functions'
   },
   {
     symbols: ['🌞', '+', '🛀'],
@@ -882,6 +883,11 @@ const rebuses = [
     symbols: ['🌎', 'OF', '⚔', 'CRAFT'],
     words: ['World', 'of', 'Warcraft'],
     hint: ['Famous Blizzard online game']
+  },
+  {
+    symbols: ['🍯', '+', '🐝'],
+    words: ['honeybee'],
+    hint: ['An insect that makes a sweet treat.']
   },
   {
     symbols: ['🍯', '+', '🐝'],
