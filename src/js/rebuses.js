@@ -887,6 +887,16 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🤖', '+', '👮‍'],
+    words: ['Robocop'],
+    hint: ['A 1987 American action film.']
+  },
+  {
+    symbols: ['📦', '+', '🔗‍'],
+    words: ['Blockchain'],
+    hint: ['Sequential distributed database.']
   }
 ];
 
