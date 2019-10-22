@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: `Example Ctrl + V`
   },
   {
     symbols: ['🌞', '+', '🛀'],
