@@ -860,7 +860,7 @@ const rebuses = [
   },
   {
     symbols: ['🎁', '+', '🃏'],
-    words: ['', 'card'],
+    words: ['gift', 'card'],
     hint: 'You get one on your birthday'
   },
   {
