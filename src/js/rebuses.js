@@ -887,6 +887,11 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['FUN', 'WITH', '🏳🏳']
+    words: ['fun with flags'],
+    hint: ['A popular youtube channel by Dr. Sheldon Cooper and Dr. Amy Farrah Fowler']
   }
 ];
 
