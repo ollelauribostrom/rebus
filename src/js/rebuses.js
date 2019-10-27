@@ -889,9 +889,9 @@ const rebuses = [
     hint: ['An insect that makes a sweet treat.']
   },
   {
-    symbols: ['🔑', '+', '🕳'],
-    words: ['keyhole'],
-    hint: ['Aperture for receiving a key.']
+    symbols: ['🎸', '+', '⛹️‍♂️'],
+    words: ['Guitar', 'Player'],
+    hint: ['Member of a band']
   }
 ];
 
