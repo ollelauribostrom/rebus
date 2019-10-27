@@ -895,9 +895,9 @@ const rebuses = [
   },
   {
     symbols: ['☕', '+', '🎂'],
-    words: ['cup','cake'],
+    words: ['cupcake'],
     hint: ['Love to eat.']
-  },
+  }
   
 
 ];
