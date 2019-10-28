@@ -892,7 +892,7 @@ const rebuses = [
     symbols: ['🐀', '+', 'pad'],
     words: ['mouse', 'pad'],
     hint: ['A surface for placing and moving a computer mouse']
-  },
+  }
 ];
 
 export function isRebusAnswered(id) {
