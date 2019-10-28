@@ -887,6 +887,11 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['👣', '+', '⚽'],
+    words: ['football'],
+    hint: ['This is a game played by two teams of eleven players using a round ball.']
   }
 ];
 
