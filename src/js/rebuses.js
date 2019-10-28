@@ -756,7 +756,7 @@ const rebuses = [
   {
     symbols: ['😄', '+', '🎂🎁'],
     words: ['Happy', 'Birthday'],
-    hint: '____ to you!'
+    hint: 'What you celebrate when you became old?'
   },
   {
     symbols: ['🔥', '+', '⚽'],
@@ -826,7 +826,7 @@ const rebuses = [
   {
     symbols: ['✉'],
     words: ['mail'],
-    hint: '"You&#39ve got ____"'
+    hint: '"You can send and recieve through internet"'
   },
   {
     symbols: ['🌮', '+', '🥗'],
@@ -887,7 +887,19 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['snack', '+', '🐶'],
+    words: ['scooby','doo'],
+    hint: ['Famous cartoon cartoon character(a dog).']
+  },
+  {
+    symbols: ['☕', '+', '🎂'],
+    words: ['cupcake'],
+    hint: ['Love to eat.']
   }
+  
+
 ];
 
 export function isRebusAnswered(id) {
