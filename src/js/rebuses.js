@@ -897,6 +897,11 @@ const rebuses = [
     symbols: ['&#960;', '+', '🐀', '+', '🚢'],
     words: ['Pirateship'],
     hint: ['The robbers of the sea.']
+  },
+  {
+    symbols: ['🏠', '+', 'of', '+', '🃏🃏'],
+    words: ['House of Cards'],
+    hint: ['The popular Netflix Show']
   }
 ];
 
