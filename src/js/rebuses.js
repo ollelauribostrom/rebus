@@ -887,6 +887,21 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['❤️', '+', '🐻'],
+    words: ['Carebear'],
+    hint: ['Sweet little animals.']
+  },
+  {
+    symbols: ['&#960;', '+', '🐀', '+', '🚢'],
+    words: ['Pirateship'],
+    hint: ['The robbers of the sea.']
+  },
+  {
+    symbols: ['🏠', '+', 'of', '+', '🃏🃏'],
+    words: ['House of Cards'],
+    hint: ['The popular Netflix Show']
   }
 ];
 
