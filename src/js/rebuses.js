@@ -892,6 +892,11 @@ const rebuses = [
     symbols: ['1️⃣', '+', '➕'],
     words: ['OnePlus'],
     hint: ['A Tech Brand.']
+  },
+  {
+    symbols: ['G', '+', '😲'],
+    words: ['G-Shock'],
+    hint: ['A Watch Brand.']
   }
 ];
 
