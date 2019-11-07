@@ -856,7 +856,7 @@ const rebuses = [
   {
     symbols: ['🖖'],
     words: ['Star', 'Trek'],
-    hint: 'Famous salute from what TV show?'
+    hint: 'Famous salute from what  show?'
   },
   {
     symbols: ['🎁', '+', '🃏'],
@@ -887,6 +887,11 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🍵', '+', 'V'],
+    words: ['TV'],
+    hint: ['Something you see in a living room']
   }
 ];
 
