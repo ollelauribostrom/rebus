@@ -52,11 +52,12 @@ const rebuses = [
   {
     symbols: ['🖊️', '+', 'd', '+', '🐜'],
     words: ['Pendant'],
-    hint: `The second emoji is 'ant' not 'bug'`
+    hint: "The second emoji is 'ant' not 'bug'"
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: "It's a keyboard shortcut that involves multiple pressing of a key"
   },
   {
     symbols: ['🌞', '+', '🛀'],
@@ -846,7 +847,7 @@ const rebuses = [
   {
     symbols: ['→', '🦁', '👑'],
     words: ['the', 'lion', 'king'],
-    hint: `Classic 90's coming of age film about a lion who must re-take his father's throne and become king of the jungle`
+    hint: "Classic 90's coming of age film about a lion who must re-take his father's throne and become king of the jungle"
   },
   {
     symbols: ['🚐', '+', 'Gogh'],
@@ -866,12 +867,12 @@ const rebuses = [
   {
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
-    hint: ['An accessory that is often worn with a suit']
+    hint: 'An accessory that is often worn with a suit'
   },
   {
     symbols: ['🔎', '+', '🎉'],
     words: ['search', 'party'],
-    hint: ["Let's find something together"]
+    hint: "Let's find something together"
   },
   {
     symbols: ['🐛', '+', '🕳'],
@@ -881,12 +882,12 @@ const rebuses = [
   {
     symbols: ['🌎', 'OF', '⚔', 'CRAFT'],
     words: ['World', 'of', 'Warcraft'],
-    hint: ['Famous Blizzard online game']
+    hint: 'Famous Blizzard online game'
   },
   {
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
-    hint: ['An insect that makes a sweet treat.']
+    hint: 'An insect that makes a sweet treat.'
   }
 ];
 
