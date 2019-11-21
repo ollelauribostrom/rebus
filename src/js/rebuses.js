@@ -56,7 +56,9 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: `It's a keyboard shortcut that involves multiple tapping of a key`
+
   },
   {
     symbols: ['🌞', '+', '🛀'],
@@ -866,12 +868,12 @@ const rebuses = [
   {
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
-    hint: ['An accessory that is often worn with a suit']
+    hint: 'An accessory that is often worn with a suit'
   },
   {
     symbols: ['🔎', '+', '🎉'],
     words: ['search', 'party'],
-    hint: ["Let's find something together"]
+    hint: "Let's find something together"
   },
   {
     symbols: ['🐛', '+', '🕳'],
@@ -881,12 +883,12 @@ const rebuses = [
   {
     symbols: ['🌎', 'OF', '⚔', 'CRAFT'],
     words: ['World', 'of', 'Warcraft'],
-    hint: ['Famous Blizzard online game']
+    hint: 'Famous Blizzard online game'
   },
   {
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
-    hint: ['An insect that makes a sweet treat.']
+    hint: 'An insect that makes a sweet treat.'
   }
 ];
 
