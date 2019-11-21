@@ -891,7 +891,7 @@ const rebuses = [
   {
     symbols: ['🦇', '+', '👨'],
     words: ['Batman'],
-    hint: "Joker's enemy, billionaire, Gotham's last hope."
+    hint: "Billionaire, Gotham's last hope."
   }
 ];
 
