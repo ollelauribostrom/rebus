@@ -889,9 +889,9 @@ const rebuses = [
     hint: ['An insect that makes a sweet treat.']
   },
   {
-    symbols :['🦷', '+', '🖌'],
-    words : ['toothbrush'],
-    hint : ['You should use it twice everyday']
+    symbols: ['🦷', '+', '🖌'],
+    words: ['toothbrush'],
+    hint: ['You should use it twice everyday']
   }
 ];
 
