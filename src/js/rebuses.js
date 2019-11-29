@@ -699,7 +699,7 @@ const rebuses = [
     hint: 'An instructional manual'
   },
   {
-    symbols: ['🛤️', '+', 'men'],
+    symbols: ['🚇', '+', 'way', '+', '🧔'],
     words: ['Railwayman'],
     hint: `Works in a railway yard`
   },
