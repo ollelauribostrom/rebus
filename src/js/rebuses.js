@@ -887,7 +887,33 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🌱', '-', 'T', '👽'],
+	words: ['planet'],
+	hint: ['A large, round object in space that moves around a star']
+  },
+  {
+    symbols: ['Burt\'s', '+', '🐝'],
+	words: ['Burt\'s', 'Bee'],
+    hint: ['Famous lip barm brand']
+  },
+  {
+	symbols: ['👻', '+', '💣'],
+	words: ['Ghostbusters'],
+	hint: ['Famous ghost hunters movie']
+  },
+  {
+	symbols: ['b', '+', '🦉'],
+	words: ['bowl'],
+	hint: ['A round container with a wide uncovered top']
+  },
+  {
+    symbols: ['🧛', '+', '📓'],
+    words: ['The Vampire Diaries'],
+	hint: ['An America drama series']
   }
+
 ];
 
 export function isRebusAnswered(id) {
