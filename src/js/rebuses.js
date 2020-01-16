@@ -887,7 +887,12 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
-  }
+  },
+  {
+    symbols: ['🌟','+','Wars', '⚔', 'II'],
+    words: ['StarWars', 'Battlefront', '2'],
+    hint: ["Just like the Simulations."]
+  },
 ];
 
 export function isRebusAnswered(id) {
