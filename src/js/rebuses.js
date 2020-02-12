@@ -891,7 +891,7 @@ const rebuses = [
     {
     symbols: ['🌞', '+', '💡'],
     words: ['Sunlight'],
-    hint: 'It makes the day bright'
+    hint: 'It makes the day bright.'
   }
 ];
 
