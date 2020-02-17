@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: 'A key or collection of computer keys'
   },
   {
     symbols: ['🌞', '+', '🛀'],
