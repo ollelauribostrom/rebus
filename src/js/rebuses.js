@@ -893,6 +893,11 @@ const rebuses = [
     words: ['Band'],
     hint: ['A group that makes music']
   },
+  {
+    symbols: ['👞', '+', 'bill'],
+    words: ['shoebill'],
+    hint: ['A type of bird']
+  }
 ];
 
 export function isRebusAnswered(id) {
