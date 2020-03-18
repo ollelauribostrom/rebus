@@ -887,6 +887,41 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🐚', '+', '🧝'],
+    words: ['shelf'],
+    hint: ['A nice place to hold things']
+  },
+  {
+    symbols: ['🍫', '+', '🥜'],
+    words: ['coconut'],
+    hint: ['Put the lime in the...']
+  },
+  {
+    symbols: ['👼', '+', '💇‍♀️', '+', '👴', '+', '⭐', '-', 'R'],
+    words: ['angel', 'hair', 'pasta'],
+    hint: ['A fine type of spaghetti']
+  },
+  {
+    symbols: ['🦌', '+', '🌾'],
+    words: ['buckwheat'],
+    hint: ['A trendy, gluten-free (pseudo)grain alternative to wheat or other grains']
+  },
+  {
+    symbols: ['🍳', '+', '🌄'],
+    words: ['Friday'],
+    hint: ['Gotta get down on this day']
+  },
+  {
+    symbols: ['💿', '-', 'C', '+', '👨‍🔧🤵👨‍🌾'],
+    words: ['disguise'],
+    hint: ['It is worn to conceal identity']
+  },
+  {
+    symbols: ['🐚', '+', '🐠'],
+    words: ['shellfish'],
+    hint: ['Popular seafood']
   }
 ];
 
