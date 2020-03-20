@@ -889,8 +889,8 @@ const rebuses = [
     hint: ['An insect that makes a sweet treat.']
   },
   {
-    symbols: ['🚶', '+', 'dead'],
-    words: ['walking dead'],
+    symbols: ['🚶', 'dead'],
+    words: ['walking', 'dead'],
     hint: `The undead.`
   }
 ];
