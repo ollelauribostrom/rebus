@@ -890,8 +890,8 @@ const rebuses = [
   },
   {
     sybols: ['🏠', '+', '🌃'],
-    word: ['fortnight'],
-    hint: 'A period of two weeks.'
+    words: ['fortnight'],
+    hint: ['A period of two weeks.']
   }
 ];
 
