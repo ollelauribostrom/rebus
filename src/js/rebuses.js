@@ -885,8 +885,8 @@ const rebuses = [
   },
   {
     symbols: ['🏠', '+', '🌃'],
-    words: ['House', 'night'],
-    hint: ['Party']
+    words: ['fort', 'night'],
+    hint: ['A period of more than 2 weeks']
   },
   {
     symbols: ['🍯', '+', '🐝'],
