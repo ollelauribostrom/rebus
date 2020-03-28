@@ -889,8 +889,8 @@ const rebuses = [
     hint: ['A period of more than 2 weeks']
   },
   {
-    symbols: ['👽', '+', '👔', '+','😎', '+', '😎'],
-    words: ['men in black'],
+    symbols: ['👽', '+', '👔', '+', '😎😎'],
+    words: ['men', 'in', 'black'],
     hint: ['anonymous dark-clothed men who supposedly visit people who have reported an encounter with a UFO or an alien in order to prevent them publicizing it.']
   },
   {
