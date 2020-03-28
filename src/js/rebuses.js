@@ -891,7 +891,7 @@ const rebuses = [
   {
     symbols: ['👽', '+', '👔', '+', '😎😎'],
     words: ['men', 'in', 'black'],
-    hint: ['anonymous dark-clothed men who supposedly visit people who have reported an encounter with a UFO or an alien in order to prevent them publicizing it.']
+    hint: ['anonymous dark clothed men who supposedly visit people who have reported an encounter with a UFO or an alien in order to prevent them publicizing it.']
   },
   {
     symbols: ['🍯', '+', '🐝'],
