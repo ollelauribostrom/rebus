@@ -866,12 +866,12 @@ const rebuses = [
   {
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
-    hint: 'An accessory that is often worn with a suit'
+    hint: ['An accessory that is often worn with a suit']
   },
   {
     symbols: ['🔎', '+', '🎉'],
     words: ['search', 'party'],
-    hint: "Let's find something together"
+    hint: ["Let's find something together"]
   },
   {
     symbols: ['🐛', '+', '🕳'],
@@ -881,18 +881,18 @@ const rebuses = [
   {
     symbols: ['🌎', 'OF', '⚔', 'CRAFT'],
     words: ['World', 'of', 'Warcraft'],
-    hint: 'Famous Blizzard online game'
+    hint: ['Famous Blizzard online game']
+  },
+  {
+    symbols: ['🏠', '+', '🌃'],
+    words: ['House', 'night'],
+    hint: ['Party']
   },
   {
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
-    hint: 'An insect that makes a sweet treat.'
-  },
-  {
-    sybols: ['🏠', '+', '🌃'],
-    word: ['fortnight'],
-    hint: 'A period of two weeks.'
-   }
+    hint: ['An insect that makes a sweet treat.']
+  }
 ];
 
 export function isRebusAnswered(id) {
