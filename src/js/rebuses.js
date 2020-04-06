@@ -691,7 +691,7 @@ const rebuses = [
   {
     symbols: ['⌚', '+', '👨'],
     words: ['Watchman'],
-    hint: 'Who watches the ______?'
+    hint: 'Person standing at the gate of your society'
   },
   {
     symbols: ['✋', '+', '📗'],
