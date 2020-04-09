@@ -887,6 +887,16 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🧈', '+', '🦟'],
+    words: ['butterfly'],
+    hint: ['Flying insects with large colorful wings that undergo metamorphosis.']
+  },
+  {
+    symbols: ['👩', '+', '🐛'],
+    words: ['ladybug'],
+    hint: ['Small beetles with black polka dots on a red shell.']
   }
 ];
 
