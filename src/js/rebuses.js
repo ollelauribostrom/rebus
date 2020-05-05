@@ -887,7 +887,23 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
-  }
+  },
+  {
+    symbols: ['⚔','OF','the','🌎'],
+    words: ['War','of','the','Worlds'],
+    hint: ['The first emoji is war'],
+  },
+  {
+    symbols: ['🎮','OF','👑'],
+    words: ['Game','of','thrones'],
+    hint: ['Very popular Television show'],
+  },
+  {
+    symbols: ['💀','🌊'],
+    words: ['Dead','Sea'],
+    hint: ['A sea famous for large amounts of salt content'],
+  },
+
 ];
 
 export function isRebusAnswered(id) {
