@@ -5,6 +5,11 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
+    symbols: ['🚀', '+', 'x'],
+    words: ['SpaceX'],
+    hint: 'The space company that Elon Musk founded'
+  },
+  {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants'],
     hint: `The second emoji is 'ant' not 'bug'`
