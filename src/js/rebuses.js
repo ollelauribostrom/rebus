@@ -754,6 +754,11 @@ const rebuses = [
     hint: `cute animals are very _____`
   },
   {
+  symbols: ['👀','+','no'],
+    words: ['iknow'],
+    hint: `somthing you are aware about _____`
+  },
+  {
     symbols: ['😄', '+', '🎂🎁'],
     words: ['Happy', 'Birthday'],
     hint: '____ to you!'
