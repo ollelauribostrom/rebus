@@ -10,31 +10,6 @@ const rebuses = [
     hint: `The second emoji is 'ant' not 'bug'`
   },
   {
-    symbols: ['🏃‍♂', '+', '🕢'],
-    words: ['Running', 'late'],
-    hint: `Behind Schedule`
-  },
-  {
-    symbols: ['🍵', '+', '💼'],
-    words: ['Tea', 'Bag'],
-    hint: `A sachet containing tea leaves`
-  },
-  {
-    symbols: ['🦷', '+', '🖌️'],
-    words: ['Tooth', 'Brush'],
-    hint: `Used to clean teeth`
-  },
-  {
-    symbols: ['💅', '+', '🎨'],
-    words: ['Nail', 'Paint'],
-    hint: ` lacquer applied to the human fingernail`
-  },
-  {
-    symbols: ['🌄', '+', '🔝'],
-    words: ['Hill', 'Top'],
-    hint: `summit of a hill`
-  },
-  {
     symbols: ['📖', '+', '🙋', '+', '📝'],
     words: ['Readme', 'file'],
     hint: 'The default markdown file of every GitHub repo'
@@ -912,6 +887,32 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+
+  {
+    symbols: ['🏃‍♂', '+', '🕢'],
+    words: ['Running', 'late'],
+    hint: `Behind Schedule`
+  },
+  {
+    symbols: ['🍵', '+', '💼'],
+    words: ['Tea', 'Bag'],
+    hint: `A sachet containing tea leaves`
+  },
+  {
+    symbols: ['🦷', '+', '🖌️'],
+    words: ['Tooth', 'Brush'],
+    hint: `Used to clean teeth`
+  },
+  {
+    symbols: ['💅', '+', '🎨'],
+    words: ['Nail', 'Paint'],
+    hint: ` lacquer applied to the human fingernail`
+  },
+  {
+    symbols: ['🌄', '+', '🔝'],
+    words: ['Hill', 'Top'],
+    hint: `summit of a hill`
   }
 ];
 
