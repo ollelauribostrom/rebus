@@ -884,6 +884,11 @@ const rebuses = [
     hint: ['Famous Blizzard online game']
   },
   {
+    symbols: ['🏠', '+', '🌃'],
+    words: ['Fortnight'],
+    hint: 'A period of Two weaks.'
+  },
+  {
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
