@@ -1,5 +1,10 @@
 const rebuses = [
   {
+    symbols:['☀️ ',' + ',' day '],
+    words:['Sunday'],
+    hint: 'Final day of the week'
+  },
+  {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
     hint: 'You´re solving one right now'
