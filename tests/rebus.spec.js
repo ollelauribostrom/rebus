@@ -20,7 +20,7 @@ describe('Tests for rebuses', () => {
       const [rebus] = getRebuses();
       expect(rebus.id).toEqual(1);
       expect(rebus.isAnswered).toEqual(true);
-      expect(rebus.input).toEqual(['R', 'e', 'b', 'u', 's']);
+      expect(rebus.input).toEqual(['S', 'u', 'n', 'd', 'a', 'y']);
       storage.mockRestore();
     });
   });
