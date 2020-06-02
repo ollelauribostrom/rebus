@@ -1,6 +1,6 @@
 const rebuses = [
   {
-    symbols:['☀️ ',' + ',' day '],
+    symbols:['☀️','+','day'],
     words:['Sunday'],
     hint: 'Final day of the week'
   },
