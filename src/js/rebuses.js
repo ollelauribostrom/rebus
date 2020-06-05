@@ -30,6 +30,11 @@ const rebuses = [
     hint: 'A tower with a light to guide ships at sea'
   },
   {
+    symbols: ['👉', '+', '🌑', '-', 'o'],
+    words: ['Pokemon'],
+    hint: 'Gotta catch em all'
+  },
+  {
     symbols: ['🌲', '+', '🍎'],
     words: ['Pineapple'],
     hint: 'Who lives in a ____ under the sea? SPONGEBOB SQUAREPANTS!'
