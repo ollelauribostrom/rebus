@@ -888,6 +888,12 @@ const rebuses = [
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
   }
+  {
+    symbols: ['⭐️', '+', '⛩️'],
+    words: ['stargate'],
+    hint: ['TV show about an artefact discovered in ancient Egypt and used to travel between worlds.']
+  }
+
 ];
 
 export function isRebusAnswered(id) {
