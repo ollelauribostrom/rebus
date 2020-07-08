@@ -891,7 +891,7 @@ const rebuses = [
   {
     symbols: ['⭐️', '+', '⛩️'],
     words: ['stargate'],
-    hint: ['TV show about an artefact discovered in ancient Egypt and used to travel between worlds.']
+    hint: ['TV show about an artefact discovered in ancient Egypt thats used to travel between worlds.']
   }
 
 ];
