@@ -887,7 +887,58 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
-  }
+  },
+  {
+    symbols: ['🦶', '+', '⚽️ '],
+    words: ['futbol'],
+    hint: ['The beautiful game. Called soccer in the US.']
+  },
+   {
+    symbols: ['🐱', '+', '🎣'],
+    words: ['catfishing'],
+    hint: ['Creating a fake account online to trick people.']
+  },
+  {
+    symbols: ['⭐️' + '🐠'],
+    words: ['starfish'],
+    hint: ['Not really a fish, but it is star-shaped.']
+  },
+  {
+    symbols: ['🌨' + '🎀'],
+    words: ['rainbow'],
+    hint: ['After the rain comes a....']
+  },
+  {
+    symbols: ['🔑' + '📃' + '🗣️'],
+    words: ['keynote', 'speech'],
+    hint: ['The main speech of a conference.']
+  },
+  {
+    symbols: ['🌞' + '🌸'],
+    words: ['sunflower'],
+    hint: ['A flower that looks like a mini sun.']
+  },
+  {
+    symbols: ['🦀' + '🍰'],
+    words: ['crab' + 'cake'],
+    hint: ['Not a dessert, but a seafood delicacy of Maryland and Virginia.']
+  },
+  {
+    symbols: ['🍔' + '👑'],
+    words: ['burger' + 'king'],
+    hint: ['A royal figure in American fast food.']
+  },
+  {
+    symbols: ['🍪' + '👺'],
+    words: ['cookie' + 'monster'],
+    hint: ['A harmless character from Sesame Street.']
+  },
+  {
+    symbols: ['🧦' + '🐁' +'🍵' + '🍵'],
+    words: ['socrates'],
+    hint: ['Famous philosopher and a founder of western philosophy.']
+  },
+  
 ];
 
 export function isRebusAnswered(id) {
