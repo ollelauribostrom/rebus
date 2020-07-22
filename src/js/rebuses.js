@@ -20,6 +20,11 @@ const rebuses = [
     hint: 'The trailer you take when you go camping'
   },
   {
+    symbols: ['🌞', '+', '🌼'],
+    words: ['Sunflower'],
+    hint: 'It tracks the sun'
+  },
+  {
     symbols: ['⭐', '+', '🐠'],
     words: ['Starfish'],
     hint: 'Say the two emojis out loud'
