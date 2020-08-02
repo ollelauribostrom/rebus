@@ -887,6 +887,66 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🐝', '+', '🙋', '+', 'VE'],
+    words: ['beehive'],
+    hint: ['Home of a bee.']
+  },
+  {
+    symbols: ['👻', '+', '🏍️'],
+    words: ['ghostrider'],
+    hint: ['Famous Hollywood Movie']
+  },
+  {
+    symbols: ['🔴', '+', 'Z', '+', '1️⃣'],
+    words: ['redzone'],
+    hint: ['Danger Area']
+  },
+  {
+    symbols: ['🟩', '+', 'Z', '+', '1️⃣'],
+    words: ['greenzone'],
+    hint: ['Unrestricted Area']
+  },
+  {
+    symbols: ['🐵', '-', '🗝️', '+', '☀️'],
+    words: ['monday'],
+    hint: ['Comes after weekend']
+  },
+  {
+    symbols: ['🆓', '+', '🔫'],
+    words: ['freefire'],
+    hint: ['A competitor of pubg mobile']
+  },
+  {
+    symbols: ['🩸', '+', '🏦'],
+    words: ['bloodbank'],
+    hint: ['A major requirement for health sector']
+  },
+  {
+    symbols: ['🌽 ', '+', '🍞'],
+    words: ['cornbread'],
+    hint: ['An eatable']
+  },
+  {
+    symbols: ['🍔', '+', '👑'],
+    words: ['burgerking'],
+    hint: ['A kind of Burger']
+  },
+  {
+    symbols: ['❤️', '+', '✉️'],
+    words: ['loveletter'],
+    hint: ['For the lovers']
+  },
+  {
+    symbols: ['🐴', '+', '💪'],
+    words: ['horsepower'],
+    hint: ['A unit of power']
+  },
+  {
+    symbols: ['☕', '+', '💔'],
+    words: ['coffeebreak'],
+    hint: ['Necessary between continuous work']
   }
 ];
 
