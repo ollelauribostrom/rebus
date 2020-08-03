@@ -43,6 +43,15 @@ export function Rebus(props, ...children) {
             <div class="rebus__words">
               <children>
             </div>
+            <div class="searchbar">
+              <form>
+                <strong>Go To Rebus:&nbsp;</strong>
+                <input type="number" name="rebus" placeholder="Enter rebus no." min="1" max=${
+                  rebuses.length
+                } />
+              </form>
+            </div>
+
           </div>
         `;
       }
