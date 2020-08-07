@@ -887,6 +887,11 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['⚫', '+', '🕳'],
+    words: ['black', 'hole'],
+    hint: 'A place in space where gravity pulls so much that even light can not get out.'
   }
 ];
 
