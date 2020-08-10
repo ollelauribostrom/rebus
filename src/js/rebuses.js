@@ -887,6 +887,31 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🐜', '+', '👨'],
+    words: ['antman'],
+    hint: ["It's a superhero!"]
+  },
+  {
+    symbols: ['👄', '+', '🏑'],
+    words: ['lipstick'],
+    hint: ['A beauty product']
+  },
+  {
+    symbols: ['🟢', '+', '🏮'],
+    words: ['green', 'lantern'],
+    hint: ["It's a superhero!"]
+  },
+  {
+    symbols: ['🏰', '+', '🌃'],
+    words: ['fortnite'],
+    hint: ['A battle royale video game']
+  },
+  {
+    symbols: ['⌚', '+', '🐶'],
+    words: ['watch', 'dogs'],
+    hint: ['A video game about a hacker']
   }
 ];
 
