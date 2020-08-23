@@ -17,7 +17,7 @@ export function Rebus(props, ...children) {
       },
       componentDidUpdate() {
         const rebus = this.props.rebuses[this.props.current];
-        /* If history API isn't available, we shouldn't revert to the more widely available `window.location.href`, 
+        /* If history API isn't available, we shouldn't revert to the more widely available `window.location.href`,
         as it incurs a new HTTP request and thus results in an infinite loop (and breaks SPAs). */
         if (window.history) {
           // Adds 'rebus' query parameter to end of URL. Should be endpoint-agnostic.
@@ -31,6 +31,7 @@ export function Rebus(props, ...children) {
       },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
+        const currentPercentage = (((current + 1) / rebuses.length) * 100).toFixed(1);
         this.children = rebus.words.map((word, wordIndex) =>
           Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
         );
@@ -38,6 +39,7 @@ export function Rebus(props, ...children) {
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
+              <span>${current + 1}/${rebuses.length} (${currentPercentage}%)</span>
             </div>
             <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
             <div class="rebus__words">
