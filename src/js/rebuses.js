@@ -887,6 +887,11 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🤠', '+', 'trick'],
+    words: ['hat', 'trick'],
+    hint: ['In hockey or soccer, the scoring of three goals in a game by a single player']
   }
 ];
 
