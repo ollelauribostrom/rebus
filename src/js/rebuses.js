@@ -896,7 +896,7 @@ const rebuses = [
   {
     symbols: ['🏃‍♂️', '+', '🌲🌲🌲', '+', '🏃‍♂️'],
     words: ['runforrestrun'],
-    hint: ['Line from the movie "Forrest Gump"']
+    hint: ['Line from the movie Forrest Gump']
   },
 
 
