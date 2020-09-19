@@ -887,6 +887,16 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🌞', '+', '🔥'],
+    words: ['sunburn'],
+    hint: ['What happens if you stay under the sun too long?']
+  },
+  {
+    symbols: ['🏃‍', '+', '🌲🌲🌲', '+', '🏃‍'],
+    words: ['runforrestrun'],
+    hint: ['Line from the movie Forrest Gump']
   }
 ];
 
