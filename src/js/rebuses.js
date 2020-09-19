@@ -891,7 +891,7 @@ const rebuses = [
   {
     symbols: ['👁️','+','🟤','-','N'],
     words: ['eyebrow'],
-    hint: ['It is above your eyes! ']
+    hint: 'It is above your eyes! '
   }
 ];
 
