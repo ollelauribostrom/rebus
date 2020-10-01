@@ -370,7 +370,7 @@ const rebuses = [
   },
   {
     symbols: ['🐦', '+', '🔥'],
-    words: ["firefly"],
+    words: ['firefly'],
     hint: `insect which glows`
   },
   {
