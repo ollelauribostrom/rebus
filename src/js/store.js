@@ -15,10 +15,7 @@ export const actionsCreators = {
   }),
   setCurrent: ({ rebuses }, id) => {
     const index = rebuses.findIndex(rebus => rebus.id === id);
-    if (index > 0) {
-      return { current: index };
-    }
-    return {};
+    return (index > 0) ? { current: index } : {};
   },
   setInput: ({ current, rebuses }, input, wordIndex, charIndex) => {
     const rebus = rebuses[current];
@@ -47,10 +44,7 @@ export const actionsCreators = {
   shake: ({ current, rebuses }) => {
     const rebus = rebuses[current];
     const isAnswered = rebus.words.join('').toUpperCase() === rebus.input.join('').toUpperCase();
-    if (!isAnswered) {
-      return { animation: 'shake' };
-    }
-    return {};
+    return (!isAnswered) ? { animation: 'shake' } : {};
   }
 };
 
