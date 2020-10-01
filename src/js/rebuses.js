@@ -369,6 +369,11 @@ const rebuses = [
     hint: `When you observe from above`
   },
   {
+    symbols: ['🐦', '+', '🔥'],
+    words: ["firefly"],
+    hint: `insect which glows`
+  },
+  {
     symbols: ['🐴', '+', '🔙'],
     words: ['horseback'],
     hint: `A cowboy's primary form of travel`
