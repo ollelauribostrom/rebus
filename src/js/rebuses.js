@@ -5,6 +5,12 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
+    symbols: ['👣', '+', '⚽'],
+    words: ['FootBall'],
+    hint: 'Messi, Pele, Kaka, Ronaldo'
+  },
+  
+  {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants'],
     hint: `The second emoji is 'ant' not 'bug'`
