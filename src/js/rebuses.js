@@ -9,6 +9,11 @@ const rebuses = [
     words: ['FootBall'],
     hint: 'Messi, Pele, Kaka, Ronaldo'
   },
+  {
+    symbols: ['👣', '+', 'wear'],
+    words: ['Footwear'],
+    hint: 'Bata, JimmyChoo, Nike'
+  },
   
   {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
