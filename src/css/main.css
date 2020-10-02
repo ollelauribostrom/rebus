@@ -63,9 +63,8 @@ body,
   background-color: #1d1d1d1a;
   font-size: 14px;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
+  display: block;
+  padding: 12px 20px 0px 20px;
 }
 
 .rebus__symbols {
@@ -183,6 +182,10 @@ progress[value]::-moz-progress-bar {
 
 progress[value]::-webkit-progress-value {
   background-color: #438365;
+}
+
+#difficulty{
+  float: right;
 }
 
 /* ----------------------------------------------

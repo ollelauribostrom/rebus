@@ -23,6 +23,7 @@ function getMockState() {
         symbols: ['😍', '👍', '😍'],
         words: ['one', 'two'],
         hint: 'hint',
+        difficulty: 'easy',
         input: [...Array(6)],
         isAnswered: false
       }
@@ -82,6 +83,7 @@ describe('Tests for components', () => {
       const root = document.createElement('div');
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
+      inputs[0].setAttribute('tabindex', '-1');
       inputs[0].focus();
       inputs[0].value = 'T';
       inputs[0].dispatchEvent(new Event('input'));
@@ -93,6 +95,7 @@ describe('Tests for components', () => {
       const root = document.createElement('div');
       render(Word(props), root);
       const inputs = root.querySelectorAll('input');
+      inputs[0].setAttribute('tabindex', '-1');
       inputs[0].focus();
       inputs[0].value = '!';
       inputs[0].dispatchEvent(new Event('input'));

@@ -2,6 +2,17 @@ import { createComponent } from '../mini';
 import { connect } from '../store';
 import { Word } from './Word';
 
+function getDifficulty(rebus){
+  switch(rebus.difficulty){
+    case 1: return "easy"; break;
+    case 2: return "basic"; break;
+    case 3: return "intermediate"; break;
+    case 4: return "hard"; break;
+    case 5: return "very hard"; break;
+    default: return ""; break;
+  }
+}
+
 export function Rebus(props, ...children) {
   return connect(
     createComponent({
@@ -38,6 +49,7 @@ export function Rebus(props, ...children) {
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
+              <span id="difficulty">${getDifficulty(rebus)}</span>
             </div>
             <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
             <div class="rebus__words">
