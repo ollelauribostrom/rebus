@@ -888,6 +888,11 @@ const rebuses = [
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
   }
+  {
+    symbols: ['🎶', '+', '📘'],
+    words: ['notebook'],
+    hint: ['Where we can express our own thoughts when no one is there to listen!!']
+  }
 ];
 
 export function isRebusAnswered(id) {
