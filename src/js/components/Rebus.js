@@ -2,14 +2,20 @@ import { createComponent } from '../mini';
 import { connect } from '../store';
 import { Word } from './Word';
 
-function getDifficulty(rebus){
-  switch(rebus.difficulty){
-    case 1: return "easy"; break;
-    case 2: return "basic"; break;
-    case 3: return "intermediate"; break;
-    case 4: return "hard"; break;
-    case 5: return "very hard"; break;
-    default: return ""; break;
+function getDifficulty(rebus) {
+  switch (rebus.difficulty) {
+    case 1:
+      return 'easy';
+    case 2:
+      return 'basic';
+    case 3:
+      return 'intermediate';
+    case 4:
+      return 'hard';
+    case 5:
+      return 'very hard';
+    default:
+      return '';
   }
 }
 
