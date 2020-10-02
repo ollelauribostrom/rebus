@@ -891,7 +891,7 @@ const rebuses = [
   {
     symbols: ['😀', '+', '🎭'],
     words: ['facemask'],
-    hint: ['Used for covering your face'] 
+    hint: ['Used for covering your face.']
   }
 ];
 
