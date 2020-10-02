@@ -887,6 +887,31 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['A', '👍'],
+    words: ['Alike'],
+    hint: 'Similar to each other.'
+  },
+  {
+    symbols: ['🔥', '💨', '🎈'],
+    words: ['Hot', 'Air', 'Baloon'],
+    hint: 'Adventure sports'
+  },
+  {
+    symbols: ['❤️','🔥'],
+    words: ['Heart on Fire'],
+    hint: 'passionate forms of love'
+  },
+  {
+    symbols: ['🔫','🚆'],
+    words: ['Bullet Train'],
+    hint: 'fastest train'
+  },
+  {
+    symbols: ['🐔'],
+    words: ['Turkey'],
+    hint: 'Thanksgiving'
   }
 ];
 
