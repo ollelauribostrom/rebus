@@ -891,27 +891,27 @@ const rebuses = [
   {
     symbols: ['A', '👍'],
     words: ['Alike'],
-    hint: ['Similar to each other.']
+    hint: 'Similar to each other.'
   },
   {
     symbols: ['🔥', '💨', '🎈'],
     words: ['Hot', 'Air', 'Baloon'],
-    hint: ['Adventure sports.']
+    hint: 'Adventure sports'
   },
   {
     symbols: ['❤️','🔥'],
     words: ['Heart on Fire'],
-    hint: ['passionate forms of love.']
+    hint: 'passionate forms of love'
   },
   {
     symbols: ['🔫','🚆'],
     words: ['Bullet Train'],
-    hint: ['fastest train.']
+    hint: 'fastest train'
   },
   {
     symbols: ['🐔'],
     words: ['Turkey'],
-    hint: ['Thanksgiving!.']
+    hint: 'Thanksgiving'
   }
 ];
 
