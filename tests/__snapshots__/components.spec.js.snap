@@ -155,7 +155,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
-        "difficulty": "easy",
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -208,7 +208,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
-        "difficulty": "easy",
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -287,7 +287,7 @@ Object {
     "incorrectAnswerCount": 1,
     "rebuses": Array [
       Object {
-        "difficulty": "easy",
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -332,7 +332,7 @@ Object {
     "incorrectAnswerCount": 4,
     "rebuses": Array [
       Object {
-        "difficulty": "easy",
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -426,7 +426,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
-        "difficulty": "easy",
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -472,7 +472,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
-        "difficulty": "easy",
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -526,7 +526,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
-        "difficulty": "easy",
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
