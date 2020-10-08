@@ -891,7 +891,7 @@ const rebuses = [
   {
     symbols: ['🎩', '+', '⏱️'],
     words: ['a', 'hat', 'in', 'time'],
-    hint: ['An insect that makes a sweet treat.']
+    hint: ['action-adventure game.']
   }
 ];
 
