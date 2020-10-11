@@ -891,7 +891,7 @@ const rebuses = [
   {
     symbols: ['🔥', '+', '🌉'],
     words: ['Burning', 'Bridges'],
-    hint: 'To destroy a path'
+    hint: ['To destroy a path']
   }
 ];
 
