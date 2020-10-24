@@ -134,6 +134,11 @@ const rebuses = [
     hint: 'Mick Jagger is a what?'
   },
   {
+    symbols: ['important', '=', 'important'],
+    words: ['equally important'],
+    hint: 'equally significant'
+  },
+  {
     symbols: ['Tu', '+', '👄'],
     words: ['Tulip'],
     hint: 'This popular flower blooms in Spring'
