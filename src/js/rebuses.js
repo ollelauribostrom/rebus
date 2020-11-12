@@ -341,7 +341,7 @@ const rebuses = [
   {
     symbols: ['Uni', '+', '🌽'],
     words: ['unicorn'],
-    hint: 'A billion-dollar startup company'
+    hint: 'A magic pony'
   },
   {
     symbols: ['🆘', '+', 'desk'],
@@ -711,7 +711,7 @@ const rebuses = [
   {
     symbols: ['👂', '+', '💍'],
     words: ['Earring'],
-    hint: 'Say the emojis out loud'
+    hint: 'You need to have a hole in your ear to wear one'
   },
   {
     symbols: ['10', '+', '🐜'],
