@@ -887,6 +887,21 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['🦆', '+', '🦆', '+', '🟢'],
+    words: ['duckduckgo'],
+    hint: `A search engine that doesn't profile its users.`
+  },
+  {
+    symbols: ['🤜', '+', '👀'],
+    words: ['wristwatch'],
+    hint: 'A clock that can fit on your wrist.'
+  },
+  {
+    symbols: ['👁️', '+', '🕵️'],
+    words: ['i', 'spy'],
+    hint: 'A guessing game.'
   }
 ];
 
