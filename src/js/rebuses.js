@@ -887,6 +887,31 @@ const rebuses = [
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
     hint: ['An insect that makes a sweet treat.']
+  },
+  {
+    symbols: ['T_RN'],
+    words: ['nouturn'],
+    hint: 'What is the opposite of U-turn?'
+  },
+  {
+    symbols: ['JOB', '+', 'IN', '+', 'JOB'],
+    words: ['inbetweenjobs'],
+    hint: 'Where is `in` placed w.r.t Jobs?'
+  },
+  {
+    symbols: ['🏴‍☠️', '+', '⚔️'],
+    words: ['treasurehunt'],
+    hint: 'A game where you search for hidden objects through some clues.'
+  },
+  {
+    symbols: ['COF', '_', 'FEE'],
+    words: ['coffeebreak'],
+    hint: 'A pause for a coffee? I am in!😉'
+  },
+  {
+    symbols: ['gsegesggegsg'],
+    words: ['scrambledeggs'],
+    hint: 'How are the eggs? Are they properly arranged?😋'
   }
 ];
 
