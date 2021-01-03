@@ -897,6 +897,11 @@ const rebuses = [
     symbols: ['☕️', '+', '📄'],
     words: ['java', 'script'],
     hint: ['It makes the website interactive']
+  },
+  {
+    symbols: ['🦀', '+', '🎂'],
+    words: ['crab', 'cake'],
+    hint: 'A delicious appetizer'
   }
 ];
 
