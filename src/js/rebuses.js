@@ -889,6 +889,16 @@ const rebuses = [
     hint: ['An insect that makes a sweet treat.']
   },
   {
+    symbols: ['🧶'],
+    words: ['yarn'],
+    hint: ['A package manager similar to NPM']
+  },
+  {
+    symbols: ['☕️', '+', '📄'],
+    words: ['java', 'script'],
+    hint: ['It makes the website interactive']
+  },
+  {
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
