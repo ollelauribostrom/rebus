@@ -102,6 +102,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -154,6 +155,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -206,6 +208,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -284,6 +287,7 @@ Object {
     "incorrectAnswerCount": 1,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -328,6 +332,7 @@ Object {
     "incorrectAnswerCount": 4,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -421,6 +426,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -466,6 +472,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -498,6 +505,7 @@ exports[`Tests for components Rebus renders correctly (when rebus is answered) 2
           <div class=\\"rebus rebus--answered animation--none\\">
             <div class=\\"rebus__header\\">
               <span>1/1</span>
+              <span id=\\"difficulty\\">easy</span>
             </div>
             <span class=\\"rebus__symbols\\">😍 👍 😍</span>
             <div class=\\"rebus__words\\">
@@ -518,6 +526,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -550,6 +559,7 @@ exports[`Tests for components Rebus renders correctly (with animation class) 2`]
           <div class=\\"rebus  animation--flip-vertical-right\\">
             <div class=\\"rebus__header\\">
               <span>1/1</span>
+              <span id=\\"difficulty\\">easy</span>
             </div>
             <span class=\\"rebus__symbols\\">😍 👍 😍</span>
             <div class=\\"rebus__words\\">
@@ -570,6 +580,7 @@ Object {
     "incorrectAnswerCount": 0,
     "rebuses": Array [
       Object {
+        "difficulty": 1,
         "hint": "hint",
         "input": Array [
           undefined,
@@ -602,6 +613,7 @@ exports[`Tests for components Rebus renders correctly 2`] = `
           <div class=\\"rebus  animation--none\\">
             <div class=\\"rebus__header\\">
               <span>1/1</span>
+              <span id=\\"difficulty\\">easy</span>
             </div>
             <span class=\\"rebus__symbols\\">😍 👍 😍</span>
             <div class=\\"rebus__words\\">

@@ -23,6 +23,7 @@ function getMockState() {
         symbols: ['😍', '👍', '😍'],
         words: ['one', 'two'],
         hint: 'hint',
+        difficulty: 1,
         input: [...Array(6)],
         isAnswered: false
       }

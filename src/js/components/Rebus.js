@@ -1,6 +1,7 @@
 import { createComponent } from '../mini';
 import { connect } from '../store';
 import { Word } from './Word';
+import { getDifficulty } from './Difficulty';
 
 export function Rebus(props, ...children) {
   return connect(
@@ -38,6 +39,7 @@ export function Rebus(props, ...children) {
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
+              <span id="difficulty">${getDifficulty(rebus)}</span>
             </div>
             <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
             <div class="rebus__words">
