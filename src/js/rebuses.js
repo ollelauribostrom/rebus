@@ -903,6 +903,11 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+  {
+    symbols: ['i', '+', '🥫' + 'd'],
+    words: ['Eye', 'Candy'],
+    hint: ['An insect that makes a sweet treat.']
+  }
 ];
 
 export function isRebusAnswered(id) {
