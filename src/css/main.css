@@ -167,6 +167,13 @@ body,
   background: #9c0629;
 }
 
+.progress-value {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  text-align: center;
+}
+
 progress[value] {
   width: auto;
   height: 20px;
