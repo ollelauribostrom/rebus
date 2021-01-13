@@ -52,16 +52,17 @@ const rebuses = [
   {
     symbols: ['🖊️', '+', 'd', '+', '🐜'],
     words: ['Pendant'],
-    hint: `The second emoji is 'ant' not 'bug'`
+    hint: "The second emoji is 'ant' not 'bug'"
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: '___ and cold'
   },
   {
     symbols: ['🌞', '+', '🛀'],
     words: ['Sunbath'],
-    hint: 'A way for cold-blooded animals to keep warm'
+    hint: 'Way to get tan'
   },
   {
     symbols: ['🚗', '🚙', '🚗'],
@@ -756,7 +757,7 @@ const rebuses = [
   {
     symbols: ['😄', '+', '🎂🎁'],
     words: ['Happy', 'Birthday'],
-    hint: '____ to you!'
+    hint: 'Greeting when you turn 365 days older'
   },
   {
     symbols: ['🔥', '+', '⚽'],
