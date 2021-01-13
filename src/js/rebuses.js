@@ -904,7 +904,7 @@ const rebuses = [
     hint: 'A delicious appetizer'
   },
   {
-    symbols: ['⭐', '+', '⚔','s'],
+    symbols: ['⭐', '+', '⚔', 's'],
     words: ['starwars'],
     hint: 'May the force be with you ...'
   }
