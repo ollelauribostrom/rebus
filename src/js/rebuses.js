@@ -903,6 +903,11 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+  {
+    symbols: ['👃🏾', '+', ' 💍'],
+    words: ['nosering'],
+    hint: 'the jewellry for nose piercing'
+  },
 ];
 
 export function isRebusAnswered(id) {
