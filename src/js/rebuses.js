@@ -37,7 +37,7 @@ const rebuses = [
   {
     symbols: ['🥚', '+', '🌱'],
     words: ['Eggplant'],
-    hint: '🍆'
+    hint: 'Dark purple tropical fruit, cooked and eaten as a vegetable'
   },
   {
     symbols: ['🔥', '+', '🦊'],
