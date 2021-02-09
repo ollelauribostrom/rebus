@@ -229,12 +229,21 @@ progress[value]::-webkit-progress-value {
     grid-column-start: 2;
     grid-column-end: span 3;
   }
+  
   .word {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 50px);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+  .word__char__container{
+    margin: 0 5px;
+  }
+  
   .word__char {
-    width: auto;
+    flex: 1;
+    width: 100%;
   }
 }
 
@@ -261,12 +270,21 @@ progress[value]::-webkit-progress-value {
   .rebus__header {
     border-radius: 0;
   }
+  
   .word {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 50px);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+  .word__char__container{
+    margin: 0 5px;
+  }
+  
   .word__char {
-    width: auto;
+    flex: 1;
+    width: 100%;
   }
 }
 
