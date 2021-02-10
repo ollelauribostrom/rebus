@@ -185,6 +185,14 @@ progress[value]::-webkit-progress-value {
   background-color: #438365;
 }
 
+.score {
+    padding-right: 20px;
+	#grid-column-start: 3;
+	width: 100%;
+	text-align: right;
+  }
+
+	
 /* ----------------------------------------------
  * GitHub Corners
  * w: https://github.com/tholman/github-corners
