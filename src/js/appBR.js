@@ -1,18 +1,18 @@
 import * as Sentry from '@sentry/browser';
 import { render } from './mini';
-import { initBR } from './appBR';
-
 import { App } from './components/App';
 import { Logo } from './components/Logo';
 import { GithubCorner } from './components/GithubCorner';
 import { ChangeButton } from './components/ChangeButton';
-import { Rebus } from './components/Rebus';
-import { ProgressBar } from './components/ProgressBar';
-import { Hint } from './components/Hint';
+import { RebusBR } from './components/RebusBR';
+import { ProgressBarBR } from './components/ProgressBarBR';
+import { Hint } from './components/HintBR';
 
-import { actions } from './store';
+import { actions } from './storeBR';
 import '../css/main.css';
-import { ButtonCountryPTBR } from './components/ButtonPTBR';
+import { ButtonCountryEN } from './components/ButtonEN';
+
+import { init } from './app';
 import { ResetButton, clickReset } from './components/ResetButton';
 
 const events = function(event) {
@@ -36,31 +36,22 @@ export function setCurrentFromURL(rebus) {
   actions.setCurrent(id);
 }
 
-// FUNCTION DEFAULT REBUS
-export function init() {
-  // CONDITION: if init as reset [pt-br] rebus
-  if (localStorage.getItem('resetFlagBR') === 'true') {
-    document.querySelector('.root').classList.add('rootbr'); // then keep design [pt-br] & [pt-br] rebus
-    initBR();
-
-    return;
-  }
-
-  localStorage.setItem('flagBR', 'false'); // FLAG: no [pt-br] rebus
-  localStorage.setItem('resetFlagBR', 'false'); // FLAG: no reset [pt-br] rebus
+// FUNCTION REBUS IN PT-BR
+export function initBR() {
+  localStorage.setItem('flagBR', 'true'); // FLAG: is [pt-br] rebus
 
   try {
     render(
       App(
-        { app: 'app' },
+        { app: 'app-br' },
         Logo(),
         GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
         ChangeButton({
           className: 'change-button--prev',
           onClick: () => actions.prev()
         }),
-        ButtonCountryPTBR({ button: '/?rebus-br=1' }),
-        Rebus({
+        ButtonCountryEN({ button: '/?rebus=1' }),
+        RebusBR({
           charInput: (input, wordIndex, charIndex) => {
             const confettiCanon = document.querySelector('.confetti-canon');
             actions.setInput(input, wordIndex, charIndex);
@@ -72,45 +63,52 @@ export function init() {
           onClick: () => actions.next()
         }),
         Hint(),
-        ProgressBar(),
-        ResetButton({ resetButton: 'reset-english' })
+        ProgressBarBR(),
+        ResetButton({ resetButton: 'reset-ptbr' })
       ),
-      document.querySelector('.root')
+      document.querySelector('.rootbr')
     );
-    clickReset('reset-english');
-    clickbr();
+    clickReset('reset-ptbr', 'answeredRebusesBR');
+    clicken();
     registerListeners();
+
+    // CONDITION: if init as reset [pt-br] rebus
+    if (localStorage.getItem('resetFlagBR') === 'true') {
+      document.querySelector('.root').classList.add('rootbr'); // switch to design [pt-br]
+
+      document.getElementById('button-en').classList.remove('button-spam'); // display button [english]
+
+      localStorage.setItem('resetFlagBR', 'false'); // FLAG: no reset [pt-br] rebus
+    }
+    return '0';
   } catch (err) {
-    Sentry.captureException(err);
+    return Sentry.captureException(err);
   }
 }
 
 if (!global || !global.isTestRun) {
   Sentry.init({ dsn: 'https://8f025bee12e84d9b8a16e9c3b9155ce8@sentry.io/1300214' });
-  init();
+  initBR();
   registerListeners();
-  setCurrentFromURL('rebus');
+  setCurrentFromURL('rebus-br');
 }
 
-// BUTTON [PT-BR] - LOAD BUTTON
-export function clickbr() {
-  const e = document.getElementById('button-ptbr'); // get button [pt-br]
+// BUTTON [ENGLISH] - LOAD BUTTON
+export function clicken() {
+  const e = document.querySelector('.app-br').querySelector('#button-en'); // get button [english]
 
-  // HOVER FUNCTION: cursor (hover) [pt-br]
+  // HOVER FUNCTION: cursor (hover) [english]
   e.addEventListener('mouseover', () => {
-    document.getElementById('button-text-id-br').classList.add('button-text-show');
+    document.getElementById('button-text-id-en').classList.add('button-text-show');
   });
   e.addEventListener('mouseout', () => {
-    document.getElementById('button-text-id-br').classList.remove('button-text-show');
+    document.getElementById('button-text-id-en').classList.remove('button-text-show');
   });
 
-  // CLICK FUNCTION: click on button [pt-br]
-  e.addEventListener('click', a => {
-    a.preventDefault();
+  // CLICK FUNCTION: click on button [english]
+  e.addEventListener('click', () => {
+    document.querySelector('.root').classList.remove('rootbr'); // switch to design [english]
 
-    document.querySelector('.root').classList.add('rootbr'); // switch to design [pt-br]
-    document.querySelector('.app').classList.add('button-spam'); // hide [english] rebus
-
-    initBR(); // switch to [pt-br] rebus
+    init(); // switch to [english] rebus
   });
 }

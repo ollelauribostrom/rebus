@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tests for app init renders the app into the root element 1`] = `
+exports[`Tests for app initBR renders the app into the root element 1`] = `
 Object {
   "children": Array [
     Object {
@@ -37,7 +37,7 @@ Object {
       "componentDidMount": undefined,
       "componentDidUpdate": undefined,
       "props": Object {
-        "button": "/?rebus-br=1",
+        "button": "/?rebus=1",
       },
       "render": [Function],
       "update": [Function],
@@ -84,7 +84,7 @@ Object {
       "componentDidMount": undefined,
       "componentDidUpdate": undefined,
       "props": Object {
-        "resetButton": "reset-english",
+        "resetButton": "reset-ptbr",
       },
       "render": [Function],
       "update": [Function],
@@ -93,7 +93,7 @@ Object {
   "componentDidMount": undefined,
   "componentDidUpdate": undefined,
   "props": Object {
-    "app": "app",
+    "app": "app-br",
   },
   "render": [Function],
   "update": [Function],

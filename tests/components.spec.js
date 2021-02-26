@@ -8,6 +8,9 @@ import { ChangeButton } from '../src/js/components/ChangeButton';
 import { Rebus } from '../src/js/components/Rebus';
 import { ProgressBar } from '../src/js/components/ProgressBar';
 import { Hint } from '../src/js/components/Hint';
+import { ButtonCountryPTBR } from '../src/js/components/ButtonPTBR';
+import { ButtonCountryEN } from '../src/js/components/ButtonEN';
+import { ResetButton } from '../src/js/components/ResetButton';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
@@ -33,9 +36,10 @@ function getMockState() {
 describe('Tests for components', () => {
   describe('App', () => {
     it('renders correctly', () => {
-      const wrapper = App(Logo());
+      const props = { app: 'app' };
+      const wrapper = App(props, Logo());
       expect(wrapper).toMatchSnapshot();
-      expect(wrapper.render()).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
     });
   });
   describe('Rebus', () => {
@@ -237,6 +241,30 @@ describe('Tests for components', () => {
     it('renders correctly (when incorrect answer count is less than max incorrect answer count)', () => {
       const props = { ...getMockState(), incorrectAnswerCount: 1 };
       const wrapper = Hint(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('ResetButton', () => {
+    it('renders correctly', () => {
+      const props = { resetButton: 'reset-english' };
+      const wrapper = ResetButton(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('ButtonCountryEN', () => {
+    it('renders correctly', () => {
+      const props = { button: '/?rebus=1' };
+      const wrapper = ButtonCountryEN(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('ButtonCountryPTBR', () => {
+    it('renders correctly', () => {
+      const props = { button: '/?rebus-br=1' };
+      const wrapper = ButtonCountryPTBR(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });

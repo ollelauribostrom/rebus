@@ -77,4 +77,12 @@ describe('Tests for rebuses', () => {
       expect(duplicates).toEqual([]);
     });
   });
+  describe('resetRebuses', () => {
+    it('reset all rebuses', () => {
+      window.localStorage.removeItem('answeredRebuses');
+      expect(
+        window.localStorage.getItem('answeredRebuses') === undefined && isRebusAnswered(0) === false
+      );
+    });
+  });
 });

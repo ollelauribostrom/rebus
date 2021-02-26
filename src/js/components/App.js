@@ -1,11 +1,12 @@
 import { createComponent } from '../mini';
 
-export function App(...children) {
+export function App(props, ...children) {
   return createComponent({
+    props,
     children,
-    render() {
+    render({ app }) {
       return `
-        <div class="app">
+        <div class="${app}">
           <children>
         </div>
       `;

@@ -1,6 +1,7 @@
 import { createComponent } from '../mini';
 import { Char } from './Char';
 import { actions } from '../store';
+import { actions as actionsBR } from '../storeBR';
 
 export function Word(props, ...children) {
   return createComponent({
@@ -32,9 +33,14 @@ export function Word(props, ...children) {
             if (keyCode >= 65 && keyCode <= 90) {
               target.value = '';
             }
-            if (key === 'Enter' || keyCode === 13) {
+
+            if ((key === 'Enter' || keyCode === 13) && localStorage.getItem('flagBR') !== 'true') {
               actions.shake();
             }
+            if ((key === 'Enter' || keyCode === 13) && localStorage.getItem('flagBR') === 'true') {
+              actionsBR.shake();
+            }
+
             if (key === 'Backspace' || keyCode === 8) {
               const input = target.value;
               const prevChild = target.previousElementSibling;
