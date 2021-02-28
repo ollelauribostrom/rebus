@@ -23,8 +23,9 @@ export function clickbr() {
 
   // CLICK FUNCTION: click on button [pt-br]
   e.addEventListener('click', () => {
-    localStorage.setItem('flagBR', 'true'); // FLAG: now [pt-br] rebus
+    localStorage.setItem('flagBR', 'true');
   });
+  // FLAG: now [pt-br] rebus
 }
 
 // BUTTON [EN] - LOAD BUTTON
@@ -36,8 +37,9 @@ export function clicken() {
 
   // CLICK FUNCTION: click on button [english]
   e.addEventListener('click', () => {
-    localStorage.setItem('flagBR', 'false'); // FLAG: now [english / original] rebus
+    localStorage.setItem('flagBR', 'false');
   });
+  // FLAG: now [english / original] rebus
 }
 
 function mouseHoverPTBR(e) {
@@ -60,9 +62,7 @@ function mouseHoverEN(e) {
 
 export function checkResetPTBR() {
   let resetIdiom = 'reset-english';
-  if (localStorage.getItem('flagBR') === 'true') {
-    resetIdiom = 'reset-ptbr';
-  }
+  if (localStorage.getItem('flagBR') === 'true') resetIdiom = 'reset-ptbr';
   return resetIdiom;
 }
 
