@@ -12,9 +12,9 @@ import { Hint } from './components/Hint';
 import { actions } from './store';
 import '../css/main.css';
 import { ButtonCountryPTBR } from './components/ButtonPTBR';
-import { ResetButton, clickReset } from './components/ResetButton';
+import { ResetButton } from './components/ResetButton';
 import { ButtonCountryEN } from './components/ButtonEN';
-import { clickbr, clicken, checkResetPTBR } from './appBR';
+import { loadButtons, checkResetPTBR } from './appBR';
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -66,9 +66,7 @@ export function init() {
       ),
       document.querySelector('.root')
     );
-    clickReset(resetIdiom);
-    clickbr();
-    clicken();
+    loadButtons(resetIdiom);
   } catch (err) {
     Sentry.captureException(err);
   }
