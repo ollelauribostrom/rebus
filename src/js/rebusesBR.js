@@ -148,7 +148,7 @@ export function markRebusAsAnswered(id) {
   }
 }
 
-export function getRebuses() {
+export function getRebusesBR() {
   return rebuses.map((rebus, index) => {
     const id = index + 1;
     const isAnswered = isRebusAnswered(id);

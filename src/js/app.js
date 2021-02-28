@@ -15,9 +15,9 @@ import { ButtonCountryPTBR } from './components/ButtonPTBR';
 import { ResetButton, clickReset } from './components/ResetButton';
 import { ButtonCountryEN } from './components/ButtonEN';
 
-let resetIdiom;
+let resetIdiom = '';
 
-const events = function(event) {
+const events = function eventsFunction(event) {
   const keys = event.key;
   if (keys === 'ArrowRight' || keys === 39) {
     actions.next();
@@ -38,13 +38,17 @@ export function setCurrentFromURL(rebus) {
   actions.setCurrent(id);
 }
 
-export function init() {
-  // CONDITION: if init as [pt-br] rebus, choose reset idiom
+function checkResetPTBR() {
   if (localStorage.getItem('flagBR') === 'true') {
     resetIdiom = 'reset-ptbr';
   } else {
     resetIdiom = 'reset-english';
   }
+}
+
+export function init() {
+  // CONDITION: if init as [pt-br] rebus, choose reset idiom
+  checkResetPTBR();
 
   try {
     render(
@@ -94,21 +98,12 @@ if (!global || !global.isTestRun) {
 export function clickbr() {
   // CONDITION: if init as [pt-br] rebus, change design and hide button [ptbr]
   // ELSE: hide button [english]
-  if (localStorage.getItem('flagBR') === 'true') {
-    document.querySelector('.root').classList.add('rootbr');
-    document.getElementById('button-ptbr').classList.add('button-spam');
-  } else {
-    document.getElementById('button-en').classList.add('button-spam');
-  }
+  checkIsPTBR();
+
   const e = document.getElementById('button-ptbr'); // get button [pt-br]
 
   // HOVER FUNCTION: cursor (hover) [pt-br]
-  e.addEventListener('mouseover', () => {
-    document.getElementById('button-text-id-br').classList.add('button-text-show');
-  });
-  e.addEventListener('mouseout', () => {
-    document.getElementById('button-text-id-br').classList.remove('button-text-show');
-  });
+  mouseHoverPTBR(e);
 
   // CLICK FUNCTION: click on button [pt-br]
   e.addEventListener('click', () => {
@@ -116,19 +111,42 @@ export function clickbr() {
   });
 }
 
+// BUTTON [EN] - LOAD BUTTON
 export function clicken() {
   const e = document.getElementById('button-en'); // get button [english]
 
   // HOVER FUNCTION: cursor (hover) [english]
+  mouseHoverEN(e);
+
+  // CLICK FUNCTION: click on button [english]
+  e.addEventListener('click', () => {
+    localStorage.setItem('flagBR', 'false'); // FLAG: now [english / original] rebus
+  });
+}
+
+function mouseHoverPTBR(e) {
+  e.addEventListener('mouseover', () => {
+    document.getElementById('button-text-id-br').classList.add('button-text-show');
+  });
+  e.addEventListener('mouseout', () => {
+    document.getElementById('button-text-id-br').classList.remove('button-text-show');
+  });
+}
+
+function mouseHoverEN(e) {
   e.addEventListener('mouseover', () => {
     document.getElementById('button-text-id-en').classList.add('button-text-show');
   });
   e.addEventListener('mouseout', () => {
     document.getElementById('button-text-id-en').classList.remove('button-text-show');
   });
+}
 
-  // CLICK FUNCTION: click on button [english]
-  e.addEventListener('click', () => {
-    localStorage.setItem('flagBR', 'false'); // FLAG: now [english / original] rebus
-  });
+function checkIsPTBR() {
+  if (localStorage.getItem('flagBR') === 'true') {
+    document.querySelector('.root').classList.add('rootbr');
+    document.getElementById('button-ptbr').classList.add('button-spam');
+  } else {
+    document.getElementById('button-en').classList.add('button-spam');
+  }
 }

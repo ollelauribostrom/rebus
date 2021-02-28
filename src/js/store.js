@@ -1,10 +1,7 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
 import { getRebuses, markRebusAsAnswered } from './rebuses';
-import {
-  getRebuses as getRebusesBR,
-  markRebusAsAnswered as markRebusAsAnsweredBR
-} from './rebusesBR';
+import { getRebusesBR, markRebusAsAnswered as markRebusAsAnsweredBR } from './rebusesBR';
 
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
