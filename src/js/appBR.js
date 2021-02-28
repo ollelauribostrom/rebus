@@ -1,19 +1,14 @@
 import { clickReset } from './components/ResetButton';
+import { checkIsPTBR } from './checkBR';
 
 export function loadButtons(resetIdiom) {
   clickReset(resetIdiom);
-  clickbr();
-  clicken();
+  loadCountryButtons();
 }
 
-export function checkResetPTBR(param) {
-  let resetIdiom = param;
-  if (localStorage.getItem('flagBR') === 'true') {
-    resetIdiom = 'reset-ptbr';
-  } else {
-    resetIdiom = 'reset-english';
-  }
-  return resetIdiom;
+function loadCountryButtons() {
+  clickbr();
+  clicken();
 }
 
 // BUTTON [PT-BR] - LOAD BUTTON
@@ -62,13 +57,4 @@ function mouseHoverEN(e) {
   e.addEventListener('mouseout', () => {
     document.getElementById('button-text-id-en').classList.remove('button-text-show');
   });
-}
-
-function checkIsPTBR() {
-  if (localStorage.getItem('flagBR') === 'true') {
-    document.querySelector('.root').classList.add('rootbr');
-    document.getElementById('button-ptbr').classList.add('button-spam');
-  } else {
-    document.getElementById('button-en').classList.add('button-spam');
-  }
 }

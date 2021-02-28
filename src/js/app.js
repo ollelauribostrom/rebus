@@ -14,7 +14,8 @@ import '../css/main.css';
 import { ButtonCountryPTBR } from './components/ButtonPTBR';
 import { ResetButton } from './components/ResetButton';
 import { ButtonCountryEN } from './components/ButtonEN';
-import { loadButtons, checkResetPTBR } from './appBR';
+import { loadButtons } from './appBR';
+import { checkResetPTBR } from './checkBR';
 
 let resetIdiom = '';
 
