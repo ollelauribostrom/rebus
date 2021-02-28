@@ -17,15 +17,14 @@ export function Rebus(props, ...children) {
       },
       componentDidUpdate() {
         const rebus = this.props.rebuses[this.props.current];
+        const rebusRef =
+          (localStorage.getItem('flagBR') === 'true' ? '?rebus-br=' : '?rebus=') + rebus.id;
         /* If history API isn't available, we shouldn't revert to the more widely available `window.location.href`, 
         as it incurs a new HTTP request and thus results in an infinite loop (and breaks SPAs). */
-        if (window.history)
-          window.history.pushState(
-            '',
-            '',
-            `${(localStorage.getItem('flagBR') === 'true' ? '?rebus-br=' : '?rebus=') + rebus.id}`
-          );
-        // Adds 'rebus' query parameter to end of URL. Should be endpoint-agnostic.
+        if (window.history) {
+          // Adds 'rebus' query parameter to end of URL. Should be endpoint-agnostic.
+          window.history.pushState('', '', `${rebusRef}`);
+        }
         if (rebus.isAnswered) {
           this.$parent.querySelector('.change-button--next').focus();
         } else {
