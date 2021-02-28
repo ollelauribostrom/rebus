@@ -14,11 +14,9 @@ export function Word(props, ...children) {
           onInput: e => {
             const input = e.target.value;
             charInput(input, props.wordIndex, charIndex);
-
             if (/[a-zA-Z]/.test(input)) {
               const nextChild = e.target.nextElementSibling;
               const hasNextWord = !!this.$element.nextSibling;
-
               if (nextChild !== null) {
                 nextChild.focus();
               }

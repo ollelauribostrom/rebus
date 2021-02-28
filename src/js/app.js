@@ -1,5 +1,6 @@
 import * as Sentry from '@sentry/browser';
 import { render } from './mini';
+
 import { App } from './components/App';
 import { Logo } from './components/Logo';
 import { GithubCorner } from './components/GithubCorner';
@@ -10,6 +11,10 @@ import { Hint } from './components/Hint';
 
 import { actions } from './store';
 import '../css/main.css';
+import { ButtonCountryPTBR } from './components/ButtonPTBR';
+import { ResetButton } from './components/ResetButton';
+import { ButtonCountryEN } from './components/ButtonEN';
+import { loadButtons, checkResetPTBR } from './appBR';
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -23,15 +28,18 @@ export function registerListeners() {
   });
 }
 
-export function setCurrentFromURL() {
+export function setCurrentFromURL(rebus) {
   const params = new URLSearchParams(window.location.search);
-  const id = Number(params.get('rebus'));
+  const id = Number(params.get(rebus));
   actions.setCurrent(id);
 }
 
 export function init() {
+  // CONDITION: if init as [pt-br] rebus, choose reset idiom
+  const resetIdiom = checkResetPTBR();
+
   try {
-    return render(
+    render(
       App(
         Logo(),
         GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
@@ -39,6 +47,8 @@ export function init() {
           className: 'change-button--prev',
           onClick: () => actions.prev()
         }),
+        ButtonCountryPTBR({ button: '/?rebus-br=1' }),
+        ButtonCountryEN({ button: '/?rebus=1' }),
         Rebus({
           charInput: (input, wordIndex, charIndex) => {
             const confettiCanon = document.querySelector('.confetti-canon');
@@ -51,12 +61,14 @@ export function init() {
           onClick: () => actions.next()
         }),
         Hint(),
-        ProgressBar()
+        ProgressBar(),
+        ResetButton({ resetButton: resetIdiom })
       ),
       document.querySelector('.root')
     );
+    loadButtons(resetIdiom);
   } catch (err) {
-    return Sentry.captureException(err);
+    Sentry.captureException(err);
   }
 }
 

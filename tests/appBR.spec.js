@@ -1,5 +1,6 @@
-import { init, registerListeners, setCurrentFromURL } from '../src/js/app';
+import { init, setCurrentFromURL } from '../src/js/app';
 import { actions as actionsMock } from '../src/js/store';
+import { isRebusAnswered } from '../src/js/rebuses';
 import * as renderMock from '../src/js/mini/render';
 
 jest.mock('../src/js/mini/render', () => {
@@ -34,11 +35,12 @@ const setup = () => {
   return { container };
 };
 
-describe('Tests for app', () => {
-  describe('init', () => {
+describe('Tests for app in PT-BR mode', () => {
+  describe('init as PT-BR', () => {
     it('renders the app into the root element', () => {
       const { container } = setup();
       init();
+      container.className = 'rootbr';
       expect(renderMock.render).toHaveBeenCalledTimes(1);
       const firstCall = renderMock.render.mock.calls[0];
       const [firstArg, secondArg] = firstCall;
@@ -46,24 +48,20 @@ describe('Tests for app', () => {
       expect(secondArg).toEqual(container);
     });
   });
-  describe('registerListeners', () => {
-    it('register a listener for keyup events', () => {
-      const leftArrowEvent = new Event('keyup');
-      const rightArrowEvent = new Event('keyup');
-      leftArrowEvent.key = 'ArrowLeft';
-      rightArrowEvent.key = 'ArrowRight';
-      registerListeners();
-      document.dispatchEvent(leftArrowEvent);
-      document.dispatchEvent(rightArrowEvent);
-      expect(actionsMock.prev).toHaveBeenCalled();
-      expect(actionsMock.next).toHaveBeenCalled();
+  describe('setCurrentFromURL', () => {
+    it('sets the current rebus  based on the url query string', () => {
+      window.history.pushState({}, 'Test', '/?rebus-br=2');
+      setCurrentFromURL('rebus-br');
+      expect(actionsMock.setCurrent).toHaveBeenCalledWith(2);
     });
   });
-  describe('setCurrentFromURL', () => {
-    it('sets the current rebus based on the url query string', () => {
-      window.history.pushState({}, 'Test', '/?rebus=2');
-      setCurrentFromURL('rebus');
-      expect(actionsMock.setCurrent).toHaveBeenCalledWith(2);
+  describe('resetRebuses(BR)', () => {
+    it('reset all rebusesBR', () => {
+      window.localStorage.removeItem('answeredRebusesBR');
+      expect(
+        window.localStorage.getItem('answeredRebusesBR') === undefined &&
+          isRebusAnswered(0) === false
+      );
     });
   });
 });
