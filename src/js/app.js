@@ -18,19 +18,16 @@ import { loadButtons, checkResetPTBR } from './appBR';
 
 let resetIdiom = '';
 
-const events = function eventsFunction(event) {
-  const keys = event.key;
-  if (keys === 'ArrowRight' || keys === 39) {
-    actions.next();
-  }
-  if (keys === 'ArrowLeft' || keys === 37) {
-    actions.prev();
-  }
-};
-
 export function registerListeners() {
-  document.removeEventListener('keyup', events);
-  document.addEventListener('keyup', events);
+  document.addEventListener('keyup', event => {
+    const key = event.key || event.keyCode; // For older browser support
+    if (key === 'ArrowRight' || key === 39) {
+      actions.next();
+    }
+    if (key === 'ArrowLeft' || key === 37) {
+      actions.prev();
+    }
+  });
 }
 
 export function setCurrentFromURL(rebus) {
@@ -72,7 +69,6 @@ export function init() {
       document.querySelector('.root')
     );
     loadButtons(resetIdiom);
-    registerListeners();
   } catch (err) {
     Sentry.captureException(err);
   }
