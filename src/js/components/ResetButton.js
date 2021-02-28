@@ -12,20 +12,10 @@ export function ResetButton(props) {
 }
 
 export function clickReset(resetButton) {
-  let answeredRebuses = '';
-  if (localStorage.getItem('flagBR') === 'true') {
-    answeredRebuses = 'answeredRebusesBR';
-  } else {
-    answeredRebuses = 'answeredRebuses';
-  }
+  let answeredRebuses = 'answeredRebuses';
+  if (localStorage.getItem('flagBR') === 'true') answeredRebuses = 'answeredRebusesBR';
   const e = document.getElementById(resetButton);
   e.addEventListener('click', () => {
-    if (resetButton === 'reset-ptbr') {
-      localStorage.setItem('resetFlagBR', 'true');
-      window.localStorage.removeItem(answeredRebuses);
-    } else {
-      localStorage.setItem('resetFlagBR', 'false');
-      window.localStorage.removeItem(answeredRebuses);
-    }
+    window.localStorage.removeItem(answeredRebuses);
   });
 }

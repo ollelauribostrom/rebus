@@ -1,7 +1,6 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
 import { getRebuses, markRebusAsAnswered } from './rebuses';
-import { getRebusesBR } from './rebusesBR';
 
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
@@ -55,17 +54,10 @@ export const actionsCreators = {
   }
 };
 
-function getRebusesHere() {
-  if (localStorage.getItem('flagBR') === 'true') {
-    return getRebusesBR();
-  }
-  return getRebuses();
-}
-
 export const initialState = {
   current: 0,
   animation: 'none',
-  rebuses: getRebusesHere(),
+  rebuses: getRebuses(),
   incorrectAnswerCount: 0
 };
 

@@ -58,12 +58,10 @@ function mouseHoverEN(e) {
   });
 }
 
-export function checkResetPTBR(param) {
-  let resetIdiom = param;
+export function checkResetPTBR() {
+  let resetIdiom = 'reset-english';
   if (localStorage.getItem('flagBR') === 'true') {
     resetIdiom = 'reset-ptbr';
-  } else {
-    resetIdiom = 'reset-english';
   }
   return resetIdiom;
 }

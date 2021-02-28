@@ -41,7 +41,7 @@ export function setCurrentFromURL(rebus) {
 
 export function init() {
   // CONDITION: if init as [pt-br] rebus, choose reset idiom
-  resetIdiom = checkResetPTBR(resetIdiom);
+  resetIdiom = checkResetPTBR();
 
   try {
     render(
