@@ -1,3 +1,5 @@
+import { isRebusAnswered } from './rebuses';
+
 const rebuses = [
   {
     symbols: ['⭐️', '+', 'do'],
@@ -130,23 +132,6 @@ const rebuses = [
     hint: 'Animação que possui o nome de uma ilha do continente africano.'
   }
 ];
-
-export function isRebusAnswered(id) {
-  const answeredRebusesBR = window.localStorage.getItem('answeredRebusesBR');
-  return !!answeredRebusesBR && JSON.parse(answeredRebusesBR).includes(id);
-}
-
-export function markRebusAsAnswered(id) {
-  const answeredRebusesBR = window.localStorage.getItem('answeredRebusesBR');
-  if (!answeredRebusesBR) {
-    window.localStorage.setItem('answeredRebusesBR', JSON.stringify([id]));
-  } else {
-    window.localStorage.setItem(
-      'answeredRebusesBR',
-      JSON.stringify([...JSON.parse(answeredRebusesBR), id])
-    );
-  }
-}
 
 export function getRebusesBR() {
   return rebuses.map((rebus, index) => {

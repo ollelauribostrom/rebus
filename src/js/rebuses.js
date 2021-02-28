@@ -905,18 +905,23 @@ const rebuses = [
   }
 ];
 
+let answeredRebusesIdiom = 'answeredRebuses';
+if (localStorage.getItem('flagBR') === 'true') {
+  answeredRebusesIdiom = 'answeredRebusesBR';
+}
+
 export function isRebusAnswered(id) {
-  const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+  const answeredRebuses = window.localStorage.getItem(answeredRebusesIdiom);
   return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id);
 }
 
 export function markRebusAsAnswered(id) {
-  const answeredRebuses = window.localStorage.getItem('answeredRebuses');
+  const answeredRebuses = window.localStorage.getItem(answeredRebusesIdiom);
   if (!answeredRebuses) {
-    window.localStorage.setItem('answeredRebuses', JSON.stringify([id]));
+    window.localStorage.setItem(answeredRebusesIdiom, JSON.stringify([id]));
   } else {
     window.localStorage.setItem(
-      'answeredRebuses',
+      answeredRebusesIdiom,
       JSON.stringify([...JSON.parse(answeredRebuses), id])
     );
   }

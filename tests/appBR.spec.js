@@ -1,6 +1,6 @@
 import { init, setCurrentFromURL } from '../src/js/app';
 import { actions as actionsMock } from '../src/js/store';
-import { isRebusAnswered } from '../src/js/rebusesBR';
+import { isRebusAnswered } from '../src/js/rebuses';
 import * as renderMock from '../src/js/mini/render';
 
 jest.mock('../src/js/mini/render', () => {

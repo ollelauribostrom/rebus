@@ -1,7 +1,7 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
 import { getRebuses, markRebusAsAnswered } from './rebuses';
-import { getRebusesBR, markRebusAsAnswered as markRebusAsAnsweredBR } from './rebusesBR';
+import { getRebusesBR } from './rebusesBR';
 
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
@@ -37,11 +37,7 @@ export const actionsCreators = {
       return {};
     }
     if (input === answer) {
-      if (localStorage.getItem('flagBR') === 'true') {
-        markRebusAsAnsweredBR(rebus.id);
-      } else {
-        markRebusAsAnswered(rebus.id);
-      }
+      markRebusAsAnswered(rebus.id);
       confetti(confettiCanon);
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;
