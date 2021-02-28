@@ -1041,13 +1041,9 @@ const rebusesBR = [
 
 // END OF REBUSES
 
-let answeredRebusesIdiom = 'answeredRebuses';
-let rebusesIdiom = rebuses;
-
-if (localStorage.getItem('flagBR') === 'true') {
-  answeredRebusesIdiom = 'answeredRebusesBR';
-  rebusesIdiom = rebusesBR;
-}
+const answeredRebusesIdiom =
+  localStorage.getItem('flagBR') === 'true' ? 'answeredRebusesBR' : 'answeredRebuses';
+const rebusesIdiom = localStorage.getItem('flagBR') === 'true' ? rebusesBR : rebuses;
 
 export function isRebusAnswered(id) {
   const answeredRebuses = window.localStorage.getItem(answeredRebusesIdiom);

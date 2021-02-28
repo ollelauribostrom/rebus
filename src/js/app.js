@@ -16,8 +16,6 @@ import { ResetButton } from './components/ResetButton';
 import { ButtonCountryEN } from './components/ButtonEN';
 import { loadButtons, checkResetPTBR } from './appBR';
 
-let resetIdiom = '';
-
 export function registerListeners() {
   document.addEventListener('keyup', event => {
     const key = event.key || event.keyCode; // For older browser support
@@ -38,7 +36,7 @@ export function setCurrentFromURL(rebus) {
 
 export function init() {
   // CONDITION: if init as [pt-br] rebus, choose reset idiom
-  resetIdiom = checkResetPTBR();
+  const resetIdiom = checkResetPTBR();
 
   try {
     render(

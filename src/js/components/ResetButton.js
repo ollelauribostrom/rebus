@@ -12,8 +12,8 @@ export function ResetButton(props) {
 }
 
 export function clickReset(resetButton) {
-  let answeredRebuses = 'answeredRebuses';
-  if (localStorage.getItem('flagBR') === 'true') answeredRebuses = 'answeredRebusesBR';
+  const answeredRebuses =
+    localStorage.getItem('flagBR') === 'true' ? 'answeredRebusesBR' : 'answeredRebuses';
   const e = document.getElementById(resetButton);
   e.addEventListener('click', () => {
     window.localStorage.removeItem(answeredRebuses);

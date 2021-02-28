@@ -57,8 +57,7 @@ export function loadButtons(resetIdiom) {
 }
 
 export function checkResetPTBR() {
-  let resetIdiom = 'reset-english';
-  if (localStorage.getItem('flagBR') === 'true') resetIdiom = 'reset-ptbr';
+  const resetIdiom = localStorage.getItem('flagBR') === 'true' ? 'reset-ptbr' : 'reset-english';
   return resetIdiom;
 }
 
