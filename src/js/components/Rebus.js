@@ -2,7 +2,8 @@ import { createComponent } from '../mini';
 import { connect } from '../store';
 import { Word } from './Word';
 
-const rebusRef = localStorage.getItem('flagBR') === 'true' ? '?rebus-br=' : '?rebus=';
+let rebusRef = '';
+rebusRef = localStorage.getItem('flagBR') === 'true' ? '?rebus-br=' : '?rebus=';
 
 export function Rebus(props, ...children) {
   return connect(
