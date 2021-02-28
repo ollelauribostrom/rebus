@@ -3,17 +3,19 @@ import { clickReset } from './components/ResetButton';
 // BUTTON [PT-BR] - LOAD BUTTON
 export function clickbr() {
   checkIsPTBR();
-  const e = document.getElementById('button-ptbr'); // get button [pt-br]
+  document
+    .getElementById('button-ptbr')
+    .addEventListener('click', () => localStorage.setItem('flagBR', 'true'));
   // CLICK FUNCTION: click on button [pt-br]
-  e.addEventListener('click', () => localStorage.setItem('flagBR', 'true'));
   // FLAG: now [pt-br] rebus
 }
 
 // BUTTON [EN] - LOAD BUTTON
 export function clicken() {
-  const a = document.getElementById('button-en'); // get button [english]
+  document
+    .getElementById('button-en')
+    .addEventListener('click', () => localStorage.setItem('flagBR', 'false'));
   // CLICK FUNCTION: click on button [english]
-  a.addEventListener('click', () => localStorage.setItem('flagBR', 'false'));
   // FLAG: now [english / original] rebus
 }
 
