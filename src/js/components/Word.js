@@ -14,11 +14,9 @@ export function Word(props, ...children) {
           onInput: e => {
             const input = e.target.value;
             charInput(input, props.wordIndex, charIndex);
-
             if (/[a-zA-Z]/.test(input)) {
               const nextChild = e.target.nextElementSibling;
               const hasNextWord = !!this.$element.nextSibling;
-
               if (nextChild !== null) {
                 nextChild.focus();
               }
@@ -32,11 +30,9 @@ export function Word(props, ...children) {
             if (keyCode >= 65 && keyCode <= 90) {
               target.value = '';
             }
-
             if (key === 'Enter' || keyCode === 13) {
               actions.shake();
             }
-
             if (key === 'Backspace' || keyCode === 8) {
               const input = target.value;
               const prevChild = target.previousElementSibling;

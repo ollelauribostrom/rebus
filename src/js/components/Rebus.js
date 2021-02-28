@@ -5,9 +5,7 @@ import { Word } from './Word';
 let rebusRef = '?rebus=';
 
 export function Rebus(props, ...children) {
-  if (localStorage.getItem('flagBR') === 'true') {
-    rebusRef = '?rebus-br=';
-  }
+  if (localStorage.getItem('flagBR') === 'true') rebusRef = '?rebus-br=';
   return connect(
     createComponent({
       props,

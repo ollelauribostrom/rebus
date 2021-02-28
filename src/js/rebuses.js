@@ -906,7 +906,6 @@ const rebuses = [
 ];
 
 // PT-BR REBUSES
-
 const rebusesBR = [
   {
     symbols: ['⭐️', '+', 'do'],
