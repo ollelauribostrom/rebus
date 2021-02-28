@@ -15,7 +15,5 @@ export function clickReset(resetButton) {
   const answeredRebuses =
     localStorage.getItem('flagBR') === 'true' ? 'answeredRebusesBR' : 'answeredRebuses';
   const e = document.getElementById(resetButton);
-  e.addEventListener('click', () => {
-    window.localStorage.removeItem(answeredRebuses);
-  });
+  e.addEventListener('click', () => window.localStorage.removeItem(answeredRebuses));
 }

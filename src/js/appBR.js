@@ -1,21 +1,21 @@
 import { clickReset } from './components/ResetButton';
 
 function mouseHoverPTBR(e) {
-  e.addEventListener('mouseover', () => {
-    document.getElementById('button-text-id-br').classList.add('button-text-show');
-  });
-  e.addEventListener('mouseout', () => {
-    document.getElementById('button-text-id-br').classList.remove('button-text-show');
-  });
+  e.addEventListener('mouseover', () =>
+    document.getElementById('button-text-id-br').classList.add('button-text-show')
+  );
+  e.addEventListener('mouseout', () =>
+    document.getElementById('button-text-id-br').classList.remove('button-text-show')
+  );
 }
 
 function mouseHoverEN(a) {
-  a.addEventListener('mouseover', () => {
-    document.getElementById('button-text-id-en').classList.add('button-text-show');
-  });
-  a.addEventListener('mouseout', () => {
-    document.getElementById('button-text-id-en').classList.remove('button-text-show');
-  });
+  a.addEventListener('mouseover', () =>
+    document.getElementById('button-text-id-en').classList.add('button-text-show')
+  );
+  a.addEventListener('mouseout', () =>
+    document.getElementById('button-text-id-en').classList.remove('button-text-show')
+  );
 }
 
 // BUTTON [PT-BR] - LOAD BUTTON
@@ -30,9 +30,7 @@ export function clickbr() {
   mouseHoverPTBR(e);
 
   // CLICK FUNCTION: click on button [pt-br]
-  e.addEventListener('click', () => {
-    localStorage.setItem('flagBR', 'true');
-  });
+  e.addEventListener('click', () => localStorage.setItem('flagBR', 'true'));
   // FLAG: now [pt-br] rebus
 }
 
@@ -44,9 +42,7 @@ export function clicken() {
   mouseHoverEN(a);
 
   // CLICK FUNCTION: click on button [english]
-  a.addEventListener('click', () => {
-    localStorage.setItem('flagBR', 'false');
-  });
+  a.addEventListener('click', () => localStorage.setItem('flagBR', 'false'));
   // FLAG: now [english / original] rebus
 }
 
