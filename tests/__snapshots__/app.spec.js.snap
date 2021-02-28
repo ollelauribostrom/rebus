@@ -44,6 +44,16 @@ Object {
     },
     Object {
       "children": Array [],
+      "componentDidMount": undefined,
+      "componentDidUpdate": undefined,
+      "props": Object {
+        "button": "/?rebus=1",
+      },
+      "render": [Function],
+      "update": [Function],
+    },
+    Object {
+      "children": Array [],
       "componentDidMount": [Function],
       "componentDidUpdate": [Function],
       "props": Object {
@@ -92,9 +102,7 @@ Object {
   ],
   "componentDidMount": undefined,
   "componentDidUpdate": undefined,
-  "props": Object {
-    "app": "app",
-  },
+  "props": Object {},
   "render": [Function],
   "update": [Function],
 }

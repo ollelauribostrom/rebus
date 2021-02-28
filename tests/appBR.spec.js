@@ -1,5 +1,5 @@
-import { initBR, setCurrentFromURL } from '../src/js/appBR';
-import { actions as actionsMock } from '../src/js/storeBR';
+import { init, setCurrentFromURL } from '../src/js/app';
+import { actions as actionsMock } from '../src/js/store';
 import { isRebusAnswered } from '../src/js/rebusesBR';
 import * as renderMock from '../src/js/mini/render';
 
@@ -15,7 +15,7 @@ jest.mock('../src/js/mini/render', () => {
   return mock;
 });
 
-jest.mock('../src/js/storeBR', () => ({
+jest.mock('../src/js/store', () => ({
   actions: {
     next: jest.fn(),
     prev: jest.fn(),
@@ -30,16 +30,17 @@ afterEach(() => {
 
 const setup = () => {
   const container = document.createElement('div');
-  container.className = 'rootbr';
+  container.className = 'root';
   document.body.append(container);
   return { container };
 };
 
-describe('Tests for app', () => {
-  describe('initBR', () => {
+describe('Tests for app in PT-BR mode', () => {
+  describe('init as PT-BR', () => {
     it('renders the app into the root element', () => {
       const { container } = setup();
-      initBR();
+      init();
+      container.className = 'rootbr';
       expect(renderMock.render).toHaveBeenCalledTimes(1);
       const firstCall = renderMock.render.mock.calls[0];
       const [firstArg, secondArg] = firstCall;
@@ -48,7 +49,7 @@ describe('Tests for app', () => {
     });
   });
   describe('setCurrentFromURL', () => {
-    it('sets the current rebus based on the url query string', () => {
+    it('sets the current rebus  based on the url query string', () => {
       window.history.pushState({}, 'Test', '/?rebus-br=2');
       setCurrentFromURL('rebus-br');
       expect(actionsMock.setCurrent).toHaveBeenCalledWith(2);

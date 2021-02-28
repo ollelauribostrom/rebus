@@ -2,7 +2,12 @@ import { createComponent } from '../mini';
 import { connect } from '../store';
 import { Word } from './Word';
 
+let rebusRef = '?rebus=';
+
 export function Rebus(props, ...children) {
+  if (localStorage.getItem('flagBR') === 'true') {
+    rebusRef = '?rebus-br=';
+  }
   return connect(
     createComponent({
       props,
@@ -21,7 +26,7 @@ export function Rebus(props, ...children) {
         as it incurs a new HTTP request and thus results in an infinite loop (and breaks SPAs). */
         if (window.history) {
           // Adds 'rebus' query parameter to end of URL. Should be endpoint-agnostic.
-          window.history.pushState('', '', `?rebus=${rebus.id}`);
+          window.history.pushState('', '', `${rebusRef}${rebus.id}`);
         }
         if (rebus.isAnswered) {
           this.$parent.querySelector('.change-button--next').focus();

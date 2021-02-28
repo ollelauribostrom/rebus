@@ -1,6 +1,5 @@
 import * as Sentry from '@sentry/browser';
 import { render } from './mini';
-import { initBR } from './appBR';
 
 import { App } from './components/App';
 import { Logo } from './components/Logo';
@@ -14,6 +13,9 @@ import { actions } from './store';
 import '../css/main.css';
 import { ButtonCountryPTBR } from './components/ButtonPTBR';
 import { ResetButton, clickReset } from './components/ResetButton';
+import { ButtonCountryEN } from './components/ButtonEN';
+
+let resetIdiom;
 
 const events = function(event) {
   const keys = event.key;
@@ -36,23 +38,17 @@ export function setCurrentFromURL(rebus) {
   actions.setCurrent(id);
 }
 
-// FUNCTION DEFAULT REBUS
 export function init() {
-  // CONDITION: if init as reset [pt-br] rebus
-  if (localStorage.getItem('resetFlagBR') === 'true') {
-    document.querySelector('.root').classList.add('rootbr'); // then keep design [pt-br] & [pt-br] rebus
-    initBR();
-
-    return;
+  // CONDITION: if init as [pt-br] rebus, choose reset idiom
+  if (localStorage.getItem('flagBR') === 'true') {
+    resetIdiom = 'reset-ptbr';
+  } else {
+    resetIdiom = 'reset-english';
   }
-
-  localStorage.setItem('flagBR', 'false'); // FLAG: no [pt-br] rebus
-  localStorage.setItem('resetFlagBR', 'false'); // FLAG: no reset [pt-br] rebus
 
   try {
     render(
       App(
-        { app: 'app' },
         Logo(),
         GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
         ChangeButton({
@@ -60,6 +56,7 @@ export function init() {
           onClick: () => actions.prev()
         }),
         ButtonCountryPTBR({ button: '/?rebus-br=1' }),
+        ButtonCountryEN({ button: '/?rebus=1' }),
         Rebus({
           charInput: (input, wordIndex, charIndex) => {
             const confettiCanon = document.querySelector('.confetti-canon');
@@ -73,12 +70,13 @@ export function init() {
         }),
         Hint(),
         ProgressBar(),
-        ResetButton({ resetButton: 'reset-english' })
+        ResetButton({ resetButton: resetIdiom })
       ),
       document.querySelector('.root')
     );
-    clickReset('reset-english');
+    clickReset(resetIdiom);
     clickbr();
+    clicken();
     registerListeners();
   } catch (err) {
     Sentry.captureException(err);
@@ -89,11 +87,19 @@ if (!global || !global.isTestRun) {
   Sentry.init({ dsn: 'https://8f025bee12e84d9b8a16e9c3b9155ce8@sentry.io/1300214' });
   init();
   registerListeners();
-  setCurrentFromURL('rebus');
+  setCurrentFromURL();
 }
 
 // BUTTON [PT-BR] - LOAD BUTTON
 export function clickbr() {
+  // CONDITION: if init as [pt-br] rebus, change design and hide button [ptbr]
+  // ELSE: hide button [english]
+  if (localStorage.getItem('flagBR') === 'true') {
+    document.querySelector('.root').classList.add('rootbr');
+    document.getElementById('button-ptbr').classList.add('button-spam');
+  } else {
+    document.getElementById('button-en').classList.add('button-spam');
+  }
   const e = document.getElementById('button-ptbr'); // get button [pt-br]
 
   // HOVER FUNCTION: cursor (hover) [pt-br]
@@ -105,12 +111,24 @@ export function clickbr() {
   });
 
   // CLICK FUNCTION: click on button [pt-br]
-  e.addEventListener('click', a => {
-    a.preventDefault();
+  e.addEventListener('click', () => {
+    localStorage.setItem('flagBR', 'true'); // FLAG: now [pt-br] rebus
+  });
+}
 
-    document.querySelector('.root').classList.add('rootbr'); // switch to design [pt-br]
-    document.querySelector('.app').classList.add('button-spam'); // hide [english] rebus
+export function clicken() {
+  const e = document.getElementById('button-en'); // get button [english]
 
-    initBR(); // switch to [pt-br] rebus
+  // HOVER FUNCTION: cursor (hover) [english]
+  e.addEventListener('mouseover', () => {
+    document.getElementById('button-text-id-en').classList.add('button-text-show');
+  });
+  e.addEventListener('mouseout', () => {
+    document.getElementById('button-text-id-en').classList.remove('button-text-show');
+  });
+
+  // CLICK FUNCTION: click on button [english]
+  e.addEventListener('click', () => {
+    localStorage.setItem('flagBR', 'false'); // FLAG: now [english / original] rebus
   });
 }

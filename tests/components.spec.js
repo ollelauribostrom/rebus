@@ -36,10 +36,9 @@ function getMockState() {
 describe('Tests for components', () => {
   describe('App', () => {
     it('renders correctly', () => {
-      const props = { app: 'app' };
-      const wrapper = App(props, Logo());
+      const wrapper = App(Logo());
       expect(wrapper).toMatchSnapshot();
-      expect(wrapper.render(props)).toMatchSnapshot();
+      expect(wrapper.render()).toMatchSnapshot();
     });
   });
   describe('Rebus', () => {
@@ -253,18 +252,18 @@ describe('Tests for components', () => {
       expect(wrapper.render(props)).toMatchSnapshot();
     });
   });
-  describe('ButtonCountryEN', () => {
-    it('renders correctly', () => {
-      const props = { button: '/?rebus=1' };
-      const wrapper = ButtonCountryEN(props);
-      expect(wrapper).toMatchSnapshot();
-      expect(wrapper.render(props)).toMatchSnapshot();
-    });
-  });
   describe('ButtonCountryPTBR', () => {
     it('renders correctly', () => {
       const props = { button: '/?rebus-br=1' };
       const wrapper = ButtonCountryPTBR(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('ButtonCountryEN', () => {
+    it('renders correctly', () => {
+      const props = { button: '/?rebus=1' };
+      const wrapper = ButtonCountryEN(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });

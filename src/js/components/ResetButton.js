@@ -11,7 +11,13 @@ export function ResetButton(props) {
   });
 }
 
-export function clickReset(resetButton, answeredRebuses = 'answeredRebuses') {
+export function clickReset(resetButton) {
+  let answeredRebuses = '';
+  if (localStorage.getItem('flagBR') === 'true') {
+    answeredRebuses = 'answeredRebusesBR';
+  } else {
+    answeredRebuses = 'answeredRebuses';
+  }
   const e = document.getElementById(resetButton);
   e.addEventListener('click', () => {
     if (resetButton === 'reset-ptbr') {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tests for app initBR renders the app into the root element 1`] = `
+exports[`Tests for app in PT-BR mode init as PT-BR renders the app into the root element 1`] = `
 Object {
   "children": Array [
     Object {
@@ -28,6 +28,16 @@ Object {
       "props": Object {
         "className": "change-button--prev",
         "onClick": [Function],
+      },
+      "render": [Function],
+      "update": [Function],
+    },
+    Object {
+      "children": Array [],
+      "componentDidMount": undefined,
+      "componentDidUpdate": undefined,
+      "props": Object {
+        "button": "/?rebus-br=1",
       },
       "render": [Function],
       "update": [Function],
@@ -84,7 +94,7 @@ Object {
       "componentDidMount": undefined,
       "componentDidUpdate": undefined,
       "props": Object {
-        "resetButton": "reset-ptbr",
+        "resetButton": "reset-english",
       },
       "render": [Function],
       "update": [Function],
@@ -92,9 +102,7 @@ Object {
   ],
   "componentDidMount": undefined,
   "componentDidUpdate": undefined,
-  "props": Object {
-    "app": "app-br",
-  },
+  "props": Object {},
   "render": [Function],
   "update": [Function],
 }

@@ -14,9 +14,7 @@ Object {
   ],
   "componentDidMount": undefined,
   "componentDidUpdate": undefined,
-  "props": Object {
-    "app": "app",
-  },
+  "props": Object {},
   "render": [Function],
   "update": [Function],
 }
