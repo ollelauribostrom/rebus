@@ -1,28 +1,22 @@
 import { clickReset } from './components/ResetButton';
 
-// BUTTON [PT-BR] - LOAD BUTTON
-export function clickbr() {
+export function loadButtons(resetIdiom) {
+  clickReset(resetIdiom);
+
+  // BUTTON [PT-BR] - LOAD BUTTON
   checkIsPTBR();
   document
     .getElementById('button-ptbr')
     .addEventListener('click', () => localStorage.setItem('flagBR', 'true'));
   // CLICK FUNCTION: click on button [pt-br]
   // FLAG: now [pt-br] rebus
-}
 
-// BUTTON [EN] - LOAD BUTTON
-export function clicken() {
+  // BUTTON [EN] - LOAD BUTTON
   document
     .getElementById('button-en')
     .addEventListener('click', () => localStorage.setItem('flagBR', 'false'));
   // CLICK FUNCTION: click on button [english]
   // FLAG: now [english / original] rebus
-}
-
-export function loadButtons(resetIdiom) {
-  clickReset(resetIdiom);
-  clickbr();
-  clicken();
 }
 
 export function checkResetPTBR() {
