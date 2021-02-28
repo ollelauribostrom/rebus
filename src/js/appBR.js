@@ -1,9 +1,21 @@
 import { clickReset } from './components/ResetButton';
 
-export function loadButtons(resetIdiom) {
-  clickReset(resetIdiom);
-  clickbr();
-  clicken();
+function mouseHoverPTBR(e) {
+  e.addEventListener('mouseover', () => {
+    document.getElementById('button-text-id-br').classList.add('button-text-show');
+  });
+  e.addEventListener('mouseout', () => {
+    document.getElementById('button-text-id-br').classList.remove('button-text-show');
+  });
+}
+
+function mouseHoverEN(a) {
+  a.addEventListener('mouseover', () => {
+    document.getElementById('button-text-id-en').classList.add('button-text-show');
+  });
+  a.addEventListener('mouseout', () => {
+    document.getElementById('button-text-id-en').classList.remove('button-text-show');
+  });
 }
 
 // BUTTON [PT-BR] - LOAD BUTTON
@@ -38,22 +50,10 @@ export function clicken() {
   // FLAG: now [english / original] rebus
 }
 
-function mouseHoverPTBR(e) {
-  e.addEventListener('mouseover', () => {
-    document.getElementById('button-text-id-br').classList.add('button-text-show');
-  });
-  e.addEventListener('mouseout', () => {
-    document.getElementById('button-text-id-br').classList.remove('button-text-show');
-  });
-}
-
-function mouseHoverEN(a) {
-  a.addEventListener('mouseover', () => {
-    document.getElementById('button-text-id-en').classList.add('button-text-show');
-  });
-  a.addEventListener('mouseout', () => {
-    document.getElementById('button-text-id-en').classList.remove('button-text-show');
-  });
+export function loadButtons(resetIdiom) {
+  clickReset(resetIdiom);
+  clickbr();
+  clicken();
 }
 
 export function checkResetPTBR() {
