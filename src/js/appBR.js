@@ -2,10 +2,6 @@ import { clickReset } from './components/ResetButton';
 
 export function loadButtons(resetIdiom) {
   clickReset(resetIdiom);
-  loadCountryButtons();
-}
-
-function loadCountryButtons() {
   clickbr();
   clicken();
 }
@@ -30,13 +26,13 @@ export function clickbr() {
 
 // BUTTON [EN] - LOAD BUTTON
 export function clicken() {
-  const e = document.getElementById('button-en'); // get button [english]
+  const a = document.getElementById('button-en'); // get button [english]
 
   // HOVER FUNCTION: cursor (hover) [english]
-  mouseHoverEN(e);
+  mouseHoverEN(a);
 
   // CLICK FUNCTION: click on button [english]
-  e.addEventListener('click', () => {
+  a.addEventListener('click', () => {
     localStorage.setItem('flagBR', 'false');
   });
   // FLAG: now [english / original] rebus
@@ -51,11 +47,11 @@ function mouseHoverPTBR(e) {
   });
 }
 
-function mouseHoverEN(e) {
-  e.addEventListener('mouseover', () => {
+function mouseHoverEN(a) {
+  a.addEventListener('mouseover', () => {
     document.getElementById('button-text-id-en').classList.add('button-text-show');
   });
-  e.addEventListener('mouseout', () => {
+  a.addEventListener('mouseout', () => {
     document.getElementById('button-text-id-en').classList.remove('button-text-show');
   });
 }
@@ -68,9 +64,10 @@ export function checkResetPTBR() {
 
 export function checkIsPTBR() {
   if (localStorage.getItem('flagBR') === 'true') {
-    document.querySelector('.root').classList.add('rootbr');
-    document.getElementById('button-ptbr').classList.add('button-spam');
-  } else {
-    document.getElementById('button-en').classList.add('button-spam');
+    return (
+      document.querySelector('.root').classList.add('rootbr'),
+      document.getElementById('button-ptbr').classList.add('button-spam')
+    );
   }
+  return document.getElementById('button-en').classList.add('button-spam');
 }
