@@ -907,7 +907,7 @@ const rebuses = [
     symbols: ['☕', '+', '🎂'],
     words: ['cupcake'],
     hint: 'A small cake (dessert)'
-  }  
+  }
 ];
 
 export function isRebusAnswered(id) {
