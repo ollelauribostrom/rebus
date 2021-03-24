@@ -89,6 +89,11 @@ const rebuses = [
     hint: `Say the emoji out loud and replace the 'B' with 'F'`
   },
   {
+    symbols: ['🚂', '+', 'i', 'n', 'g', '+', '☀️'],
+    words: ['Training','Day'],
+    hint: `Denzel Washington was in it`
+  },
+  {
     symbols: ['G', '+', '❤️'],
     words: ['Glove'],
     hint: `It covers your hand when it's cold outside`
