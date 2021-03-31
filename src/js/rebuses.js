@@ -899,6 +899,11 @@ const rebuses = [
     hint: ['It makes the website interactive']
   },
   {
+    symbols: ['🦀', '+', '🎂'],
+    words: ['crab', 'cake'],
+    hint: 'A delicious appetizer'
+  },
+  {
     symbols: ['📴', '+', '🌱'],
     words: ['off', 'spring'],
     hint: 'A delicious appetizer'
