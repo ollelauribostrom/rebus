@@ -5,3 +5,9 @@ yarn-error.log
 dist
 coverage
 .idea
+
+# Vim stuff
+
+*.swp
+*.swn
+*.swo
