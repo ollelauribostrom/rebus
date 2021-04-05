@@ -36,7 +36,28 @@ body,
   position: absolute;
   top: 30px;
   left: 30px;
+  margin-top: auto;
 }
+
+.b_1{
+  font-size: 50px;
+  margin: auto;
+  text-align: left;
+}
+
+.nav-link{
+  margin-top: -20px;
+  font-size: 20px;
+  
+}
+
+.logo_size{
+  max-height: 50px;
+  max-width: 50px;
+  margin-top: -20px;
+  margin-right: 10px;
+}
+
 
 .rebus {
   background-color: #1542e642;
