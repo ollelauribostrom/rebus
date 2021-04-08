@@ -941,6 +941,12 @@ const rebuses = [
     hint: 'Videogame'
 
   }
+
+  {
+    symbols: ['🐉', '⚽'],
+    words: ['dragon', 'ball'],
+    hint: 'Anime'
+  }
 ];
 
 export function isRebusAnswered(id) {
