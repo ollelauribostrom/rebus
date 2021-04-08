@@ -243,13 +243,13 @@ Para evitar este roblema en el futuro, puedes cambiar en su editor de texto para
 - [Repositorios GitHub  Aprobados por Contribuidores para Principiantes](https://github.com/showcases/great-for-new-contributors)
 - [Sourcetree - Interfaz Gráfica de Git para MacOs y Windows](https://www.sourcetreeapp.com/)
 - [VS Code - editor de código ampliable](https://code.visualstudio.com/)
-- [GitHub Atom - Un Editor de Texto Hackeable para este Siglo 21](https://atom.io/)
+- [GitHub Atom - Un Editor de Texto Hackeable para este Siglo 21](https://atom.io/) 
 
 ## Soporte
 
 Por favor [Abre una issue](https://github.com/ollelauribostrom/rebus/issues/new) para soporte, o unete a nuestra [Sala de chat](https://gitter.im/rebus-contributors/Lobby).
 
-## Código de conducta
+## Código de conducta       
 
 Este proyecto de adhiere al [Fundación de Código de Conducta JS](https://js.foundation/community/code-of-conduct).
 Por favor lee completamente para que puedas entender qué acciones serán o no toleradas
@@ -257,6 +257,7 @@ Por favor lee completamente para que puedas entender qué acciones serán o no t
 ## License
 
 Licenciada para la Licencia MIT.
+
 
 
 
