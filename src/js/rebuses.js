@@ -902,6 +902,50 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+
+  {
+    symbols: ['🌽', '+', 'flakes'],
+    words: ['corn', 'flakes'],
+    hint: 'A cereal'
+  },
+
+  {
+    symbols: ['💨', 'and', '💢'],
+    words: ['fast', 'and', 'furious'],
+    hint: 'It is a movie'
+
+  },
+
+  {
+    symbols: ['👻', 'rider'],
+    words: ['ghost', 'rider'],
+    hint: 'Johnny Cage'
+  },
+
+  {
+    symbols: ['❌', '📦'],
+    words: ['xbox'],
+    hint: 'It is a videoconsole'
+  },
+
+  {
+    symbols: ['🍔', '👑'],
+    words: ['burguer', 'king'],
+    hint: 'Fast food'
+  },
+
+  {
+    symbols: ['🤫', '⛰'],
+    words: ['silent', 'hill'],
+    hint: 'Videogame'
+
+  }
+
+  {
+    symbols: ['🐉', '⚽'],
+    words: ['dragon', 'ball'],
+    hint: 'Anime'
   }
 ];
 
