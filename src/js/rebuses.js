@@ -5,6 +5,17 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
+    symbols: ['👣', '+', '⚽'],
+    words: ['FootBall'],
+    hint: 'Messi, Pele, Kaka, Ronaldo'
+  },
+  {
+    symbols: ['👣', '+', 'wear'],
+    words: ['Footwear'],
+    hint: 'Bata, JimmyChoo, Nike'
+  },
+  
+  {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants'],
     hint: `The second emoji is 'ant' not 'bug'`
@@ -367,6 +378,11 @@ const rebuses = [
     symbols: ['🐦', '+', 's-', '+', '👁️'],
     words: ["bird's-eye"],
     hint: `When you observe from above`
+  },
+  {
+    symbols: ['🐦', '+', '🔥'],
+    words: ['firefly'],
+    hint: `insect which glows`
   },
   {
     symbols: ['🐴', '+', '🔙'],
