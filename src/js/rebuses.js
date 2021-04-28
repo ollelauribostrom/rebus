@@ -104,7 +104,7 @@ const rebuses = [
     hint: `Hmm, there's a bee and a leaf. Say both out loud`
   },
   {
-    symbols: ['🐱', '+', 'as', '+', '🏆', 'y̶', '+', 'e'],
+    symbols: ['🐱', '+', 'as', '+', '🏆', '-', 'y', '+', 'e'],
     words: ['Catastrophe'],
     hint: 'A really really bad occurence'
   },
