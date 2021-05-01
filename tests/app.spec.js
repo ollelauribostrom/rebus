@@ -18,6 +18,7 @@ jest.mock('../src/js/store', () => ({
   actions: {
     next: jest.fn(),
     prev: jest.fn(),
+    random: jest.fn(),
     setCurrent: jest.fn()
   },
   connect: component => component

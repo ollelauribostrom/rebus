@@ -8,6 +8,7 @@ import { ChangeButton } from '../src/js/components/ChangeButton';
 import { Rebus } from '../src/js/components/Rebus';
 import { ProgressBar } from '../src/js/components/ProgressBar';
 import { Hint } from '../src/js/components/Hint';
+import { RandomButton } from '../src/js/components/RandomButton';
 
 jest.mock('../src/js/store', () => ({
   connect: arg => arg
@@ -190,6 +191,14 @@ describe('Tests for components', () => {
     it('renders correctly (with className prop)', () => {
       const props = { className: 'test' };
       const wrapper = ChangeButton(props);
+      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.render(props)).toMatchSnapshot();
+    });
+  });
+  describe('RandomButton', () => {
+    it('renders correctly', () => {
+      const props = { className: 'test' };
+      const wrapper = RandomButton(props);
       expect(wrapper).toMatchSnapshot();
       expect(wrapper.render(props)).toMatchSnapshot();
     });

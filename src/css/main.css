@@ -335,3 +335,17 @@ progress[value]::-webkit-progress-value {
     transform: translate3d(4px, 0, 0);
   }
 }
+
+.random-button {
+  background-color: #1542e642;
+  grid-column-start: 3;
+  align-self: center;
+  grid-row-start: 3;
+  box-shadow: 4px 7px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  grid-template-rows: 40px auto;
+  grid-row-gap: 30px;
+  padding: 20px;
+  border-color: aqua;
+  font-size: 1.25rem;
+}

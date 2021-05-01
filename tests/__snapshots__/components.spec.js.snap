@@ -455,6 +455,21 @@ exports[`Tests for components ProgressBar renders correctly 2`] = `
         "
 `;
 
+exports[`Tests for components RandomButton renders correctly 1`] = `
+Object {
+  "children": Array [],
+  "componentDidMount": undefined,
+  "componentDidUpdate": undefined,
+  "props": Object {
+    "className": "test",
+  },
+  "render": [Function],
+  "update": [Function],
+}
+`;
+
+exports[`Tests for components RandomButton renders correctly 2`] = `"<button class='random-button'>Random</button>"`;
+
 exports[`Tests for components Rebus renders correctly (when rebus is answered) 1`] = `
 Object {
   "children": Array [],
