@@ -243,20 +243,21 @@ progress[value]::-webkit-progress-value {
     display: none;
   }
   .app {
-    grid-template-rows: 1fr 8fr 2fr;
+    grid-template-rows: 1.5fr 1fr 8fr;
   }
   .github-corner {
     display: none;
   }
   .change-button {
-    grid-row-start: 3;
+    grid-row-start: 2;
   }
   .rebus {
-    grid-row-start: 1;
+    grid-row-start: 3;
     grid-row-end: span 2;
     grid-column-start: 1;
     grid-column-end: span 5;
     border-radius: 0;
+    align-self: flex-start;
   }
   .rebus__header {
     border-radius: 0;
@@ -268,6 +269,16 @@ progress[value]::-webkit-progress-value {
   .word__char {
     width: auto;
   }
+  .rebus__symbols {
+    font-size: 1.5em;
+  }
+  .rebus__hint {
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    grid-row-start: 1;
+    align-self: center;
+  }
+  
 }
 
 /* ----------------------------------------------
