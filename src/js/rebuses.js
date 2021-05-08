@@ -907,11 +907,6 @@ const rebuses = [
     symbols: ['🔥', '+', '🦊'],
     words: ['FireFox'], 
     hint: 'Browser'
-  }, 
-  {
-    symbols: ['🐶' + 'coin'],
-    words: ['dogecoin'], 
-    hint: 'E.M coin'
   }
 ];
 
