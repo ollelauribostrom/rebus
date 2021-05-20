@@ -904,8 +904,8 @@ const rebuses = [
     hint: 'A delicious appetizer'
   },
   {
-    symbols:['GREEN', '+', '🏠', '+', '🔥'],
-    words:['green','house','gas'],
+    symbols:['GREEN',·'+',·'🏠',·'+',·'🔥'],
+    words:['green',·'house',·'gas'],
     hint:['Gas that absorbs and emits radiant energy']
   }
 ];
