@@ -904,9 +904,9 @@ const rebuses = [
     hint: 'A delicious appetizer'
   },
   {
-    symbols: ['G', '+', '❤️'],
-    words: ['Glove'],
-    hint: `It covers your hand when it's cold outside`
+    symbols: ['🌙', '+', '💡'],
+    words: ['Moonlight'],
+    hint: `Lights up the night`
   }
 ];
 
