@@ -904,9 +904,9 @@ const rebuses = [
     hint: 'A delicious appetizer'
   },
   {
-    symbols:['😠','+','🐦','+','s'],
-    words:['angry','birds'],
-    hint:'A famous game and a movie',
+    symbols: ['😠', '+', '🐦', '+', 's'],
+    words: ['angry', 'birds'],
+    hint: 'A famous game and a movie'
   }
 ];
 
