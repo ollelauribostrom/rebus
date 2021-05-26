@@ -499,6 +499,11 @@ const rebuses = [
     hint: 'A popular rock band'
   },
   {
+    symbols: ['👃', '+', '📌'],
+    words: ['Nosepin'],
+    hint: 'a small piece of jewellery'
+  },
+  {
     symbols: ['👦🏼', '+', '📔'],
     words: ['Facebook'],
     hint: `Mark Zuckerberg's company`
@@ -597,6 +602,11 @@ const rebuses = [
     symbols: ['🦇', '+', '👨'],
     words: ['Batman'],
     hint: 'Bruce Wayne'
+  },
+  {
+    symbols: ['👃', '+', '📌'],
+    words: ['Nosepin'],
+    hint: 'a small piece of jewellery'
   },
   {
     symbols: ['☀️', '+', '👓'],
