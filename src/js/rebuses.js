@@ -602,7 +602,7 @@ const rebuses = [
     symbols: ['🦇', '+', '👨'],
     words: ['Batman'],
     hint: 'Bruce Wayne'
-  }
+  },
   {
     symbols: ['☀️', '+', '👓'],
     words: ['Sunglasses'],
