@@ -902,6 +902,16 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['The', '🤴', 'of the', '💍', 's'],
+    words: ['The', 'Lord', 'of', 'the', 'Rings'],
+    hint: 'An epic high fantasy novel by Tolkien'
+  },
+  {
+    symbols: ['A', '⌚', 'work', '🍊'],
+    words: ['A', 'Clockwork', 'Orange'],
+    hint: 'A dystopian black comedy novel by Anthony Burgess'
   }
 ];
 
