@@ -40,7 +40,12 @@ export const actionsCreators = {
       confetti(confettiCanon);
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;
-      return { updatedRebuses, animation: 'none', incorrectAnswerCount: 0 };
+      return {
+        current: current < rebuses.length - 1 ? current + 1 : 0,
+        rebuses: updatedRebuses,
+        animation: 'flip-vertical-right',
+        incorrectAnswerCount: 0
+      };
     }
     return { incorrectAnswerCount: incorrectAnswerCount + 1 };
   },
