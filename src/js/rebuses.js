@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: 'Keys or combination of keys to perform computer tasks faster'
   },
   {
     symbols: ['🌞', '+', '🛀'],
@@ -296,7 +297,7 @@ const rebuses = [
   {
     symbols: ['🐝', '+', 'r'],
     words: ['Beer'],
-    hint: '🍺'
+    hint: 'Bachelors Life Celebration drink'
   },
   {
     symbols: ['🎉', '-', 'Y', '+', '⏰', '+', 'Job'],
