@@ -4,6 +4,7 @@ import { App } from './components/App';
 import { Logo } from './components/Logo';
 import { GithubCorner } from './components/GithubCorner';
 import { ChangeButton } from './components/ChangeButton';
+import { Rebusbar } from './components/Rebusbar';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
@@ -51,6 +52,7 @@ export function init() {
           onClick: () => actions.next()
         }),
         Hint(),
+        Rebusbar(),
         ProgressBar()
       ),
       document.querySelector('.root')
