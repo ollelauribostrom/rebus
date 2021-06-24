@@ -38,6 +38,32 @@ body,
   left: 30px;
 }
 
+.rebusbar {
+  position:fixed;
+  display: inline-block;
+  white-space: nowrap;
+  left: 360px;
+  top: 80%;
+  width: 500px;
+  padding: 20px;
+  margin: 5px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+
+.rebusbar button {
+  background-color: #1542e642;
+  color: white;
+  font-family:cursive;
+  padding: 5px;
+  margin: 0px;
+  outline: none;
+}
+
+.rebusbar button:hover {
+  transform: scale(1.2);
+}
+
 .rebus {
   background-color: #1542e642;
   grid-column-start: 3;
