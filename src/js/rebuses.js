@@ -819,6 +819,11 @@ const rebuses = [
     hint: 'You need to charge your device soon'
   },
   {
+    symbols: ['🎵', '🎼'],
+    words: ['composer'],
+    hint: 'Who writes classical music'
+  },
+  {
     symbols: ['📰'],
     words: ['newspaper'],
     hint: 'Reading today&#39s ______'
@@ -859,6 +864,11 @@ const rebuses = [
     hint: 'Famous salute from what TV show?'
   },
   {
+    symbols: ['👸🏼', '+', '🐸'],
+    words: ['princess', 'and', 'the', 'frog'],
+    hint: 'A girl who kisses a ___.'
+  },
+  {
     symbols: ['🎁', '+', '🃏'],
     words: ['gift', 'card'],
     hint: 'You get one on your birthday'
@@ -872,6 +882,16 @@ const rebuses = [
     symbols: ['🔎', '+', '🎉'],
     words: ['search', 'party'],
     hint: ["Let's find something together"]
+  },
+  {
+    symbols: ['👸🏼', '+', '❄️'],
+    words: ['frozen'],
+    hint: ["Let it go"]
+  },
+  {
+    symbols: ['👸🏼', '+', '🐸'],
+    words: ['princess', 'and', 'the', 'frog'],
+    hint: 'A girl who kisses a ___.'
   },
   {
     symbols: ['🐛', '+', '🕳'],
