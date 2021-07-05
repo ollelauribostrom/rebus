@@ -34,8 +34,8 @@ body,
 
 .logo {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 35px;
+  left: 35px;
 }
 
 .rebus {
@@ -90,7 +90,7 @@ body,
 .word {
   margin-bottom: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
