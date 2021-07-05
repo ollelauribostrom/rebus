@@ -821,12 +821,12 @@ const rebuses = [
   {
     symbols: ['📰'],
     words: ['newspaper'],
-    hint: 'Reading today&#39s ______'
+    hint: 'Something called as "TimesToday"'
   },
   {
     symbols: ['✉'],
     words: ['mail'],
-    hint: '"You&#39ve got ____"'
+    hint: 'message via internet or post'
   },
   {
     symbols: ['🌮', '+', '🥗'],
