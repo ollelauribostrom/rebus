@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: `A keyboard shortcut that involves multiple tapping of a key`
   },
   {
     symbols: ['🌞', '+', '🛀'],
