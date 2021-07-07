@@ -41,6 +41,15 @@ export function Word(props, ...children) {
               if (prevChild !== null && input === '') {
                 prevChild.focus();
                 e.preventDefault();
+              } else if (target != null && target.parentElement && input === '') {
+                const { previousSibling } = target.parentElement.previousSibling;
+                if (previousSibling !== null) {
+                  const lastChildOfParent = previousSibling.lastElementChild;
+                  if (lastChildOfParent) {
+                    lastChildOfParent.focus();
+                    e.preventDefault();
+                  }
+                }
               }
             }
           }
