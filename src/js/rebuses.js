@@ -902,7 +902,28 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
-  }
+  },
+  {
+      symbols: ['🏧', '+', '💳'],
+      words: ['ATM', 'Card'],
+      hint: ['Issued by the bank to have transactions']
+    },
+    {
+      symbols: ['🌊', '+', '🍲'],
+      words: ['Sea', 'Food'],
+      hint: ['Water-dwelling animals that people eat']
+    },
+    {
+      symbols: ['🍔', '+', '🤴'],
+      words: ['Burger', 'King'],
+      hint: ['Corporation, restaurant & company second largest for fast food hamburger chain in the world.']
+    },
+    {
+      symbols: ['7️⃣', '+', '⬆️'],
+      words: ['Seven', 'Up'],
+      hint: ['An American brand of lemon-lime-​flavored non-caffeinated soft drink.']
+    }
+      
 ];
 
 export function isRebusAnswered(id) {
