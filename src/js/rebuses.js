@@ -143,6 +143,10 @@ const rebuses = [
     words: ['Hotdog'],
     hint: 'A close relative of burgers'
   },
+    symbols: ['P', '+', '🥧'],
+    words: ['Spy'],
+    hint: 'A Secret Agent'
+  },
   {
     symbols: ['🌙', '+', '☀'],
     words: ['Moonshine'],
