@@ -892,6 +892,21 @@ const rebuses = [
     symbols: ['🥧', '+', '🐏', '+', '🆔'],
     words: ['pyramid'],
     hint: ['Some believe they were made with help of aliens.']
+  },
+  {
+    symbols: ['🧶'],
+    words: ['yarn'],
+    hint: ['A package manager similar to NPM']
+  },
+  {
+    symbols: ['☕️', '+', '📄'],
+    words: ['java', 'script'],
+    hint: ['It makes the website interactive']
+  },
+  {
+    symbols: ['🦀', '+', '🎂'],
+    words: ['crab', 'cake'],
+    hint: 'A delicious appetizer'
   }
 ];
 
