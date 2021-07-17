@@ -40,6 +40,7 @@ export function Word(props, ...children) {
               const prevChild = target.previousElementSibling;
               if (prevChild !== null && input === '') {
                 prevChild.focus();
+                prevChild.value = '';
                 e.preventDefault();
               }
             }
