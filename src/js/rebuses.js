@@ -902,7 +902,12 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
-  }
+  },
+  {
+    symbols: ['ru', '+', '🐝', '+', 'on', '+', '🛤️', '+', 's'],
+    words: ['Ruby', 'on', 'Rails'],
+    hint: 'How to create websites using Ruby?'
+  },
 ];
 
 export function isRebusAnswered(id) {
