@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: `The first word is when the emoji is measuring a big number`
   },
   {
     symbols: ['🌞', '+', '🛀'],
