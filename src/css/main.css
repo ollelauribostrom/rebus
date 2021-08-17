@@ -335,3 +335,13 @@ progress[value]::-webkit-progress-value {
     transform: translate3d(4px, 0, 0);
   }
 }
+
+.searchbar {
+  text-align: center;
+  color: black;
+}
+.searchbar input {
+  width: 150px;
+  opacity: 70%;
+  border: 2px solid black;
+}
