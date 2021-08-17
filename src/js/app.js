@@ -6,6 +6,7 @@ import { GithubCorner } from './components/GithubCorner';
 import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
+import { PercentBar } from './components/PercentBar';
 import { Hint } from './components/Hint';
 
 import { actions } from './store';
@@ -51,7 +52,8 @@ export function init() {
           onClick: () => actions.next()
         }),
         Hint(),
-        ProgressBar()
+        ProgressBar(),
+        PercentBar()
       ),
       document.querySelector('.root')
     );
