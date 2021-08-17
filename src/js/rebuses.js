@@ -903,6 +903,12 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+  {
+    symbols: ['⭐️', '+', '⛩️'],
+    words: ['stargate'],
+    hint: ['TV show about an artefact discovered in ancient Egypt thats used to travel between worlds.']
+  }
+
 ];
 
 export function isRebusAnswered(id) {
