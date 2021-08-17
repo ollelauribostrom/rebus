@@ -36,7 +36,11 @@ export function Rebus(props, ...children) {
         );
         return `
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
-            <div class="rebus__header">
+          <form>
+        Rebus Number: <input type="text" name="rebus">
+        <input type="submit">
+        </form>  
+          <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
             </div>
             <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
