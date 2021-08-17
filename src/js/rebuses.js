@@ -903,6 +903,10 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+  symbols: ['🍈 - on', '+', '🗑'],
+  words: ['Melbourne'],
+  hint: ['Soon to be the largest city in Australia.']
+}
 ];
 
 export function isRebusAnswered(id) {
