@@ -15,6 +15,11 @@ const rebuses = [
     hint: 'The default markdown file of every GitHub repo'
   },
   {
+    symbols: ['🌊', '-', 'S', '+', '😴', '-', 'EP'],
+    words: ['Easle'],
+    hint: 'Painters use these to hold paintings in progress'
+  },
+  {
     symbols: ['🚗', '+', 'a', '+', '🚐'],
     words: ['Caravan'],
     hint: 'The trailer you take when you go camping'
