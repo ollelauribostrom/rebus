@@ -37,9 +37,18 @@ export function Word(props, ...children) {
             }
             if (key === 'Backspace' || keyCode === 8) {
               const input = target.value;
-              const prevChild = target.previousElementSibling;
+              let prevChild = target.previousElementSibling;
+              if (prevChild === null) {
+                const parent = target.parentElement;
+                const parentSibling = parent.previousElementSibling;
+                if (parentSibling === null) {
+                  return;
+                }
+                prevChild = parentSibling.lastElementChild;
+              }
               if (prevChild !== null && input === '') {
                 prevChild.focus();
+                prevChild.value = '';
                 e.preventDefault();
               }
             }
