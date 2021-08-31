@@ -123,6 +123,34 @@ describe('Tests for components', () => {
       inputs[1].dispatchEvent(mockEvent);
       expect(inputs[1] === document.activeElement).toEqual(true);
     });
+    it('clears all previous row input fields on holding backspace on the input field of current row', () => {
+      const onInput = jest.fn();
+      const props = {
+        ...getMockState(),
+        word: 'three different words',
+        wordIndex: 0,
+        charInput: onInput
+      };
+      const root = document.createElement('div');
+      render(Word(props), root);
+      const inputs = root.querySelectorAll('input');
+      const mockEvent = new Event('keydown');
+      mockEvent.key = 'Backspace';
+      inputs[17].focus();
+      inputs[16].dispatchEvent(mockEvent);
+      inputs[15].dispatchEvent(mockEvent);
+      inputs[14].dispatchEvent(mockEvent);
+      inputs[13].dispatchEvent(mockEvent);
+      inputs[12].dispatchEvent(mockEvent);
+      inputs[11].dispatchEvent(mockEvent);
+      inputs[10].dispatchEvent(mockEvent);
+      inputs[9].dispatchEvent(mockEvent);
+      inputs[8].dispatchEvent(mockEvent);
+      inputs[7].dispatchEvent(mockEvent);
+      inputs[6].dispatchEvent(mockEvent);
+      inputs[5].dispatchEvent(mockEvent);
+      expect(inputs[4] === document.activeElement).toEqual(true);
+    });
     it('clears field when user enters a valid letter character in non empty field', () => {
       const onInput = jest.fn();
       const props = { ...getMockState(), word: 'one', wordIndex: 0, charInput: onInput };
