@@ -114,7 +114,7 @@ npm install
 Now it's time to make your changes. Let's add a new rebus to the game.
 
 1. Open the file `src/js/rebuses.js` in your favourite editor (preferable VSCode 😉).
-1. Add a new rebus object to the end of the `rebuses` array.
+1. Add a new rebus object to the end of the `rebuses` array. (You can find emojis here https://emojipedia.org/)
 1. Save the file when you are done.
 
 ### 7. Run the game locally
