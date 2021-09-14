@@ -524,7 +524,7 @@ const rebuses = [
     hint: `The role of the headmaster`
   },
   {
-    symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
+    symbols: ['🅰️', '+', '💣', '-' ,'b','+', 'in', '+', '🅰️', '+', 'ble'],
     words: ['Abominable'],
     hint: 'The ___ Snowman'
   },
