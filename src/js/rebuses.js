@@ -289,6 +289,11 @@ const rebuses = [
     hint: 'AKA girl fight'
   },
   {
+    symbols: ['☀️', '+', 'roof'],
+    words: ['sun', 'roof'],
+    hint: 'Luxury car roof'
+  },
+  {
     symbols: ['👣', '+', '📝'],
     words: ['footnote'],
     hint: 'Placed at the bottom of a page to describe something referenced in the page'
