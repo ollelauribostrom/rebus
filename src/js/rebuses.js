@@ -902,7 +902,14 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  
+  {
+    symbols: ['⚱','+','🕳'],
+    words: ['pot','hole'],
+    hint: 'A hollow area on the surface of the road'
   }
+
 ];
 
 export function isRebusAnswered(id) {
