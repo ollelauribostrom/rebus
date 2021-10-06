@@ -14,7 +14,8 @@ export function createComponent({
     render,
     componentDidMount,
     componentDidUpdate,
-    update() {
+    update(updateProps) {
+      // this.updateProps = updateProps;
       if (this.rendered !== this.render(this.props)) {
         renderComponent(this, this.$parent);
         if (isFunction(this.componentDidUpdate)) {

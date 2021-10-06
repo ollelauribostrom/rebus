@@ -276,8 +276,8 @@ exports[`Tests for components GithubCorner renders correctly 2`] = `
 exports[`Tests for components Hint renders correctly (when incorrect answer count is less than max incorrect answer count) 1`] = `
 Object {
   "children": Array [],
-  "componentDidMount": undefined,
-  "componentDidUpdate": undefined,
+  "componentDidMount": [Function],
+  "componentDidUpdate": [Function],
   "props": Object {
     "animation": "none",
     "current": 0,
@@ -311,17 +311,13 @@ Object {
 }
 `;
 
-exports[`Tests for components Hint renders correctly (when incorrect answer count is less than max incorrect answer count) 2`] = `
-" 
-        <span></span>
-        "
-`;
+exports[`Tests for components Hint renders correctly (when incorrect answer count is less than max incorrect answer count) 2`] = `"<span class=\\"rebus__hint\\">💡 Show Hint</span>"`;
 
 exports[`Tests for components Hint renders correctly (when incorrect answer count is more than max incorrect answer count) 1`] = `
 Object {
   "children": Array [],
-  "componentDidMount": undefined,
-  "componentDidUpdate": undefined,
+  "componentDidMount": [Function],
+  "componentDidUpdate": [Function],
   "props": Object {
     "animation": "none",
     "current": 0,
@@ -355,13 +351,7 @@ Object {
 }
 `;
 
-exports[`Tests for components Hint renders correctly (when incorrect answer count is more than max incorrect answer count) 2`] = `
-" 
-        <span class=\\"rebus__hint\\">
-                💡 hint
-              </span>
-        "
-`;
+exports[`Tests for components Hint renders correctly (when incorrect answer count is more than max incorrect answer count) 2`] = `"<span class=\\"rebus__hint\\">💡 Show Hint</span>"`;
 
 exports[`Tests for components Logo renders correctly 1`] = `
 Object {

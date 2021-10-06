@@ -55,8 +55,8 @@ Object {
     },
     Object {
       "children": Array [],
-      "componentDidMount": undefined,
-      "componentDidUpdate": undefined,
+      "componentDidMount": [Function],
+      "componentDidUpdate": [Function],
       "props": Object {},
       "render": [Function],
       "update": [Function],
