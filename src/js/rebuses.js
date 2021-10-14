@@ -901,7 +901,27 @@ const rebuses = [
   {
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
-    hint: 'A delicious appetizer'
+    hint: ['A delicious appetizer']
+  },
+  {
+    symbols: ['🚗', '+', '🎲', '+', '🔫'],
+    words: ['cardigan'],
+    hint: ['Throw this over your shoulders when you are cold']
+  },
+  {
+    symbols: ['📥', '+', '🔟', '-n', '+', '🛌'],
+    words: ['interest'],
+    hint: ['You will pay more than initially loaned due to _____']
+  },
+  {
+    symbols: ['🕙', '+', '📌', '-k', '+', '🧙‍♂️', '-ora'],
+    words: ['tentacle'],
+    hint: ['One of many limbs of an octapus']
+  },
+  {
+    symbols: ['🇺🇸', '+', '🆗', '-se', '+', '🍐', '-a'],
+    words: ['usurper'],
+    hint: ['Someone that takes the matter of a royal life in their own hands']
   }
 ];
 
