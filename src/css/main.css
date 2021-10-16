@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+html {
+  --white1: #fff;
+  --metalred: #9c0629;
+  --ferngreen: #438365;
+}
+
 html,
 body,
 .root,
@@ -24,7 +30,7 @@ body,
 }
 
 .app {
-  color: #fff;
+  color: var(--white1);
   font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
@@ -62,7 +68,7 @@ body,
 .rebus__header {
   background-color: #1d1d1d1a;
   font-size: 14px;
-  color: #ffffff;
+  color: var(--white1);
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -97,9 +103,9 @@ body,
 .word__char {
   height: 50px;
   width: 50px;
-  border: 1px solid #fff;
+  border: 1px solid var(--white1);
   background-color: transparent;
-  color: #fff;
+  color: var(--white1);
   text-align: center;
   font-size: 24px;
   font-weight: 500;
@@ -131,7 +137,7 @@ body,
 }
 
 .change-button path {
-  fill: #fff;
+  fill: var(--white1);
 }
 
 .change-button:hover path,
@@ -164,7 +170,7 @@ body,
   grid-column-start: 1;
   grid-column-end: 6;
   border: none;
-  background: #9c0629;
+  background: var(--metalred);
 }
 
 progress[value] {
@@ -174,15 +180,15 @@ progress[value] {
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: #9c0629;
+  background-color: var(--metalred);
 }
 
 progress[value]::-moz-progress-bar {
-  background-color: #438365;
+  background-color: var(--ferngreen);
 }
 
 progress[value]::-webkit-progress-value {
-  background-color: #438365;
+  background-color: var(--ferngreen);
 }
 
 /* ----------------------------------------------
@@ -192,7 +198,7 @@ progress[value]::-webkit-progress-value {
 
 .github-corner {
   fill: #951e89;
-  color: #fff;
+  color: var(--white1);
   position: absolute;
   top: 0;
   border: 0;
