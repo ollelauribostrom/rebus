@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html {
-  --white1: #fff;
+  --snowwhite: #fff;
   --metalred: #9c0629;
   --ferngreen: #438365;
 }
@@ -30,7 +30,7 @@ body,
 }
 
 .app {
-  color: var(--white1);
+  color: var(--snowwhite);
   font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
@@ -68,7 +68,7 @@ body,
 .rebus__header {
   background-color: #1d1d1d1a;
   font-size: 14px;
-  color: var(--white1);
+  color: var(--snowwhite);
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -103,9 +103,9 @@ body,
 .word__char {
   height: 50px;
   width: 50px;
-  border: 1px solid var(--white1);
+  border: 1px solid var(--snowwhite);
   background-color: transparent;
-  color: var(--white1);
+  color: var(--snowwhite);
   text-align: center;
   font-size: 24px;
   font-weight: 500;
@@ -137,7 +137,7 @@ body,
 }
 
 .change-button path {
-  fill: var(--white1);
+  fill: var(--snowwhite);
 }
 
 .change-button:hover path,
@@ -198,7 +198,7 @@ progress[value]::-webkit-progress-value {
 
 .github-corner {
   fill: #951e89;
-  color: var(--white1);
+  color: var(--snowwhite);
   position: absolute;
   top: 0;
   border: 0;
