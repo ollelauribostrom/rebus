@@ -902,7 +902,17 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
-  }
+  },
+  {
+    symbols: ['🎁'],
+    words: ['present'],
+    hint: 'Something that is given to show affection'
+  },
+  {
+    symbols: ['🧈','+','☕'],
+    words: ['Buttercup'],
+    hint: '_________ plant has cup-shaped flowers'
+  },
 ];
 
 export function isRebusAnswered(id) {
