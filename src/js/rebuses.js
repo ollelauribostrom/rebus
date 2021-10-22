@@ -912,7 +912,7 @@ const rebuses = [
     symbols: ['🧈', '+', '☕'],
     words: ['Buttercup'],
     hint: '_________ plant has cup-shaped flowers'
-  }
+  },
 ];
 
 export function isRebusAnswered(id) {
