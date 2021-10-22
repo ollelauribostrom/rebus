@@ -909,10 +909,10 @@ const rebuses = [
     hint: 'Something that is given to show affection'
   },
   {
-    symbols: ['🧈','+','☕'],
+    symbols: ['🧈', '+', '☕'],
     words: ['Buttercup'],
     hint: '_________ plant has cup-shaped flowers'
-  },
+  }
 ];
 
 export function isRebusAnswered(id) {
