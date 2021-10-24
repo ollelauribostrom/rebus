@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const rebuses = [
   {
     symbols: ['Re', '+', '🚌'],
@@ -902,6 +903,11 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['💀', '+', '💩', '+', 'L'],
+    words: ['deadpool'],
+    hint: 'A movie'
   }
 ];
 
