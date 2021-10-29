@@ -789,6 +789,11 @@ const rebuses = [
     hint: 'To please someone'
   },
   {
+    symbols: ['✨', '+', '🚶🏼‍♂️'],
+    words: ['Star Trek'],
+    hint: 'Beam Me Up, Scotty'
+  },
+  {
     symbols: ['🌲', '+', 'T'],
     words: ['treaty'],
     hint: 'an agreement between countries'
@@ -902,6 +907,11 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['✨', '+', '⚔'],
+    words: ['star', 'wars'],
+    hint: 'in a galaxy far, far away....'
   }
 ];
 
