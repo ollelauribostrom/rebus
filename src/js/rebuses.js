@@ -903,6 +903,16 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+  {
+  	symbols: ['⌚', '+', '🗼'],
+    words: ['watchtower'],
+    hint: ['create an elevated observation point.']
+  }
+  {
+  	symbols: ['⌚', '+', '👨'],
+    words: ['watchman'],
+    hint: ['A guard']
+  }
 ];
 
 export function isRebusAnswered(id) {
