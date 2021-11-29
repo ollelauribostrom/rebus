@@ -906,7 +906,7 @@ const rebuses = [
   {
     symbols: ['🐉', '+', '🪰'],
     words: ['dragon', 'fly'],
-    hint: ['An insect with a mythical creature in its name']
+    hint: 'An insect with a mythical creature in its name'
   }
 ];
 
