@@ -766,12 +766,12 @@ const rebuses = [
   {
     symbols: ['💎', '+', '⃝'],
     words: ['Diamond', 'ring'],
-    hint: ['Things you exchange in weddings.']
+    hint: 'Things you exchange in weddings.'
   },
   {
     symbols: ['Black', '+', '🕳'],
     words: ['Black', 'hole'],
-    hint: ['Final form of a star.']
+    hint: 'Final form of a star.'
   },
   {
     symbols: ['🐼', '-', 'DA', '+', '🍰'],
@@ -866,12 +866,12 @@ const rebuses = [
   {
     symbols: ['🏹', '+', '👔'],
     words: ['bow', 'tie'],
-    hint: ['An accessory that is often worn with a suit']
+    hint: 'An accessory that is often worn with a suit'
   },
   {
     symbols: ['🔎', '+', '🎉'],
     words: ['search', 'party'],
-    hint: ["Let's find something together"]
+    hint: "Let's find something together"
   },
   {
     symbols: ['🐛', '+', '🕳'],
@@ -881,27 +881,52 @@ const rebuses = [
   {
     symbols: ['🌎', 'OF', '⚔', 'CRAFT'],
     words: ['World', 'of', 'Warcraft'],
-    hint: ['Famous Blizzard online game']
+    hint: 'Famous Blizzard online game'
   },
   {
     symbols: ['🍯', '+', '🐝'],
     words: ['honeybee'],
-    hint: ['An insect that makes a sweet treat.']
+    hint: 'An insect that makes a sweet treat.'
   },
   {
     symbols: ['🧶'],
     words: ['yarn'],
-    hint: ['A package manager similar to NPM']
+    hint: 'A package manager similar to NPM'
   },
   {
     symbols: ['☕️', '+', '📄'],
     words: ['java', 'script'],
-    hint: ['It makes the website interactive']
+    hint: 'It makes the website interactive'
   },
   {
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['☀️', '🪑'],
+    words: ['sunset'],
+    hint: 'A beautiful event in nature'
+  },
+  {
+    symbols: ['🚀', '🌎'],
+    words: ['astroworld'],
+    hint: 'Travis Scott'
+  },
+  {
+    symbols: ['💸', '+', '⛔️', '+', '✌️', '+', '😁'],
+    words: ['money', 'cant', 'buy', 'happiness'],
+    hint: 'A common phrase about success'
+  },
+  {
+    symbols: ['🚗', '😢'],
+    words: ['cartier'],
+    hint: 'A fashion brand'
+  },
+  {
+    symbols: ['📍', '⚽️'],
+    words: ['pinball'],
+    hint: 'An arcade game'
   }
 ];
 
