@@ -152,6 +152,27 @@ body,
   grid-row-start: 2;
 }
 
+.solutionBtn {
+  position: relative;
+  top: 10%;
+  display: inline-block;
+  padding: 0.25em 1.0em;
+  border: 0.1em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 25px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.solutionBtn:hover {
+  background-color: #951e89;
+  cursor: pointer;
+} 
+
 .confetti-canon {
   position: absolute;
   left: 50%;
