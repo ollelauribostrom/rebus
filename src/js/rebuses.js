@@ -324,6 +324,11 @@ const rebuses = [
     hint: 'The Star Wars weapon for hand-to-hand combat'
   },
   {
+    symbols: ['🏫', '+', '👩‍🏫'],
+    words: ['School Teacher'],
+    hint: 'You can learn something from them'
+  },
+  {
     symbols: ['☕️'],
     words: ['Java'],
     hint: 'A highly popular programming language owned by Oracle'
@@ -382,6 +387,11 @@ const rebuses = [
     symbols: ['🌊', '+', '🐴'],
     words: ['seahorse'],
     hint: `One of Nemo's friends was a _______`
+  },
+  {
+    symbols: ['⚫', '+', 'Wal', '+', '🌰'],
+    words: ['Black Walnut'],
+    hint: `There's a tree named after it`
   },
   {
     symbols: ['🔙', '+', '💀'],
@@ -902,7 +912,12 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
-  }
+  },
+  {
+    symbols: ['🔥', '+', '🌲'],
+    words: ['Firewood'],
+    hint: `What would you put in a wood stove?`
+  },
 ];
 
 export function isRebusAnswered(id) {
