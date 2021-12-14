@@ -7,6 +7,7 @@ import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
+import { HintButton } from './components/HintButton';
 
 import { actions } from './store';
 import '../css/main.css';
@@ -49,6 +50,9 @@ export function init() {
         ChangeButton({
           className: 'change-button--next',
           onClick: () => actions.next()
+        }),
+        HintButton({
+          onClick: () => actions.toogleHint()
         }),
         Hint(),
         ProgressBar()
