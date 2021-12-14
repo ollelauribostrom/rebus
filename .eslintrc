@@ -1,13 +1,28 @@
+/*eslint "linebreak-style": ["error", "windows"]*/
 {
   "parser": "babel-eslint",
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["react", "jsx-a11y", "import", "prettier"],
+  "linebreak-style": [
+    "error",
+    "windows"
+  ],
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import",
+    "prettier"
+  ],
   "env": {
     "jest": true,
     "browser": true
   },
   "rules": {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": [
+      "error"
+    ],
     "no-use-before-define": 0,
     "lines-between-class-members": 0,
     "import/prefer-default-export": 0

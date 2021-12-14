@@ -152,6 +152,21 @@ body,
   grid-row-start: 2;
 }
 
+.hint-button {
+  padding: 0px;
+  cursor: pointer;
+  background: transparent;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #fff;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 20px;
+}
+
 .confetti-canon {
   position: absolute;
   left: 50%;
@@ -284,7 +299,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .animation--shake {
-  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
@@ -319,19 +334,24 @@ progress[value]::-webkit-progress-value {
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
 
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }

@@ -51,6 +51,12 @@ export const actionsCreators = {
       return { animation: 'shake' };
     }
     return {};
+  },
+  toggleHint: ({ flagHint }) => {
+    if (flagHint == 0) {
+      return { flagHint: 1 };
+    }
+    return { flagHint: 0 };
   }
 };
 
@@ -58,7 +64,8 @@ export const initialState = {
   current: 0,
   animation: 'none',
   rebuses: getRebuses(),
-  incorrectAnswerCount: 0
+  incorrectAnswerCount: 0,
+  flagHint: 0
 };
 
 export const { connect, actions } = createStore(initialState, actionsCreators);
