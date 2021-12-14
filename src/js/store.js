@@ -52,7 +52,7 @@ export const actionsCreators = {
     }
     return {};
   },
-  toogleHint: ({ flagHint }) => {
+  toggleHint: ({ flagHint }) => {
     if (flagHint == 0) {
       return { flagHint: 1 };
     }

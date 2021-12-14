@@ -52,7 +52,7 @@ export function init() {
           onClick: () => actions.next()
         }),
         HintButton({
-          onClick: () => actions.toogleHint()
+          onClick: () => actions.toggleHint()
         }),
         Hint(),
         ProgressBar()
