@@ -902,6 +902,16 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['🦶', '+', '⚽'],
+    words: ['foot', 'ball'],
+    hint: 'Team sport. 2 teams of 11. Rectangular field.'
+  },
+  {
+    symbols: ['🏋️', '+', '🌹'],
+    words: ['Wait', 'rose'],
+    hint: 'Everyone deserves quality food. Everyone deserves...'
   }
 ];
 
