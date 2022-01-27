@@ -902,6 +902,26 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['🌧', '+', '🧥'],
+    words: ['rain', 'coat'],
+    hint: 'Worn during a rainy day'
+  },
+  {
+    symbols: ['🍔', '+', '👑'],
+    words: ['burger', 'king'],
+    hint: 'McDonalds main competitor'
+  },
+  {
+    symbols: ['⌨', '+', '📝'],
+    words: ['type', 'script'],
+    hint: 'Similar to Javascript'
+  },
+  {
+    symbols: ['🐍'],
+    words: ['python'],
+    hint: 'Programming language used for Machine Learning'
   }
 ];
 
