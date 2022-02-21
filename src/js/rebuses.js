@@ -907,7 +907,12 @@ const rebuses = [
     symbols: ['🍥'],
     words: ['naruto'],
     hint: 'A popular ninja anime'
-  }
+  },
+  {
+    symbols: ['⭐', '+', '🚢'],
+    words: ['star', 'ship'],
+    hint: 'Say the two emojis out loud'
+  },
 ];
 
 export function isRebusAnswered(id) {
