@@ -902,6 +902,21 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['🍵', '+', '🥳'],
+    words: ['tea', 'party'],
+    hint: ['A fun activity similar to brunch']
+  },
+  {
+    symbols: ['🧀', '🎂', '+', '🏭'],
+    words: ['cheese', 'cake', 'factory'],
+    hint: ['a popular american restaurant']
+  },
+  {
+    symbols: ['🌊', '+', '🍼'],
+    words: ['water', 'bottle'],
+    hint: ['How to stay hydrated all day']
   }
 ];
 
