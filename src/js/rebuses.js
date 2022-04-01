@@ -900,7 +900,7 @@ const rebuses = [
   },
   {
     symbols: ['👁️', '+', '"frame"'],
-    words: ["iframe"],
+    words: ['iframe'],
     hint: 'inline frame'
   },
   {
