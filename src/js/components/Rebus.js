@@ -34,10 +34,21 @@ export function Rebus(props, ...children) {
         this.children = rebus.words.map((word, wordIndex) =>
           Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
         );
+
+        /* Calculate the score based on the number of letters in each correctly answered rebus. */
+        let score = 0;
+        rebuses.filter(x => x.isAnswered).forEach(x =>
+          x.words.forEach(y => {
+            score += y.length;
+          })
+        );
+        score *= 10;
+
         return `
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
+              <span class="score">Score: ${score}</span>
             </div>
             <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
             <div class="rebus__words">
