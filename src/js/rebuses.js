@@ -902,7 +902,13 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },  
+  {
+    symbols: ['🕖', '+', '🧙‍♂️'],
+    words: ['clock', 'wise'],
+    hint: 'How do the hands of a clock move around?'
   }
+
 ];
 
 export function isRebusAnswered(id) {
