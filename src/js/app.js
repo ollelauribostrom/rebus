@@ -21,6 +21,11 @@ export function registerListeners() {
       actions.prev();
     }
   });
+  document.addEventListener('auto-toggle', () => {
+    setTimeout(() => {
+      actions.next();
+    }, 500);
+  });
 }
 
 export function setCurrentFromURL() {
