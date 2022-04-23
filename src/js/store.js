@@ -40,7 +40,7 @@ export const actionsCreators = {
       confetti(confettiCanon);
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;
-      const event = new Event('auto-toggle', {});
+      const event = new Event('auto-toggle', {}); // call the auto toggle event handler
       document.dispatchEvent(event);
       return { updatedRebuses, animation: 'none', incorrectAnswerCount: 0 };
     }
