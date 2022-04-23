@@ -59,6 +59,14 @@ describe('Tests for app', () => {
       expect(actionsMock.next).toHaveBeenCalled();
     });
   });
+  describe('registerAutoToggleListeners', () => {
+    it('register a listener for auto toggle event', () => {
+      const autoToggleEvent = new Event('auto-toggle');
+      registerListeners();
+      document.dispatchEvent(autoToggleEvent);
+      expect(actionsMock.prev).toHaveBeenCalled();
+    });
+  });
   describe('setCurrentFromURL', () => {
     it('sets the current rebus based on the url query string', () => {
       window.history.pushState({}, 'Test', '/?rebus=2');

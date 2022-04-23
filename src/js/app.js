@@ -21,6 +21,12 @@ export function registerListeners() {
       actions.prev();
     }
   });
+  document.addEventListener('auto-toggle', () => {
+    // event listener for the auto toggle. When a rebus is answered correctly, it will automatically jump to the next rebus.
+    setTimeout(() => {
+      actions.next();
+    }, 500);
+  });
 }
 
 export function setCurrentFromURL() {
