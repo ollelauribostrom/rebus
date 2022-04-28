@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/ollelauribostrom/rebus.svg?branch=master)](https://travis-ci.org/ollelauribostrom/rebus)
 [![Coverage Status](https://coveralls.io/repos/github/ollelauribostrom/rebus/badge.svg?branch=master)](https://coveralls.io/github/ollelauribostrom/rebus?branch=master)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/rebus-contributors/Lobby)
-[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) 
+[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 
 Contributing to an open source project for the first time can be a scary thing. The goal of this repo is to help you take your first steps as an open source contributor by developing a simple (but hopefully fun) rebus game together. 💖
 
@@ -14,7 +14,7 @@ Contributing to an open source project for the first time can be a scary thing. 
 
 Everyone can! (and I mean everyone) 💫
 
-💻 **You don’t have to contribute code**. Add a new rebus, fix a typo, report a bug, add some documentation, do some re-design or add a translation. This project just like most open source projects are in need of all sorts of different contributions. Not just code.
+💻 **You don’t have to contribute code**. Add a new rebus, fix a typo, report a bug, add some documentation, do some re-design, or add a translation. This project, just like most open source projects, is in need of all sorts of different contributions. Not just code.
 
 🌟 **You are good enough**. Start off easy by fixing something small (like adding a new rebus). This will help you orient yourself in the project and increase your confidence and experience. No one will judge you if you make a mistake, and you can't break anything! Ask for some pointers if you get stuck. You got this!
 
@@ -30,11 +30,11 @@ When you contribute to Open Source, you are taking part in the collaborative eff
 
 ## How to contribute
 
-Follow this step-by-step guide to make your first open source contribution. The steps you will perform in this guide is a somewhat standard workflow that you will encounter in most projects: `Fork -> Clone -> Install dependencies -> Make your changes -> Run tests -> Commit -> PR`
+Follow this step-by-step guide to make your first open source contribution. The steps you will perform in this guide are a somewhat standard workflow that you will encounter in most projects: `Fork -> Clone -> Install dependencies -> Make your changes -> Run tests -> Commit -> PR`
 
 ### 1. Fork
 
-The first step is to create a fork of this repo. Do so by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
+The first step is to create a fork of this repo. Do so by clicking on the fork button at the top of this page. A fork is basically your own working copy of this repository.
 
 <img src=".github/fork.png" alt="Forking the repo" />
 
@@ -135,7 +135,7 @@ npm run test:all
 
 ### 9. Commit your changes
 
-Run `git status` to see which changes you have made. This will look something like:
+Run `git status` to see the changes you have made. This will look something like:
 
 <img width="300" src=".github/status.png" alt="Git status" />
 
@@ -190,29 +190,31 @@ inspiration. Also, take a look the [Further Reading](https://github.com/ollelaur
 
 ## FAQ
 
-### Resolve Merge Conflicts ###
+### Resolve Merge Conflicts
 
-Once changes have been committed and staged it's time to manage conflicts by running: 
+Once changes have been committed and staged it's time to manage conflicts by running:
 
 ```sh
 git pull upstream master
 ```
 
-Head back to your favourite code editor and review any conflicts.  Generally `current` changes will be highlighted in one color and `incoming` changes will be highlighted in a different color. `Accept` the `current` or `incoming` changes.  
+Head back to your favourite code editor and review any conflicts. Generally `current` changes will be highlighted in one color and `incoming` changes will be highlighted in a different color. `Accept` the `current` or `incoming` changes.
 
-Commit changes again as outlined in step #9 and #10 above or by running: 
+Commit changes again as outlined in step #9 and #10 above or by running:
 
 ```sh
 git add -A
 ```
+
 ```sh
 git commit -m "Your message"
 ```
+
 ```sh
 git push origin <your-new-branch-name>
 ```
 
-### Linebreaks ###
+### Linebreaks
 
 It is important to note that Windows and Linux operating systems deal with line endings differently. If you are getting an error where the program expects linebreaks to be "lf" but are finding "crlf" linebreak styles,
 
@@ -221,10 +223,10 @@ It is important to note that Windows and Linux operating systems deal with line 
 then you can run the following command in your terminal:
 
 ```sh
-npm run lint -- --fix 
+npm run lint -- --fix
 ```
 
-To avoid this problem in the future, you can change your editor to use an end of line sequence of 'lf'. To do this in Visual Studio Code, simply click on the lf/crlf button on the bottom right and then select 'lf' from the drop-down menu that appears.
+To avoid this problem in the future, you can change your editor to use an end of line sequence of 'lf'. To do this in Visual Studio Code, simply click on the lf/crlf button at the bottom right and then select 'lf' from the drop-down menu that appears.
 
 <img src=".github/vsc-endline.png" alt="Visual Studio Code linebreaks" />
 
@@ -251,7 +253,7 @@ Please [open an issue](https://github.com/ollelauribostrom/rebus/issues/new) for
 ## Code of Conduct
 
 This project adheres to the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct).
-Please read the full text so that you can understand what actions will and will not be tolerated.
+Please read the full text so that you understand what actions will and will not be tolerated.
 
 ## License
 
