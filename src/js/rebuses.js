@@ -63,6 +63,12 @@ const rebuses = [
     words: ['Sunbath'],
     hint: 'A way for cold-blooded animals to keep warm'
   },
+
+  {
+    symbols:['🌹', '+', 'hip'],
+    words:['Rose', 'Hip'],
+    hint:'Fruit of rose plant'
+  },
   {
     symbols: ['🚗', '🚙', '🚗'],
     words: ['Cars'],
