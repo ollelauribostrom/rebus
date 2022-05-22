@@ -2,7 +2,7 @@ const rebuses = [
   {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
-    hint: 'You`re solving one right now'
+    hint: 'You´re solving one right now'
   },
   {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
