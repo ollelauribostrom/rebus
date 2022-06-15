@@ -760,8 +760,8 @@ const rebuses = [
   },
   {
     symbols: ['🐱'+'🤏'-'S']
-    words: ['Cat'+'snap'-'s']
-    hint: 'A short sleep during the day'
+    words : ['Cat'+'snap'-'s']
+    hint : 'A short sleep during the day'
    },
   {
     symbols: ['🔥', '+', '⚽'],
