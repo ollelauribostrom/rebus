@@ -759,6 +759,11 @@ const rebuses = [
     hint: '____ to you!'
   },
   {
+    symbols: ['🐱'+'🤏'-'S']
+    words : ['Cat'+'snap'-'s']
+    hint : 'A short sleep during the day'
+   },
+  {
     symbols: ['🔥', '+', '⚽'],
     words: ['Fireball'],
     hint: 'The sun is a big ________'
@@ -903,6 +908,7 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+  
 ];
 
 export function isRebusAnswered(id) {
