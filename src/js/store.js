@@ -51,6 +51,12 @@ export const actionsCreators = {
       return { animation: 'shake' };
     }
     return {};
+  },
+  showHint: ({ current, rebuses }) => {
+    const rebus = rebuses[current];
+    if (rebus.hint) {
+      rebus.isShowHint = true;
+    }
   }
 };
 

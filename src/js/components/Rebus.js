@@ -8,6 +8,9 @@ export function Rebus(props, ...children) {
       props,
       children,
       componentDidMount() {
+        document
+          .getElementById('hint-button')
+          .addEventListener('click', () => this.props.showHint());
         const rebus = this.props.rebuses[this.props.current];
         if (rebus.isAnswered) {
           this.$parent.querySelector('.change-button--next').focus();
@@ -16,6 +19,9 @@ export function Rebus(props, ...children) {
         }
       },
       componentDidUpdate() {
+        document
+          .getElementById('hint-button')
+          .addEventListener('click', () => this.props.showHint());
         const rebus = this.props.rebuses[this.props.current];
         /* If history API isn't available, we shouldn't revert to the more widely available `window.location.href`, 
         as it incurs a new HTTP request and thus results in an infinite loop (and breaks SPAs). */
@@ -31,6 +37,7 @@ export function Rebus(props, ...children) {
       },
       render({ current, rebuses, animation }) {
         const rebus = rebuses[current];
+        const HINT_SYMBOL = '💡';
         this.children = rebus.words.map((word, wordIndex) =>
           Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
         );
@@ -38,6 +45,7 @@ export function Rebus(props, ...children) {
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
+              <button id="hint-button" class="rebus-hint-button">${HINT_SYMBOL}</button>
             </div>
             <span class="rebus__symbols">${rebus.symbols.join(' ')}</span>
             <div class="rebus__words">

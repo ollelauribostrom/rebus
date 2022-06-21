@@ -64,8 +64,18 @@ body,
   font-size: 14px;
   color: #ffffff;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
+  padding: 0 20px;
+}
+
+.rebus-hint-button {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .rebus__symbols {

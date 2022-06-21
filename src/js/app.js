@@ -44,7 +44,8 @@ export function init() {
             const confettiCanon = document.querySelector('.confetti-canon');
             actions.setInput(input, wordIndex, charIndex);
             actions.check(confettiCanon);
-          }
+          },
+          showHint: () => actions.showHint()
         }),
         ChangeButton({
           className: 'change-button--next',

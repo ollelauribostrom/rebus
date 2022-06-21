@@ -931,7 +931,8 @@ export function getRebuses() {
       id,
       ...rebus,
       input: isAnswered ? [...chars] : [...Array(chars.length)],
-      isAnswered
+      isAnswered,
+      isShowHint: false
     };
   });
 }
