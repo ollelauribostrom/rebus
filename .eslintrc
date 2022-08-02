@@ -10,7 +10,9 @@
     "prettier/prettier": ["error"],
     "no-use-before-define": 0,
     "lines-between-class-members": 0,
-    "import/prefer-default-export": 0
+    "import/prefer-default-export": 0,
+    "linebreak-style": ["error", "windows" ],
+
   },
   "globals": {
     "document": true,

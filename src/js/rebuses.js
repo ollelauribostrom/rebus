@@ -5,6 +5,11 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
+    symbols: ['⌚', '+', '🐶'],
+    words: ['Watchdog'],
+    hint: `The first emoji is 'watch' not 'time'`
+  },
+  {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants'],
     hint: `The second emoji is 'ant' not 'bug'`
