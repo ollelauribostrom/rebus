@@ -49,6 +49,7 @@ body,
   grid-template-rows: 40px auto;
   grid-row-gap: 30px;
   padding-bottom: 20px;
+  border-radius: 1rem;
 }
 
 .rebus:hover {
@@ -66,6 +67,7 @@ body,
   display: flex;
   align-items: center;
   padding-left: 20px;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .rebus__symbols {
@@ -228,6 +230,8 @@ progress[value]::-webkit-progress-value {
   .rebus {
     grid-column-start: 2;
     grid-column-end: span 3;
+   
+  
   }
   .word {
     display: grid;
@@ -240,13 +244,13 @@ progress[value]::-webkit-progress-value {
 
 @media (max-width: 500px) {
   .logo {
-    display: none;
+    display: block;
   }
   .app {
     grid-template-rows: 1fr 8fr 2fr;
   }
   .github-corner {
-    display: none;
+    display: block;
   }
   .change-button {
     grid-row-start: 3;
@@ -256,11 +260,9 @@ progress[value]::-webkit-progress-value {
     grid-row-end: span 2;
     grid-column-start: 1;
     grid-column-end: span 5;
-    border-radius: 0;
+    margin: 0 16px 0 16px;
   }
-  .rebus__header {
-    border-radius: 0;
-  }
+
   .word {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50px);
