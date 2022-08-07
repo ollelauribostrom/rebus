@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 export function isFunction(value) {
   return typeof value === 'function';
 }

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 export function createStore(initialState, actions) {
   const store = {
     connectedComponents: [],
