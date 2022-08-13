@@ -902,6 +902,11 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['👂', '📱📱'],
+    words: ['ear', 'phones'],
+    hint: `Electrical devices worn on the ear to receive radio or telephone communications or to listen to a radio, MP3 player, etc.`
   }
 ];
 
