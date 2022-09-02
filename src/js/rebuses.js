@@ -5,6 +5,11 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
+    symbols: ['♥', '+' , '📨'],
+    word: ['love','letter'],
+    hint: 'Lets Start Simple'
+  },
+  {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants'],
     hint: `The second emoji is 'ant' not 'bug'`
@@ -18,6 +23,11 @@ const rebuses = [
     symbols: ['🚗', '+', 'a', '+', '🚐'],
     words: ['Caravan'],
     hint: 'The trailer you take when you go camping'
+  },
+  {
+    symbols: ['📼','🐛'],
+    words: ['tapeworm'],
+    hint: 'Yucky'
   },
   {
     symbols: ['⭐', '+', '🐠'],
@@ -403,6 +413,12 @@ const rebuses = [
     words: ['cargo'],
     hint: 'Items carried by ships and planes'
   },
+  {
+    symbols: ['⌚','+','🐺'],
+    words: ['watch','dog'],
+    hint: 'We could all use one of these'
+  },
+
   {
     symbols: ['sm', '+', '🎨'],
     words: ['smart'],
@@ -821,12 +837,12 @@ const rebuses = [
   {
     symbols: ['📰'],
     words: ['newspaper'],
-    hint: 'Reading today&#39s ______'
+    hint: 'Reading todays ______'
   },
   {
     symbols: ['✉'],
     words: ['mail'],
-    hint: '"You&#39ve got ____"'
+    hint: '"You 39ve got ____"'
   },
   {
     symbols: ['🌮', '+', '🥗'],
@@ -893,6 +909,8 @@ const rebuses = [
     words: ['yarn'],
     hint: ['A package manager similar to NPM']
   },
+
+
   {
     symbols: ['☕️', '+', '📄'],
     words: ['java', 'script'],
@@ -903,6 +921,8 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+
+
 ];
 
 export function isRebusAnswered(id) {
