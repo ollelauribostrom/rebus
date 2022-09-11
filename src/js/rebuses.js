@@ -499,6 +499,11 @@ const rebuses = [
     hint: 'A popular rock band'
   },
   {
+    symbols: ['⌚', '+', '🐶'],
+    words: ['Watchdog'],
+    hint: 'Word use with dog'
+  },
+  {
     symbols: ['👦🏼', '+', '📔'],
     words: ['Facebook'],
     hint: `Mark Zuckerberg's company`
