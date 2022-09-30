@@ -349,10 +349,22 @@ const rebuses = [
     hint: `Where you go to find help`
   },
   {
+    symbols: ['🔍'+'🐟'],
+    words: ['finding','nemo'],
+    hint: `The search is on.`
+  }
+  ,
+  {
     symbols: ['🐱', '+', 'er', '+', '🗼'],
     words: ['caterpillar'],
     hint: 'It chews on leaves and then grows into something pretty.'
   },
+  {
+    symbols: ['🎲', '🎲', '🍕'],
+    words: ['dominos','pizza'],
+    hint: 'A pizza outlet.'
+  },
+  
   {
     symbols: ['🧢', '+', 'tain'],
     words: ['captain'],
@@ -372,6 +384,11 @@ const rebuses = [
     symbols: ['🐴', '+', '🔙'],
     words: ['horseback'],
     hint: `A cowboy's primary form of travel`
+  },
+  {
+    symbols: ['🏃', '🌲','🏃', ],
+    words: ['run','forest','run'],
+    hint: `forest gump.`
   },
   {
     symbols: ['🎼', '+', '🍴'],
