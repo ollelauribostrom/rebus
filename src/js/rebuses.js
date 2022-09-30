@@ -55,6 +55,11 @@ const rebuses = [
     hint: `The second emoji is 'ant' not 'bug'`
   },
   {
+    symbols: ['+', 'Marry', 'Marry'],
+    words: ['Summary'],
+    hint: 'a brief statement '
+  },
+  {
     symbols: ['🌡️', '+', '🔑'],
     words: ['Hotkey']
   },
@@ -902,6 +907,11 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+   {
+    symbols:['🏃‍♂️','+','up'],
+    word:['Hurry','up'],
+    hint:['People Do when they are late!!']
   }
 ];
 
