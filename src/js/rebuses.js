@@ -35,6 +35,11 @@ const rebuses = [
     hint: 'Who lives in a ____ under the sea? SPONGEBOB SQUAREPANTS!'
   },
   {
+    symbols: ['+', 'Marry', 'Marry'],
+    words: ['Summary'],
+    hint: 'A brief Statement about a topic!'
+  },
+  {
     symbols: ['🥚', '+', '🌱'],
     words: ['Eggplant'],
     hint: '🍆'
