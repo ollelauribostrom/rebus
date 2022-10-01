@@ -902,6 +902,36 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['🌌', '+', '🚢'],
+    words: ['space', 'ship'],
+    hint: 'A vehicle used to go to space'
+  },
+  {
+    symbols: ['🥛', '+', '🛣️'],
+    words: ['milky', 'way'],
+    hint: 'A famous galaxy'
+  },
+  {
+    symbols: ['🧱', '+', '⛓️'],
+    words: ['block', 'chain'],
+    hint: 'A shared database or ledger'
+  },
+  {
+    symbols: ['🧀', '+', '🎂'],
+    words: ['cheese', 'cake'],
+    hint: 'A delicious dessert'
+  },
+  {
+    symbols: ['🐎', '+', '⚡'],
+    words: ['horse', 'power'],
+    hint: 'A unit of power'
+  },
+  {
+    symbols: ['🦇', '+', '👨'],
+    words: ['bat','man'],
+    hint: 'A famous superhero'
   }
 ];
 
