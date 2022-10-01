@@ -904,7 +904,7 @@ const rebuses = [
     hint: 'A delicious appetizer'
   },
   {
-    symbols: ['🚗', '@'],
+    symbols: ['🚗', '+', '@'],
     words: ['Carrot'],
     hint: 'What does Bugs Bunny like ?'
   }
