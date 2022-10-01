@@ -904,14 +904,9 @@ const rebuses = [
     hint: 'A delicious appetizer'
   },
   {
-    symbols: ['🧀', '+', '🎂'],
-    words: ['cheese', 'cake'],
-    hint: 'A Sweet Sweet cake'
-  },
-  {
-    symbols: ['🍎'],
-    words: ['Apple'],
-    hint: 'once in a day keeps a doctor away'
+    symbols: ['☕️'],
+    words: ['teacup'],
+    hint: ['sip of the morning']
   }
 ];
 
