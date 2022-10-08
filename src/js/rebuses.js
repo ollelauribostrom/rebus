@@ -10,6 +10,11 @@ const rebuses = [
     hint: `The second emoji is 'ant' not 'bug'`
   },
   {
+    symbols: ['✋', 'y'],
+    words: ['Handy'],
+    hint: `When something is within easy reach`
+  },
+  {
     symbols: ['📖', '+', '🙋', '+', '📝'],
     words: ['Readme', 'file'],
     hint: 'The default markdown file of every GitHub repo'
@@ -902,11 +907,6 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
-  },
-  {
-    symbols: ['✋', 'y'],
-    words: ['Handy'],
-    hint: `When something is within easy reach`
   }
 ];
 
