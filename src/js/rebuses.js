@@ -184,6 +184,11 @@ const rebuses = [
     hint: `Helps you put your shoe on`
   },
   {
+    symbols: ['💀', '+', '🚴‍♂️'],
+    words: ['Ghostrider'],
+    hint: `He's the only one that can walk on both worlds. Lets Ride !`
+  },
+  {
     symbols: ['🖊', '+', 't', '+', '🏠'],
     words: ['Penthouse'],
     hint: `The highest room in a hotel`
