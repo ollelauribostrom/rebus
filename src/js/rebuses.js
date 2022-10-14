@@ -902,6 +902,51 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['⛺️', '+', '🔥'],
+    words: ['camp', 'fire'],
+    hint: 'Roasted marshmallows and smores!'
+  },
+  {
+    symbols: ['___', '+', 'et', '+', '🐗'],
+    words: ['blanket', 'hog'],
+    hint: 'They steel the sheets at night'
+  },
+  {
+    symbols: ['👸', '+', '&', '+', '👹'],
+    words: ['beauty', 'and', 'the', 'beast'],
+    hint: 'Belle and her prince'
+  },
+  {
+    symbols: ['🏔', '+', '🚲'],
+    words: ['mountain', 'bike'],
+    hint: 'Riding up and down BIG hills'
+  },
+  {
+    symbols: ['🔊', '+', 'asl', '+', '🐑', '-', 'sh'],
+    words: ['sound', 'asleep'],
+    hint: "Wouldn't wake up if you stubbed your toe on the bed"
+  },
+  {
+    symbols: ['🟩', '+', '🍳', '+', '🍖'],
+    words: ['green', 'eggs', 'and', 'ham'],
+    hint: 'I would not, could not, eat them in a box'
+  },
+  {
+    symbols: ['🔍', '+', '🐠'],
+    words: ['finding', 'dory'],
+    hint: 'Nemos friend is lost again'
+  },
+  {
+    symbols: ['🦜', '+', '👁', '+', '🏞'],
+    words: ['birds', 'eye', 'view'],
+    hint: 'Looking down at the scenery'
+  },
+  {
+    symbols: ['👻', '+', '🏠'],
+    words: ['haunted', 'house'],
+    hint: 'A spooky place to live'
   }
 ];
 
