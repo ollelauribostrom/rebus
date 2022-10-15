@@ -902,6 +902,11 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['😡', '+', 'bird'],
+    words: ['angry', 'bird'],
+    hint: 'Game and Movie'
   }
 ];
 
