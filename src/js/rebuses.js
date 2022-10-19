@@ -907,7 +907,7 @@ const rebuses = [
     symbols: ['👿', '+', '❄'],
     words: ['demon', 'snow'],
     hint: 'A fictional character ability'
-  },
+  }
 ];
 
 export function isRebusAnswered(id) {
