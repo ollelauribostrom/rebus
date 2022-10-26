@@ -7,7 +7,7 @@ export function NavBar() {
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="${window.location.origin}?rebus=${1}" class="nav__link">Play</a>
+            <a href="#select-game-language" class="nav__link">Play</a>
           </li>
           <li class="nav__item">
             <a href="#demo" class="nav__link">Demo</a>

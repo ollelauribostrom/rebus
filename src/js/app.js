@@ -15,6 +15,7 @@ import { NavBar } from './components/homagePage/NavBar';
 import { Demo } from './components/homagePage/Demo';
 import { About } from './components/homagePage/About';
 import { Content } from './components/homagePage/Content';
+import { GameLanguage } from './components/homagePage/GameLanguage';
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -40,7 +41,7 @@ export function init() {
   try {
     return render(
       !id
-        ? HomePage(NavBar(), GithubCorner(), Content(Demo(), About()))
+        ? HomePage(NavBar(), GithubCorner(), Content(Demo(), GameLanguage(), About()))
         : App(
             Logo(),
             GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
