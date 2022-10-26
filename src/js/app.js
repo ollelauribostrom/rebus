@@ -10,6 +10,8 @@ import { Hint } from './components/Hint';
 
 import { actions } from './store';
 import '../css/main.css';
+import { HomePage } from './components/HomePage';
+import { NavBar } from './components/NavBar';
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -30,29 +32,33 @@ export function setCurrentFromURL() {
 }
 
 export function init() {
+  const params = new URLSearchParams(window.location.search);
+  const id = Number(params.get('rebus'));
   try {
     return render(
-      App(
-        Logo(),
-        GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
-        ChangeButton({
-          className: 'change-button--prev',
-          onClick: () => actions.prev()
-        }),
-        Rebus({
-          charInput: (input, wordIndex, charIndex) => {
-            const confettiCanon = document.querySelector('.confetti-canon');
-            actions.setInput(input, wordIndex, charIndex);
-            actions.check(confettiCanon);
-          }
-        }),
-        ChangeButton({
-          className: 'change-button--next',
-          onClick: () => actions.next()
-        }),
-        Hint(),
-        ProgressBar()
-      ),
+      !id
+        ? HomePage(NavBar())
+        : App(
+            Logo(),
+            GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
+            ChangeButton({
+              className: 'change-button--prev',
+              onClick: () => actions.prev()
+            }),
+            Rebus({
+              charInput: (input, wordIndex, charIndex) => {
+                const confettiCanon = document.querySelector('.confetti-canon');
+                actions.setInput(input, wordIndex, charIndex);
+                actions.check(confettiCanon);
+              }
+            }),
+            ChangeButton({
+              className: 'change-button--next',
+              onClick: () => actions.next()
+            }),
+            Hint(),
+            ProgressBar()
+          ),
       document.querySelector('.root')
     );
   } catch (err) {
