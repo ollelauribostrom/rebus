@@ -87,6 +87,37 @@ body,
   text-decoration: none;
 }
 
+.demo .demo__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+.demo .demo__container {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.select-game-language .select-game-language-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+.about .about__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
 .select-game-language .select-game-language__container {
   display: flex;
   justify-content: flex-start;
@@ -105,7 +136,8 @@ body,
   align-items: center;
   text-decoration: none;
   height: 60px;
-  background-color: aliceblue;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .select-game-language .lang_choice .lang_choice_text {
