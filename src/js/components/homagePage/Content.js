@@ -1,11 +1,11 @@
-import { createComponent } from '../mini';
+import { createComponent } from '../../mini';
 
-export function HomePage(...children) {
+export function Content(...children) {
   return createComponent({
     children,
     render() {
       return `
-        <div class="home-page">
+        <div class="content">
           <children>
         </div>
       `;

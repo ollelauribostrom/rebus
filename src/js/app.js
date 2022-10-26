@@ -10,8 +10,11 @@ import { Hint } from './components/Hint';
 
 import { actions } from './store';
 import '../css/main.css';
-import { HomePage } from './components/HomePage';
-import { NavBar } from './components/NavBar';
+import { HomePage } from './components/homagePage/HomePage';
+import { NavBar } from './components/homagePage/NavBar';
+import { Demo } from './components/homagePage/Demo';
+import { About } from './components/homagePage/About';
+import { Content } from './components/homagePage/Content';
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -37,7 +40,7 @@ export function init() {
   try {
     return render(
       !id
-        ? HomePage(NavBar())
+        ? HomePage(NavBar(), GithubCorner(), Content(Demo(), About()))
         : App(
             Logo(),
             GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
