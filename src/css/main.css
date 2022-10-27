@@ -33,7 +33,7 @@ body,
 } */
 
 .home-page .content {
-  height: 95vh;
+  height: 96vh;
   overflow-y: scroll;
   margin: auto;
   padding: auto;
@@ -92,31 +92,44 @@ body,
   text-decoration: none;
 }
 
+.demo {
+  margin-top: 40px;
+}
+
 .demo .demo__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 2em;
   color: #fff;
   margin: 10px 0 10px 0;
-  padding: 0;
+  padding: 10px 0 5px 0;
 }
 
-/* .demo .demo__container {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-} */
+.demo .demo__container {
+  width: 100%;
+  height: 100%;
+}
+
+.demo .demo__container .demo__img {
+  width: 100%;
+}
 
 /* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .demo .demo__container .demo__img {
     width: 100%;
   }
-}
+} */
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .demo .demo__container .demo__img {
     width: 200px;
   }
+} */
+
+.select-game-language {
+  margin-top: 40px;
 }
 
 .select-game-language .select-game-language-title {
@@ -125,7 +138,11 @@ body,
   font-size: 2em;
   color: #fff;
   margin: 10px 0 10px 0;
-  padding: 0;
+  padding: 10px 0 5px 0;
+}
+
+.about {
+  margin-top: 40px;
 }
 
 .about .about__title {
@@ -134,7 +151,36 @@ body,
   font-size: 2em;
   color: #fff;
   margin: 10px 0 10px 0;
-  padding: 0;
+  padding: 10px 0 5px 0;
+}
+
+.about .about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about .about__content .rebus_example {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about .about__content .rebus_example div > *:nth-of-type(n+1) {
+  margin-left: 20px;
+}
+
+.about .about__content .about__description {
+  font-size: 25px;
+}
+
+.about .about__content figure {
+  margin: 0;
+}
+
+.about .about__content figure img {
+  width: 100%;
 }
 
 .select-game-language .select-game-language__container {
