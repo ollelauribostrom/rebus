@@ -6,7 +6,7 @@
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/rebus-contributors/Lobby)
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/) 
 
-Contributing to an open source project for the first time can be a scary thing. The goal of this repo is to help you take your first steps as an open source contributor by developing a simple (but hopefully fun) rebus game together. 💖
+Contributing to an Open source project for the first time can be a scary thing. The goal of this repo is to help you take your first steps as an Open source contributor by developing a simple (but hopefully fun) rebus game together. 💖
 
 #### Try the live version of the game: https://ollelauribostrom.github.io/rebus/
 
@@ -20,7 +20,7 @@ Everyone can! (and I mean everyone) 💫
 
 ➡️ Have a look at the [open issues](https://github.com/ollelauribostrom/rebus/issues) to see what needs to be done in this project.
 
-The only thing that is required to get started is git. Make sure you have it installed on your computer by running `git --version` in your terminal. If you do not have git installed, [install it](https://help.github.com/articles/set-up-git/).
+The only thing that is required to get started is git. Make sure you have git installed on your computer by running `git --version` in your terminal. If you do not have git installed, [install it](https://help.github.com/articles/set-up-git/).
 
 If you are an experienced developer, look at the [CONTRIBUTING file](https://github.com/ollelauribostrom/rebus/blob/master/.github/CONTRIBUTING.md) to see how you can contribute.
 
@@ -30,11 +30,11 @@ When you contribute to Open Source, you are taking part in the collaborative eff
 
 ## How to contribute
 
-Follow this step-by-step guide to make your first open source contribution. The steps you will perform in this guide is a somewhat standard workflow that you will encounter in most projects: `Fork -> Clone -> Install dependencies -> Make your changes -> Run tests -> Commit -> PR`
+Follow this step-by-step guide to make your first Open source contribution. The steps you will perform in this guide are somewhat standard workflow that you will encounter in most projects: `Fork -> Clone -> Install dependencies -> Make your changes -> Run tests -> Commit -> PR`
 
 ### 1. Fork
 
-The first step is to create a fork of this repo. Do so by clicking on the fork button on the top of this page. A fork is basically your own working copy of this repository.
+The first step is to create a fork of this repo. Do so by clicking on the fork button at the top of this page. A fork is basically your own working copy of this repository.
 
 <img src=".github/fork.png" alt="Forking the repo" />
 
@@ -46,7 +46,7 @@ Go to your GitHub repositories and open the forked repository called Rebus (_for
 
 <img align="right" width="300" src=".github/clone.png" alt="Cloning the repo" />
 
-Finally run the following git command in your terminal:
+Finally, run the following git command in your terminal:
 
 ```sh
 git clone "the copied url"
@@ -77,9 +77,9 @@ git remote add upstream https://github.com/ollelauribostrom/rebus.git
 
 ### 4. Create a branch
 
-It's common practice to create a new branch for each new feature or bugfix you are working on. Let's go ahead and create one!
+It's common practice to create a new branch for each new feature or bug fix you are working on. Let's go ahead and create one!
 
-First, lets make sure we have the latest version of the upstream repository by running (do this before each time you create a new branch):
+First, let's make sure we have the latest version of the upstream repository by running (do this before each time you create a new branch):
 
 ```sh
 git fetch upstream
@@ -103,7 +103,7 @@ git checkout -b add-new-rebus upstream/master
 
 ### 5. Install the dependencies
 
-Before we begin making our changes, let's install the projects dependencies:
+Before we begin making our changes, let's install the project's dependencies:
 
 ```sh
 npm install
@@ -157,7 +157,7 @@ For example:
 git commit -m "Adding a new rebus"
 ```
 
-### 10. Push your changes to Github
+### 10. Push your changes to GitHub
 
 Push your changes to GitHub by running:
 
@@ -181,7 +181,7 @@ Describe your changes and submit your pull request
 
 🎉 Congratulations 🎉
 
-You just took your first step as an open source contributor. Your pull request will be reviewed as soon as possible.
+You just took your first step as an Open source contributor. Your pull request will be reviewed as soon as possible.
 Join us on [gitter](https://gitter.im/rebus-contributors/Lobby) if you have questions or need any help. If you feel like
 it, please give this repository a star ⭐.
 
@@ -200,7 +200,7 @@ git pull upstream master
 
 Head back to your favourite code editor and review any conflicts.  Generally `current` changes will be highlighted in one color and `incoming` changes will be highlighted in a different color. `Accept` the `current` or `incoming` changes.  
 
-Commit changes again as outlined in step #9 and #10 above or by running: 
+Commit changes again as outlined in steps #9 and #10 above or by running: 
 
 ```sh
 git add -A
