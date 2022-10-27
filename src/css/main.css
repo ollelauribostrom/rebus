@@ -25,7 +25,12 @@ body,
 
 /* HOME PAGE */
 
-/* .home-page {} */
+/* .home-page {
+  height: 95vh;
+    margin: auto;
+    padding: auto;
+    width: 90%;
+} */
 
 .home-page .content {
   height: 95vh;
@@ -90,20 +95,34 @@ body,
 .demo .demo__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
   margin: 10px 0 10px 0;
   padding: 0;
 }
 
-.demo .demo__container {
+/* .demo .demo__container {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+} */
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .demo .demo__container .demo__img {
+    width: 100%;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .demo .demo__container .demo__img {
+    width: 200px;
+  }
 }
 
 .select-game-language .select-game-language-title {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
   margin: 10px 0 10px 0;
   padding: 0;
@@ -112,7 +131,7 @@ body,
 .about .about__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 2em;
   color: #fff;
   margin: 10px 0 10px 0;
   padding: 0;
