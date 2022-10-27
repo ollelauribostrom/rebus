@@ -36,6 +36,57 @@ body,
   width: 50%;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home-page .content {
+      margin: auto;
+      padding: auto;
+      width: 95%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 95%;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 95%;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 80%;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 50%;
+}
+
+}
+
+
+
 .home-page::-webkit-scrollbar {
   width: 0 !important
 }
