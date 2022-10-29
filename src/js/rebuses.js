@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: 'A synonym for a macro'
   },
   {
     symbols: ['🌞', '+', '🛀'],
@@ -121,7 +122,7 @@ const rebuses = [
   {
     symbols: ['🔑', '🐗', '+', 'd'],
     words: ['Keyboard'],
-    hint: `You're typing with one`
+    hint: `You're typing with one, if you are on a computer`
   },
   {
     symbols: ['💵', '+', 'ew'],
@@ -341,7 +342,7 @@ const rebuses = [
   {
     symbols: ['Uni', '+', '🌽'],
     words: ['unicorn'],
-    hint: 'A billion-dollar startup company'
+    hint: 'A fictional animal'
   },
   {
     symbols: ['🆘', '+', 'desk'],
@@ -551,7 +552,7 @@ const rebuses = [
   {
     symbols: ['🔙', '+', '🏁'],
     words: ['Backend'],
-    hint: `The opposite of frontend`
+    hint: `What runs on a server?`
   },
   {
     symbols: ['🌃', '+', '🐎'],
@@ -641,7 +642,7 @@ const rebuses = [
   {
     symbols: ['🌎', '+', '🐛'],
     words: ['Earthworm'],
-    hint: `It's not a moonworm`
+    hint: `Last emoji is worm`
   },
   {
     symbols: ['🌬', '+', '🐟'],
@@ -656,7 +657,7 @@ const rebuses = [
   {
     symbols: ['💔', '+', '🕐'],
     words: ['Breaktime'],
-    hint: `Everyone's favourite part of the day`
+    hint: `Everyone's favourite part of the work day`
   },
   {
     symbols: ['🐊', '+', '😭'],
@@ -756,7 +757,7 @@ const rebuses = [
   {
     symbols: ['😄', '+', '🎂🎁'],
     words: ['Happy', 'Birthday'],
-    hint: '____ to you!'
+    hint: 'A saying that people tell you on your birthday'
   },
   {
     symbols: ['🔥', '+', '⚽'],
@@ -784,7 +785,7 @@ const rebuses = [
     hint: 'What an unskilled archer would use'
   },
   {
-    symbols: ['D', '+', '💡'],
+    symbols: ['De', '+', '💡'],
     words: ['delight'],
     hint: 'To please someone'
   },
