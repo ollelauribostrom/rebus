@@ -156,6 +156,11 @@ body,
   text-decoration: none;
 }
 
+.nav .nav__list .nav__item .nav__link.nav__link--active {
+  color: #FA3;
+  border-bottom: 2px solid #FA3;
+}
+
 .demo {
   margin-top: 40px;
 }
