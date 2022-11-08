@@ -1,6 +1,6 @@
 const rebuses = [
   {
-    symbols: ['Re', '+', '🚌'],
+    symbols: ['Re', '+', '🚍'],
     words: ['Rebus'],
     hint: 'You´re solving one right now'
   },
@@ -10,42 +10,42 @@ const rebuses = [
     hint: `The second emoji is 'ant' not 'bug'`
   },
   {
-    symbols: ['📖', '+', '🙋', '+', '📝'],
+    symbols: ['📚', '+', '🤙', '+', '🗄️'],
     words: ['Readme', 'file'],
     hint: 'The default markdown file of every GitHub repo'
   },
   {
-    symbols: ['🚗', '+', 'a', '+', '🚐'],
+    symbols: ['🚘', '+', 'a', '+', '🚐'],
     words: ['Caravan'],
     hint: 'The trailer you take when you go camping'
   },
   {
-    symbols: ['⭐', '+', '🐠'],
+    symbols: ['⭐', '+', '🐟'],
     words: ['Starfish'],
     hint: 'Say the two emojis out loud'
   },
   {
-    symbols: ['💡', '+', '🏠'],
+    symbols: ['⚡', '+', '🏠'],
     words: ['Lighthouse'],
     hint: 'A tower with a light to guide ships at sea'
   },
   {
-    symbols: ['🌲', '+', '🍎'],
+    symbols: ['Pi', '+', '🌱', 'ap', '🌱'],
     words: ['Pineapple'],
     hint: 'Who lives in a ____ under the sea? SPONGEBOB SQUAREPANTS!'
   },
   {
-    symbols: ['🥚', '+', '🌱'],
+    symbols: ['🥚', '+', '☘️ '],
     words: ['Eggplant'],
     hint: '🍆'
   },
   {
-    symbols: ['🔥', '+', '🦊'],
+    symbols: ['♨', '+', '😼'],
     words: ['Firefox'],
     hint: 'One of the most popular web browsers'
   },
   {
-    symbols: ['💊', '+', 'ow'],
+    symbols: ['💊', '+', 'low'],
     words: ['Pillow'],
     hint: 'Soft item to rest your head when you sleep'
   },
@@ -55,16 +55,16 @@ const rebuses = [
     hint: `The second emoji is 'ant' not 'bug'`
   },
   {
-    symbols: ['🌡️', '+', '🔑'],
+    symbols: ['🌡️', '+', '🗝️'],
     words: ['Hotkey']
   },
   {
-    symbols: ['🌞', '+', '🛀'],
+    symbols: ['🌣', '+', '🛀'],
     words: ['Sunbath'],
     hint: 'A way for cold-blooded animals to keep warm'
   },
   {
-    symbols: ['🚗', '🚙', '🚗'],
+    symbols: ['🏎️', '+', '🚗'],
     words: ['Cars'],
     hint: `They're always on the road`
   },
@@ -84,7 +84,7 @@ const rebuses = [
     hint: `Man's best friend`
   },
   {
-    symbols: ['📦', 'B', '=', 'F'],
+    symbols: ['📦', 'B', '😼', 'F'],
     words: ['Fox'],
     hint: `Say the emoji out loud and replace the 'B' with 'F'`
   },
@@ -94,12 +94,12 @@ const rebuses = [
     hint: `It covers your hand when it's cold outside`
   },
   {
-    symbols: ['🍏', '-', '🐒', '+', '🐜'],
+    symbols: ['P', '-', 'l', '+', '🕷'],
     words: ['Plant'],
     hint: `It grows in your garden`
   },
   {
-    symbols: ['🐝', '🍁'],
+    symbols: ['𓆤', '𖥸'],
     words: ['Belief'],
     hint: `Hmm, there's a bee and a leaf. Say both out loud`
   },
@@ -114,17 +114,17 @@ const rebuses = [
     hint: `What's another word for your butt? That's what the emojis mean`
   },
   {
-    symbols: ['🍌', '+', '🍞'],
+    symbols: ['🍌', '+', 'read'],
     words: ['Bananabread'],
     hint: `A monkey's favourite bread`
   },
   {
-    symbols: ['🔑', '🐗', '+', 'd'],
+    symbols: ['🗝️', '📋', '+', 'd'],
     words: ['Keyboard'],
     hint: `You're typing with one`
   },
   {
-    symbols: ['💵', '+', 'ew'],
+    symbols: ['💰', '+', 'ew'],
     words: ['cashew'],
     hint: 'A type of nut'
   },
