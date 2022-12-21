@@ -864,6 +864,11 @@ const rebuses = [
     hint: 'Famous salute from what TV show?'
   },
   {
+    symbols: ['🧶'],
+    words: ['yarball'],
+    hint: ['A package manager similar to NPM']
+  },
+  {
     symbols: ['🎁', '+', '🃏'],
     words: ['gift', 'card'],
     hint: 'You get one on your birthday'
