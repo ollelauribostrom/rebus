@@ -799,6 +799,11 @@ const rebuses = [
     hint: 'they have gigantic wheels!'
   },
   {
+    symbols: ['⭐', '+', '🐠'],
+    words: ['Star and fish'],
+    hint: 'Two things up and down'
+  },
+  {
     symbols: ['🔑', '+', '⛓️'],
     words: ['keychain'],
     hint: 'Something that holds on to one or more keys'
@@ -857,6 +862,11 @@ const rebuses = [
     symbols: ['🖖'],
     words: ['Star', 'Trek'],
     hint: 'Famous salute from what TV show?'
+  },
+  {
+    symbols: ['🧶'],
+    words: ['yarball'],
+    hint: ['A package manager similar to NPM']
   },
   {
     symbols: ['🎁', '+', '🃏'],
