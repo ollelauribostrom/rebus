@@ -799,6 +799,11 @@ const rebuses = [
     hint: 'they have gigantic wheels!'
   },
   {
+    symbols: ['⭐', '+', '🐠'],
+    words: ['Star and fish'],
+    hint: 'Two things up and down'
+  },
+  {
     symbols: ['🔑', '+', '⛓️'],
     words: ['keychain'],
     hint: 'Something that holds on to one or more keys'
