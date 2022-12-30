@@ -242,7 +242,7 @@ To avoid this problem in the future, you can change your editor to use an end of
 - [GitHub Endorsed Beginning Contributer Repos](https://github.com/showcases/great-for-new-contributors)
 - [Sourcetree - Git GUI for macOS and Windows](https://www.sourcetreeapp.com/)
 - [VS Code - extensible code editor](https://code.visualstudio.com/)
-- [GitHub Atom - Hackable Text Editor for the 21st Century](https://atom.io/)
+
 
 ## Support
 
