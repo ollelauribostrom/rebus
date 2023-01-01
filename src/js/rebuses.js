@@ -32,7 +32,7 @@ const rebuses = [
   {
     symbols: ['🌲', '+', '🍎'],
     words: ['Pineapple'],
-    hint: 'Who lives in a ____ under the sea? SPONGEBOB SQUAREPANTS!'
+    hint: 'Who lives in a pineapple under the sea? SPONGEBOB SQUAREPANTS!'
   },
   {
     symbols: ['🥚', '+', '🌱'],
@@ -76,7 +76,7 @@ const rebuses = [
   {
     symbols: ['H', '=', 'C', '👒'],
     words: ['Cat'],
-    hint: `It's raining ____ and dogs`
+    hint: `It's raining cat and dogs`
   },
   {
     symbols: ['FR', '=', 'D', '🐸'],
@@ -216,7 +216,7 @@ const rebuses = [
   {
     symbols: ['f', '+', '🌬️', '+', 'y'],
     words: ['Fairy'],
-    hint: 'The tooth ____ changes lost teeth to money'
+    hint: 'The tooth gnome changes lost teeth to money'
   },
   {
     symbols: ['🔨', '+', '⏰'],
@@ -281,7 +281,7 @@ const rebuses = [
   {
     symbols: ['🐏', '📃'],
     words: ['rampage'],
-    hint: `The Hulk likes to go on a ____`
+    hint: `The Hulk likes to go on a riot`
   },
   {
     symbols: ['🐈', '+', '🥊'],
@@ -356,7 +356,7 @@ const rebuses = [
   {
     symbols: ['🧢', '+', 'tain'],
     words: ['captain'],
-    hint: '_____ America 💪'
+    hint: 'Superhero of America 💪'
   },
   {
     symbols: ['🦊', '+', 'hole'],
@@ -381,7 +381,7 @@ const rebuses = [
   {
     symbols: ['🌊', '+', '🐴'],
     words: ['seahorse'],
-    hint: `One of Nemo's friends was a _______`
+    hint: `One of Nemo's friends was a horse`
   },
   {
     symbols: ['🔙', '+', '💀'],
@@ -391,7 +391,7 @@ const rebuses = [
   {
     symbols: ['💥', '+', '🌽'],
     words: ['popcorn'],
-    hint: 'You watch movies with ___ and a drink'
+    hint: 'You watch movies with snacks and a drink'
   },
   {
     symbols: ['🔥', '+', '🏠'],
@@ -476,7 +476,7 @@ const rebuses = [
   {
     symbols: ['🍏', '+', '🥧'],
     words: ['Applepie'],
-    hint: `It's as American as ______`
+    hint: `It's as American as pie`
   },
   {
     symbols: ['🍯', '+', '🌗'],
@@ -526,7 +526,7 @@ const rebuses = [
   {
     symbols: ['🅰️', '+', '💣', '+', 'in', '+', '🅰️', '+', '🐂'],
     words: ['Abominable'],
-    hint: 'The ___ Snowman'
+    hint: 'The terible Snowman'
   },
   {
     symbols: ['👁', '+', '💖', '+', 'YOU'],
@@ -651,7 +651,7 @@ const rebuses = [
   {
     symbols: ['🔑', '+', '🕳'],
     words: ['Keyhole'],
-    hint: 'Your house key goes into the ______'
+    hint: 'Your house key goes into the tiny hole'
   },
   {
     symbols: ['💔', '+', '🕐'],
@@ -691,7 +691,7 @@ const rebuses = [
   {
     symbols: ['⌚', '+', '👨'],
     words: ['Watchman'],
-    hint: 'Who watches the ______?'
+    hint: 'Who watches the stopwatch man?'
   },
   {
     symbols: ['✋', '+', '📗'],
@@ -746,22 +746,22 @@ const rebuses = [
   {
     symbols: ['🐱', '+', '🌲'],
     words: ['catalog'],
-    hint: `The Sear's ________`
+    hint: `The Sear's inventory`
   },
   {
     symbols: ['💋', '+', 'able'],
     words: ['kissable'],
-    hint: `cute animals are very _____`
+    hint: `cute animals are very charming`
   },
   {
     symbols: ['😄', '+', '🎂🎁'],
     words: ['Happy', 'Birthday'],
-    hint: '____ to you!'
+    hint: 'Happy born day to you!'
   },
   {
     symbols: ['🔥', '+', '⚽'],
     words: ['Fireball'],
-    hint: 'The sun is a big ________'
+    hint: 'The sun is a big snowball'
   },
   {
     symbols: ['💎', '+', '⃝'],
@@ -821,12 +821,12 @@ const rebuses = [
   {
     symbols: ['📰'],
     words: ['newspaper'],
-    hint: 'Reading today&#39s ______'
+    hint: 'Reading today&#39s news'
   },
   {
     symbols: ['✉'],
     words: ['mail'],
-    hint: '"You&#39ve got ____"'
+    hint: '"You&#39ve got fax"'
   },
   {
     symbols: ['🌮', '+', '🥗'],
