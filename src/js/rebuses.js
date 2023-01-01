@@ -902,9 +902,33 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['✈️', '+', '👧'],
+    words: ['Plain Jane'],
+    hint: 'A regular kind of girl'
+  },
+  {
+    symbols: ['👴', '+', '➡️', '+', '⛲', '+', '👶'],
+    words: ['Fountain of youth'],
+    hint: 'Youth is wasted on the young'
+  },
+  {
+    symbols: ['🦶', '+', '⚽','+', '🎮'],
+    words: ['Football game'],
+    hint: 'Sunday night tradition'
+  },
+  {
+    symbols: ['🌳', '+', '🏠'],
+    words: ['Tree house'],
+    hint: 'You always wanted one as a child'
+  },
+  {
+    symbols: ['🍯', '+', '🌔', '=', '❤️'],
+    words: ['Honey moon'],
+    hint: 'The sweetest time of marriage'
   }
 ];
-
 export function isRebusAnswered(id) {
   const answeredRebuses = window.localStorage.getItem('answeredRebuses');
   return !!answeredRebuses && JSON.parse(answeredRebuses).includes(id);
