@@ -202,6 +202,10 @@ progress[value]::-webkit-progress-value {
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
+.github-corner:hover{
+  color: black;
+  fill: white;
+}
 
 @keyframes octocat-wave {
   0%,
