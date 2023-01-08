@@ -894,6 +894,11 @@ const rebuses = [
     hint: ['A package manager similar to NPM']
   },
   {
+    symbols: ['🧀', '+', '🍕'],
+    words: ['cheese', 'pizza'],
+    hint: ['A delicious Italian creation']
+  },
+  {
     symbols: ['☕️', '+', '📄'],
     words: ['java', 'script'],
     hint: ['It makes the website interactive']
