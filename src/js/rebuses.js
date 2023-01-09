@@ -37,7 +37,7 @@ const rebuses = [
   {
     symbols: ['🥚', '+', '🌱'],
     words: ['Eggplant'],
-    hint: '🍆'
+    hint: 'Plant which gives proteins'
   },
   {
     symbols: ['🔥', '+', '🦊'],
@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: 'The second emoji is used to open locked rooms'
   },
   {
     symbols: ['🌞', '+', '🛀'],
@@ -751,17 +752,17 @@ const rebuses = [
   {
     symbols: ['💋', '+', 'able'],
     words: ['kissable'],
-    hint: `cute animals are very _____`
+    hint: `cute animals are very kissable`
   },
   {
     symbols: ['😄', '+', '🎂🎁'],
     words: ['Happy', 'Birthday'],
-    hint: '____ to you!'
+    hint: 'Happy Birthday to you!'
   },
   {
     symbols: ['🔥', '+', '⚽'],
     words: ['Fireball'],
-    hint: 'The sun is a big ________'
+    hint: 'The sun is a big fireball'
   },
   {
     symbols: ['💎', '+', '⃝'],
