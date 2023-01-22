@@ -902,7 +902,17 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
-  }
+  },
+
+{
+  symbols: ['👁', '+', 'strain'],
+  words: ['eyestrain'],
+  hint: ['a common condition that occurs when your eyes get tired from intense use']
+
+
+}
+  
+
 ];
 
 export function isRebusAnswered(id) {
