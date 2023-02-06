@@ -1,5 +1,5 @@
-import { englishRebuses } from './englishRebuses';
-import { frenchRebuses } from './frenchRebuses';
+import { englishRebuses } from './rebusesLanguages/englishRebuses';
+import { frenchRebuses } from './rebusesLanguages/frenchRebuses';
 
 export function isRebusAnswered(id) {
   const answeredRebuses = window.localStorage.getItem('answeredRebuses');
@@ -33,7 +33,7 @@ export function getRebuses() {
       chosenRebuses = frenchRebuses;
       break;
     default:
-      chosenRebuses = englishRebuses;
+      chosenRebuses = [];
   }
   return chosenRebuses.map((rebus, index) => {
     const id = index + 1;
