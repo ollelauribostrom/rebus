@@ -7,9 +7,14 @@ import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
-
 import { actions } from './store';
 import '../css/main.css';
+import { HomePage } from './components/homagePage/HomePage';
+import { NavBar } from './components/homagePage/NavBar';
+import { Demo } from './components/homagePage/Demo';
+import { About } from './components/homagePage/About';
+import { Content } from './components/homagePage/Content';
+import { GameLanguage } from './components/homagePage/GameLanguage';
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -30,29 +35,33 @@ export function setCurrentFromURL() {
 }
 
 export function init() {
+  const params = new URLSearchParams(window.location.search);
+  const id = Number(params.get('rebus'));
   try {
     return render(
-      App(
-        Logo(),
-        GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
-        ChangeButton({
-          className: 'change-button--prev',
-          onClick: () => actions.prev()
-        }),
-        Rebus({
-          charInput: (input, wordIndex, charIndex) => {
-            const confettiCanon = document.querySelector('.confetti-canon');
-            actions.setInput(input, wordIndex, charIndex);
-            actions.check(confettiCanon);
-          }
-        }),
-        ChangeButton({
-          className: 'change-button--next',
-          onClick: () => actions.next()
-        }),
-        Hint(),
-        ProgressBar()
-      ),
+      !id
+        ? HomePage(NavBar(), GithubCorner(), Content(Demo(), GameLanguage(), About()))
+        : App(
+            Logo(),
+            GithubCorner({ url: 'https://github.com/ollelauribostrom/rebus' }),
+            ChangeButton({
+              className: 'change-button--prev',
+              onClick: () => actions.prev()
+            }),
+            Rebus({
+              charInput: (input, wordIndex, charIndex) => {
+                const confettiCanon = document.querySelector('.confetti-canon');
+                actions.setInput(input, wordIndex, charIndex);
+                actions.check(confettiCanon);
+              }
+            }),
+            ChangeButton({
+              className: 'change-button--next',
+              onClick: () => actions.next()
+            }),
+            Hint(),
+            ProgressBar()
+          ),
       document.querySelector('.root')
     );
   } catch (err) {

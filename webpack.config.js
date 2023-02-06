@@ -24,7 +24,12 @@ module.exports = publicPath => ({
       // HTML
       { test: /\.html$/, use: ['html-loader'] },
       // CSS
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] }
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      // Images
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: 'file-loader'
+      }
     ]
   },
   plugins: [
