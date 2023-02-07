@@ -23,6 +23,268 @@ body,
   background-position: center;
 }
 
+/* HOME PAGE */
+
+.home-page {
+  overflow-y: scroll;
+  height: 98vh;
+}
+
+.home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home-page .content {
+      margin: auto;
+      padding: auto;
+      width: 95%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 95%;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 95%;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 80%;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .home-page .content {
+  margin: auto;
+  padding: auto;
+  width: 50%;
+}
+
+}
+
+
+
+.home-page::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.home-page {
+  overflow: -moz-scrollbars-none;
+}
+
+.home-page {
+  -ms-overflow-style: none;
+}
+
+.home-page {
+  scrollbar-width: none;
+}
+
+/* .home-page .content::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.home-page .content {
+  overflow: -moz-scrollbars-none;
+}
+
+.home-page .content {
+  -ms-overflow-style: none;
+}
+
+.home-page .content {
+  scrollbar-width: none;
+} */
+
+.home-page .nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.home-page .nav .nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.home-page .nav .nav__list .nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.home-page .nav .nav__list .nav__item a {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.nav .nav__list .nav__item .nav__link.nav__link--active {
+  color: #FA3;
+  border-bottom: 2px solid #FA3;
+}
+
+.demo {
+  margin-top: 40px;
+}
+
+.demo .demo__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  padding: 10px 0 5px 0;
+}
+
+.demo .demo__container {
+  width: 100%;
+  height: 100%;
+}
+
+.demo .demo__container .demo__img {
+  width: 100%;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+/* @media screen and (max-width: 992px) {
+  .demo .demo__container .demo__img {
+    width: 100%;
+  }
+} */
+
+/* On screens that are 600px or less, set the background color to olive */
+/* @media screen and (max-width: 600px) {
+  .demo .demo__container .demo__img {
+    width: 200px;
+  }
+} */
+
+.select-game-language {
+  margin-top: 40px;
+}
+
+.select-game-language .select-game-language-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  padding: 10px 0 5px 0;
+}
+
+.about {
+  margin-top: 40px;
+}
+
+.about .about__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  padding: 10px 0 5px 0;
+}
+
+.about .about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about .about__content .rebus_example {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about .about__content .rebus_example div > *:nth-of-type(n+1) {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.about .about__content .about__description {
+  font-size: 25px;
+}
+
+.about .about__content figure {
+  margin: 0;
+}
+
+.about .about__content figure img {
+  width: 100%;
+}
+
+.select-game-language .select-game-language__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.select-game-language .select-game-language__container > * {
+  margin: 10px;
+}
+
+.select-game-language .lang_choice {
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.select-game-language .lang_choice .lang_choice_text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: darkgrey;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+/* END HOME PAGE */
+
 .app {
   color: #fff;
   font-family: 'Raleway', sans-serif;
@@ -32,10 +294,24 @@ body,
   grid-column-gap: 30px;
 }
 
+.logo-container {
+  top: 0px;
+}
+
 .logo {
   position: absolute;
   top: 30px;
   left: 30px;
+}
+
+.no-rebus {
+  background-color: #1542e642;
+  grid-column-start: 3;
+  align-self: center;
+  grid-row-start: 2;
+  font-size: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 .rebus {
