@@ -19,9 +19,11 @@ export function Rebus(props, ...children) {
         const rebus = this.props.rebuses[this.props.current];
         /* If history API isn't available, we shouldn't revert to the more widely available `window.location.href`, 
         as it incurs a new HTTP request and thus results in an infinite loop (and breaks SPAs). */
+        const params = new URLSearchParams(window.location.search);
+        const lang = params.get('lang');
         if (window.history) {
           // Adds 'rebus' query parameter to end of URL. Should be endpoint-agnostic.
-          window.history.pushState('', '', `?rebus=${rebus.id}`);
+          window.history.pushState('', '', `?rebus=${rebus.id}&lang=${lang}`);
         }
         if (rebus.isAnswered) {
           this.$parent.querySelector('.change-button--next').focus();
@@ -30,11 +32,12 @@ export function Rebus(props, ...children) {
         }
       },
       render({ current, rebuses, animation }) {
-        const rebus = rebuses[current];
-        this.children = rebus.words.map((word, wordIndex) =>
-          Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
-        );
-        return `
+        if (rebuses.length !== 0) {
+          const rebus = rebuses[current];
+          this.children = rebus.words.map((word, wordIndex) =>
+            Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
+          );
+          return `
           <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
@@ -45,6 +48,18 @@ export function Rebus(props, ...children) {
             </div>
           </div>
         `;
+        }
+
+        return `
+        <div class="no-rebus">
+            <span>There are no rebuses yet for this language.</span>
+            <div>
+            <a href="${window.location.origin}">
+            <span>Return to home page</span>
+            </a>
+            </div>
+          </div>
+          `;
       }
     })
   );

@@ -304,6 +304,16 @@ body,
   left: 30px;
 }
 
+.no-rebus {
+  background-color: #1542e642;
+  grid-column-start: 3;
+  align-self: center;
+  grid-row-start: 2;
+  font-size: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
 .rebus {
   background-color: #1542e642;
   grid-column-start: 3;
