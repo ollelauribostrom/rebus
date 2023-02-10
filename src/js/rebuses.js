@@ -20,6 +20,16 @@ const rebuses = [
     hint: 'The trailer you take when you go camping'
   },
   {
+    symbols: ['🐝', '+', '⛆'],
+    words: ['Brain'],
+    hint: 'It lies between your two ears'
+  },
+  {
+    symbols: ['G', '+', '🏁'],
+    words: ['Grace'],
+    hint: 'It\'s a favor recieved, not earned'
+  },
+  {
     symbols: ['⭐', '+', '🐠'],
     words: ['Starfish'],
     hint: 'Say the two emojis out loud'
