@@ -41,8 +41,8 @@ export const actionsCreators = {
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;
       return { updatedRebuses, animation: 'none', incorrectAnswerCount: 0 };
-      // eslint-disable-next-line prettier/prettier
-    } return {incorrectAnswerCount: incorrectAnswerCount + 1, animation: 'none'};
+    }
+    return { incorrectAnswerCount: incorrectAnswerCount + 1, animation: 'none' };
   },
   shake: ({ current, rebuses }) => {
     const rebus = rebuses[current];
