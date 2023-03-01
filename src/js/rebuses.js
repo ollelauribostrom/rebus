@@ -911,7 +911,17 @@ const rebuses = [
   {
     symbols: ['🦷', '+', '🧚‍♀️'],
     words: ['tooth', 'fairy'],
-    hint: 'A fairy credited with leaving a child money or a small gift.'
+    hint: 'A fairy credited with leaving a child money or a small gift'
+  },
+  {
+    symbols: ['❄️', '+', '🤍'],
+    words: ['snow', 'white'],
+    hint: 'A disney princess'
+  },
+  {
+    symbols: ['🧊', '+', 'age'],
+    words: ['ice', 'age'],
+    hint: 'Also cakked the glacial age'
   }
 ];
 
