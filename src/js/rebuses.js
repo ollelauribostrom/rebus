@@ -902,6 +902,16 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['ju', '+', '👨🏽', '+', 'ji'],
+    words: ['jumanji'],
+    hint: 'An American fantasy adventure film'
+  },
+  {
+    symbols: ['🦷', '+', '🧚‍♀️'],
+    words: ['tooth', 'fairy'],
+    hint: 'A fairy credited with leaving a child money or a small gift.'
   }
 ];
 
