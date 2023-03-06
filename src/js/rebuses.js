@@ -921,7 +921,7 @@ const rebuses = [
   {
     symbols: ['🧊', '+', 'age'],
     words: ['ice', 'age'],
-    hint: 'Also cakked the glacial age'
+    hint: 'Also called the glacial age'
   }
 ];
 
