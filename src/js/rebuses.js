@@ -922,6 +922,11 @@ const rebuses = [
     symbols: ['🧊', '+', 'age'],
     words: ['ice', 'age'],
     hint: 'Also called the glacial age'
+  },
+  {
+    symbols: ['🚗', '+', '🏊🏻'],
+    words: ['car', 'pool'],
+    hint: 'an arrangement between people to make a regular journey in a single vehicle'
   }
 ];
 
