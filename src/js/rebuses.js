@@ -904,9 +904,9 @@ const rebuses = [
     hint: 'A delicious appetizer'
   },
   {
-    symbols:['🧵', '+', '🧵', '+', '🧵'],
-    words :['multithread'],
-    hint: 'Parallel computing'
+    symbols:['🔥', '+', '🛁'],
+    words :['hot', 'tub'],
+    hint: 'Take a comforting soak'
   }
 ];
 
