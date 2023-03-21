@@ -899,6 +899,11 @@ const rebuses = [
     hint: ['It makes the website interactive']
   },
   {
+    symbols: ['🐜', '+', 'loop'],
+    words: ['Ante', 'lope'],
+    hint: 'Many species of even-toed ruminant'
+  },
+  {
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
