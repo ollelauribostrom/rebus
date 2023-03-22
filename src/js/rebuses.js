@@ -40,6 +40,11 @@ const rebuses = [
     hint: '🍆'
   },
   {
+    symbols: ['🐜', '+', 'loop'],
+    words: ['Ante', 'lope'],
+    hint: 'Many species of even-toed ruminant'
+  },
+  {
     symbols: ['🔥', '+', '🦊'],
     words: ['Firefox'],
     hint: 'One of the most popular web browsers'
