@@ -1,4 +1,9 @@
 const rebuses = [
+   {
+    symbols: ['⭐', '+', '🍎'],
+    words: ['Starfruit'],
+    hint: 'The second emoji is Fruit not Apple'
+  }, 
   {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
