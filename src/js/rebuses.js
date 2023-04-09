@@ -296,7 +296,7 @@ const rebuses = [
   {
     symbols: ['🐝', '+', 'r'],
     words: ['Beer'],
-    hint: '🍺'
+    hint: 'This rebus uses a visual pun to represent a popular alcoholic beverage that is often associated with socializing and relaxation'
   },
   {
     symbols: ['🎉', '-', 'Y', '+', '⏰', '+', 'Job'],
