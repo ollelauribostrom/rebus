@@ -902,6 +902,36 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+
+  {
+    symbols: ['x', '+', '🌌'],
+    words: ['multiverse'],
+    hint: `A collection of universes`
+  },
+  
+  {
+    symbols: ['🧠', '+', '⌚'],
+    words: ['smart', 'watch'],
+    hint: `Modernized Clock`
+  },
+  
+  {
+    symbols: ['🎤', '+', '🎯'],
+    words: ['microscope'],
+    hint: `Used to observe organisms as small as bacteria and viruses`
+  },
+
+  {
+    symbols: ['😄', '+', '🎹'],
+    words: ['major', 'scale'],
+    hint: `Commonly denoted as happy tones in piano`
+  },
+
+  {
+    symbols: ['🧠', '+', '🥶'],
+    words: ['brainfreeze'],
+    hint: `Happens after drinking or eating something cold very fast`
   }
 ];
 
