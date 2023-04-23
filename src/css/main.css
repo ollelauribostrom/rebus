@@ -170,7 +170,6 @@ body,
 progress[value] {
   width: auto;
   height: 20px;
-  -webkit-appearance: none;
 }
 
 progress[value]::-webkit-progress-bar {
