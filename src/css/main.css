@@ -204,14 +204,17 @@ progress[value]::-webkit-progress-value {
 }
 
 @keyframes octocat-wave {
+
   0%,
   100% {
     transform: rotate(0);
   }
+
   20%,
   60% {
     transform: rotate(-25deg);
   }
+
   40%,
   80% {
     transform: rotate(10deg);
@@ -222,17 +225,21 @@ progress[value]::-webkit-progress-value {
   .change-button--prev {
     grid-column-start: 1;
   }
+
   .change-button--next {
     grid-column-start: 5;
   }
+
   .rebus {
     grid-column-start: 2;
     grid-column-end: span 3;
   }
+
   .word {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50px);
   }
+
   .word__char {
     width: auto;
   }
@@ -242,15 +249,19 @@ progress[value]::-webkit-progress-value {
   .logo {
     display: none;
   }
+
   .app {
     grid-template-rows: 1fr 8fr 2fr;
   }
+
   .github-corner {
     display: none;
   }
+
   .change-button {
     grid-row-start: 3;
   }
+
   .rebus {
     grid-row-start: 1;
     grid-row-end: span 2;
@@ -258,13 +269,16 @@ progress[value]::-webkit-progress-value {
     grid-column-end: span 5;
     border-radius: 0;
   }
+
   .rebus__header {
     border-radius: 0;
   }
+
   .word {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50px);
   }
+
   .word__char {
     width: auto;
   }
@@ -299,6 +313,7 @@ progress[value]::-webkit-progress-value {
   0% {
     transform: rotateY(0);
   }
+
   100% {
     transform: rotateY(360deg);
   }
@@ -313,25 +328,32 @@ progress[value]::-webkit-progress-value {
   0% {
     transform: rotateY(0);
   }
+
   100% {
     transform: rotateY(-360deg);
   }
 }
 
 @keyframes shake {
-  10%, 90% {
+
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
 
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
