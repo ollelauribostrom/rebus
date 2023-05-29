@@ -906,7 +906,7 @@ const rebuses = [
   {
     symbols: ['🔴', '🧢'],
     words: ['red', 'hat'],
-    hint: 'An open source software company'
+    hint: 'An open-source software company'
   },
 ];
 
