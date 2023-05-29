@@ -907,7 +907,7 @@ const rebuses = [
     symbols: ['🔴', '🧢'],
     words: ['red', 'hat'],
     hint: 'An open-source software company'
-  },
+  }
 ];
 
 export function isRebusAnswered(id) {
