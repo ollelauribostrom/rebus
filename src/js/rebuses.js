@@ -902,6 +902,11 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['❤️', '+', 'at', '+', '🥇', '+', '👀'],
+    words: ['Love', 'at', 'first', 'sight'],
+    hint: 'Feeling of infatuation after seeing someone for the first time'
   }
 ];
 
