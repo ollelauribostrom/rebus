@@ -664,6 +664,11 @@ const rebuses = [
     hint: `Fake tears`
   },
   {
+    symbols: ['🛁', '+', '⏳'],
+    words: ['bath', 'time'],
+    hint: `Would you like some bubbles in it?`
+  },
+  {
     symbols: ['💋', '☠'],
     words: ['Kiss', 'of', 'death'],
     hint: `One kiss you don't want to receive`
