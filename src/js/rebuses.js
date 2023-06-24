@@ -906,7 +906,7 @@ const rebuses = [
   {
     symbols: ['⌨️', '+', '📄'],
     words: ['Type', 'Script'],
-    hint: 'A superset of 180th rebus'
+    hint: 'A superset of Javascript'
   }
 ];
 
