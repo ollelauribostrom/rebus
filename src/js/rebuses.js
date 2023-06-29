@@ -1,5 +1,10 @@
 const rebuses = [
   {
+    symbols: ['India', '+', 'is Great'],
+    words: ['Indian'],
+    hint: 'proud to be indian'
+  },
+  {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
     hint: 'You´re solving one right now'
