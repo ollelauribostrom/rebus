@@ -5,6 +5,11 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
+    symbols: ['🖊️', '+', 't', '+' ,'🏠'],
+    words: ['Penthouse'],
+    hint: 'a top-floor apartment known for its luxury'
+  },
+  {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants'],
     hint: `The second emoji is 'ant' not 'bug'`
