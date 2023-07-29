@@ -1,5 +1,10 @@
 const rebuses = [
   {
+    symbols: ['🧽' + 'bob' + '🟨' + '👖'],
+    words: ['Spongebob', 'Squarepants'],
+    hint: 'Who lives in a pineapple under the sea?'
+  },
+  {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
     hint: 'You´re solving one right now'
