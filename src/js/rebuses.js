@@ -79,6 +79,11 @@ const rebuses = [
     hint: `It's raining ____ and dogs`
   },
   {
+    symbols: ['🎮', '+', 'ch', '+', '😡'],
+    words: ['Gamechanger'],
+    hint: `Angry without adjective`
+  },
+  {
     symbols: ['FR', '=', 'D', '🐸'],
     words: ['Dog'],
     hint: `Man's best friend`
