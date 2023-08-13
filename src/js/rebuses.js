@@ -902,6 +902,11 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['🍎', '+', 'to', '+', '🍊'],
+    words: ['apples', 'to', 'oranges'],
+    hint: "It's a common saying about making comparisons between different things"
   }
 ];
 
