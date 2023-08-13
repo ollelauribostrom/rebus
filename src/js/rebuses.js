@@ -5,6 +5,11 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
+    symbols: ['💋', '+', '🦯'],
+    words: ['lip', 'stick'],
+    hint: 'A beauty product for women'
+  },
+  {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants'],
     hint: `The second emoji is 'ant' not 'bug'`
@@ -903,6 +908,8 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+
+
 ];
 
 export function isRebusAnswered(id) {
