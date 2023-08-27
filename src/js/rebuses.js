@@ -486,7 +486,7 @@ const rebuses = [
   {
     symbols: ['🕷', '+', '🧔🏻'],
     words: ['Spiderman'],
-    hint: `Uncle Ben's superhero nephew`
+    hint: `Stan Lee's first creation`
   },
   {
     symbols: ['🐲', '+', '🍑'],
