@@ -907,6 +907,11 @@ const rebuses = [
     symbols: ['❌', '+','🎀'],
     words: ['cross', 'bow'],
     hint: 'It shoots silently'
+  },
+  {
+    symbols: ['💀', '+', '🐠', '-', 'F', '+', 'W'],
+    words: ['death', 'wish'],
+    hint: 'Daredevils have a _'
   }
 ];
 
