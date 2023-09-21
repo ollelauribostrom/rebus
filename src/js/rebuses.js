@@ -903,6 +903,16 @@ const rebuses = [
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
   }
+  {
+    symbols: ['❌', '+','🎀'],
+    words: ['cross', 'bow'],
+    hint: 'It shoots silently'
+  },
+  {
+    symbols: ['💀', '+', '🐠', '-', 'F', '+', 'W'],
+    words: ['death', 'wish'],
+    hint: 'Daredevils have a _'
+  }
 ];
 
 export function isRebusAnswered(id) {
