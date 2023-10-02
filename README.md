@@ -10,6 +10,16 @@ Contributing to an open source project for the first time can be a scary thing. 
 
 #### Try the live version of the game: https://ollelauribostrom.github.io/rebus/
 
+## Table of Contents
+  1. [Who can contribute?](#who-can-contribute)
+  2. [Why contribute to open source?](#why-contribute-to-open-source)
+  3. [How to contribute](#how-to-contribute)
+  4. [FAQ](#faq)
+  5. [Further Reading](#further-reading)
+  6. [Support](#support)
+  7. [Code of Conduct](#code-of-conduct)
+  8. [License](#license)
+
 ## Who can contribute?
 
 Everyone can! (and I mean everyone) 💫
