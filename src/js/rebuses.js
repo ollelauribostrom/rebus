@@ -5,6 +5,16 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
+    symbols: ['👨‍👩‍👦‍👦', '+', '🚶'],
+    words: ['family', 'guy'],
+    hint: 'famous tv show'
+  },
+  {
+    symbols: ['⚔', '+', '🐠'],
+    words: ['swordfish'],
+    hint: 'famous tv show'
+  },
+  {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
     words: ['Houseplants'],
     hint: `The second emoji is 'ant' not 'bug'`
