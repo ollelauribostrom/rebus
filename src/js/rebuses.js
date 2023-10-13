@@ -7,7 +7,7 @@ const rebuses = [
   {
     symbols: ['⚔', '+', '🐠'],
     words: ['swordfish'],
-    hint: 'famous tv show'
+    hint: 'a pointy fish'
   },
   {
     symbols: ['🏠', '+', 'pl', '+', '🐜', '+', 's'],
