@@ -5,11 +5,6 @@ const rebuses = [
     hint: 'You´re solving one right now'
   },
   {
-    symbols: ['👨‍👩‍👦‍👦', '+', '🚶'],
-    words: ['family', 'guy'],
-    hint: 'famous tv show'
-  },
-  {
     symbols: ['⚔', '+', '🐠'],
     words: ['swordfish'],
     hint: 'famous tv show'
@@ -172,6 +167,11 @@ const rebuses = [
     symbols: ['💵', '+', '⚽'],
     words: ['Moneyball'],
     hint: `A great baseball movie`
+  },
+  {
+    symbols: ['👨‍👩‍👦‍👦', '+', '🚶'],
+    words: ['family', 'guy'],
+    hint: 'famous tv show'
   },
   {
     symbols: ['🐂', '+', '👀'],
