@@ -1,6 +1,9 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
 import { getRebuses, markRebusAsAnswered } from './rebuses';
+import appl from '../media/applause.mp3';
+
+const applause = new Audio(appl);
 
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
@@ -38,11 +41,15 @@ export const actionsCreators = {
     if (input === answer) {
       markRebusAsAnswered(rebus.id);
       confetti(confettiCanon);
+
+      applause.setAttribute('preload', 'metadata');
+      applause.play();
+
       const updatedRebuses = [...rebuses];
       updatedRebuses[current].isAnswered = true;
       return { updatedRebuses, animation: 'none', incorrectAnswerCount: 0 };
     }
-    return { incorrectAnswerCount: incorrectAnswerCount + 1, animation: 'none' };    
+    return { incorrectAnswerCount: incorrectAnswerCount + 1, animation: 'none' };
   },
   shake: ({ current, rebuses }) => {
     const rebus = rebuses[current];

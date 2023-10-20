@@ -35,7 +35,7 @@ module.exports = publicPath => ({
       },
       // wav
       {
-        test: /\.wav$/,
+        test: /\.(wav|mp3)$/,
         use: ['file-loader']
       }
     ]
