@@ -10,6 +10,9 @@ import { Hint } from './components/Hint';
 
 import { actions } from './store';
 import '../css/main.css';
+import wav from '../media/click.wav';
+
+const player = new Audio(wav);
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -41,6 +44,20 @@ export function init() {
         }),
         Rebus({
           charInput: (input, wordIndex, charIndex) => {
+
+            /* I have added a sound effect to a button when you click on it 
+             npm install --save-dev html-loader
+             in webpack.config.js 
+             
+            {
+              test: /\.wav$/,
+              use: ['file-loader']
+            }
+            */
+            
+            player.setAttribute('preload', 'metadata');
+            player.play();
+
             const confettiCanon = document.querySelector('.confetti-canon');
             actions.setInput(input, wordIndex, charIndex);
             actions.check(confettiCanon);
