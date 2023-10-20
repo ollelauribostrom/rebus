@@ -42,7 +42,7 @@ export const actionsCreators = {
       updatedRebuses[current].isAnswered = true;
       return { updatedRebuses, animation: 'none', incorrectAnswerCount: 0 };
     }
-    return { incorrectAnswerCount: incorrectAnswerCount + 1, animation: 'none' };
+    return { incorrectAnswerCount: incorrectAnswerCount + 1, animation: 'none' };    
   },
   shake: ({ current, rebuses }) => {
     const rebus = rebuses[current];
