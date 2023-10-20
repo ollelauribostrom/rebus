@@ -12,7 +12,9 @@ module.exports = publicPath => ({
     publicPath: publicPath || '/'
   },
   devtool: 'source-map',
-  resolve: { extensions: ['.js', '.json'] },
+  resolve: {
+    extensions: ['.js', '.json']
+  },
   module: {
     rules: [
       // Process JS with Babel.
@@ -22,9 +24,20 @@ module.exports = publicPath => ({
         loader: require.resolve('babel-loader')
       },
       // HTML
-      { test: /\.html$/, use: ['html-loader'] },
+      {
+        test: /\.html$/,
+        use: ['html-loader']
+      },
       // CSS
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] }
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      // wav
+      {
+        test: /\.wav$/,
+        use: ['file-loader']
+      }
     ]
   },
   plugins: [
