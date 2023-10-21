@@ -7,9 +7,15 @@ import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
-
 import { actions } from './store';
+
 import '../css/main.css';
+
+import wav from '../media/click.wav';
+import soundtrack from '../media/Ascension.mp3';
+
+const player = new Audio(wav);
+const melody = new Audio(soundtrack);
 
 export function registerListeners() {
   document.addEventListener('keyup', event => {
@@ -19,6 +25,13 @@ export function registerListeners() {
     }
     if (key === 'ArrowLeft' || key === 37) {
       actions.prev();
+    }
+    if (key === 'ArrowUp' || key === 38) {
+      melody.setAttribute('preload', 'metadata');
+      melody.play();
+    }
+    if (key === 'ArrowDown' || key === 40) {
+      melody.pause();
     }
   });
 }
@@ -41,6 +54,18 @@ export function init() {
         }),
         Rebus({
           charInput: (input, wordIndex, charIndex) => {
+            /* I have added a sound effect to a button when you click on it 
+             npm install --save-dev html-loader
+             in webpack.config.js 
+             
+            {
+              test: /\.wav$/,
+              use: ['file-loader']
+            }
+            */
+            player.setAttribute('preload', 'metadata');
+            player.play();
+
             const confettiCanon = document.querySelector('.confetti-canon');
             actions.setInput(input, wordIndex, charIndex);
             actions.check(confettiCanon);
