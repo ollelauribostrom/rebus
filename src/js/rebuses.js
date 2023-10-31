@@ -907,6 +907,11 @@ const rebuses = [
     symbols: ['👬', '+', '⛵️'],
     words: ['friend', 'ship'],
     hint: `A ship which cannot sink...?`
+  },
+  {
+    symbols: ['+', 'verb'],
+    words: ['Ad', 'verb'],
+    hint: `parts of speech`
   }
 ];
 
