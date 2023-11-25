@@ -36,6 +36,7 @@ export const actionsCreators = {
       return {};
     }
     if (input === answer) {
+      new Audio('https://audio.code.org/win1.mp3').play();
       markRebusAsAnswered(rebus.id);
       confetti(confettiCanon);
       const updatedRebuses = [...rebuses];
