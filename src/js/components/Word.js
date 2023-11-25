@@ -30,9 +30,15 @@ export function Word(props, ...children) {
           onKeydown: e => {
             const { key, keyCode, target } = e;
             if (keyCode >= 65 && keyCode <= 90) {
+              new Audio('https://audio.code.org/goal1.mp3').play();
               target.value = '';
             }
             if (key === 'Enter' || keyCode === 13) {
+              if (props.rebuses[props.current].isAnswered) {
+                new Audio('https://audio.code.org/win1.mp3').play();
+              } else {
+                new Audio('https://audio.code.org/failure1.mp3').play();
+              }
               actions.shake();
             }
             if (key === 'Backspace' || keyCode === 8) {
@@ -41,6 +47,8 @@ export function Word(props, ...children) {
               if (prevChild !== null && input === '') {
                 prevChild.focus();
                 e.preventDefault();
+              } else {
+                new Audio('https://audio.code.org/goal2.mp3').play();
               }
             }
           }
