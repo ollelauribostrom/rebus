@@ -901,8 +901,19 @@ const rebuses = [
   {
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
-    hint: 'A delicious appetizer'
+    hint: ['A delicious appetizer']
+  },
+  {
+    symbols: ['👣', '+', '⚽'],
+    words: ['football'],
+    hint: ['Soccer']
+  },
+  {
+    symbols: ['♎', '-', 'li', '+', 'zi', '+', '🦁', '-', 'li', '+', 'ans'],
+    words: ['brazilians'],
+    hint: ['The best soccer players in the world']
   }
+
 ];
 
 export function isRebusAnswered(id) {
