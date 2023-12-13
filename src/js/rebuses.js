@@ -907,6 +907,11 @@ const rebuses = [
     symbols: ['🪝', '+', '🔑'],
     words: ['hookey'],
     hint: ['Skipping school']
+  },
+  {
+    symbols: ['🛞', '+', '👨'],
+    words: ['spokesperson'],
+    hint: ['Someone speaking on behalf of others']
   }
 ];
 
