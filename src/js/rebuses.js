@@ -906,7 +906,7 @@ const rebuses = [
   {
     symbols: ['🍎', '+', '🥧'],
     words: ['apple', 'pie'],
-    hint: 'The symbol is called Pi'
+    hint: 'It is a delicous pie'
   }
 ];
 
