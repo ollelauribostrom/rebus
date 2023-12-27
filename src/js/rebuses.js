@@ -912,6 +912,11 @@ const rebuses = [
     symbols: ['🛞', '+', '👨'],
     words: ['spokesperson'],
     hint: ['Someone speaking on behalf of others']
+  },
+  {
+    symbols: ['👨', '+', '📞'],
+    words: ['headphones'],
+    hint: ['Device to listen to things to yourself']
   }
 ];
 
