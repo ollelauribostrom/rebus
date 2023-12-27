@@ -902,6 +902,21 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['🪝', '+', '🔑'],
+    words: ['hookey'],
+    hint: ['Skipping school']
+  },
+  {
+    symbols: ['🛞', '+', '👨'],
+    words: ['spokesperson'],
+    hint: ['Someone speaking on behalf of others']
+  },
+  {
+    symbols: ['👨', '+', '📞'],
+    words: ['headphones'],
+    hint: ['Device to listen to things to yourself']
   }
 ];
 
