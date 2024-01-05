@@ -1,5 +1,10 @@
 const rebuses = [
   {
+    symbols: ['Raise', '+', '2', '✋', 's'],
+    words: ['Raise hand'],
+    hint: 'Solve the emoji'
+  },
+  {
     symbols: ['Re', '+', '🚌'],
     words: ['Rebus'],
     hint: 'You´re solving one right now'
