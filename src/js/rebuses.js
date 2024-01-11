@@ -56,7 +56,8 @@ const rebuses = [
   },
   {
     symbols: ['🌡️', '+', '🔑'],
-    words: ['Hotkey']
+    words: ['Hotkey'],
+    hint: `Hotweels's special item to ignite the engine `
   },
   {
     symbols: ['🌞', '+', '🛀'],
@@ -71,12 +72,12 @@ const rebuses = [
   {
     symbols: ['👦🏻', '+', '⚡', '+', '👓', '=', '✨'],
     words: ['Harry', 'Potter'],
-    hint: 'Hogwarts'
+    hint: 'The boy wThe boy who lived'
   },
   {
     symbols: ['H', '=', 'C', '👒'],
     words: ['Cat'],
-    hint: `It's raining ____ and dogs`
+    hint: `loolook what the ___ dragged inn !`
   },
   {
     symbols: ['FR', '=', 'D', '🐸'],
@@ -86,7 +87,7 @@ const rebuses = [
   {
     symbols: ['📦', 'B', '=', 'F'],
     words: ['Fox'],
-    hint: `Say the emoji out loud and replace the 'B' with 'F'`
+    hint: `what does the ____ say "drinding dingwhat does the ____ say "drinding ding""`
   },
   {
     symbols: ['G', '+', '❤️'],
