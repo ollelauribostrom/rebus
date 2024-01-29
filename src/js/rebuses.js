@@ -902,6 +902,102 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['🔥', '+', '🪰'],
+    words: ['Firefly'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['🚌', '+', 'stop'],
+    words: ['Busstop'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['🦷', '+', '🪥'],
+    words: ['Toothbrush'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['🖐️', '+', '👜'],
+    words: ['Handbag'],
+    hint: 'You´re solving one right now'
+  },
+
+  {
+    symbols: ['Cup', '+', '🎂'],
+    words: ['Cupcake'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['🔒', '+', '⬇️'],
+    words: ['Lockdown'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['Kettle', '+', '🔔'],
+    words: ['Kettlebell'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['💪', '+', '🪑'],
+    words: ['Armchair'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['👁️', '+', '🏀'],
+    words: ['Eyeball'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['👄', '+', '🦯'],
+    words: ['Lipstick'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['M', '+', '🥄', '-', 'sp'],
+    words: ['Moon'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['🛞', '+', '🪑'],
+    words: ['Wheelchair'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['📕', '+', '🪱'],
+    words: ['Bookworm'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['✉️', '+', '📦'],
+    words: ['Letterbox'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['R', '+', '🛏️', '-', 'B'],
+    words: ['Red'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['☾', '-', 'o', '+', '🗝️'],
+    words: ['Monkey'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['⌚️', '+', '💍', '-', 'r'],
+    words: ['Watching'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['🦋', '-', '🪰'],
+    words: ['Butter'],
+    hint: 'You´re solving one right now'
+  },
+  {
+    symbols: ['🪰', '+', '👂', '-', 'a'],
+    words: ['Flyer'],
+    hint: 'You´re solving one right now'
   }
 ];
 
