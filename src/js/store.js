@@ -42,7 +42,10 @@ export const actionsCreators = {
       updatedRebuses[current].isAnswered = true;
       return { updatedRebuses, animation: 'none', incorrectAnswerCount: 0 };
     }
-    return { incorrectAnswerCount: incorrectAnswerCount + 1 };
+    // Added This New Code
+    const updatedRebuses = [...rebuses];
+    updatedRebuses[current].input = Array(answer.length).fill('');
+    return { updatedRebuses, animation: 'shake', incorrectAnswerCount: incorrectAnswerCount + 1 };
   },
   shake: ({ current, rebuses }) => {
     const rebus = rebuses[current];
