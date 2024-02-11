@@ -7,6 +7,8 @@ import { ChangeButton } from './components/ChangeButton';
 import { Rebus } from './components/Rebus';
 import { ProgressBar } from './components/ProgressBar';
 import { Hint } from './components/Hint';
+import { AudioPlayer } from './components/Audio';
+import song from '/src/Jeopardy_Music.wav';
 
 import { actions } from './store';
 import '../css/main.css';
@@ -39,6 +41,7 @@ export function init() {
           className: 'change-button--prev',
           onClick: () => actions.prev()
         }),
+
         Rebus({
           charInput: (input, wordIndex, charIndex) => {
             const confettiCanon = document.querySelector('.confetti-canon');
@@ -49,6 +52,10 @@ export function init() {
         ChangeButton({
           className: 'change-button--next',
           onClick: () => actions.next()
+        }),
+        AudioPlayer({
+          src: song,
+          onClick: () => actions.playSound()
         }),
         Hint(),
         ProgressBar()

@@ -1,4 +1,5 @@
 import { createComponent } from '../mini';
+import '../../css/main.css';
 
 export function App(...children) {
   return createComponent({

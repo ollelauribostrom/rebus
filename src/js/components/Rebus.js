@@ -35,7 +35,7 @@ export function Rebus(props, ...children) {
           Word({ word, wordIndex, current, rebuses, charInput: props.charInput })
         );
         return `
-          <div class="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
+          <div className="rebus ${rebus.isAnswered ? 'rebus--answered' : ''} animation--${animation}">
             <div class="rebus__header">
               <span>${current + 1}/${rebuses.length}</span>
             </div>
