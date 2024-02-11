@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-module.exports = publicPath => ({
+module.exports = {
   entry: {
     main: './src/js/app.js'
   },
@@ -9,7 +9,7 @@ module.exports = publicPath => ({
     filename: '[name].bundle.js',
     chunkFilename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: publicPath || '/'
+    publicPath: 'auto'
   },
   devtool: 'source-map',
   resolve: { extensions: ['.js', '.json'] },
@@ -24,7 +24,14 @@ module.exports = publicPath => ({
       // HTML
       { test: /\.html$/, use: ['html-loader'] },
       // CSS
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] }
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      {
+        test: /\.(wav)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'Jeopardy_Music.wav'
+        }
+      }
     ]
   },
   plugins: [
@@ -35,7 +42,11 @@ module.exports = publicPath => ({
     })
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    port: 3000
+    static: {
+      directory: path.resolve(__dirname, 'dist')
+    },
+    port: 3000,
+    open: true, // Open the default browser when the server starts
+    hot: true // Enable Hot Module Replacement (HMR)
   }
-});
+};

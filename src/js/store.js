@@ -1,18 +1,20 @@
 import { confetti } from 'dom-confetti';
 import { createStore } from './mini';
 import { getRebuses, markRebusAsAnswered } from './rebuses';
-
+ import song from '/src/Jeopardy_Music.wav';
 export const actionsCreators = {
   next: ({ current, rebuses }) => ({
     current: current < rebuses.length - 1 ? current + 1 : 0,
     animation: 'flip-vertical-right',
     incorrectAnswerCount: 0
   }),
+
   prev: ({ current, rebuses }) => ({
     current: current > 0 ? current - 1 : rebuses.length - 1,
     animation: 'flip-vertical-left',
     incorrectAnswerCount: 0
   }),
+
   setCurrent: ({ rebuses }, id) => {
     const index = rebuses.findIndex(rebus => rebus.id === id);
     if (index > 0) {
@@ -51,6 +53,10 @@ export const actionsCreators = {
       return { animation: 'shake' };
     }
     return {};
+  },
+  playSound: () => {
+    const sound = new Audio(song);
+    sound.play();
   }
 };
 
