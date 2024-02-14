@@ -11,6 +11,7 @@ import { Hint } from './components/Hint';
 import { actions } from './store';
 import '../css/main.css';
 
+// register function that listens to any call
 export function registerListeners() {
   document.addEventListener('keyup', event => {
     const key = event.key || event.keyCode; // For older browser support
