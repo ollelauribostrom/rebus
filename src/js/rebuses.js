@@ -24,6 +24,7 @@ const rebuses = [
     words: ['Starfish'],
     hint: 'Say the two emojis out loud'
   },
+ 
   {
     symbols: ['💡', '+', '🏠'],
     words: ['Lighthouse'],
@@ -587,6 +588,11 @@ const rebuses = [
     symbols: ['❌', '+', '🔤'],
     words: ['crossword'],
     hint: 'A type of puzzle'
+  },
+  {
+    symbols: ['12:00', '+', '☕'],
+    words: ['Noon tea'],
+    hint: 'A drink we drink on a cold noon'
   },
   {
     symbols: ['S', '+', '🦀', '+', 'BLE'],
