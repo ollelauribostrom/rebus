@@ -902,6 +902,11 @@ const rebuses = [
     symbols: ['🦀', '+', '🎂'],
     words: ['crab', 'cake'],
     hint: 'A delicious appetizer'
+  },
+  {
+    symbols: ['🥌🦾🪨🔩', '+', 'IC'],
+    words: ['ironic'],
+    hint: 'synonym to cynical or satirical'
   }
 ];
 
