@@ -704,6 +704,11 @@ const rebuses = [
     hint: `Works in a railway yard`
   },
   {
+    symbols: ['🐱', '+', '👩'],
+    words: ['Catwoman'],
+    hint: `Batman's love interest`
+  },
+  {
     symbols: ['🐱', '+', '🐠'],
     words: ['Catfish'],
     hint: 'A person who fakes his/her identity online'
